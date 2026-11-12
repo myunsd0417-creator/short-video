@@ -1,5 +1,0 @@
-slide0: File:Small kitchen timer.jpg / Douglas Paul Perkins / CC BY 3.0 / https://commons.wikimedia.org/wiki/File:Small_kitchen_timer.jpg
-slide1: File:Cutlery dries on a red mat beside cups in a kitchen dish rack.jpg / Shixart1985 / CC BY 2.0 / https://commons.wikimedia.org/wiki/File:Cutlery_dries_on_a_red_mat_beside_cups_in_a_kitchen_dish_rack.jpg
-slide2: File:American Triumph Refrigerator - Westinghouse, 1948.jpg / Wyeth, N. C. (Newell Convers), 1882-1945 / Public domain / https://commons.wikimedia.org/wiki/File:American_Triumph_Refrigerator_-_Westinghouse,_1948.jpg
-slide3: File:Haahla.jpg / Hekaheka / Public domain / https://commons.wikimedia.org/wiki/File:Haahla.jpg
-slide4: File:A well-organized kitchen.jpg / Shixart1985 / CC BY 2.0 / https://commons.wikimedia.org/wiki/File:A_well-organized_kitchen.jpg
