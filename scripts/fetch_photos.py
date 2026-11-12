@@ -18,16 +18,25 @@ def get(url, timeout=30):
         return r.read()
 
 
-def search(query):
+BAD_WORDS = ("png", "clipart", "clip art", "transparent", "illustration", "vector", "icon", "drawing", "cartoon")
+
+
+def search(query, licenses="cc0,pdm"):
     params = {
         "q": query,
-        "license": "cc0,pdm",
-        "size": "large",
-        "page_size": "20",
+        "license": licenses,
+        "category": "photograph",
+        "extension": "jpg",
+        "page_size": "40",
         "mature": "false",
     }
     data = json.loads(get(API + "?" + urllib.parse.urlencode(params)))
-    results = data.get("results", [])
+    results = [
+        r for r in data.get("results", [])
+        if not any(w in (r.get("title") or "").lower() for w in BAD_WORDS)
+        and (r.get("width") or 0) >= 800
+    ]
+    print(f"  search '{query}' [{licenses}]: {len(results)} usable")
     # 縦長に近いものを優先、次に大きいもの
     def score(r):
         w, h = r.get("width") or 0, r.get("height") or 0
@@ -44,11 +53,21 @@ def main(path):
     used = set()
     for i, slide in enumerate(spec["slides"]):
         dest = outdir / f"bg{i}.jpg"
-        try:
-            results = search(slide["query"])
-        except Exception as e:
-            print(f"[{i}] 検索失敗: {e}")
-            results = []
+        results = []
+        queries = [slide["query"]] + slide.get("fallback", []) + ["kitchen"]
+        for q in queries:
+            for lic in ("cc0,pdm", "by"):
+                try:
+                    results = search(q, lic)
+                except Exception as e:
+                    print(f"[{i}] 検索失敗 {q}: {e}")
+                    results = []
+                results = [r for r in results if r["url"] not in used]
+                if results:
+                    break
+                time.sleep(1)
+            if results:
+                break
         ok = False
         for r in results:
             if r["url"] in used:
