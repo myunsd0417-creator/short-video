@@ -1,0 +1,75 @@
+{
+  "id": "004",
+  "title": "狭いキッチンの置き場所を増やす3つ",
+  "caption": "ワンルームのキッチン、これで広くなった✨\n保存して、あとで見返してね\n#一人暮らし #キッチングッズ #時短家事 #便利グッズ #自炊",
+  "slides": [
+    {
+      "type": "hook",
+      "query": "small kitchen",
+      "big": [
+        "キッチン",
+        "狭すぎない？"
+      ],
+      "mark": "狭すぎ",
+      "small": "ワンルームの人へ",
+      "fallback": [
+        "tiny kitchen"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "dish rack sink",
+      "big": [
+        "シンク上",
+        "ラック"
+      ],
+      "mark": "ラック",
+      "sub": "水切りも置き場も1つで",
+      "tag": "その1",
+      "fallback": [
+        "dish drying rack"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "magnetic rack kitchen",
+      "big": [
+        "マグネット",
+        "ラック"
+      ],
+      "mark": "マグネット",
+      "sub": "冷蔵庫の横がそのまま棚に",
+      "tag": "その2",
+      "fallback": [
+        "refrigerator side"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "kitchen hooks utensils",
+      "big": [
+        "吊り下げ",
+        "フック"
+      ],
+      "mark": "フック",
+      "sub": "おたまもフライ返しも浮かせる",
+      "tag": "その3",
+      "fallback": [
+        "hanging utensils"
+      ]
+    },
+    {
+      "type": "end",
+      "query": "organized kitchen",
+      "big": [
+        "浮かせて",
+        "広くする"
+      ],
+      "mark": "浮かせて",
+      "sub": "保存して、あとで見返してね",
+      "fallback": [
+        "kitchen shelf"
+      ]
+    }
+  ]
+}

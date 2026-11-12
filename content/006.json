@@ -1,0 +1,75 @@
+{
+  "id": "006",
+  "title": "生ごみのストレスを減らす3つ",
+  "caption": "夏も冬も生ごみのニオイ、気にならなくなった\n保存して、あとで見返してね\n#一人暮らし #キッチングッズ #時短家事 #便利グッズ #自炊",
+  "slides": [
+    {
+      "type": "hook",
+      "query": "kitchen garbage",
+      "big": [
+        "生ごみの",
+        "ニオイ平気？"
+      ],
+      "mark": "ニオイ",
+      "small": "一人暮らしの人へ",
+      "fallback": [
+        "trash bin"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "plastic bags kitchen",
+      "big": [
+        "ポリ袋",
+        "スタンド"
+      ],
+      "mark": "スタンド",
+      "sub": "三角コーナーなしで済む",
+      "tag": "その1",
+      "fallback": [
+        "plastic bag"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "freezer",
+      "big": [
+        "生ごみは",
+        "冷凍庫へ"
+      ],
+      "mark": "冷凍庫",
+      "sub": "ゴミの日まで凍らせておく",
+      "tag": "その2",
+      "fallback": [
+        "freezer food"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "baking soda",
+      "big": [
+        "重曹",
+        "スプレー"
+      ],
+      "mark": "重曹",
+      "sub": "ゴミ箱にシュッとするだけ",
+      "tag": "その3",
+      "fallback": [
+        "baking soda"
+      ]
+    },
+    {
+      "type": "end",
+      "query": "clean sink",
+      "big": [
+        "生ごみが",
+        "ラクになる"
+      ],
+      "mark": "ラク",
+      "sub": "保存して、あとで見返してね",
+      "fallback": [
+        "kitchen sink"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "010",
+  "title": "キッチン掃除がラクになる3つ",
+  "caption": "掃除を後回しにしがちな人へ🧽\n保存して、あとで見返してね\n#一人暮らし #キッチングッズ #時短家事 #便利グッズ #自炊",
+  "slides": [
+    {
+      "type": "hook",
+      "query": "dirty stove",
+      "big": [
+        "コンロの",
+        "汚れ放置してない？"
+      ],
+      "mark": "汚れ",
+      "small": "一人暮らしの人へ",
+      "fallback": [
+        "stove"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "kitchen paper towels",
+      "big": [
+        "キッチン",
+        "ペーパー"
+      ],
+      "mark": "ペーパー",
+      "sub": "使ったらすぐ拭くが一番ラク",
+      "tag": "その1",
+      "fallback": [
+        "paper towel"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "cleaning spray",
+      "big": [
+        "アルコール",
+        "スプレー"
+      ],
+      "mark": "アルコール",
+      "sub": "油汚れもシュッとして拭くだけ",
+      "tag": "その2",
+      "fallback": [
+        "spray bottle"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "aluminium foil",
+      "big": [
+        "アルミの",
+        "レンジガード"
+      ],
+      "mark": "レンジガード",
+      "sub": "油はねを汚れる前に防ぐ",
+      "tag": "その3",
+      "fallback": [
+        "aluminum foil"
+      ]
+    },
+    {
+      "type": "end",
+      "query": "clean kitchen",
+      "big": [
+        "汚れる前に",
+        "防ぐ"
+      ],
+      "mark": "防ぐ",
+      "sub": "保存して、あとで見返してね",
+      "fallback": [
+        "kitchen interior"
+      ]
+    }
+  ]
+}

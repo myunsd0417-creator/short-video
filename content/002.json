@@ -1,0 +1,75 @@
+{
+  "id": "002",
+  "title": "レンジだけで自炊できる3つの道具",
+  "caption": "火を使わない自炊、これで十分だった🍳\n保存して、あとで見返してね\n#一人暮らし #キッチングッズ #時短家事 #便利グッズ #自炊",
+  "slides": [
+    {
+      "type": "hook",
+      "query": "microwave oven",
+      "big": [
+        "コンロ",
+        "使わずに自炊"
+      ],
+      "mark": "コンロ",
+      "small": "一人暮らしの人へ",
+      "fallback": [
+        "microwave"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "steamed vegetables",
+      "big": [
+        "シリコン",
+        "スチーマー"
+      ],
+      "mark": "スチーマー",
+      "sub": "野菜も肉もレンジで蒸せる",
+      "tag": "その1",
+      "fallback": [
+        "steamed broccoli"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "spaghetti pasta",
+      "big": [
+        "レンジ用",
+        "パスタ容器"
+      ],
+      "mark": "パスタ",
+      "sub": "鍋もザルも出さずにゆでられる",
+      "tag": "その2",
+      "fallback": [
+        "pasta"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "cooked rice bowl",
+      "big": [
+        "レンジ用",
+        "炊飯容器"
+      ],
+      "mark": "炊飯",
+      "sub": "1合だけ、炊きたてが食べられる",
+      "tag": "その3",
+      "fallback": [
+        "rice"
+      ]
+    },
+    {
+      "type": "end",
+      "query": "clean kitchen counter",
+      "big": [
+        "火を使わない",
+        "自炊でいい"
+      ],
+      "mark": "自炊",
+      "sub": "保存して、あとで見返してね",
+      "fallback": [
+        "kitchen interior"
+      ]
+    }
+  ]
+}

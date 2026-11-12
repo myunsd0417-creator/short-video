@@ -1,0 +1,75 @@
+{
+  "id": "008",
+  "title": "朝ごはんが5分で終わる3つの道具",
+  "caption": "朝ごはん抜きの人ほど見てほしい🍞\n保存して、あとで見返してね\n#一人暮らし #キッチングッズ #時短家事 #便利グッズ #自炊",
+  "slides": [
+    {
+      "type": "hook",
+      "query": "breakfast toast",
+      "big": [
+        "朝ごはん",
+        "抜いてない？"
+      ],
+      "mark": "抜いて",
+      "small": "忙しい人へ",
+      "fallback": [
+        "breakfast"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "hot sandwich",
+      "big": [
+        "ホットサンド",
+        "メーカー"
+      ],
+      "mark": "ホットサンド",
+      "sub": "はさんで焼くだけで満足感",
+      "tag": "その1",
+      "fallback": [
+        "grilled sandwich"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "boiled eggs",
+      "big": [
+        "ゆで卵",
+        "メーカー"
+      ],
+      "mark": "ゆで卵",
+      "sub": "レンジでチンして放置",
+      "tag": "その2",
+      "fallback": [
+        "eggs"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "toaster oven",
+      "big": [
+        "トースター用",
+        "トレイ"
+      ],
+      "mark": "トレイ",
+      "sub": "目玉焼きもトーストと一緒に",
+      "tag": "その3",
+      "fallback": [
+        "toaster"
+      ]
+    },
+    {
+      "type": "end",
+      "query": "coffee breakfast",
+      "big": [
+        "朝5分で",
+        "ちゃんと食べる"
+      ],
+      "mark": "5分",
+      "sub": "保存して、あとで見返してね",
+      "fallback": [
+        "coffee"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "007",
+  "title": "自炊が続く3つの道具",
+  "caption": "三日坊主だった自炊が続くようになった\n保存して、あとで見返してね\n#一人暮らし #キッチングッズ #時短家事 #便利グッズ #自炊",
+  "slides": [
+    {
+      "type": "hook",
+      "query": "home cooking",
+      "big": [
+        "自炊",
+        "続かない人へ"
+      ],
+      "mark": "続かない",
+      "small": "一人暮らしの人へ",
+      "fallback": [
+        "cooking"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "small frying pan",
+      "big": [
+        "小さい",
+        "フライパン"
+      ],
+      "mark": "小さい",
+      "sub": "1人分ならこれで十分。洗うのもラク",
+      "tag": "その1",
+      "fallback": [
+        "frying pan"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "clay pot",
+      "big": [
+        "一人用",
+        "土鍋"
+      ],
+      "mark": "土鍋",
+      "sub": "切って入れて火にかけるだけ",
+      "tag": "その2",
+      "fallback": [
+        "hot pot"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "measuring spoons",
+      "big": [
+        "計量",
+        "スプーン"
+      ],
+      "mark": "計量",
+      "sub": "味が決まると失敗しない",
+      "tag": "その3",
+      "fallback": [
+        "spoons"
+      ]
+    },
+    {
+      "type": "end",
+      "query": "meal on table",
+      "big": [
+        "道具が",
+        "続けさせる"
+      ],
+      "mark": "続けさせる",
+      "sub": "保存して、あとで見返してね",
+      "fallback": [
+        "dinner plate"
+      ]
+    }
+  ]
+}

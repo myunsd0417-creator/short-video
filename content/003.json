@@ -1,0 +1,75 @@
+{
+  "id": "003",
+  "title": "食材をムダにしない3つの工夫",
+  "caption": "冷蔵庫で食材をダメにしがちな人へ🥬\n保存して、あとで見返してね\n#一人暮らし #キッチングッズ #時短家事 #便利グッズ #自炊",
+  "slides": [
+    {
+      "type": "hook",
+      "query": "refrigerator vegetables",
+      "big": [
+        "また食材",
+        "捨ててない？"
+      ],
+      "mark": "捨てて",
+      "small": "一人暮らしの人へ",
+      "fallback": [
+        "fridge food"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "zipper storage bag food",
+      "big": [
+        "冷凍用の",
+        "保存袋"
+      ],
+      "mark": "冷凍用",
+      "sub": "買ってすぐ小分けして冷凍",
+      "tag": "その1",
+      "fallback": [
+        "frozen food bag"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "ice cube tray",
+      "big": [
+        "小分け",
+        "冷凍トレー"
+      ],
+      "mark": "小分け",
+      "sub": "ソースもごはんも1食分ずつ",
+      "tag": "その2",
+      "fallback": [
+        "ice tray"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "masking tape",
+      "big": [
+        "マスキング",
+        "テープ"
+      ],
+      "mark": "テープ",
+      "sub": "日付を書いて貼るだけ",
+      "tag": "その3",
+      "fallback": [
+        "tape roll"
+      ]
+    },
+    {
+      "type": "end",
+      "query": "fresh vegetables",
+      "big": [
+        "捨てる食材",
+        "ゼロへ"
+      ],
+      "mark": "ゼロ",
+      "sub": "保存して、あとで見返してね",
+      "fallback": [
+        "vegetables"
+      ]
+    }
+  ]
+}

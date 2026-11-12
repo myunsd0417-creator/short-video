@@ -1,0 +1,73 @@
+{
+  "id": "005",
+  "title": "包丁を使わなくていい3つの道具",
+  "caption": "包丁とまな板、ほぼ出さなくなった🔪\n保存して、あとで見返してね\n#一人暮らし #キッチングッズ #時短家事 #便利グッズ #自炊",
+  "slides": [
+    {
+      "type": "hook",
+      "query": "knife cutting board",
+      "big": [
+        "まな板",
+        "洗うのめんどい"
+      ],
+      "mark": "まな板",
+      "small": "一人暮らしの人へ",
+      "fallback": [
+        "cutting board"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "vegetable peeler",
+      "big": [
+        "ピーラー"
+      ],
+      "mark": "ピーラー",
+      "sub": "キャベツの千切りもこれでOK",
+      "tag": "その1",
+      "fallback": [
+        "peeler"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "vegetable slicer",
+      "big": [
+        "スライサー"
+      ],
+      "mark": "スライサー",
+      "sub": "玉ねぎもきゅうりも数秒",
+      "tag": "その2",
+      "fallback": [
+        "mandoline slicer"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "food chopper",
+      "big": [
+        "ぶんぶん",
+        "チョッパー"
+      ],
+      "mark": "チョッパー",
+      "sub": "ひもを引くだけでみじん切り",
+      "tag": "その3",
+      "fallback": [
+        "chopped onion"
+      ]
+    },
+    {
+      "type": "end",
+      "query": "salad bowl",
+      "big": [
+        "包丁なしで",
+        "自炊できる"
+      ],
+      "mark": "包丁なし",
+      "sub": "保存して、あとで見返してね",
+      "fallback": [
+        "salad"
+      ]
+    }
+  ]
+}

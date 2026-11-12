@@ -1,0 +1,75 @@
+{
+  "id": "009",
+  "title": "洗い物を減らす食器の選び方",
+  "caption": "食器を変えたら洗い物がラクになった🍽\n保存して、あとで見返してね\n#一人暮らし #キッチングッズ #時短家事 #便利グッズ #自炊",
+  "slides": [
+    {
+      "type": "hook",
+      "query": "stacked plates",
+      "big": [
+        "食器が",
+        "多すぎない？"
+      ],
+      "mark": "多すぎ",
+      "small": "一人暮らしの人へ",
+      "fallback": [
+        "plates"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "one plate meal",
+      "big": [
+        "ワンプレート",
+        "皿"
+      ],
+      "mark": "ワンプレート",
+      "sub": "おかずもごはんも1枚で",
+      "tag": "その1",
+      "fallback": [
+        "plate food"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "deep bowl",
+      "big": [
+        "深めの",
+        "どんぶり"
+      ],
+      "mark": "どんぶり",
+      "sub": "麺も丼もサラダもこれ1つ",
+      "tag": "その2",
+      "fallback": [
+        "bowl"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "glass cup",
+      "big": [
+        "耐熱",
+        "マグカップ"
+      ],
+      "mark": "耐熱",
+      "sub": "スープもレンジでそのまま",
+      "tag": "その3",
+      "fallback": [
+        "mug"
+      ]
+    },
+    {
+      "type": "end",
+      "query": "minimal dishes",
+      "big": [
+        "食器は",
+        "少ないほどラク"
+      ],
+      "mark": "少ない",
+      "sub": "保存して、あとで見返してね",
+      "fallback": [
+        "kitchen cupboard"
+      ]
+    }
+  ]
+}
