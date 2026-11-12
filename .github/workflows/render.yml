@@ -49,5 +49,5 @@ jobs:
             echo "nothing new"
           else
             git commit -m "render: add videos"
-            git push
+            git pull --rebase -q origin main && git push
           fi
