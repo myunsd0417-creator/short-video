@@ -1,0 +1,2 @@
+001 tiktok 2026-11-12T20:15:00+09:00 NG {"data": {"createPost": {"message": "Channel not found"}}}
+001 youtube 2026-11-12T20:15:00+09:00 OK {"data": {"createPost": {"post": {"id": "6af5955f49bcfed3aa76e27a", "dueAt": "2026-11-12T11:15:00.000Z"}}}}
