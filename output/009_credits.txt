@@ -1,5 +1,0 @@
-slide0: File:Iron heavy plates stacked for exercise.jpg / Nenad Stojkovic / CC BY 2.0 / https://commons.wikimedia.org/wiki/File:Iron_heavy_plates_stacked_for_exercise.jpg
-slide1: File:A couple are having a meal at the table as one servant bring Wellcome V0039376.jpg /  / CC BY 4.0 / https://commons.wikimedia.org/wiki/File:A_couple_are_having_a_meal_at_the_table_as_one_servant_bring_Wellcome_V0039376.jpg
-slide2: File:Deep bowl MET 36.1.70 EGDP010356.jpg /  / CC0 / https://commons.wikimedia.org/wiki/File:Deep_bowl_MET_36.1.70_EGDP010356.jpg
-slide3: File:A glass made of cup.jpg / Knites / CC0 / https://commons.wikimedia.org/wiki/File:A_glass_made_of_cup.jpg
-slide4: File:卡邦尼扁意粉.jpg / Andy Li / CC0 / https://commons.wikimedia.org/wiki/File:%E5%8D%A1%E9%82%A6%E5%B0%BC%E6%89%81%E6%84%8F%E7%B2%89.jpg

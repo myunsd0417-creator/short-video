@@ -5,7 +5,7 @@
   "slides": [
     {
       "type": "hook",
-      "query": "stacked plates",
+      "query": "dirty plates",
       "big": [
         "食器が",
         "多すぎない？"
@@ -13,7 +13,8 @@
       "mark": "多すぎ",
       "small": "一人暮らしの人へ",
       "fallback": [
-        "plates"
+        "plates",
+        "dishes"
       ]
     },
     {
@@ -32,7 +33,7 @@
     },
     {
       "type": "item",
-      "query": "deep bowl",
+      "query": "ramen bowl",
       "big": [
         "深めの",
         "どんぶり"
@@ -41,7 +42,8 @@
       "sub": "麺も丼もサラダもこれ1つ",
       "tag": "その2",
       "fallback": [
-        "bowl"
+        "noodle bowl",
+        "bowl of rice"
       ]
     },
     {
