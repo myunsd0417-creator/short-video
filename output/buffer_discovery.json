@@ -1,0 +1,546 @@
+{
+ "orgs": {
+  "data": {
+   "account": {
+    "organizations": [
+     {
+      "id": "6715160d6ebd9c191c9ccab2",
+      "name": "My Organization"
+     }
+    ]
+   }
+  }
+ },
+ "channels_raw": [
+  {
+   "data": {
+    "channels": [
+     {
+      "id": "6af3e49562b70b94b0ee8b6f",
+      "name": "みん",
+      "displayName": "みん",
+      "service": "youtube",
+      "isQueuePaused": false
+     },
+     {
+      "id": "6af3b90962b70b94b0ecb696",
+      "name": "minmi_581",
+      "displayName": "minmi_581",
+      "service": "tiktok",
+      "isQueuePaused": false
+     },
+     {
+      "id": "6af02b6162b70b94b0bb3dab",
+      "name": "miiiint555",
+      "displayName": "miiiint555",
+      "service": "threads",
+      "isQueuePaused": false
+     }
+    ]
+   }
+  }
+ ],
+ "channels": [
+  {
+   "id": "6af3e49562b70b94b0ee8b6f",
+   "name": "みん",
+   "displayName": "みん",
+   "service": "youtube",
+   "isQueuePaused": false
+  },
+  {
+   "id": "6af3b90962b70b94b0ecb696",
+   "name": "minmi_581",
+   "displayName": "minmi_581",
+   "service": "tiktok",
+   "isQueuePaused": false
+  },
+  {
+   "id": "6af02b6162b70b94b0bb3dab",
+   "name": "miiiint555",
+   "displayName": "miiiint555",
+   "service": "threads",
+   "isQueuePaused": false
+  }
+ ],
+ "types": {
+  "CreatePostInput": {
+   "data": {
+    "__type": {
+     "name": "CreatePostInput",
+     "kind": "INPUT_OBJECT",
+     "inputFields": [
+      {
+       "name": "aiAssisted",
+       "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+       }
+      },
+      {
+       "name": "assets",
+       "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+         "kind": "LIST",
+         "name": null,
+         "ofType": {
+          "kind": "NON_NULL",
+          "name": null
+         }
+        }
+       }
+      },
+      {
+       "name": "channelId",
+       "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+         "kind": "SCALAR",
+         "name": "ChannelId",
+         "ofType": null
+        }
+       }
+      },
+      {
+       "name": "draftId",
+       "type": {
+        "kind": "SCALAR",
+        "name": "DraftId",
+        "ofType": null
+       }
+      },
+      {
+       "name": "dueAt",
+       "type": {
+        "kind": "SCALAR",
+        "name": "DateTime",
+        "ofType": null
+       }
+      },
+      {
+       "name": "ideaId",
+       "type": {
+        "kind": "SCALAR",
+        "name": "IdeaId",
+        "ofType": null
+       }
+      },
+      {
+       "name": "metadata",
+       "type": {
+        "kind": "INPUT_OBJECT",
+        "name": "PostInputMetaData",
+        "ofType": null
+       }
+      },
+      {
+       "name": "mode",
+       "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+         "kind": "ENUM",
+         "name": "ShareMode",
+         "ofType": null
+        }
+       }
+      },
+      {
+       "name": "needsApproval",
+       "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+         "kind": "SCALAR",
+         "name": "Boolean",
+         "ofType": null
+        }
+       }
+      },
+      {
+       "name": "saveToDraft",
+       "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+       }
+      },
+      {
+       "name": "schedulingType",
+       "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+         "kind": "ENUM",
+         "name": "SchedulingType",
+         "ofType": null
+        }
+       }
+      },
+      {
+       "name": "source",
+       "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+       }
+      },
+      {
+       "name": "tagIds",
+       "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+         "kind": "NON_NULL",
+         "name": null,
+         "ofType": {
+          "kind": "SCALAR",
+          "name": "TagId"
+         }
+        }
+       }
+      },
+      {
+       "name": "text",
+       "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+       }
+      }
+     ],
+     "enumValues": null
+    }
+   }
+  },
+  "PostInputMetaData": {
+   "data": {
+    "__type": {
+     "name": "PostInputMetaData",
+     "kind": "INPUT_OBJECT",
+     "inputFields": [
+      {
+       "name": "bluesky",
+       "type": {
+        "kind": "INPUT_OBJECT",
+        "name": "BlueskyPostMetadataInput",
+        "ofType": null
+       }
+      },
+      {
+       "name": "facebook",
+       "type": {
+        "kind": "INPUT_OBJECT",
+        "name": "FacebookPostMetadataInput",
+        "ofType": null
+       }
+      },
+      {
+       "name": "google",
+       "type": {
+        "kind": "INPUT_OBJECT",
+        "name": "GoogleBusinessPostMetadataInput",
+        "ofType": null
+       }
+      },
+      {
+       "name": "instagram",
+       "type": {
+        "kind": "INPUT_OBJECT",
+        "name": "InstagramPostMetadataInput",
+        "ofType": null
+       }
+      },
+      {
+       "name": "linkedin",
+       "type": {
+        "kind": "INPUT_OBJECT",
+        "name": "LinkedInPostMetadataInput",
+        "ofType": null
+       }
+      },
+      {
+       "name": "mastodon",
+       "type": {
+        "kind": "INPUT_OBJECT",
+        "name": "MastodonPostMetadataInput",
+        "ofType": null
+       }
+      },
+      {
+       "name": "pinterest",
+       "type": {
+        "kind": "INPUT_OBJECT",
+        "name": "PinterestPostMetadataInput",
+        "ofType": null
+       }
+      },
+      {
+       "name": "substack",
+       "type": {
+        "kind": "INPUT_OBJECT",
+        "name": "SubstackPostMetadataInput",
+        "ofType": null
+       }
+      },
+      {
+       "name": "threads",
+       "type": {
+        "kind": "INPUT_OBJECT",
+        "name": "ThreadsPostMetadataInput",
+        "ofType": null
+       }
+      },
+      {
+       "name": "tiktok",
+       "type": {
+        "kind": "INPUT_OBJECT",
+        "name": "TikTokPostMetadataInput",
+        "ofType": null
+       }
+      },
+      {
+       "name": "twitter",
+       "type": {
+        "kind": "INPUT_OBJECT",
+        "name": "TwitterPostMetadataInput",
+        "ofType": null
+       }
+      },
+      {
+       "name": "youtube",
+       "type": {
+        "kind": "INPUT_OBJECT",
+        "name": "YoutubePostMetadataInput",
+        "ofType": null
+       }
+      }
+     ],
+     "enumValues": null
+    }
+   }
+  },
+  "AssetsInput": {
+   "data": {
+    "__type": null
+   }
+  },
+  "VideoAssetInput": {
+   "data": {
+    "__type": {
+     "name": "VideoAssetInput",
+     "kind": "INPUT_OBJECT",
+     "inputFields": [
+      {
+       "name": "metadata",
+       "type": {
+        "kind": "INPUT_OBJECT",
+        "name": "VideoMetadataInput",
+        "ofType": null
+       }
+      },
+      {
+       "name": "thumbnailUrl",
+       "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+       }
+      },
+      {
+       "name": "url",
+       "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+         "kind": "SCALAR",
+         "name": "String",
+         "ofType": null
+        }
+       }
+      }
+     ],
+     "enumValues": null
+    }
+   }
+  },
+  "VideoMetadataInput": {
+   "data": {
+    "__type": {
+     "name": "VideoMetadataInput",
+     "kind": "INPUT_OBJECT",
+     "inputFields": [
+      {
+       "name": "thumbnailOffset",
+       "type": {
+        "kind": "SCALAR",
+        "name": "Int",
+        "ofType": null
+       }
+      },
+      {
+       "name": "title",
+       "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+       }
+      }
+     ],
+     "enumValues": null
+    }
+   }
+  },
+  "SchedulingType": {
+   "data": {
+    "__type": {
+     "name": "SchedulingType",
+     "kind": "ENUM",
+     "inputFields": null,
+     "enumValues": [
+      {
+       "name": "automatic"
+      },
+      {
+       "name": "notification"
+      }
+     ]
+    }
+   }
+  },
+  "ShareMode": {
+   "data": {
+    "__type": {
+     "name": "ShareMode",
+     "kind": "ENUM",
+     "inputFields": null,
+     "enumValues": [
+      {
+       "name": "addToQueue"
+      },
+      {
+       "name": "customScheduled"
+      },
+      {
+       "name": "shareNext"
+      },
+      {
+       "name": "shareNow"
+      }
+     ]
+    }
+   }
+  },
+  "YoutubePostMetadataInput": {
+   "data": {
+    "__type": {
+     "name": "YoutubePostMetadataInput",
+     "kind": "INPUT_OBJECT",
+     "inputFields": [
+      {
+       "name": "categoryId",
+       "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+       }
+      },
+      {
+       "name": "embeddable",
+       "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+       }
+      },
+      {
+       "name": "isAiGenerated",
+       "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+       }
+      },
+      {
+       "name": "license",
+       "type": {
+        "kind": "ENUM",
+        "name": "YoutubeLicense",
+        "ofType": null
+       }
+      },
+      {
+       "name": "madeForKids",
+       "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+       }
+      },
+      {
+       "name": "notifySubscribers",
+       "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+       }
+      },
+      {
+       "name": "privacy",
+       "type": {
+        "kind": "ENUM",
+        "name": "YoutubePrivacy",
+        "ofType": null
+       }
+      },
+      {
+       "name": "title",
+       "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+       }
+      }
+     ],
+     "enumValues": null
+    }
+   }
+  },
+  "TikTokPostMetadataInput": {
+   "data": {
+    "__type": {
+     "name": "TikTokPostMetadataInput",
+     "kind": "INPUT_OBJECT",
+     "inputFields": [
+      {
+       "name": "isAiGenerated",
+       "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+       }
+      },
+      {
+       "name": "title",
+       "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+       }
+      }
+     ],
+     "enumValues": null
+    }
+   }
+  },
+  "TiktokPostMetadataInput": {
+   "data": {
+    "__type": null
+   }
+  }
+ }
+}
