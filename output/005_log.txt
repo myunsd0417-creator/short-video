@@ -1,0 +1,10 @@
+  search 'knife cutting board': 15 usable
+[0] OK knife cutting board -> File:Chopped onions on a cutting board with knife.jpg (CC BY 2.0)
+  search 'vegetable peeler': 6 usable
+[1] OK vegetable peeler -> File:VEGETABLE PEELER.jpg (CC0)
+  search 'vegetable slicer': 13 usable
+[2] OK vegetable slicer -> File:Vegetable Slicer SAAM-2011.37.19 1.jpg (CC0)
+  search 'food chopper': 21 usable
+[3] OK food chopper -> File:Cuisinart food processor.jpg (CC BY 3.0)
+  search 'salad bowl': 16 usable
+[4] OK salad bowl -> File:Bob Stocksdale Salad Bowl with Servers.jpg (CC0)

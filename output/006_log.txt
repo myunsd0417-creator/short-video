@@ -1,0 +1,10 @@
+  search 'kitchen garbage': 10 usable
+[0] OK kitchen garbage -> File:"The garbage that comes from your Kitchen, even after you have eliminated all possible human food, contains materials ne - NARA - 512518.jpg (Public domain)
+  search 'plastic bags kitchen': 5 usable
+[1] OK plastic bags kitchen -> File:White plastic bag on white kitchen counter.jpg (CC0)
+  search 'freezer': 8 usable
+[2] OK freezer -> File:Ice cream freezer at Brastad Arena 3.jpg (CC BY 4.0)
+  search 'baking soda': 15 usable
+[3] OK baking soda -> File:Пищевая сода.jpg (CC0)
+  search 'clean sink': 11 usable
+[4] OK clean sink -> File:Bon Ami - Now I clean my sink fast this safe, easy way, 1948.jpg (Public domain)

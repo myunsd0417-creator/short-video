@@ -1,0 +1,10 @@
+  search 'stacked plates': 7 usable
+[0] OK stacked plates -> File:Iron heavy plates stacked for exercise.jpg (CC BY 2.0)
+  search 'one plate meal': 13 usable
+[1] OK one plate meal -> File:A couple are having a meal at the table as one servant bring Wellcome V0039376.jpg (CC BY 4.0)
+  search 'deep bowl': 23 usable
+[2] OK deep bowl -> File:Deep bowl MET 36.1.70 EGDP010356.jpg (CC0)
+  search 'glass cup': 24 usable
+[3] OK glass cup -> File:A glass made of cup.jpg (CC0)
+  search 'minimal dishes': 2 usable
+[4] OK minimal dishes -> File:卡邦尼扁意粉.jpg (CC0)

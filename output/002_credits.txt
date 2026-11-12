@@ -1,0 +1,5 @@
+slide0: File:Microwave oven "Erisson".jpg / Karamanskaya / CC0 / https://commons.wikimedia.org/wiki/File:Microwave_oven_%22Erisson%22.jpg
+slide1: File:Grouper, steamed, with mixed vegetables - Massachusetts.jpg / Daderot / CC0 / https://commons.wikimedia.org/wiki/File:Grouper,_steamed,_with_mixed_vegetables_-_Massachusetts.jpg
+slide2: File:Burger, fries, and baked pasta - La Tessa.jpg / Andy Li / CC0 / https://commons.wikimedia.org/wiki/File:Burger,_fries,_and_baked_pasta_-_La_Tessa.jpg
+slide3: File:Bowl of Rice and Meat.jpg / Paul The Writer / CC0 / https://commons.wikimedia.org/wiki/File:Bowl_of_Rice_and_Meat.jpg
+slide4: File:Never accept an invitation from a stranger unless he gives you candy -Linda Festa (3312118251).jpg / Evil Erin / CC BY 2.0 / https://commons.wikimedia.org/wiki/File:Never_accept_an_invitation_from_a_stranger_unless_he_gives_you_candy_-Linda_Festa_(3312118251).jpg

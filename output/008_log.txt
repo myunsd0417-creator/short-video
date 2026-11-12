@@ -1,0 +1,10 @@
+  search 'breakfast toast': 10 usable
+[0] OK breakfast toast -> File:Breakfast burrito and toast - Bakersfield, CA.jpg (CC0)
+  search 'hot sandwich': 17 usable
+[1] OK hot sandwich -> File:Hot dago1 inside.jpg (CC0)
+  search 'boiled eggs': 3 usable
+[2] OK boiled eggs -> File:Boiled eggs on a white plate.jpg (CC0)
+  search 'toaster oven': 3 usable
+[3] OK toaster oven -> File:I Need a Proper Cooling Rack - but Toaster Oven rack works.jpg (CC BY 2.0)
+  search 'coffee breakfast': 14 usable
+[4] OK coffee breakfast -> File:Enjoying a delightful breakfast at home with pastry, coffee, and juice.jpg (CC BY 2.0)

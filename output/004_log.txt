@@ -1,0 +1,11 @@
+  search 'small kitchen': 6 usable
+[0] OK small kitchen -> File:Small kitchen timer.jpg (CC BY 3.0)
+  search 'dish rack sink': 4 usable
+[1] OK dish rack sink -> File:Cutlery dries on a red mat beside cups in a kitchen dish rack.jpg (CC BY 2.0)
+  search 'magnetic rack kitchen': 0 usable
+  search 'refrigerator side': 10 usable
+[2] OK refrigerator side -> File:American Triumph Refrigerator - Westinghouse, 1948.jpg (Public domain)
+  search 'kitchen hooks utensils': 1 usable
+[3] OK kitchen hooks utensils -> File:Haahla.jpg (Public domain)
+  search 'organized kitchen': 9 usable
+[4] OK organized kitchen -> File:A well-organized kitchen.jpg (CC BY 2.0)

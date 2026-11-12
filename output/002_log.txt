@@ -1,0 +1,10 @@
+  search 'microwave oven': 1 usable
+[0] OK microwave oven -> File:Microwave oven "Erisson".jpg (CC0)
+  search 'steamed vegetables': 8 usable
+[1] OK steamed vegetables -> File:Grouper, steamed, with mixed vegetables - Massachusetts.jpg (CC0)
+  search 'spaghetti pasta': 8 usable
+[2] OK spaghetti pasta -> File:Burger, fries, and baked pasta - La Tessa.jpg (CC0)
+  search 'cooked rice bowl': 10 usable
+[3] OK cooked rice bowl -> File:Bowl of Rice and Meat.jpg (CC0)
+  search 'clean kitchen counter': 11 usable
+[4] OK clean kitchen counter -> File:Never accept an invitation from a stranger unless he gives you candy -Linda Festa (3312118251).jpg (CC BY 2.0)
