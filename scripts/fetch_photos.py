@@ -1,100 +1,107 @@
-"""Openverseから商用利用OK（CC0・パブリックドメイン）の写真を取ってくる。
+"""Wikimedia Commonsから、商用利用OK（CC0・パブリックドメイン・CC BY）の写真を取ってくる。
+CC BY-SA など条件が重いものは使わない。出典は output/<id>_credits.txt に残す。
 使い方: python scripts/fetch_photos.py content/001.json
 """
 import json
+import re
 import sys
 import time
 import urllib.parse
 import urllib.request
 from pathlib import Path
 
-UA = "short-video-bot/1.0 (personal project)"
-API = "https://api.openverse.org/v1/images/"
+UA = "short-video-bot/1.0 (https://github.com/myunsd0417-creator/short-video)"
+API = "https://commons.wikimedia.org/w/api.php"
+BAD_WORDS = ("logo", "icon", "drawing", "diagram", "map", "clipart", "illustration", "svg", "patent")
 
 
-def get(url, timeout=30):
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json, image/*"})
+def get(url, timeout=40):
+    req = urllib.request.Request(url, headers={"User-Agent": UA})
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read()
 
 
-BAD_WORDS = ("png", "clipart", "clip art", "transparent", "illustration", "vector", "icon", "drawing", "cartoon")
+def license_ok(name):
+    n = (name or "").lower()
+    if "sa" in re.split(r"[\s\-]+", n):
+        return False
+    return n.startswith("cc0") or "public domain" in n or n == "pd" or n.startswith("cc by")
 
 
-def search(query, licenses="cc0,pdm"):
+def search(query):
     params = {
-        "q": query,
-        "license": licenses,
-        "category": "photograph",
-        "extension": "jpg",
-        "page_size": "40",
-        "mature": "false",
+        "action": "query",
+        "format": "json",
+        "generator": "search",
+        "gsrsearch": f"{query} filetype:bitmap",
+        "gsrnamespace": "6",
+        "gsrlimit": "30",
+        "prop": "imageinfo",
+        "iiprop": "url|size|mime|extmetadata",
+        "iiurlwidth": "1400",
     }
     data = json.loads(get(API + "?" + urllib.parse.urlencode(params)))
-    results = [
-        r for r in data.get("results", [])
-        if not any(w in (r.get("title") or "").lower() for w in BAD_WORDS)
-        and (r.get("width") or 0) >= 800
-    ]
-    print(f"  search '{query}' [{licenses}]: {len(results)} usable")
-    # 縦長に近いものを優先、次に大きいもの
-    def score(r):
-        w, h = r.get("width") or 0, r.get("height") or 0
-        tall = 1 if h >= w else 0
-        return (tall, w * h)
-    return sorted(results, key=score, reverse=True)
+    pages = sorted(data.get("query", {}).get("pages", {}).values(), key=lambda p: p.get("index", 99))
+    out = []
+    for p in pages:
+        ii = (p.get("imageinfo") or [{}])[0]
+        meta = ii.get("extmetadata", {})
+        lic = meta.get("LicenseShortName", {}).get("value", "")
+        title = p.get("title", "")
+        if ii.get("mime") != "image/jpeg":
+            continue
+        if any(w in title.lower() for w in BAD_WORDS):
+            continue
+        if (ii.get("width") or 0) < 900 or not license_ok(lic):
+            continue
+        artist = re.sub("<[^>]+>", "", meta.get("Artist", {}).get("value", "")).strip()
+        out.append({
+            "url": ii.get("thumburl") or ii.get("url"),
+            "title": title,
+            "license": lic,
+            "artist": artist,
+            "page": ii.get("descriptionurl", ""),
+            "tall": ii.get("height", 0) >= ii.get("width", 1),
+        })
+    print(f"  search '{query}': {len(out)} usable")
+    # 検索順位を保ちつつ、縦長を少し優先
+    return sorted(out, key=lambda r: not r["tall"])[:10] if out else []
 
 
 def main(path):
     spec = json.loads(Path(path).read_text(encoding="utf-8"))
     outdir = Path("work") / spec["id"]
     outdir.mkdir(parents=True, exist_ok=True)
-    credits = []
-    used = set()
+    credits, used = [], set()
     for i, slide in enumerate(spec["slides"]):
         dest = outdir / f"bg{i}.jpg"
-        results = []
-        queries = [slide["query"]] + slide.get("fallback", []) + ["kitchen"]
-        for q in queries:
-            for lic in ("cc0,pdm", "by"):
-                try:
-                    results = search(q, lic)
-                except Exception as e:
-                    body = getattr(e, "read", lambda: b"")()[:300]
-                    print(f"[{i}] 検索失敗 {q}: {e} {body}")
-                    results = []
-                results = [r for r in results if r["url"] not in used]
-                if results:
-                    break
-                time.sleep(1)
-            if results:
-                break
         ok = False
-        for r in results:
-            if r["url"] in used:
-                continue
+        for q in [slide["query"]] + slide.get("fallback", []):
             try:
-                blob = get(r["url"], timeout=40)
-                if len(blob) < 30_000:
-                    continue
-                dest.write_bytes(blob)
-                used.add(r["url"])
-                credits.append(
-                    f"slide{i}: {r.get('title','')} / {r.get('creator','')} / "
-                    f"{r.get('license','')} / {r.get('foreign_landing_url','')}"
-                )
-                print(f"[{i}] {slide['query']} -> {r['url']}")
-                ok = True
-                break
+                results = [r for r in search(q) if r["url"] not in used]
             except Exception as e:
-                print(f"[{i}] 取得失敗 {r.get('url')}: {e}")
+                print(f"[{i}] 検索失敗 {q}: {e}")
+                results = []
+            for r in results:
+                try:
+                    blob = get(r["url"])
+                    if len(blob) < 40_000:
+                        continue
+                    dest.write_bytes(blob)
+                    used.add(r["url"])
+                    credits.append(f"slide{i}: {r['title']} / {r['artist']} / {r['license']} / {r['page']}")
+                    print(f"[{i}] OK {q} -> {r['title']} ({r['license']})")
+                    ok = True
+                    break
+                except Exception as e:
+                    print(f"[{i}] 取得失敗 {r['url']}: {e}")
+            time.sleep(1)
+            if ok:
+                break
         if not ok:
             print(f"[{i}] 写真なし（グラデーション背景にします）")
-        time.sleep(1)
     Path("output").mkdir(exist_ok=True)
-    (Path("output") / f"{spec['id']}_credits.txt").write_text(
-        "\n".join(credits) + "\n", encoding="utf-8"
-    )
+    (Path("output") / f"{spec['id']}_credits.txt").write_text("\n".join(credits) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":
