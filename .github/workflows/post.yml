@@ -1,0 +1,29 @@
+name: post-to-buffer
+on:
+  push:
+    paths: ["config.json", "tools/post_buffer.py", ".github/workflows/post.yml"]
+  schedule:
+    - cron: "40 21 * * *"   # 毎日 日本時間 6:40 に予約を補充
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: post
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Schedule videos on Buffer
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+        run: python tools/post_buffer.py
+      - name: Save record
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add output
+          git commit -m "post: buffer schedule" || exit 0
+          git pull --rebase -q origin main && git push

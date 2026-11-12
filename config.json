@@ -1,0 +1,10 @@
+{
+  "publish": false,
+  "channels": {
+    "tiktok": "6af3b90962b70b94b0ee8b6f",
+    "youtube": "6af3e49562b70b94b0ee8b6f"
+  },
+  "slots_jst": ["12:15", "20:15"],
+  "max_queued_per_channel": 8,
+  "skip": ["006", "009"]
+}
