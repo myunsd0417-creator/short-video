@@ -1,0 +1,28 @@
+name: buffer-discover
+on:
+  push:
+    paths: ["tools/discover.py", ".github/workflows/discover.yml"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Look up Buffer channels and schema
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+        run: python tools/discover.py
+      - name: Check public video URLs
+        run: |
+          for u in "https://raw.githubusercontent.com/${{ github.repository }}/main/output/001.mp4" "https://cdn.jsdelivr.net/gh/${{ github.repository }}@main/output/001.mp4"; do
+            curl -s -o /dev/null -w "$u -> %{http_code} %{content_type} %{size_download}\n" "$u" | tee -a output/url_check.txt
+          done
+      - name: Save
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add output
+          git commit -m "discover: buffer info" || exit 0
+          git pull --rebase -q origin main && git push
