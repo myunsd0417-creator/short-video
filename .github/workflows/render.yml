@@ -1,0 +1,53 @@
+name: render-videos
+
+on:
+  push:
+    paths:
+      - "content/**"
+      - "scripts/**"
+      - ".github/workflows/render.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: render
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-noto-cjk-extra
+          pip install --quiet pillow
+
+      - name: Render videos that are not made yet
+        run: |
+          for f in content/*.json; do
+            id=$(basename "$f" .json)
+            if [ -f "output/$id.mp4" ]; then
+              echo "skip $id (already rendered)"
+              continue
+            fi
+            python scripts/fetch_photos.py "$f"
+            python scripts/render.py "$f"
+          done
+
+      - name: Save results to the repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add output
+          if git diff --cached --quiet; then
+            echo "nothing new"
+          else
+            git commit -m "render: add videos"
+            git push
+          fi

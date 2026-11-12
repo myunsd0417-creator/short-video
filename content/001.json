@@ -1,0 +1,45 @@
+{
+  "id": "001",
+  "title": "洗い物が半分になる3つの道具",
+  "caption": "一人暮らしの洗い物、これで半分になった🍳\n保存して、あとで見返してね\n#一人暮らし #キッチングッズ #時短家事 #洗い物 #便利グッズ",
+  "slides": [
+    {
+      "type": "hook",
+      "query": "dirty dishes sink",
+      "small": "一人暮らしの人へ",
+      "big": ["まだ1日3回も", "洗い物してる？"],
+      "mark": "洗い物"
+    },
+    {
+      "type": "item",
+      "tag": "その1",
+      "query": "glass food container",
+      "big": ["耐熱ガラスの", "保存容器"],
+      "mark": "耐熱ガラス",
+      "sub": "チンして、そのまま食べて、そのまま保存"
+    },
+    {
+      "type": "item",
+      "tag": "その2",
+      "query": "kitchen scissors",
+      "big": ["キッチンバサミ"],
+      "mark": "キッチンバサミ",
+      "sub": "まな板も包丁も出さずに切れる"
+    },
+    {
+      "type": "item",
+      "tag": "その3",
+      "query": "frying pan cooking",
+      "big": ["フライパン用", "ホイルシート"],
+      "mark": "ホイルシート",
+      "sub": "焦げつかないから、拭くだけでOK"
+    },
+    {
+      "type": "end",
+      "query": "clean kitchen",
+      "big": ["洗い物", "半分になる"],
+      "mark": "半分",
+      "sub": "保存して、あとで見返してね"
+    }
+  ]
+}
