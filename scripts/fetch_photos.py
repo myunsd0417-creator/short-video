@@ -54,6 +54,8 @@ def search(query):
             continue
         if any(w in title.lower() for w in BAD_WORDS):
             continue
+        if re.search(r"\b1[89]\d\d\b", title) or "wellcome" in title.lower() or " by " in title.lower():
+            continue  # 古い広告・絵画・肖像を避ける
         if (ii.get("width") or 0) < 900 or not license_ok(lic):
             continue
         artist = re.sub("<[^>]+>", "", meta.get("Artist", {}).get("value", "")).strip()
