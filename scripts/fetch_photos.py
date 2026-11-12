@@ -13,7 +13,7 @@ API = "https://api.openverse.org/v1/images/"
 
 
 def get(url, timeout=30):
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json, image/*"})
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read()
 
@@ -60,7 +60,8 @@ def main(path):
                 try:
                     results = search(q, lic)
                 except Exception as e:
-                    print(f"[{i}] 検索失敗 {q}: {e}")
+                    body = getattr(e, "read", lambda: b"")()[:300]
+                    print(f"[{i}] 検索失敗 {q}: {e} {body}")
                     results = []
                 results = [r for r in results if r["url"] not in used]
                 if results:

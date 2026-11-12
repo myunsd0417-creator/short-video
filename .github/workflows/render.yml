@@ -36,7 +36,7 @@ jobs:
               echo "skip $id (already rendered)"
               continue
             fi
-            python scripts/fetch_photos.py "$f"
+            python scripts/fetch_photos.py "$f" 2>&1 | tee "output/${id}_log.txt"
             python scripts/render.py "$f"
           done
 
