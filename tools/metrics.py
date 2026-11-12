@@ -1,0 +1,55 @@
+"""投稿済み動画の数字（再生数など）をBufferから集めて output/metrics.json と output/metrics.md に保存する。"""
+import json
+import os
+import urllib.request
+from pathlib import Path
+
+KEY = os.environ["BUFFER_API_KEY"]
+ORG = "6715160d6ebd9c191c9ccab2"
+CFG = json.loads(Path("config.json").read_text(encoding="utf-8"))
+
+
+def gql(q, v):
+    req = urllib.request.Request("https://api.buffer.com", data=json.dumps({"query": q, "variables": v}).encode(),
+        headers={"Authorization": f"Bearer {KEY}", "Content-Type": "application/json", "User-Agent": "short-video-bot"})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        return json.loads(r.read())
+
+
+Q = """query($org: OrganizationId!, $ch: [ChannelId!], $after: String) {
+  posts(first: 50, after: $after, input: {organizationId: $org, filter: {status: [sent], channelIds: $ch}}) {
+    edges { node { id dueAt channelId metrics { type name value unit } metricsUpdatedAt } }
+    pageInfo { endCursor hasNextPage }
+  }
+}"""
+
+state = json.loads(Path("output/posted.json").read_text(encoding="utf-8")) if Path("output/posted.json").exists() else {"posts": []}
+pid2vid = {p["post_id"]: p["id"] for p in state["posts"] if p.get("post_id")}
+svc = {v: k for k, v in CFG["channels"].items()}
+rows, after = [], None
+try:
+    while True:
+        res = gql(Q, {"org": ORG, "ch": list(CFG["channels"].values()), "after": after})
+        if "errors" in res:
+            print("errors:", json.dumps(res["errors"], ensure_ascii=False)[:500])
+            break
+        data = res["data"]["posts"]
+        for e in data["edges"]:
+            n = e["node"]
+            rows.append({"video": pid2vid.get(n["id"], "?"), "service": svc.get(n["channelId"], n["channelId"]),
+                         "dueAt": n["dueAt"], "updated": n.get("metricsUpdatedAt"),
+                         "metrics": {m["name"]: m["value"] for m in (n.get("metrics") or [])}})
+        if not data["pageInfo"]["hasNextPage"]:
+            break
+        after = data["pageInfo"]["endCursor"]
+except Exception as ex:
+    print("metrics failed:", ex)
+
+Path("output/metrics.json").write_text(json.dumps(rows, ensure_ascii=False, indent=1), encoding="utf-8")
+titles = {f.stem: json.loads(f.read_text(encoding="utf-8"))["title"] for f in Path("content").glob("*.json")}
+lines = ["# 投稿の数字（自動更新）", "", "| 動画 | 媒体 | 投稿日時 | 数字 |", "|---|---|---|---|"]
+for r in sorted(rows, key=lambda r: r["dueAt"] or ""):
+    m = "、".join(f"{k}: {v}" for k, v in r["metrics"].items()) or "まだ集計なし"
+    lines.append(f"| {r['video']} {titles.get(r['video'], '')} | {r['service']} | {r['dueAt']} | {m} |")
+Path("output/metrics.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+print(f"{len(rows)} posts")

@@ -1,7 +1,7 @@
 name: post-to-buffer
 on:
   push:
-    paths: ["config.json", "tools/post_buffer.py", ".github/workflows/post.yml"]
+    paths: ["config.json", "tools/post_buffer.py", "tools/metrics.py", ".github/workflows/post.yml"]
   schedule:
     - cron: "40 21 * * *"   # 毎日 日本時間 6:40 に予約を補充
   workflow_dispatch:
@@ -20,6 +20,10 @@ jobs:
         env:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
         run: python tools/post_buffer.py
+      - name: Collect view counts
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+        run: python tools/metrics.py || true
       - name: Save record
         run: |
           git config user.name "github-actions[bot]"

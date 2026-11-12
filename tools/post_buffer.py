@@ -65,6 +65,8 @@ def video_url(vid):
 
 def next_slots(n, taken):
     now = dt.datetime.now(JST) + dt.timedelta(minutes=30)
+    if taken:  # すでに入っている予約の後ろにつなげる
+        now = max(now, max(dt.datetime.fromisoformat(t) for t in taken) + dt.timedelta(hours=3))
     out, day = [], now.date()
     while len(out) < n:
         for s in CFG["slots_jst"]:
@@ -109,6 +111,7 @@ def main():
                 "metadata": {},
             }
             if service == "youtube":
+                inp["text"] = text + "\n#shorts"
                 inp["metadata"]["youtube"] = {"title": spec["title"][:95], "categoryId": "26",
                                               "madeForKids": False, "notifySubscribers": True}
             if service == "tiktok":
