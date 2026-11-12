@@ -1,0 +1,5 @@
+slide0: File:Frances Folsom Cleveland, by Charles Milton Bell.jpg / Charles Milton Bell / Adam Cuerden / Public domain / https://commons.wikimedia.org/wiki/File:Frances_Folsom_Cleveland,_by_Charles_Milton_Bell.jpg
+slide1: File:A couple are having a meal at the table as one servant bring Wellcome V0039376.jpg /  / CC BY 4.0 / https://commons.wikimedia.org/wiki/File:A_couple_are_having_a_meal_at_the_table_as_one_servant_bring_Wellcome_V0039376.jpg
+slide2: File:Bowl of shio ramen with pork.jpg / GiveMeMollusks / CC0 / https://commons.wikimedia.org/wiki/File:Bowl_of_shio_ramen_with_pork.jpg
+slide3: File:A glass made of cup.jpg / Knites / CC0 / https://commons.wikimedia.org/wiki/File:A_glass_made_of_cup.jpg
+slide4: File:卡邦尼扁意粉.jpg / Andy Li / CC0 / https://commons.wikimedia.org/wiki/File:%E5%8D%A1%E9%82%A6%E5%B0%BC%E6%89%81%E6%84%8F%E7%B2%89.jpg
