@@ -56,6 +56,9 @@ def text_layer(slide):
     d = ImageDraw.Draw(layer)
     big_lines = slide["big"]
     size = 150 if max(len(l) for l in big_lines) <= 6 else 128
+    widest = max(d.textlength(l, font=font(size)) for l in big_lines)
+    if widest > W - 90:
+        size = int(size * (W - 90) / widest)
     f_big = font(size)
     line_h = int(size * 1.3)
     total = line_h * len(big_lines)
