@@ -1,0 +1,10 @@
+  search 'kitchen cupboard': 6 usable
+[0] OK kitchen cupboard -> File:Kitchen area with open door and a wall out of focus in front of it.jpg (CC0)
+  search 'large cooking pot': 4 usable
+[1] OK large cooking pot -> File:Tabu, Myanmar, Large pot on fire, Village life in the Shan Hills.jpg (CC BY 4.0)
+  search 'spice rack': 10 usable
+[2] OK spice rack -> File:Kitchen utensils hanging below a spice rack.jpg (Public domain)
+  search 'waffle iron': 13 usable
+[3] OK waffle iron -> File:Woddles the penguin ish waffle maker.jpg (Public domain)
+  search 'organized kitchen': 8 usable
+[4] OK organized kitchen -> File:A well-organized kitchen.jpg (CC BY 2.0)

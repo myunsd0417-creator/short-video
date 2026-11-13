@@ -1,0 +1,10 @@
+  search 'inside refrigerator': 6 usable
+[0] OK inside refrigerator -> File:Dilution Refrigerator (39016294284).jpg (CC BY 2.0)
+  search 'refrigerator drawer': 9 usable
+[1] OK refrigerator drawer -> File:Food Safety - Cut Waste in Refrigerators (20200608-FSIS-LSC-0138).jpg (Public domain)
+  search 'food storage containers': 12 usable
+[2] OK food storage containers -> File:1960s Norwegian Panco Plast Fredrikstad plastic kitchen storage container number 192 for dry goods view 3.jpg (CC BY 4.0)
+  search 'egg carton': 6 usable
+[3] OK egg carton -> File:Carton of eggs.jpg (CC BY 3.0)
+  search 'refrigerator shelves food': 17 usable
+[4] OK refrigerator shelves food -> File:Food Safety - Cut Waste in Refrigerators (20200608-FSIS-LSC-0114).jpg (Public domain)
