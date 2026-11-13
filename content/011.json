@@ -1,0 +1,76 @@
+{
+  "id": "011",
+  "title": "一人鍋 準備が5分で終わる3つ",
+  "caption": "寒い日は一人鍋でいい🍲\n保存して、あとで見返してね\n#一人暮らし #キッチングッズ #時短家事 #自炊 #冬",
+  "slides": [
+    {
+      "type": "hook",
+      "query": "hot pot",
+      "big": [
+        "鍋の準備",
+        "面倒じゃない？"
+      ],
+      "mark": "面倒",
+      "small": "寒い日の一人暮らしへ",
+      "fallback": [
+        "nabe",
+        "hotpot"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "frozen vegetables",
+      "big": [
+        "冷凍の",
+        "カット野菜"
+      ],
+      "mark": "カット野菜",
+      "sub": "切らずにそのまま入れるだけ",
+      "tag": "その1",
+      "fallback": [
+        "frozen food"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "bouillon cubes",
+      "big": [
+        "キューブの",
+        "鍋の素"
+      ],
+      "mark": "鍋の素",
+      "sub": "1人分ずつ使えてムダがない",
+      "tag": "その2",
+      "fallback": [
+        "stock cube"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "portable gas stove",
+      "big": [
+        "卓上",
+        "コンロ"
+      ],
+      "mark": "コンロ",
+      "sub": "机の上で作ってそのまま食べる",
+      "tag": "その3",
+      "fallback": [
+        "camping stove"
+      ]
+    },
+    {
+      "type": "end",
+      "query": "hot pot dinner",
+      "big": [
+        "冬は",
+        "鍋でいい"
+      ],
+      "mark": "鍋",
+      "sub": "保存して、あとで見返してね",
+      "fallback": [
+        "soup pot"
+      ]
+    }
+  ]
+}

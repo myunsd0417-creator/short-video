@@ -1,0 +1,75 @@
+{
+  "id": "014",
+  "title": "冷蔵庫 奥まで見える整理3つ",
+  "caption": "冷蔵庫の奥で忘れてない？🧊\n保存して、あとで見返してね\n#一人暮らし #キッチングッズ #時短家事 #自炊 #冬",
+  "slides": [
+    {
+      "type": "hook",
+      "query": "open refrigerator",
+      "big": [
+        "冷蔵庫の奥",
+        "見えてる？"
+      ],
+      "mark": "奥",
+      "small": "年末の大掃除の前に",
+      "fallback": [
+        "refrigerator"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "refrigerator storage bins",
+      "big": [
+        "引き出せる",
+        "トレー"
+      ],
+      "mark": "トレー",
+      "sub": "奥の物も手前に引き出せる",
+      "tag": "その1",
+      "fallback": [
+        "plastic storage box"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "clear food containers",
+      "big": [
+        "透明な",
+        "保存容器"
+      ],
+      "mark": "透明",
+      "sub": "中身が見えて忘れない",
+      "tag": "その2",
+      "fallback": [
+        "food storage container"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "egg carton",
+      "big": [
+        "卵は",
+        "ケースごと"
+      ],
+      "mark": "ケース",
+      "sub": "ドアポケットを広く使える",
+      "tag": "その3",
+      "fallback": [
+        "eggs"
+      ]
+    },
+    {
+      "type": "end",
+      "query": "refrigerator shelves food",
+      "big": [
+        "見えれば",
+        "使い切れる"
+      ],
+      "mark": "使い切れる",
+      "sub": "保存して、あとで見返してね",
+      "fallback": [
+        "fridge"
+      ]
+    }
+  ]
+}

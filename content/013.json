@@ -1,0 +1,75 @@
+{
+  "id": "013",
+  "title": "一人暮らし 買って後悔したキッチン道具3つ",
+  "caption": "買う前に見てほしい…🙅\n保存して、あとで見返してね\n#一人暮らし #キッチングッズ #時短家事 #自炊 #冬",
+  "slides": [
+    {
+      "type": "hook",
+      "query": "kitchen cupboard",
+      "big": [
+        "買って後悔",
+        "した道具3つ"
+      ],
+      "mark": "後悔",
+      "small": "冬の買い物の前に",
+      "fallback": [
+        "kitchen cabinet"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "large cooking pot",
+      "big": [
+        "大きすぎる",
+        "鍋"
+      ],
+      "mark": "大きすぎる",
+      "sub": "一人分には重くて洗うのも大変",
+      "tag": "その1",
+      "fallback": [
+        "stock pot"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "spice rack",
+      "big": [
+        "調味料の",
+        "買いすぎ"
+      ],
+      "mark": "買いすぎ",
+      "sub": "使い切る前に期限が来る",
+      "tag": "その2",
+      "fallback": [
+        "spices"
+      ]
+    },
+    {
+      "type": "item",
+      "query": "kitchen appliance",
+      "big": [
+        "1回きりの",
+        "調理家電"
+      ],
+      "mark": "1回きり",
+      "sub": "置き場所だけ取られた",
+      "tag": "その3",
+      "fallback": [
+        "electric kettle"
+      ]
+    },
+    {
+      "type": "end",
+      "query": "minimalist kitchen",
+      "big": [
+        "一人分は",
+        "小さく少なく"
+      ],
+      "mark": "少なく",
+      "sub": "保存して、あとで見返してね",
+      "fallback": [
+        "small kitchen"
+      ]
+    }
+  ]
+}
