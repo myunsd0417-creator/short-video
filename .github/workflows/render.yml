@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - "content/**"
+      - "output/*.mp4"
       - "scripts/**"
       - ".github/workflows/render.yml"
   workflow_dispatch:
