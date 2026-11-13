@@ -32,7 +32,7 @@
     },
     {
       "type": "item",
-      "query": "insulated lunch bag",
+      "query": "lunch bag",
       "big": [
         "保温の",
         "ランチバッグ"
@@ -41,12 +41,13 @@
       "sub": "お弁当箱ごと包んで冷めにくく",
       "tag": "その2",
       "fallback": [
-        "lunch bag"
+        "bento",
+        "lunch box"
       ]
     },
     {
       "type": "item",
-      "query": "microwave safe container",
+      "query": "plastic food container",
       "big": [
         "レンジ可の",
         "弁当箱"
@@ -55,7 +56,7 @@
       "sub": "職場のレンジで温め直せる",
       "tag": "その3",
       "fallback": [
-        "plastic food container"
+        "bento box"
       ]
     },
     {

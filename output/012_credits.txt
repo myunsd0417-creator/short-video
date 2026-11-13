@@ -1,5 +1,0 @@
-slide0: File:Box-veggies-and-two-apples.jpg / Hay Kranen / CC0 / https://commons.wikimedia.org/wiki/File:Box-veggies-and-two-apples.jpg
-slide1: File:Japanese vacuum flask.jpg / Petey21 / CC0 / https://commons.wikimedia.org/wiki/File:Japanese_vacuum_flask.jpg
-slide2: File:Historical Black and White (20120106-OC-AMW-0651).jpg / USDAgov / Public domain / https://commons.wikimedia.org/wiki/File:Historical_Black_and_White_(20120106-OC-AMW-0651).jpg
-slide3: File:Take our daughters and sons to work day 2014 (14064970011).jpg / National  Science Foundation / Public domain / https://commons.wikimedia.org/wiki/File:Take_our_daughters_and_sons_to_work_day_2014_(14064970011).jpg
-slide4: File:Oksusu-onmyeon.jpg / chomjong / CC BY 2.0 / https://commons.wikimedia.org/wiki/File:Oksusu-onmyeon.jpg

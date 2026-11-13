@@ -46,7 +46,7 @@
     },
     {
       "type": "item",
-      "query": "kitchen appliance",
+      "query": "waffle iron",
       "big": [
         "1回きりの",
         "調理家電"
@@ -55,12 +55,13 @@
       "sub": "置き場所だけ取られた",
       "tag": "その3",
       "fallback": [
-        "electric kettle"
+        "electric griddle",
+        "rice cooker"
       ]
     },
     {
       "type": "end",
-      "query": "minimalist kitchen",
+      "query": "organized kitchen",
       "big": [
         "一人分は",
         "小さく少なく"
@@ -68,7 +69,7 @@
       "mark": "少なく",
       "sub": "保存して、あとで見返してね",
       "fallback": [
-        "small kitchen"
+        "kitchen interior"
       ]
     }
   ]
