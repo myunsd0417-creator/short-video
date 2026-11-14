@@ -8,9 +8,9 @@
       "query": "lunch box",
       "big": [
         "冬の弁当",
-        "冷たいまま食べてない？"
+        "冷たくない？"
       ],
-      "mark": "冷たい",
+      "mark": "冷たく",
       "small": "寒い日のお昼に",
       "fallback": [
         "bento"
