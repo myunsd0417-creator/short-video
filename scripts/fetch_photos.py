@@ -14,7 +14,8 @@ UA = "short-video-bot/1.0 (https://github.com/myunsd0417-creator/short-video)"
 API = "https://commons.wikimedia.org/w/api.php"
 BAD_WORDS = ("logo", "icon", "drawing", "diagram", "map", "clipart", "illustration", "svg", "patent",
              "advertisement", "advert", "poster", "page", "book", "scan", "newspaper", "magazine", "text", "sign",
-             "catalog", "label", "document", "letter", "postcard", "scale")
+             "catalog", "label", "document", "letter", "postcard", "scale",
+             "museum", "museo", "remains", "ancient", "excavat", "archaeolog")
 
 
 def get(url, timeout=40):

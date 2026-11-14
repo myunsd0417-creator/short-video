@@ -28,10 +28,10 @@
     {
       "type": "item",
       "tag": "その1",
-      "query": "raw chicken",
+      "query": "raw chicken meat",
       "fallback": [
-        "chicken breast raw",
-        "poultry meat"
+        "raw chicken",
+        "chicken thighs raw"
       ],
       "big": [
         "生の鶏肉は",
@@ -58,10 +58,10 @@
     {
       "type": "item",
       "tag": "その3",
-      "query": "bread loaf",
+      "query": "sliced bread",
       "fallback": [
-        "sliced bread",
-        "bread"
+        "toast bread",
+        "bread slices"
       ],
       "big": [
         "パンは",
