@@ -103,8 +103,8 @@ def text_layer(slide):
     return layer
 
 
-def frames_for(slide, bg, sh):
-    n = int(DUR[slide["type"]] * FPS)
+def frames_for(slide, bg, sh, seconds=None):
+    n = int((seconds or DUR[slide["type"]]) * FPS)
     txt = text_layer(slide)
     bw, bh = bg.size
     for k in range(n):
@@ -137,12 +137,17 @@ def main(path):
     out = Path("output") / f"{spec['id']}.mp4"
     out.parent.mkdir(exist_ok=True)
     sh = shade()
+    dfile = work / "durations.json"
+    durs = json.loads(dfile.read_text())["durations"] if dfile.exists() else [None] * len(spec["slides"])
+    audio = work / "audio.wav"
+    ain = ["-i", str(audio)] if audio.exists() else ["-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo"]
     cmd = [
         "ffmpeg", "-y", "-loglevel", "error",
         "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
-        "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo",
+        *ain, "-map", "0:v", "-map", "1:a",
         "-shortest", "-c:v", "libx264", "-preset", "veryfast", "-crf", "21",
-        "-pix_fmt", "yuv420p", "-c:a", "aac", "-movflags", "+faststart", str(out),
+        "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", "-ar", "44100", "-ac", "2",
+        "-movflags", "+faststart", str(out),
     ]
     p = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     for i, slide in enumerate(spec["slides"]):
@@ -152,7 +157,7 @@ def main(path):
         except Exception:
             bg = gradient_bg()
         bg = bg.filter(ImageFilter.GaussianBlur(1))
-        for fr in frames_for(slide, bg, sh):
+        for fr in frames_for(slide, bg, sh, durs[i]):
             p.stdin.write(fr.tobytes())
     p.stdin.close()
     p.wait()

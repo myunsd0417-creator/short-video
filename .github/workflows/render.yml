@@ -27,7 +27,14 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg fonts-noto-cjk-extra
-          pip install --quiet pillow
+          pip install --quiet pillow numpy
+
+      - name: Start VOICEVOX (narration)
+        run: |
+          docker run -d --name voicevox -p 50021:50021 voicevox/voicevox_engine:cpu-latest \
+            || docker run -d --name voicevox -p 50021:50021 voicevox/voicevox_engine:cpu-ubuntu20.04-latest
+          for i in $(seq 1 60); do curl -sf http://127.0.0.1:50021/version && break; sleep 3; done
+          curl -s http://127.0.0.1:50021/speakers | python -c "import json,sys;[print(st['id'],sp['name'],st['name']) for sp in json.load(sys.stdin) for st in sp['styles'] if st['id'] in (2,3,8,14)]" || true
 
       - name: Render videos that are not made yet
         run: |
@@ -38,6 +45,7 @@ jobs:
               continue
             fi
             python scripts/fetch_photos.py "$f" 2>&1 | tee "output/${id}_log.txt"
+            python scripts/audio.py "$f" 2>&1 | tee -a "output/${id}_log.txt"
             python scripts/render.py "$f"
           done
 
