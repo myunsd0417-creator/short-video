@@ -1,0 +1,16 @@
+  search 'freezer food': 11 usable
+[0] OK freezer food -> File:Durian in freezer - Massachusetts.jpg (CC0)
+  search 'frozen meat': 11 usable
+[1] OK frozen meat -> File:Frozen scallop meat (20240124).jpg (CC0)
+  search 'freezer drawer': 1 usable
+[2] OK freezer drawer -> File:Tiefkühlschublade.JPEG (CC0)
+  search 'beaten eggs': 15 usable
+[3] OK beaten eggs -> File:French toast and bacon served at a cafe in Auckland, New Zealand (52370230473).jpg (CC BY 2.0)
+  search 'kitchen cooking': 7 usable
+[4] OK kitchen cooking -> File:Chef prepares red onion at kitchen counter for cooking in the morning.jpg (CC BY 2.0)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.2, 4.22, 3.89, 2.86, 3.13] total: 16.3
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.2, 4.22, 3.89, 2.86, 3.91] total: 17.08
