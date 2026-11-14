@@ -11,10 +11,10 @@
   "slides": [
     {
       "type": "hook",
-      "query": "leftover food",
+      "query": "leftovers pot stew",
       "fallback": [
-        "kitchen table food",
-        "dinner leftovers"
+        "pot of soup",
+        "stew pot"
       ],
       "big": [
         "残りもの",

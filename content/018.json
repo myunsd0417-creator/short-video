@@ -72,10 +72,10 @@
     },
     {
       "type": "end",
-      "query": "cheese",
+      "query": "kitchen counter",
       "fallback": [
-        "cheese plate",
-        "dairy"
+        "clean kitchen",
+        "home kitchen"
       ],
       "big": [
         "捨てるか",
