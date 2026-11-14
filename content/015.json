@@ -1,0 +1,88 @@
+{
+  "id": "015",
+  "hook_type": "surprise",
+  "kind": "knowledge",
+  "title": "海外では常識 日本であまり聞かない台所のルール3つ",
+  "caption": "海外では常識なのに、日本ではあまり聞かない台所のルール🍅\n参考：米国農務省（USDA）2019年の調査／米国科学アカデミー紀要（2016年）のトマト研究\n保存して、あとで見返してね\n#一人暮らし #自炊 #キッチン #保存方法 #知らないと損",
+  "sources": [
+    "USDA 2019 消費者調査：生の鶏肉を洗った人の60%でシンクに菌が残った https://www.newschannel5.com/news/national/please-stop-washing-your-poultry-usda-warns-in-new-study",
+    "PNAS 2016 トマト：約4℃で7日保存すると香り成分が減り、常温3日でも戻らない（1〜3日なら影響なし） https://phys.org/news/2016-10-tomatoes-flavor-fridge-genes-chill.pdf",
+    "パンは冷蔵だとでんぷんの老化が進みやすく、保存は冷凍が向く https://iufost.org/iufostold/wp-content/uploads/2017/04/66-The-Complexities-of-Bread-Staling.pdf"
+  ],
+  "slides": [
+    {
+      "type": "hook",
+      "query": "kitchen sink",
+      "fallback": [
+        "home kitchen",
+        "kitchen counter"
+      ],
+      "small": "一人暮らしの人へ",
+      "big": [
+        "海外では常識",
+        "台所のルール3つ"
+      ],
+      "mark": "常識",
+      "sub": "2つ目は知らない人が多い"
+    },
+    {
+      "type": "item",
+      "tag": "その1",
+      "query": "raw chicken",
+      "fallback": [
+        "chicken breast raw",
+        "poultry meat"
+      ],
+      "big": [
+        "生の鶏肉は",
+        "洗わない"
+      ],
+      "mark": "洗わない",
+      "sub": "洗った人の6割、シンクに菌が残った"
+    },
+    {
+      "type": "item",
+      "tag": "その2",
+      "query": "tomatoes",
+      "fallback": [
+        "fresh tomatoes",
+        "tomato"
+      ],
+      "big": [
+        "トマトの",
+        "冷蔵は短く"
+      ],
+      "mark": "短く",
+      "sub": "冷蔵1週間で香りが落ちて戻らない"
+    },
+    {
+      "type": "item",
+      "tag": "その3",
+      "query": "bread loaf",
+      "fallback": [
+        "sliced bread",
+        "bread"
+      ],
+      "big": [
+        "パンは",
+        "冷蔵より冷凍"
+      ],
+      "mark": "冷凍",
+      "sub": "冷蔵庫は常温よりかたくなりやすい"
+    },
+    {
+      "type": "end",
+      "query": "fresh vegetables",
+      "fallback": [
+        "vegetables market",
+        "groceries"
+      ],
+      "big": [
+        "知ってるだけで",
+        "ムダが減る"
+      ],
+      "mark": "ムダ",
+      "sub": "保存して、あとで見返してね"
+    }
+  ]
+}
