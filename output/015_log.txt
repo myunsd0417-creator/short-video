@@ -1,0 +1,13 @@
+  search 'kitchen sink': 7 usable
+[0] OK kitchen sink -> File:High End Kitchen Sink 2b.jpg (CC0)
+  search 'raw chicken': 9 usable
+[1] OK raw chicken -> File:Myonasse chicken.jpg (CC0)
+  search 'tomatoes': 8 usable
+[2] OK tomatoes -> File:Tomato plant 2026 G2.jpg (CC BY 4.0)
+  search 'bread loaf': 25 usable
+[3] OK bread loaf -> File:Bread loaf, vegetable organic remains - Museo Egizio, Turin S 8300 p01.jpg (CC0)
+  search 'fresh vegetables': 4 usable
+[4] OK fresh vegetables -> File:Vegetarian rice and mixed fresh vegetables dish.jpg (CC BY 4.0)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.2, 3.95, 3.73, 3.42, 3.24] total: 16.54
