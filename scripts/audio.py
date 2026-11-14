@@ -22,7 +22,7 @@ MIN_PAD = 0.2  # 声のあとに残す間（秒）
 
 
 VARIANT = sys.argv[2] if len(sys.argv) > 2 else "tt"  # tt=TikTok / yt=YouTube
-CTA_SAY = {"tt": "フォローして、保存してね", "yt": "チャンネル登録して、保存してね"}
+CTA_SAY = {"tt": "フォローして、保存してね", "yt": "いいねと保存、チャンネル登録もしてね"}
 
 
 def narration_text(s):

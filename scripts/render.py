@@ -68,6 +68,8 @@ def text_layer(slide):
     line_h = int(size * 1.3)
     total = line_h * len(big_lines)
     y = (H - total) // 2 - 60
+    if slide["type"] == "end" and VARIANT == "yt":
+        y = 430  # 下と右に「ここを押してね」の矢印を出すので上に寄せる
     mark = slide.get("mark", "")
 
     # タグ（その1 など）
@@ -94,7 +96,7 @@ def text_layer(slide):
 
     sub = slide.get("sub")
     if slide["type"] == "end":
-        sub = CTA[VARIANT][1]
+        sub = CTA[VARIANT][1] if VARIANT == "tt" else None  # YouTubeは矢印で示す
     if sub:
         f_sub = font(56)
         sw = d.textlength(sub, font=f_sub)
@@ -106,7 +108,7 @@ def text_layer(slide):
     step = slide.get("_step")  # 進み具合（1/3 など）を上に表示
     if step:
         n, total = step
-        gap, top, hgt = 16, 150, 16
+        gap, top, hgt = 16, 330, 16
         seg = (W - 160 - gap * (total - 1)) / total
         for k in range(total):
             x0 = 80 + k * (seg + gap)
@@ -117,18 +119,31 @@ def text_layer(slide):
         d.text((W - 80 - d.textlength(lab, font=f_step), top + 30), lab, font=f_step, fill=WHITE,
                stroke_width=4, stroke_fill=(0, 0, 0))
 
-    if slide["type"] == "end":  # 最後にボタン風の呼びかけ
+    if slide["type"] == "end" and VARIANT == "tt":  # 最後にボタン風の呼びかけ
         label = CTA[VARIANT][0]
         f_btn = font(72)
         bw = d.textlength(label, font=f_btn) + 120
-        bx, by = (W - bw) / 2, H - 520
+        bx, by = (W - bw) / 2, H - 620
         d.rounded_rectangle((bx, by, bx + bw, by + 140), radius=70, fill=(230, 33, 23))
         d.text((bx + 60, by + 22), label, font=f_btn, fill=WHITE)
+    if slide["type"] == "end" and VARIANT == "yt":  # YouTubeのボタンの位置を矢印で示す
+        f_p = font(66)
 
-    f_foot = font(40)
-    foot = "みん｜一人暮らしの台所ラク化"
-    fw = d.textlength(foot, font=f_foot)
-    d.text(((W - fw) / 2, H - 230), foot, font=f_foot, fill=(255, 255, 255, 220), stroke_width=4, stroke_fill=(0, 0, 0))
+        def pointer(text, tx, ty, ax0, ay0, ax1, ay1, color):
+            tw = d.textlength(text, font=f_p)
+            d.rounded_rectangle((tx - 24, ty - 12, tx + tw + 24, ty + 90), radius=46, fill=color)
+            d.text((tx, ty), text, font=f_p, fill=WHITE)
+            d.line((ax0, ay0, ax1, ay1), fill=YELLOW, width=20)
+            import math
+            ang = math.atan2(ay1 - ay0, ax1 - ax0)
+            L = 62
+            p1 = (ax1 - L * math.cos(ang - 0.5), ay1 - L * math.sin(ang - 0.5))
+            p2 = (ax1 - L * math.cos(ang + 0.5), ay1 - L * math.sin(ang + 0.5))
+            d.polygon([(ax1, ay1), p1, p2], fill=YELLOW)
+
+        pointer("いいね", 440, 905, 690, 950, 860, 950, ACCENT)
+        pointer("保存", 500, 1185, 650, 1230, 860, 1230, ACCENT)
+        pointer("チャンネル登録はここ", 140, 1360, 470, 1470, 560, 1575, (230, 33, 23))
     return layer
 
 

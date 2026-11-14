@@ -1,5 +1,0 @@
-slide0: File:Durian in freezer - Massachusetts.jpg / Daderot / CC0 / https://commons.wikimedia.org/wiki/File:Durian_in_freezer_-_Massachusetts.jpg
-slide1: File:Frozen scallop meat (20240124).jpg / Fumikas Sagisavas / CC0 / https://commons.wikimedia.org/wiki/File:Frozen_scallop_meat_(20240124).jpg
-slide2: File:Tiefkühlschublade.JPEG / Tiefkuehlfan / CC0 / https://commons.wikimedia.org/wiki/File:Tiefk%C3%BChlschublade.JPEG
-slide3: File:French toast and bacon served at a cafe in Auckland, New Zealand (52370230473).jpg / Carlos Pacheco from Toronto, Canada / CC BY 2.0 / https://commons.wikimedia.org/wiki/File:French_toast_and_bacon_served_at_a_cafe_in_Auckland,_New_Zealand_(52370230473).jpg
-slide4: File:Chef prepares red onion at kitchen counter for cooking in the morning.jpg / Shixart1985 / CC BY 2.0 / https://commons.wikimedia.org/wiki/File:Chef_prepares_red_onion_at_kitchen_counter_for_cooking_in_the_morning.jpg
