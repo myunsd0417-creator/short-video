@@ -1,5 +1,33 @@
 [
  {
+  "video": "004",
+  "service": "youtube",
+  "dueAt": "2026-11-14T10:30:00.000Z",
+  "updated": "2026-11-14T10:32:38.072Z",
+  "metrics": {
+   "Reactions": 0,
+   "Comments": 0,
+   "Eng. Rate": 0,
+   "Video Views": 0
+  }
+ },
+ {
+  "video": "004",
+  "service": "tiktok",
+  "dueAt": "2026-11-14T10:30:00.000Z",
+  "updated": "2026-11-14T11:05:09.868Z",
+  "metrics": {
+   "Reactions": 0,
+   "Comments": 0,
+   "Eng. Rate": 0,
+   "Video Views": 2,
+   "Shares": 0,
+   "Reach": 0,
+   "Watch Time (min)": 0,
+   "Avg. Watch Time (sec)": 0
+  }
+ },
+ {
   "video": "005",
   "service": "youtube",
   "dueAt": "2026-11-14T03:15:00.000Z",
@@ -39,55 +67,55 @@
   "video": "005",
   "service": "tiktok",
   "dueAt": "2026-11-14T03:15:00.000Z",
-  "updated": "2026-11-12T12:11:02.418Z",
+  "updated": "2026-11-14T11:05:09.847Z",
   "metrics": {
    "Reactions": 0,
    "Comments": 0,
    "Eng. Rate": 0,
-   "Video Views": 0,
+   "Video Views": 64,
    "Shares": 0,
    "Reach": 0,
-   "Watch Time (min)": 0,
-   "Avg. Watch Time (sec)": 0
+   "Watch Time (min)": 2.53,
+   "Avg. Watch Time (sec)": 1.64
   }
  },
  {
   "video": "002",
   "service": "tiktok",
   "dueAt": "2026-11-13T11:15:00.000Z",
-  "updated": "2026-11-13T21:41:24.308Z",
+  "updated": "2026-11-14T11:05:09.866Z",
   "metrics": {
    "Reactions": 1,
    "Comments": 0,
-   "Eng. Rate": 1.33,
-   "Video Views": 75,
+   "Eng. Rate": 0.82,
+   "Video Views": 122,
    "Shares": 0,
    "Reach": 0,
-   "Watch Time (min)": 2.88,
-   "Avg. Watch Time (sec)": 2.66
+   "Watch Time (min)": 5.53,
+   "Avg. Watch Time (sec)": 2.74
   }
  },
  {
   "video": "001",
   "service": "tiktok",
   "dueAt": "2026-11-13T03:15:00.000Z",
-  "updated": "2026-11-13T21:41:24.308Z",
+  "updated": "2026-11-14T11:05:09.863Z",
   "metrics": {
    "Reactions": 0,
    "Comments": 0,
    "Eng. Rate": 0,
-   "Video Views": 92,
+   "Video Views": 105,
    "Shares": 0,
    "Reach": 0,
-   "Watch Time (min)": 5.47,
-   "Avg. Watch Time (sec)": 2.9
+   "Watch Time (min)": 6.17,
+   "Avg. Watch Time (sec)": 2.83
   }
  },
  {
   "video": "?",
   "service": "tiktok",
   "dueAt": "2024-11-02T11:29:08.000Z",
-  "updated": "2026-11-11T00:53:34.868Z",
+  "updated": "2026-11-14T11:05:09.870Z",
   "metrics": {
    "Reactions": 1,
    "Comments": 0,
@@ -103,7 +131,7 @@
   "video": "?",
   "service": "tiktok",
   "dueAt": "2024-11-10T14:47:53.000Z",
-  "updated": "2026-11-11T00:53:34.843Z",
+  "updated": "2026-11-14T11:05:09.875Z",
   "metrics": {
    "Reactions": 5,
    "Comments": 0,
@@ -119,7 +147,7 @@
   "video": "?",
   "service": "tiktok",
   "dueAt": "2024-11-25T09:28:29.000Z",
-  "updated": "2026-11-11T00:53:34.839Z",
+  "updated": "2026-11-14T11:05:09.871Z",
   "metrics": {
    "Reactions": 9,
    "Comments": 0,
@@ -135,7 +163,7 @@
   "video": "?",
   "service": "tiktok",
   "dueAt": "2024-11-05T00:49:37.000Z",
-  "updated": "2026-11-11T00:53:34.836Z",
+  "updated": "2026-11-14T11:05:09.858Z",
   "metrics": {
    "Reactions": 0,
    "Comments": 0,
@@ -151,7 +179,7 @@
   "video": "?",
   "service": "tiktok",
   "dueAt": "2024-11-19T05:18:33.000Z",
-  "updated": "2026-11-11T00:53:34.824Z",
+  "updated": "2026-11-14T11:05:09.884Z",
   "metrics": {
    "Reactions": 3,
    "Comments": 0,
@@ -167,7 +195,7 @@
   "video": "?",
   "service": "tiktok",
   "dueAt": "2024-11-23T12:10:02.000Z",
-  "updated": "2026-11-11T00:53:34.801Z",
+  "updated": "2026-11-14T11:05:09.896Z",
   "metrics": {
    "Reactions": 22,
    "Comments": 0,
@@ -183,7 +211,7 @@
   "video": "?",
   "service": "tiktok",
   "dueAt": "2024-11-14T09:41:25.000Z",
-  "updated": "2026-11-11T00:53:34.804Z",
+  "updated": "2026-11-14T11:05:09.861Z",
   "metrics": {
    "Reactions": 1,
    "Comments": 0,
@@ -199,7 +227,7 @@
   "video": "?",
   "service": "tiktok",
   "dueAt": "2024-11-21T12:28:30.000Z",
-  "updated": "2026-11-11T00:53:34.818Z",
+  "updated": "2026-11-14T11:05:09.878Z",
   "metrics": {
    "Reactions": 5,
    "Comments": 1,
@@ -208,14 +236,14 @@
    "Shares": 0,
    "Reach": 268,
    "Watch Time (min)": 197.33,
-   "Avg. Watch Time (sec)": 39.87
+   "Avg. Watch Time (sec)": 39.73
   }
  },
  {
   "video": "?",
   "service": "tiktok",
   "dueAt": "2024-11-21T12:22:12.000Z",
-  "updated": "2026-11-11T00:53:34.821Z",
+  "updated": "2026-11-14T11:05:09.850Z",
   "metrics": {
    "Reactions": 7,
    "Comments": 0,
@@ -231,7 +259,7 @@
   "video": "?",
   "service": "tiktok",
   "dueAt": "2024-11-20T10:19:32.000Z",
-  "updated": "2026-11-11T00:53:34.815Z",
+  "updated": "2026-11-14T11:05:09.854Z",
   "metrics": {
    "Reactions": 1,
    "Comments": 0,
@@ -247,7 +275,7 @@
   "video": "?",
   "service": "tiktok",
   "dueAt": "2024-11-26T10:56:24.000Z",
-  "updated": "2026-11-11T00:53:34.813Z",
+  "updated": "2026-11-14T11:05:09.876Z",
   "metrics": {
    "Reactions": 3,
    "Comments": 1,
@@ -263,7 +291,7 @@
   "video": "?",
   "service": "tiktok",
   "dueAt": "2024-10-28T15:44:56.000Z",
-  "updated": "2026-11-11T00:53:34.799Z",
+  "updated": "2026-11-14T11:05:09.860Z",
   "metrics": {
    "Reactions": 1,
    "Comments": 0,
@@ -279,23 +307,23 @@
   "video": "?",
   "service": "tiktok",
   "dueAt": "2024-11-29T04:23:14.000Z",
-  "updated": "2026-11-11T00:53:34.810Z",
+  "updated": "2026-11-14T11:05:09.873Z",
   "metrics": {
    "Reactions": 14,
    "Comments": 0,
    "Eng. Rate": 2,
    "Video Views": 700,
    "Shares": 0,
-   "Reach": 642,
-   "Watch Time (min)": 346.88,
-   "Avg. Watch Time (sec)": 29.44
+   "Reach": 0,
+   "Watch Time (min)": 0,
+   "Avg. Watch Time (sec)": 0
   }
  },
  {
   "video": "?",
   "service": "tiktok",
   "dueAt": "2024-11-19T14:49:08.000Z",
-  "updated": "2026-11-11T00:53:34.807Z",
+  "updated": "2026-11-14T11:05:09.856Z",
   "metrics": {
    "Reactions": 2,
    "Comments": 0,
