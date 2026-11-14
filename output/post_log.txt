@@ -1,1 +1,16 @@
-
+015 tiktok 2026-11-15T11:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6af8578f918fe79d2e7b61d8", "dueAt": "2026-11-15T02:45:00.000Z"}}}}
+007 tiktok 2026-11-15T19:30:00+09:00 NG {"data": {"createPost": {"message": "Invalid post: Video could not be read from its URL."}}}
+016 tiktok 2026-11-16T11:45:00+09:00 NG {"data": {"createPost": {"message": "Invalid post: Video could not be read from its URL."}}}
+017 tiktok 2026-11-16T19:30:00+09:00 OK {"data": {"createPost": {"post": {"id": "6af8579de5a113497a81c3f3", "dueAt": "2026-11-16T10:30:00.000Z"}}}}
+011 tiktok 2026-11-17T11:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6af8579fc5b364e062eef241", "dueAt": "2026-11-17T02:45:00.000Z"}}}}
+018 tiktok 2026-11-17T19:30:00+09:00 OK {"data": {"createPost": {"post": {"id": "6af857a5c5b364e062eef33b", "dueAt": "2026-11-17T10:30:00.000Z"}}}}
+013 tiktok 2026-11-18T11:45:00+09:00 NG {"data": {"createPost": {"message": "Invalid post: Video could not be read from its URL."}}}
+008 tiktok 2026-11-18T19:30:00+09:00 OK {"data": {"createPost": {"post": {"id": "6af857acc5b364e062eef439", "dueAt": "2026-11-18T10:30:00.000Z"}}}}
+015 youtube 2026-11-15T11:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6af857b3b9a106584c447816", "dueAt": "2026-11-15T02:45:00.000Z"}}}}
+007 youtube 2026-11-15T19:30:00+09:00 OK {"data": {"createPost": {"post": {"id": "6af857b5b9a106584c447863", "dueAt": "2026-11-15T10:30:00.000Z"}}}}
+016 youtube 2026-11-16T11:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6af857b7b9a106584c4478c0", "dueAt": "2026-11-16T02:45:00.000Z"}}}}
+017 youtube 2026-11-16T19:30:00+09:00 OK {"data": {"createPost": {"post": {"id": "6af857b8e86a5789a6a815e3", "dueAt": "2026-11-16T10:30:00.000Z"}}}}
+011 youtube 2026-11-17T11:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6af857bd918fe79d2e7b6beb", "dueAt": "2026-11-17T02:45:00.000Z"}}}}
+018 youtube 2026-11-17T19:30:00+09:00 OK {"data": {"createPost": {"post": {"id": "6af857c2b9a106584c447b04", "dueAt": "2026-11-17T10:30:00.000Z"}}}}
+013 youtube 2026-11-18T11:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6af857c4b9a106584c447b87", "dueAt": "2026-11-18T02:45:00.000Z"}}}}
+008 youtube 2026-11-18T19:30:00+09:00 OK {"data": {"createPost": {"post": {"id": "6af857c6918fe79d2e7b6da6", "dueAt": "2026-11-18T10:30:00.000Z"}}}}
