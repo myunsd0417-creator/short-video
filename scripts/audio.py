@@ -21,6 +21,10 @@ DEFAULT = {"hook": 2.0, "item": 2.4, "end": 2.2}
 MIN_PAD = 0.2  # 声のあとに残す間（秒）
 
 
+VARIANT = sys.argv[2] if len(sys.argv) > 2 else "tt"  # tt=TikTok / yt=YouTube
+CTA_SAY = {"tt": "フォローして、保存してね", "yt": "チャンネル登録して、保存してね"}
+
+
 def narration_text(s):
     if s.get("say"):
         return s["say"]
@@ -29,7 +33,7 @@ def narration_text(s):
         return big  # 冒頭は短く言い切る（続きの一言は文字で見せる）
     if s["type"] == "item":
         return f"{big}。{s.get('sub', '')}"  # 番号は進み具合バーで見せる
-    return f"{big}。保存して、もう1回見てね"
+    return f"{big}。{CTA_SAY[VARIANT]}"
 
 
 def tts(text):
@@ -158,8 +162,8 @@ def main(path):
     mix = music * (0.9 if any(v is not None for v in voices) else 1.4) * duck + voice_track * 1.1
     peak = np.max(np.abs(mix)) or 1
     mix = mix / peak * 0.9
-    write_wav(work / "audio.wav", mix)
-    (work / "durations.json").write_text(json.dumps({"durations": durs, "voice": use_voice}), encoding="utf-8")
+    write_wav(work / f"audio_{VARIANT}.wav", mix)
+    (work / f"durations_{VARIANT}.json").write_text(json.dumps({"durations": durs, "voice": use_voice}), encoding="utf-8")
     print("durations:", durs, "total:", round(total, 2))
 
 

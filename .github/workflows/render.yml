@@ -40,13 +40,15 @@ jobs:
         run: |
           for f in content/*.json; do
             id=$(basename "$f" .json)
-            if [ -f "output/$id.mp4" ]; then
+            if [ -f "output/$id.mp4" ] && [ -f "output/${id}_yt.mp4" ]; then
               echo "skip $id (already rendered)"
               continue
             fi
             python scripts/fetch_photos.py "$f" 2>&1 | tee "output/${id}_log.txt"
-            python scripts/audio.py "$f" 2>&1 | tee -a "output/${id}_log.txt"
-            python scripts/render.py "$f"
+            for v in tt yt; do
+              python scripts/audio.py "$f" $v 2>&1 | tee -a "output/${id}_log.txt"
+              python scripts/render.py "$f" $v
+            done
           done
 
       - name: Save results to the repo

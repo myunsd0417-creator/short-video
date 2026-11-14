@@ -51,6 +51,11 @@ def shade():
     return s
 
 
+VARIANT = sys.argv[2] if len(sys.argv) > 2 else "tt"  # tt=TikTok / yt=YouTube
+CTA = {"tt": ("＋ フォロー", "フォロー＆保存で、また見返せる"),
+       "yt": ("チャンネル登録", "チャンネル登録＆保存してね")}
+
+
 def text_layer(slide):
     layer = Image.new("RGBA", (W, H))
     d = ImageDraw.Draw(layer)
@@ -88,6 +93,8 @@ def text_layer(slide):
         y += line_h
 
     sub = slide.get("sub")
+    if slide["type"] == "end":
+        sub = CTA[VARIANT][1]
     if sub:
         f_sub = font(56)
         sw = d.textlength(sub, font=f_sub)
@@ -109,6 +116,14 @@ def text_layer(slide):
         lab = f"{n}/{total}"
         d.text((W - 80 - d.textlength(lab, font=f_step), top + 30), lab, font=f_step, fill=WHITE,
                stroke_width=4, stroke_fill=(0, 0, 0))
+
+    if slide["type"] == "end":  # 最後にボタン風の呼びかけ
+        label = CTA[VARIANT][0]
+        f_btn = font(72)
+        bw = d.textlength(label, font=f_btn) + 120
+        bx, by = (W - bw) / 2, H - 520
+        d.rounded_rectangle((bx, by, bx + bw, by + 140), radius=70, fill=(230, 33, 23))
+        d.text((bx + 60, by + 22), label, font=f_btn, fill=WHITE)
 
     f_foot = font(40)
     foot = "みん｜一人暮らしの台所ラク化"
@@ -148,12 +163,12 @@ def frames_for(slide, bg, sh, seconds=None):
 def main(path):
     spec = json.loads(Path(path).read_text(encoding="utf-8"))
     work = Path("work") / spec["id"]
-    out = Path("output") / f"{spec['id']}.mp4"
+    out = Path("output") / (f"{spec['id']}.mp4" if VARIANT == "tt" else f"{spec['id']}_yt.mp4")
     out.parent.mkdir(exist_ok=True)
     sh = shade()
-    dfile = work / "durations.json"
+    dfile = work / f"durations_{VARIANT}.json"
     durs = json.loads(dfile.read_text())["durations"] if dfile.exists() else [None] * len(spec["slides"])
-    audio = work / "audio.wav"
+    audio = work / f"audio_{VARIANT}.wav"
     ain = ["-i", str(audio)] if audio.exists() else ["-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo"]
     cmd = [
         "ffmpeg", "-y", "-loglevel", "error",
