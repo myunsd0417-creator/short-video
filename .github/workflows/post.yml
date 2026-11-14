@@ -1,7 +1,7 @@
 name: post-to-buffer
 on:
   push:
-    paths: ["config.json", "tools/post_buffer.py", "tools/metrics.py", ".github/workflows/post.yml"]
+    paths: ["requeue.txt", "config.json", "tools/post_buffer.py", "tools/metrics.py", ".github/workflows/post.yml"]
   schedule:
     - cron: "40 21 * * *"   # 毎日 日本時間 6:40 に予約を補充
   workflow_dispatch:
@@ -16,6 +16,13 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: Cancel queued posts to be replaced (requeue.txt)
+        if: hashFiles('requeue.txt') != ''
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+        run: |
+          python tools/requeue.py $(cat requeue.txt)
+          git rm -q requeue.txt
       - name: Schedule videos on Buffer
         env:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}

@@ -101,6 +101,9 @@ def main():
             cl = credits_line(vid)
             if cl:
                 text += "\n\n" + cl
+            log_p = Path(f"output/{vid}_log.txt")
+            if log_p.exists() and "VOICEVOX: OK" in log_p.read_text(encoding="utf-8"):
+                text += ("\n" if cl else "\n\n") + "VOICEVOX:春日部つむぎ"
             inp = {
                 "channelId": channel,
                 "text": text,
