@@ -1,0 +1,13 @@
+  search 'dirty stove': 3 usable
+[0] OK dirty stove -> File:Dial Dirty (16520706967).jpg (CC BY 2.0)
+  search 'kitchen paper towels': 5 usable
+[1] OK kitchen paper towels -> File:Rayon produits Renova.jpg (CC BY 4.0)
+  search 'cleaning spray': 15 usable
+[2] OK cleaning spray -> File:Window cleaner and an empty spray bottle.jpg (CC BY 4.0)
+  search 'aluminium foil': 15 usable
+[3] OK aluminium foil -> File:Aluminium foil closeup.jpg (CC BY 3.0)
+  search 'clean kitchen': 13 usable
+[4] OK clean kitchen -> File:Woman cleaning kitchen stove with spray cleaner and cloth in bright kitchen setting.jpg (CC BY 2.0)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [1.61, 2.67, 2.86, 2.87, 3.07] total: 13.08

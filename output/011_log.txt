@@ -1,0 +1,13 @@
+  search 'hot pot': 14 usable
+[0] OK hot pot -> File:Hot pot in Starfish Fast Food Restaurant.jpg (CC0)
+  search 'frozen vegetables': 6 usable
+[1] OK frozen vegetables -> File:Sausage, fried red potato, and frozen mixed vegetables (5010050320).jpg (CC BY 2.0)
+  search 'bouillon cubes': 4 usable
+[2] OK bouillon cubes -> File:Bouillon cube.jpg (CC0)
+  search 'portable gas stove': 10 usable
+[3] OK portable gas stove -> File:Portable gas stove and frying pan.jpg (Public domain)
+  search 'hot pot dinner': 27 usable
+[4] OK hot pot dinner -> File:SZ 深圳 Shenzhen 南山區 Nanshan 萬科里東里 China Vanke Lane In Street East Mall shop 昌井韓國烤肉自助餐廳 ChangJing Korean Barbecue Meat Buffet Restaurant n hot pot food July 2025 R12S 23.jpg (CC0)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [1.63, 2.77, 2.7, 2.74, 2.91] total: 12.75
