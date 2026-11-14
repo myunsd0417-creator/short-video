@@ -1,0 +1,5 @@
+slide0: File:A dirty plate.jpg / 社会我佩奇 / CC0 / https://commons.wikimedia.org/wiki/File:A_dirty_plate.jpg
+slide1: File:Own cooked meal.jpg / Thaikadavil / CC0 / https://commons.wikimedia.org/wiki/File:Own_cooked_meal.jpg
+slide2: File:Bowl of shio ramen with pork.jpg / GiveMeMollusks / CC0 / https://commons.wikimedia.org/wiki/File:Bowl_of_shio_ramen_with_pork.jpg
+slide3: File:A glass made of cup.jpg / Knites / CC0 / https://commons.wikimedia.org/wiki/File:A_glass_made_of_cup.jpg
+slide4: File:卡邦尼扁意粉.jpg / Andy Li / CC0 / https://commons.wikimedia.org/wiki/File:%E5%8D%A1%E9%82%A6%E5%B0%BC%E6%89%81%E6%84%8F%E7%B2%89.jpg
