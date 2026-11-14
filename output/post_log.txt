@@ -1,1 +1,2 @@
-
+012 tiktok 2026-11-17T19:30:00+09:00 OK {"data": {"createPost": {"post": {"id": "6af7bcba81e1228421d7bc3b", "dueAt": "2026-11-17T10:30:00.000Z"}}}}
+012 youtube 2026-11-17T19:30:00+09:00 OK {"data": {"createPost": {"post": {"id": "6af7bcbad16af15d4de65c4b", "dueAt": "2026-11-17T10:30:00.000Z"}}}}
