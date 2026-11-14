@@ -15,7 +15,7 @@ API = "https://commons.wikimedia.org/w/api.php"
 BAD_WORDS = ("logo", "icon", "drawing", "diagram", "map", "clipart", "illustration", "svg", "patent",
              "advertisement", "advert", "poster", "page", "book", "scan", "newspaper", "magazine", "text", "sign",
              "catalog", "label", "document", "letter", "postcard", "scale",
-             "museum", "museo", "remains", "ancient", "excavat", "archaeolog")
+             "museum", "museo", "navy", "army", "military", "soldier", "airman", "marine", "technician", "worker", "u.s.", "remains", "ancient", "excavat", "archaeolog")
 
 
 def get(url, timeout=40):

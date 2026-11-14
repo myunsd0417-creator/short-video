@@ -72,10 +72,10 @@
     },
     {
       "type": "end",
-      "query": "kitchen counter",
+      "query": "cutting board vegetables",
       "fallback": [
-        "clean kitchen",
-        "home kitchen"
+        "chopping board",
+        "vegetables kitchen"
       ],
       "big": [
         "捨てるか",
