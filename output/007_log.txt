@@ -1,0 +1,14 @@
+  search 'home cooking': 25 usable
+[0] OK home cooking -> File:2276Home cooking in the Philippines 59.jpg (CC0)
+  search 'small frying pan': 22 usable
+[1] OK small frying pan -> File:Super Frying Pan Geyser (14 August 2010) 7.jpg (CC BY 2.0)
+  search 'clay pot': 0 usable
+  search 'hot pot': 14 usable
+[2] OK hot pot -> File:Hot pot in Starfish Fast Food Restaurant.jpg (CC0)
+  search 'measuring spoons': 3 usable
+[3] OK measuring spoons -> File:Cup Measure 1-8.jpg (Public domain)
+  search 'meal on table': 11 usable
+[4] OK meal on table -> File:Wassataquoik Picnic Table.jpg (CC0)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.2, 3.39, 2.49, 2.51, 3.07] total: 13.66
