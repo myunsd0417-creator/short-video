@@ -7,15 +7,16 @@
       "type": "hook",
       "query": "hot pot",
       "big": [
-        "鍋の準備",
-        "面倒じゃない？"
+        "一人鍋の準備",
+        "5分で終わる"
       ],
-      "mark": "面倒",
+      "mark": "5分",
       "small": "寒い日の一人暮らしへ",
       "fallback": [
         "nabe",
         "hotpot"
-      ]
+      ],
+      "sub": "1つ目は切らずに入れるだけ"
     },
     {
       "type": "item",
@@ -72,5 +73,6 @@
         "soup pot"
       ]
     }
-  ]
+  ],
+  "hook_type": "result"
 }

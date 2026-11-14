@@ -7,14 +7,15 @@
       "type": "hook",
       "query": "home cooking",
       "big": [
-        "自炊",
-        "続かない人へ"
+        "自炊が",
+        "続くようになった"
       ],
-      "mark": "続かない",
-      "small": "一人暮らしの人へ",
+      "mark": "続く",
+      "small": "三日坊主の人へ",
       "fallback": [
         "cooking"
-      ]
+      ],
+      "sub": "3つ目で味が決まる"
     },
     {
       "type": "item",
@@ -71,5 +72,6 @@
         "dinner plate"
       ]
     }
-  ]
+  ],
+  "hook_type": "result"
 }

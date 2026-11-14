@@ -7,15 +7,16 @@
       "type": "hook",
       "query": "dirty plates",
       "big": [
-        "食器が",
-        "多すぎない？"
+        "食器が多いと",
+        "洗い物が増える"
       ],
-      "mark": "多すぎ",
+      "mark": "洗い物",
       "small": "一人暮らしの人へ",
       "fallback": [
         "plates",
         "dishes"
-      ]
+      ],
+      "sub": "減らすならこの3つだけ"
     },
     {
       "type": "item",
@@ -73,5 +74,6 @@
         "kitchen cupboard"
       ]
     }
-  ]
+  ],
+  "hook_type": "loss"
 }

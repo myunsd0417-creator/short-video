@@ -71,5 +71,6 @@
         "kitchen interior"
       ]
     }
-  ]
+  ],
+  "hook_type": "question"
 }

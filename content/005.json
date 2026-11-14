@@ -69,5 +69,6 @@
         "salad"
       ]
     }
-  ]
+  ],
+  "hook_type": "question"
 }

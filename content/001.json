@@ -76,5 +76,6 @@
         "modern kitchen"
       ]
     }
-  ]
+  ],
+  "hook_type": "question"
 }

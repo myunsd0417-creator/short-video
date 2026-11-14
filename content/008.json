@@ -7,14 +7,15 @@
       "type": "hook",
       "query": "breakfast toast",
       "big": [
-        "朝ごはん",
-        "抜いてない？"
+        "朝ごはんが",
+        "5分で終わる"
       ],
-      "mark": "抜いて",
+      "mark": "5分",
       "small": "忙しい人へ",
       "fallback": [
         "breakfast"
-      ]
+      ],
+      "sub": "2つ目はレンジで放置だけ"
     },
     {
       "type": "item",
@@ -71,5 +72,6 @@
         "coffee"
       ]
     }
-  ]
+  ],
+  "hook_type": "result"
 }

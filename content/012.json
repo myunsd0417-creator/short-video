@@ -8,13 +8,14 @@
       "query": "lunch box",
       "big": [
         "冬の弁当",
-        "冷たくない？"
+        "冷たいまま食べてない？"
       ],
-      "mark": "冷たく",
+      "mark": "冷たい",
       "small": "寒い日のお昼に",
       "fallback": [
         "bento"
-      ]
+      ],
+      "sub": "3つ目は職場のレンジで解決"
     },
     {
       "type": "item",
@@ -72,5 +73,6 @@
         "soup bowl"
       ]
     }
-  ]
+  ],
+  "hook_type": "loss"
 }

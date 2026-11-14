@@ -7,14 +7,15 @@
       "type": "hook",
       "query": "dirty stove",
       "big": [
-        "コンロの",
-        "汚れ放置してない？"
+        "汚れてから掃除",
+        "それ損してる"
       ],
-      "mark": "汚れ",
+      "mark": "損",
       "small": "一人暮らしの人へ",
       "fallback": [
         "stove"
-      ]
+      ],
+      "sub": "汚れる前に防ぐ3つ"
     },
     {
       "type": "item",
@@ -71,5 +72,6 @@
         "kitchen interior"
       ]
     }
-  ]
+  ],
+  "hook_type": "loss"
 }

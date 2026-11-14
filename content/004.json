@@ -7,14 +7,15 @@
       "type": "hook",
       "query": "small kitchen",
       "big": [
-        "キッチン",
-        "狭すぎない？"
+        "狭いキッチン",
+        "置き場が増えた"
       ],
-      "mark": "狭すぎ",
+      "mark": "増えた",
       "small": "ワンルームの人へ",
       "fallback": [
         "tiny kitchen"
-      ]
+      ],
+      "sub": "3つ目は冷蔵庫の横"
     },
     {
       "type": "item",
@@ -71,5 +72,6 @@
         "kitchen shelf"
       ]
     }
-  ]
+  ],
+  "hook_type": "result"
 }

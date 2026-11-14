@@ -59,5 +59,14 @@ lines = ["# 投稿の数字（自動更新）", "",
 for r in sorted(ours, key=lambda r: r["dueAt"] or ""):
     m = "、".join(f"{k}: {v}" for k, v in r["metrics"].items()) or "まだ集計なし"
     lines.append(f"| {r['video']} {titles.get(r['video'], '')} | {r['service']} | {r['dueAt']} | {m} |")
+# 冒頭の型ごとの平均（TikTok）
+types = {f.stem: json.loads(f.read_text(encoding="utf-8")).get("hook_type", "question") for f in Path("content").glob("*.json")}
+groups = {}
+for r in ours:
+    if r["service"] == "tiktok":
+        groups.setdefault(types.get(r["video"], "?"), []).append(r)
+lines += ["", "## 冒頭の型ごとの平均（TikTok）", "", "| 型 | 本数 | 平均再生 | 平均視聴秒数 |", "|---|---|---|---|"]
+for k, rs in sorted(groups.items()):
+    lines.append(f"| {k} | {len(rs)} | {avg(rs, 'Video Views')} | {avg(rs, 'Avg. Watch Time (sec)')} |")
 Path("output/metrics.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 print(f"{len(rows)} posts")

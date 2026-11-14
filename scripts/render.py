@@ -96,6 +96,20 @@ def text_layer(slide):
             sw = d.textlength(sub, font=f_sub)
         d.text(((W - sw) / 2, y + 70), sub, font=f_sub, fill=WHITE, stroke_width=6, stroke_fill=(0, 0, 0))
 
+    step = slide.get("_step")  # 進み具合（1/3 など）を上に表示
+    if step:
+        n, total = step
+        gap, top, hgt = 16, 150, 16
+        seg = (W - 160 - gap * (total - 1)) / total
+        for k in range(total):
+            x0 = 80 + k * (seg + gap)
+            col = ACCENT + (255,) if k < n else (255, 255, 255, 90)
+            d.rounded_rectangle((x0, top, x0 + seg, top + hgt), radius=8, fill=col)
+        f_step = font(44)
+        lab = f"{n}/{total}"
+        d.text((W - 80 - d.textlength(lab, font=f_step), top + 30), lab, font=f_step, fill=WHITE,
+               stroke_width=4, stroke_fill=(0, 0, 0))
+
     f_foot = font(40)
     foot = "みん｜一人暮らしの台所ラク化"
     fw = d.textlength(foot, font=f_foot)
@@ -115,10 +129,10 @@ def frames_for(slide, bg, sh, seconds=None):
         x0, y0 = (bw - cw) // 2, (bh - ch) // 2
         frame = bg.crop((x0, y0, x0 + cw, y0 + ch)).resize((W, H), Image.BILINEAR).convert("RGBA")
         frame.alpha_composite(sh)
-        # 文字は最初の6フレームで飛び出す
-        if k < 6:
-            p = (k + 1) / 6
-            s = 1.25 - 0.25 * p
+        # 冒頭は1コマ目から文字を全部見せる。2枚目以降は4コマで飛び出す
+        if k < 4 and slide["type"] != "hook":
+            p = (k + 1) / 4
+            s = 1.15 - 0.15 * p
             tw, th = int(W * s), int(H * s)
             big = txt.resize((tw, th), Image.BILINEAR)
             big = big.crop(((tw - W) // 2, (th - H) // 2, (tw - W) // 2 + W, (th - H) // 2 + H))
@@ -150,7 +164,10 @@ def main(path):
         "-movflags", "+faststart", str(out),
     ]
     p = subprocess.Popen(cmd, stdin=subprocess.PIPE)
+    items = [i for i, sl in enumerate(spec["slides"]) if sl["type"] == "item"]
     for i, slide in enumerate(spec["slides"]):
+        if i in items:
+            slide["_step"] = (items.index(i) + 1, len(items))
         f = work / f"bg{i}.jpg"
         try:
             bg = cover(Image.open(f)) if f.exists() else gradient_bg()
