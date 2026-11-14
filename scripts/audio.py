@@ -120,6 +120,13 @@ def main(path):
     work.mkdir(parents=True, exist_ok=True)
     use_voice = engine_ok()
     print("VOICEVOX:", "OK" if use_voice else "なし（BGMのみ）")
+    if use_voice:
+        try:
+            sp = json.loads(urllib.request.urlopen(f"{ENGINE}/speakers", timeout=10).read())
+            name = [f"{x['name']}（{st['name']}）" for x in sp for st in x["styles"] if st["id"] == SPEAKER]
+            print("speaker:", SPEAKER, name)
+        except Exception as e:
+            print("speaker lookup failed:", e)
     voices, durs = [], []
     for s in spec["slides"]:
         v = None
