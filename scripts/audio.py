@@ -18,7 +18,7 @@ SR = 24000
 ENGINE = os.environ.get("VOICEVOX_URL", "http://127.0.0.1:50021")
 SPEAKER = int(os.environ.get("VOICEVOX_SPEAKER", "8"))  # 8 = 春日部つむぎ（ノーマル）
 DEFAULT = {"hook": 2.0, "item": 2.4, "end": 2.2}
-MIN_PAD = 0.35  # 声のあとに残す間（秒）
+MIN_PAD = 0.2  # 声のあとに残す間（秒）
 
 
 def narration_text(s):
@@ -26,17 +26,17 @@ def narration_text(s):
         return s["say"]
     big = "".join(s["big"])
     if s["type"] == "hook":
-        return f"{big}。{s['sub']}" if s.get("sub") else big
+        return big  # 冒頭は短く言い切る（続きの一言は文字で見せる）
     if s["type"] == "item":
-        return f"{s.get('tag', '')}、{big}。{s.get('sub', '')}"
-    return f"{big}。保存して、もう一回1つ目から見てね"
+        return f"{big}。{s.get('sub', '')}"  # 番号は進み具合バーで見せる
+    return f"{big}。保存して、もう1回見てね"
 
 
 def tts(text):
     q = urllib.request.urlopen(urllib.request.Request(
         f"{ENGINE}/audio_query?" + urllib.parse.urlencode({"text": text, "speaker": SPEAKER}), method="POST"), timeout=60)
     query = json.loads(q.read())
-    query["speedScale"] = 1.3
+    query["speedScale"] = 1.35
     query["intonationScale"] = 1.2
     query["prePhonemeLength"] = 0.05
     query["postPhonemeLength"] = 0.05
