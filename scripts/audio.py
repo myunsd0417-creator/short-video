@@ -138,6 +138,8 @@ def main(path):
         d = DEFAULT[s["type"]]
         if v is not None:
             d = max(d * 0.8, len(v) / SR + MIN_PAD)
+        if s["type"] == "hook":
+            d = max(d, 2.2)  # 続きの一言を読める長さを確保
         voices.append(v)
         durs.append(round(d, 2))
     total = sum(durs)
