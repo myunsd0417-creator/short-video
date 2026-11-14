@@ -1,0 +1,14 @@
+  search 'leftovers pot stew': 0 usable
+  search 'pot of soup': 2 usable
+[0] OK pot of soup -> File:A pot use to store soup that is served in Buganda tradition.jpg (CC0)
+  search 'clock kitchen': 10 usable
+[1] OK clock kitchen -> File:Kitchen clock - Haas-Lilienthal House - San Francisco, CA - DSC05016.JPG (CC0)
+  search 'food storage containers': 12 usable
+[2] OK food storage containers -> File:1960s Norwegian Panco Plast Fredrikstad plastic kitchen storage container number 192 for dry goods view 3.jpg (CC BY 4.0)
+  search 'refrigerator food': 12 usable
+[3] OK refrigerator food -> File:Community Fridge, Mid-City New Orleans, December 2020.jpg (CC BY 2.0)
+  search 'home cooking': 25 usable
+[4] OK home cooking -> File:2276Home cooking in the Philippines 59.jpg (CC0)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.2, 4.34, 3.18, 2.7, 3.66] total: 16.08

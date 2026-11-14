@@ -1,0 +1,13 @@
+  search 'moldy bread': 6 usable
+[0] OK moldy bread -> File:A Moldy Loaf of Bread.jpg (CC0)
+  search 'bread slices': 15 usable
+[1] OK bread slices -> File:Slices of sourdough bread.jpg (CC BY 2.0)
+  search 'hard cheese': 16 usable
+[2] OK hard cheese -> File:Appenzeller cheese cuts.jpg (CC BY 4.0)
+  search 'frozen meat': 11 usable
+[3] OK frozen meat -> File:Frozen scallop meat (20240124).jpg (CC0)
+  search 'kitchen counter': 14 usable
+[4] OK kitchen counter -> File:A U.S. Navy Hull Maintenance Technician 3rd Class Robert Frey fabricates a steel countertop aboard the aircraft carrier USS Nimitz (CVN 68) Aug. 20, 2013, while underway in the Gulf of Oman 130820-N-JC752-778.jpg (Public domain)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.2, 2.05, 3.72, 3.02, 3.03] total: 14.02
