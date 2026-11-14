@@ -7,6 +7,7 @@ import json
 import os
 import re
 import subprocess
+import time
 import urllib.request
 from pathlib import Path
 
@@ -122,7 +123,17 @@ def main():
                 inp["metadata"]["tiktok"] = {"title": spec["title"][:90]}
             if not publish:
                 inp["saveToDraft"] = True
-            res = gql(MUTATION, {"input": inp})
+            url = inp["assets"][0]["video"]["url"]
+            for attempt in range(4):
+                try:  # 先にCDNへ取りに行って、Bufferが読めるようにしておく
+                    urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "short-video-bot"}), timeout=60).read()
+                except Exception as e:
+                    log(f"warmup {vid}: {e}")
+                res = gql(MUTATION, {"input": inp})
+                msg = json.dumps(res, ensure_ascii=False)
+                if "could not be read" not in msg:
+                    break
+                time.sleep(20)
             post = ((res.get("data") or {}).get("createPost") or {}).get("post")
             ok = bool(post)
             log(f"{vid} {service} {when.isoformat()} {'OK' if ok else 'NG'} {json.dumps(res, ensure_ascii=False)[:400]}")
