@@ -73,5 +73,6 @@
       ]
     }
   ],
-  "hook_type": "result"
+  "hook_type": "result",
+  "kind": "product"
 }

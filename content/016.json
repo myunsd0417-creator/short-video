@@ -1,0 +1,87 @@
+{
+  "id": "016",
+  "kind": "knowledge",
+  "hook_type": "surprise",
+  "title": "海外では常識 残りものの2時間ルール",
+  "caption": "アメリカでは常識の「残りもの2時間ルール」🍲\n参考：米国農務省（USDA）の食品安全の目安\n保存して、あとで見返してね\n#一人暮らし #自炊 #保存方法 #知らないと損 #キッチン",
+  "sources": [
+    "常温放置は2時間以内に冷蔵（32℃以上なら1時間） https://www.foodsafetynews.com/2024/07/keeping-your-independence-day-leftovers-bacteria-free/",
+    "残りものは浅い容器で早く冷やす／4日以内に食べるか冷凍 https://www.foodsafetynews.com/2021/05/holiday-leftovers-making-it-last.md"
+  ],
+  "slides": [
+    {
+      "type": "hook",
+      "query": "leftover food",
+      "fallback": [
+        "kitchen table food",
+        "dinner leftovers"
+      ],
+      "big": [
+        "残りもの",
+        "出しっぱなし？"
+      ],
+      "mark": "出しっぱなし",
+      "sub": "海外のルールは2時間",
+      "small": "一人暮らしの人へ"
+    },
+    {
+      "type": "item",
+      "query": "clock kitchen",
+      "fallback": [
+        "wall clock",
+        "timer"
+      ],
+      "big": [
+        "常温は",
+        "2時間まで"
+      ],
+      "mark": "2時間",
+      "sub": "暑い日（32℃以上）は1時間",
+      "tag": "その1"
+    },
+    {
+      "type": "item",
+      "query": "food storage containers",
+      "fallback": [
+        "meal prep containers",
+        "lunch box"
+      ],
+      "big": [
+        "浅い容器で",
+        "早く冷やす"
+      ],
+      "mark": "浅い",
+      "sub": "大きい鍋のままだと冷えにくい",
+      "tag": "その2"
+    },
+    {
+      "type": "item",
+      "query": "refrigerator food",
+      "fallback": [
+        "fridge",
+        "refrigerator"
+      ],
+      "big": [
+        "食べるのは",
+        "4日以内"
+      ],
+      "mark": "4日",
+      "sub": "食べきれないなら冷凍へ",
+      "tag": "その3"
+    },
+    {
+      "type": "end",
+      "query": "home cooking",
+      "fallback": [
+        "cooking at home",
+        "kitchen"
+      ],
+      "big": [
+        "2時間・浅く",
+        "4日以内"
+      ],
+      "mark": "4日",
+      "sub": "保存して、あとで見返してね"
+    }
+  ]
+}

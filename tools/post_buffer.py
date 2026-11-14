@@ -84,6 +84,8 @@ def main():
     done = {(p["id"], p["service"]) for p in STATE["posts"] if p.get("ok") and p.get("publish") == publish}
     vids = sorted(f.stem for f in Path("output").glob("*.mp4"))
     vids = [v for v in vids if v not in CFG.get("skip", [])]
+    order = CFG.get("order", [])  # 並び順の指定（知識系と商品紹介を混ぜるため）
+    vids.sort(key=lambda v: (order.index(v) if v in order else len(order), v))
     if not publish:
         vids = vids[:1]  # 下書きテストは1本だけ
     for service, channel in CFG["channels"].items():

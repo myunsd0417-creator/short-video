@@ -74,5 +74,6 @@
       ]
     }
   ],
-  "hook_type": "regret"
+  "hook_type": "regret",
+  "kind": "product"
 }

@@ -1,0 +1,88 @@
+{
+  "id": "017",
+  "kind": "knowledge",
+  "hook_type": "surprise",
+  "title": "冷凍と解凍 意外と知らない3つの事実",
+  "caption": "冷凍・解凍、意外と知られていない事実❄️\n参考：米国農務省（USDA）「Focus on Freezing」\n保存して、あとで見返してね\n#一人暮らし #自炊 #保存方法 #知らないと損 #キッチン",
+  "sources": [
+    "0°F（-18℃）で保存し続けた食品は安全。長期保存で落ちるのは品質だけ https://ncagr.gov/meat-poultry-inspection/FocusonFreezing/download",
+    "安全な解凍は冷蔵庫・冷水・電子レンジの3つ。台所に出しっぱなしはNG（同上）",
+    "卵は殻から出して溶いて冷凍。冷凍しても菌は死なないので加熱して使う https://extension.usu.edu/preserve-the-harvest/research/storing-eggs-safely.pdf"
+  ],
+  "slides": [
+    {
+      "type": "hook",
+      "query": "freezer food",
+      "fallback": [
+        "frozen food",
+        "freezer"
+      ],
+      "big": [
+        "その解凍",
+        "まちがってるかも"
+      ],
+      "mark": "まちがって",
+      "sub": "1つ目、やりがち",
+      "small": "一人暮らしの人へ"
+    },
+    {
+      "type": "item",
+      "query": "frozen meat",
+      "fallback": [
+        "frozen chicken",
+        "frozen food"
+      ],
+      "big": [
+        "解凍は",
+        "常温でしない"
+      ],
+      "mark": "常温",
+      "sub": "冷蔵庫・冷水・レンジの3つで",
+      "tag": "その1"
+    },
+    {
+      "type": "item",
+      "query": "freezer drawer",
+      "fallback": [
+        "freezer",
+        "frozen vegetables"
+      ],
+      "big": [
+        "冷凍なら",
+        "安全は続く"
+      ],
+      "mark": "安全",
+      "sub": "−18℃なら。落ちるのは味だけ",
+      "tag": "その2"
+    },
+    {
+      "type": "item",
+      "query": "beaten eggs",
+      "fallback": [
+        "eggs bowl",
+        "whisked eggs"
+      ],
+      "big": [
+        "卵は",
+        "溶いて冷凍"
+      ],
+      "mark": "溶いて",
+      "sub": "使う時は必ず加熱する",
+      "tag": "その3"
+    },
+    {
+      "type": "end",
+      "query": "kitchen cooking",
+      "fallback": [
+        "home kitchen",
+        "cooking"
+      ],
+      "big": [
+        "解凍は",
+        "3つの方法で"
+      ],
+      "mark": "3つ",
+      "sub": "保存して、あとで見返してね"
+    }
+  ]
+}

@@ -73,5 +73,6 @@
       ]
     }
   ],
-  "hook_type": "loss"
+  "hook_type": "loss",
+  "kind": "product"
 }

@@ -1,0 +1,88 @@
+{
+  "id": "018",
+  "kind": "knowledge",
+  "hook_type": "loss",
+  "title": "カビが出たら 捨てる？削る？",
+  "caption": "カビが出た時、捨てる？削る？🧀\n参考：米国農務省（USDA）の目安（コネチカット大学の解説）\n保存して、あとで見返してね\n#一人暮らし #自炊 #保存方法 #知らないと損 #キッチン",
+  "sources": [
+    "パンはカビた部分を捨て、近くのパンも確認 https://extension.uconn.edu/publication/handling-food-with-mold/",
+    "硬いチーズはカビの周りと下を2.5cm（1インチ）以上切れば使える（同上）",
+    "冷凍焼けは安全。乾いた部分を切れば使える https://ncagr.gov/meat-poultry-inspection/FocusonFreezing/download"
+  ],
+  "slides": [
+    {
+      "type": "hook",
+      "query": "moldy bread",
+      "fallback": [
+        "bread",
+        "bread slices"
+      ],
+      "big": [
+        "カビたら",
+        "全部捨ててる？"
+      ],
+      "mark": "全部",
+      "sub": "2つ目は捨てなくていい",
+      "small": "一人暮らしの人へ"
+    },
+    {
+      "type": "item",
+      "query": "bread slices",
+      "fallback": [
+        "sliced bread",
+        "bread loaf"
+      ],
+      "big": [
+        "パンは",
+        "捨てる"
+      ],
+      "mark": "捨てる",
+      "sub": "隣のパンもチェック",
+      "tag": "その1"
+    },
+    {
+      "type": "item",
+      "query": "hard cheese",
+      "fallback": [
+        "cheese block",
+        "cheddar cheese"
+      ],
+      "big": [
+        "硬いチーズは",
+        "削ればOK"
+      ],
+      "mark": "削れば",
+      "sub": "周りと下を2.5cm以上",
+      "tag": "その2"
+    },
+    {
+      "type": "item",
+      "query": "frozen meat",
+      "fallback": [
+        "freezer food",
+        "frozen food"
+      ],
+      "big": [
+        "冷凍焼けは",
+        "切ればOK"
+      ],
+      "mark": "切れば",
+      "sub": "乾いた所を切れば安全",
+      "tag": "その3"
+    },
+    {
+      "type": "end",
+      "query": "cheese",
+      "fallback": [
+        "cheese plate",
+        "dairy"
+      ],
+      "big": [
+        "捨てるか",
+        "見きわめる"
+      ],
+      "mark": "見きわめる",
+      "sub": "保存して、あとで見返してね"
+    }
+  ]
+}
