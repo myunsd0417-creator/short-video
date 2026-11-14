@@ -10,4 +10,7 @@
 [4] OK clean sink -> File:Sink at community DDT and shower facility Nakuru Hilton place (ROSA project) (3449000629).jpg (CC BY 2.0)
 VOICEVOX: OK
 speaker: 8 ['春日部つむぎ（ノーマル）']
-durations: [1.77, 3.96, 4.23, 3.82, 3.54] total: 17.32
+durations: [2.2, 2.56, 2.98, 2.55, 2.8] total: 13.09
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.2, 2.56, 2.98, 2.55, 3.21] total: 13.5

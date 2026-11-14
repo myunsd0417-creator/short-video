@@ -1,10 +1,16 @@
   search 'dirty dishes sink': 5 usable
 [0] OK dirty dishes sink -> File:Sink full of dirty dishes.jpg (CC0)
-  search 'glass food container': 13 usable
+  search 'glass food container': 12 usable
 [1] OK glass food container -> File:Verrine de crevettes pamplemousse.jpg (CC BY 2.0)
   search 'kitchen scissors': 11 usable
 [2] OK kitchen scissors -> File:Scissors above.jpg (CC0)
   search 'frying pan cooking': 6 usable
 [3] OK frying pan cooking -> File:Out of the Frying Pan - Flickr - docoverachiever.jpg (CC BY 2.0)
-  search 'clean kitchen': 14 usable
+  search 'clean kitchen': 13 usable
 [4] OK clean kitchen -> File:Woman cleaning kitchen stove with spray cleaner and cloth in bright kitchen setting.jpg (CC BY 2.0)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.2, 4.19, 2.77, 3.52, 2.88] total: 15.56
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.2, 4.19, 2.77, 3.52, 3.28] total: 15.96

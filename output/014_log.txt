@@ -4,7 +4,13 @@
 [1] OK refrigerator drawer -> File:Food Safety - Cut Waste in Refrigerators (20200608-FSIS-LSC-0138).jpg (Public domain)
   search 'food storage containers': 12 usable
 [2] OK food storage containers -> File:1960s Norwegian Panco Plast Fredrikstad plastic kitchen storage container number 192 for dry goods view 3.jpg (CC BY 4.0)
-  search 'egg carton': 6 usable
+  search 'egg carton': 7 usable
 [3] OK egg carton -> File:Carton of eggs.jpg (CC BY 3.0)
   search 'refrigerator shelves food': 17 usable
 [4] OK refrigerator shelves food -> File:Food Safety - Cut Waste in Refrigerators (20200608-FSIS-LSC-0114).jpg (Public domain)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.2, 2.74, 2.66, 2.65, 2.89] total: 13.14
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.2, 2.74, 2.66, 2.65, 3.28] total: 13.53

@@ -3,7 +3,7 @@
   search 'dish rack sink': 3 usable
 [1] OK dish rack sink -> File:Cutlery dries on a red mat beside cups in a kitchen dish rack.jpg (CC BY 2.0)
   search 'magnetic rack kitchen': 0 usable
-  search 'refrigerator side': 5 usable
+  search 'refrigerator side': 4 usable
 [2] OK refrigerator side -> File:Inside of double sided refrigerator.jpg (CC BY 4.0)
   search 'kitchen hooks utensils': 1 usable
 [3] OK kitchen hooks utensils -> File:Haahla.jpg (Public domain)
@@ -11,4 +11,7 @@
 [4] OK organized kitchen -> File:A well-organized kitchen.jpg (CC BY 2.0)
 VOICEVOX: OK
 speaker: 8 ['春日部つむぎ（ノーマル）']
-durations: [2.2, 2.54, 2.86, 2.53, 2.98] total: 13.11
+durations: [2.2, 2.54, 2.86, 2.53, 2.72] total: 12.85
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.2, 2.54, 2.86, 2.53, 3.11] total: 13.24
