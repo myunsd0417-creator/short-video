@@ -1,0 +1,83 @@
+{
+  "id": "021",
+  "kind": "product",
+  "hook_type": "result",
+  "title": "冷蔵庫 中が見やすくなる3つの道具",
+  "caption": "年末の大そうじ前に、冷蔵庫の迷子をなくす🧊\n保存して、あとで見返してね\n#一人暮らし #キッチングッズ #冷蔵庫収納 #整理整頓 #年末",
+  "slides": [
+    {
+      "type": "hook",
+      "query": "refrigerator interior",
+      "fallback": [
+        "open fridge",
+        "fridge"
+      ],
+      "small": "年末の大そうじ前に",
+      "big": [
+        "冷蔵庫の奥",
+        "3つで見える"
+      ],
+      "mark": "見える",
+      "sub": "3つ目はすぐできる"
+    },
+    {
+      "type": "item",
+      "tag": "その1",
+      "query": "glass food storage containers",
+      "fallback": [
+        "food containers",
+        "glass jars"
+      ],
+      "big": [
+        "中が見える",
+        "透明の容器"
+      ],
+      "mark": "透明",
+      "sub": "何が残ってるか一目でわかる"
+    },
+    {
+      "type": "item",
+      "tag": "その2",
+      "query": "plastic storage bin",
+      "fallback": [
+        "storage box",
+        "plastic tray"
+      ],
+      "big": [
+        "引き出せる",
+        "トレー"
+      ],
+      "mark": "トレー",
+      "sub": "奥のものも手前に出せる"
+    },
+    {
+      "type": "item",
+      "tag": "その3",
+      "query": "masking tape",
+      "fallback": [
+        "tape roll",
+        "label tape"
+      ],
+      "big": [
+        "テープで",
+        "日付を書く"
+      ],
+      "mark": "日付",
+      "sub": "いつのものか迷わない"
+    },
+    {
+      "type": "end",
+      "query": "kitchen",
+      "fallback": [
+        "home kitchen",
+        "kitchen counter"
+      ],
+      "big": [
+        "冷蔵庫の迷子",
+        "なくそう"
+      ],
+      "mark": "迷子",
+      "sub": "保存して、あとで見返してね"
+    }
+  ]
+}

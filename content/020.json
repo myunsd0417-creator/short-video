@@ -1,0 +1,89 @@
+{
+  "id": "020",
+  "kind": "knowledge",
+  "hook_type": "surprise",
+  "title": "卵の賞味期限 意外と知らない3つのこと",
+  "caption": "卵の賞味期限は「生で食べられる期限」🥚\n参考：農林水産省「aff」2021年3月号／鶏卵公正取引協議会／クレムソン大学（米国）\n保存して、あとで見返してね\n#一人暮らし #自炊 #保存方法 #知らないと損 #卵",
+  "sources": [
+    "農水省aff 2021年3月号：卵の賞味期限は生食で食べられる期限のため、過ぎてもしっかり加熱すれば食べられる https://www.maff.go.jp/j/pr/aff/2103/pdf/aff2103_08.pdf",
+    "鶏卵公正取引協議会：賞味期限経過後や殻にヒビの入った卵は、なるべく早めに充分加熱して食べる／購入後は冷蔵庫（10℃以下）で保存 https://www.jpa.or.jp/keiran_root/pdf/20200204_02.pdf",
+    "クレムソン大学：卵はパックのまま冷蔵庫の一番冷える場所へ。ドアには置かない https://hgic.clemson.edu/factsheet/safe-handling-of-eggs/"
+  ],
+  "slides": [
+    {
+      "type": "hook",
+      "query": "eggs in carton",
+      "fallback": [
+        "eggs",
+        "brown eggs"
+      ],
+      "small": "冬の自炊をする人へ",
+      "big": [
+        "卵の賞味期限は",
+        "生で食べる期限"
+      ],
+      "mark": "生で",
+      "sub": "3つ目は冷蔵庫の置き場所",
+      "say": "卵の賞味期限は、生で食べられる期限"
+    },
+    {
+      "type": "item",
+      "tag": "その1",
+      "query": "fried egg",
+      "fallback": [
+        "cooked egg",
+        "boiled eggs"
+      ],
+      "big": [
+        "期限が過ぎたら",
+        "よく加熱"
+      ],
+      "mark": "加熱",
+      "sub": "しっかり加熱すれば食べられる"
+    },
+    {
+      "type": "item",
+      "tag": "その2",
+      "query": "cracked egg",
+      "fallback": [
+        "broken egg shell",
+        "egg shell"
+      ],
+      "big": [
+        "ひびの卵は",
+        "早めに加熱"
+      ],
+      "mark": "ひび",
+      "sub": "生では食べずに充分加熱"
+    },
+    {
+      "type": "item",
+      "tag": "その3",
+      "query": "eggs refrigerator",
+      "fallback": [
+        "eggs",
+        "egg box"
+      ],
+      "big": [
+        "ドアより",
+        "奥の棚へ"
+      ],
+      "mark": "奥",
+      "sub": "米国の大学はドアを避けてと案内"
+    },
+    {
+      "type": "end",
+      "query": "egg dish",
+      "fallback": [
+        "omelette",
+        "eggs breakfast"
+      ],
+      "big": [
+        "期限を見て",
+        "使い分け"
+      ],
+      "mark": "使い分け",
+      "sub": "保存して、あとで見返してね"
+    }
+  ]
+}

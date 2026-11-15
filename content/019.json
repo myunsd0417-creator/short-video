@@ -1,0 +1,87 @@
+{
+  "id": "019",
+  "kind": "knowledge",
+  "hook_type": "result",
+  "title": "冷蔵庫 詰めすぎNG 厚労省のめやす3つ",
+  "caption": "年末の買いだめ前に、冷蔵庫のめやすをチェック🧊\n参考：厚生労働省「家庭でできる食中毒予防の6つのポイント」\n保存して、あとで見返してね\n#一人暮らし #冷蔵庫 #保存方法 #知らないと損 #年末",
+  "sources": [
+    "厚労省：冷蔵庫や冷凍庫の詰めすぎに注意。めやすは7割程度／冷蔵庫は10℃以下、冷凍庫は-15℃以下がめやす／温度計で時々温度を計るとよい https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/01_00006.html"
+  ],
+  "slides": [
+    {
+      "type": "hook",
+      "query": "open refrigerator",
+      "fallback": [
+        "refrigerator interior",
+        "fridge"
+      ],
+      "small": "年末の買いだめ前に",
+      "big": [
+        "冷蔵庫は",
+        "7割までが正解"
+      ],
+      "mark": "7割",
+      "sub": "3つ目、やってる人は少ない",
+      "say": "冷蔵庫は、7割までが正解"
+    },
+    {
+      "type": "item",
+      "tag": "その1",
+      "query": "refrigerator shelves food",
+      "fallback": [
+        "fridge shelves",
+        "refrigerator food"
+      ],
+      "big": [
+        "詰めるのは",
+        "7割まで"
+      ],
+      "mark": "7割",
+      "sub": "厚労省のめやすは7割程度"
+    },
+    {
+      "type": "item",
+      "tag": "その2",
+      "query": "thermometer",
+      "fallback": [
+        "refrigerator thermometer",
+        "thermometer cold"
+      ],
+      "big": [
+        "冷蔵は",
+        "10℃以下"
+      ],
+      "mark": "10℃",
+      "sub": "冷凍は-15℃以下がめやす"
+    },
+    {
+      "type": "item",
+      "tag": "その3",
+      "query": "kitchen thermometer",
+      "fallback": [
+        "thermometer",
+        "digital thermometer"
+      ],
+      "big": [
+        "温度計で",
+        "ときどき測る"
+      ],
+      "mark": "温度計",
+      "sub": "温度計でときどき測るとよい"
+    },
+    {
+      "type": "end",
+      "query": "refrigerator",
+      "fallback": [
+        "fridge",
+        "kitchen appliance"
+      ],
+      "big": [
+        "年末の前に",
+        "冷蔵庫チェック"
+      ],
+      "mark": "チェック",
+      "sub": "保存して、あとで見返してね"
+    }
+  ]
+}

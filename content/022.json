@@ -1,0 +1,87 @@
+{
+  "id": "022",
+  "kind": "knowledge",
+  "hook_type": "loss",
+  "title": "まな板とスポンジ 洗うだけはもったいない3つ",
+  "caption": "冬の鍋の準備に、まな板とスポンジのルール🔪\n参考：厚生労働省「家庭でできる食中毒予防の6つのポイント」\n保存して、あとで見返してね\n#一人暮らし #自炊 #キッチン #知らないと損 #衛生",
+  "sources": [
+    "厚労省：生の肉や魚を切った包丁やまな板は、洗ってから熱湯をかけたのち使う／洗わずに続けて生で食べる野菜や調理済みの食品を切らない／スポンジ等は台所用漂白剤に1晩つけ込むと消毒効果、煮沸すればなお確か https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/01_00006.html"
+  ],
+  "slides": [
+    {
+      "type": "hook",
+      "query": "cutting board",
+      "fallback": [
+        "wooden cutting board",
+        "chopping board"
+      ],
+      "small": "冬の鍋の準備に",
+      "big": [
+        "生肉のまな板",
+        "洗うだけはNG"
+      ],
+      "mark": "NG",
+      "sub": "3つ目はスポンジの話",
+      "say": "生肉のまな板、洗うだけはNG"
+    },
+    {
+      "type": "item",
+      "tag": "その1",
+      "query": "boiling water kettle",
+      "fallback": [
+        "kettle",
+        "hot water"
+      ],
+      "big": [
+        "洗ったあと",
+        "熱湯をかける"
+      ],
+      "mark": "熱湯",
+      "sub": "熱湯をかけてから次に使う"
+    },
+    {
+      "type": "item",
+      "tag": "その2",
+      "query": "chopping vegetables",
+      "fallback": [
+        "cutting vegetables",
+        "vegetables cutting board"
+      ],
+      "big": [
+        "そのまま",
+        "野菜を切らない"
+      ],
+      "mark": "野菜",
+      "sub": "洗わずに続けて切るのはやめる"
+    },
+    {
+      "type": "item",
+      "tag": "その3",
+      "query": "kitchen sponge",
+      "fallback": [
+        "sponge",
+        "dish sponge"
+      ],
+      "big": [
+        "スポンジは",
+        "漂白か煮沸"
+      ],
+      "mark": "漂白",
+      "sub": "漂白剤に1晩つけると消毒効果"
+    },
+    {
+      "type": "end",
+      "query": "clean kitchen",
+      "fallback": [
+        "kitchen sink",
+        "home kitchen"
+      ],
+      "big": [
+        "洗うだけで",
+        "終わらせない"
+      ],
+      "mark": "終わらせない",
+      "sub": "保存して、あとで見返してね"
+    }
+  ]
+}
