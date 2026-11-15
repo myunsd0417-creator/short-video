@@ -21,7 +21,9 @@ DEFAULT = {"hook": 2.0, "item": 2.4, "end": 2.2}
 MIN_PAD = 0.2  # 声のあとに残す間（秒）
 
 
-VARIANT = sys.argv[2] if len(sys.argv) > 2 else "tt"  # tt=TikTok / yt=YouTube
+RAW = sys.argv[2] if len(sys.argv) > 2 else "tt"  # tt=TikTok / yt=YouTube / tn=TikTok・BGMなし（手動で音源を付ける枠用）
+VARIANT = "tt" if RAW == "tn" else RAW
+NO_MUSIC = RAW == "tn"
 CTA_SAY = {"tt": "フォローしてね", "yt": "いいねと保存、チャンネル登録もしてね"}
 
 
@@ -190,6 +192,8 @@ def main(path):
         durs.append(round(d, 2))
     total = sum(durs)
     music = bgm(total + 0.1, seed=int(spec["id"]) if spec["id"].isdigit() else 0)
+    if NO_MUSIC:
+        music = np.zeros_like(music)
     voice_track = np.zeros_like(music)
     pos = 0.0
     for v, d in zip(voices, durs):
@@ -214,8 +218,8 @@ def main(path):
     mix = music * (0.9 if any(v is not None for v in voices) else 1.4) * duck + voice_track * 1.1 + fx
     peak = np.max(np.abs(mix)) or 1
     mix = mix / peak * 0.9
-    write_wav(work / f"audio_{VARIANT}.wav", mix)
-    (work / f"durations_{VARIANT}.json").write_text(json.dumps({"durations": durs, "voice": use_voice}), encoding="utf-8")
+    write_wav(work / f"audio_{RAW}.wav", mix)
+    (work / f"durations_{RAW}.json").write_text(json.dumps({"durations": durs, "voice": use_voice}), encoding="utf-8")
     print("durations:", durs, "total:", round(total, 2))
 
 

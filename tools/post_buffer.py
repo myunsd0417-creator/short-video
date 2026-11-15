@@ -59,8 +59,12 @@ def credits_line(vid):
     return ("写真: Wikimedia Commons " + "、".join(names)) if names else ""
 
 
-def video_url(vid, service="tiktok"):
-    name = f"{vid}_yt.mp4" if service == "youtube" and Path(f"output/{vid}_yt.mp4").exists() else f"{vid}.mp4"
+def video_url(vid, service="tiktok", notify=False):
+    name = f"{vid}.mp4"
+    if service == "youtube" and Path(f"output/{vid}_yt.mp4").exists():
+        name = f"{vid}_yt.mp4"
+    if service == "tiktok" and notify and Path(f"output/{vid}_tn.mp4").exists():
+        name = f"{vid}_tn.mp4"  # 手動で音源を付ける枠はBGMなし版
     sha = subprocess.check_output(["git", "log", "-1", "--format=%H", "--", f"output/{name}"]).decode().strip()
     return f"https://cdn.jsdelivr.net/gh/{REPO}@{sha}/output/{name}"
 
@@ -84,7 +88,7 @@ def main():
     publish = CFG.get("publish", False)
     now = dt.datetime.now(JST)
     done = {(p["id"], p["service"]) for p in STATE["posts"] if p.get("ok") and p.get("publish") == publish}
-    vids = sorted(f.stem for f in Path("output").glob("*.mp4") if not f.stem.endswith("_yt"))
+    vids = sorted(f.stem for f in Path("output").glob("*.mp4") if not f.stem.endswith(("_yt", "_tn")))
     vids = [v for v in vids if v not in CFG.get("skip", [])]
     order = CFG.get("order", [])  # 並び順の指定（知識系と商品紹介を混ぜるため）
     vids.sort(key=lambda v: (order.index(v) if v in order else len(order), v))
@@ -98,6 +102,7 @@ def main():
         taken = {p["dueAt"] for p in future}
         slots = next_slots(len(todo), taken)
         for vid, when in zip(todo, slots):
+            notify = service == "tiktok" and when.strftime("%H:%M") in CFG.get("tiktok_notify_slots", [])
             spec = json.loads(Path(f"content/{vid}.json").read_text(encoding="utf-8"))
             text = spec["caption"]
             cl = credits_line(vid)
@@ -109,10 +114,10 @@ def main():
             inp = {
                 "channelId": channel,
                 "text": text,
-                "schedulingType": ("notification" if service == "tiktok" and when.strftime("%H:%M") in CFG.get("tiktok_notify_slots", []) else "automatic"),
+                "schedulingType": "notification" if notify else "automatic",
                 "mode": "customScheduled",
                 "dueAt": when.astimezone(dt.timezone.utc).isoformat().replace("+00:00", "Z"),
-                "assets": [{"video": {"url": video_url(vid, service), "metadata": {"thumbnailOffset": 1200, "title": spec["title"]}}}],
+                "assets": [{"video": {"url": video_url(vid, service, notify), "metadata": {"thumbnailOffset": 1200, "title": spec["title"]}}}],
                 "metadata": {},
             }
             if service == "youtube":

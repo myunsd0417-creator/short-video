@@ -51,7 +51,8 @@ def shade():
     return s
 
 
-VARIANT = sys.argv[2] if len(sys.argv) > 2 else "tt"  # tt=TikTok / yt=YouTube
+RAW = sys.argv[2] if len(sys.argv) > 2 else "tt"  # tt=TikTok / yt=YouTube / tn=TikTok・BGMなし
+VARIANT = "tt" if RAW == "tn" else RAW
 CTA = {"tt": ("＋ フォロー", "フォロー＆保存で、また見返せる"),
        "yt": ("チャンネル登録", "チャンネル登録＆保存してね")}
 
@@ -178,12 +179,12 @@ def frames_for(slide, bg, sh, seconds=None):
 def main(path):
     spec = json.loads(Path(path).read_text(encoding="utf-8"))
     work = Path("work") / spec["id"]
-    out = Path("output") / (f"{spec['id']}.mp4" if VARIANT == "tt" else f"{spec['id']}_yt.mp4")
+    out = Path("output") / {"tt": f"{spec['id']}.mp4", "yt": f"{spec['id']}_yt.mp4", "tn": f"{spec['id']}_tn.mp4"}[RAW]
     out.parent.mkdir(exist_ok=True)
     sh = shade()
-    dfile = work / f"durations_{VARIANT}.json"
+    dfile = work / f"durations_{RAW}.json"
     durs = json.loads(dfile.read_text())["durations"] if dfile.exists() else [None] * len(spec["slides"])
-    audio = work / f"audio_{VARIANT}.wav"
+    audio = work / f"audio_{RAW}.wav"
     ain = ["-i", str(audio)] if audio.exists() else ["-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo"]
     cmd = [
         "ffmpeg", "-y", "-loglevel", "error",
