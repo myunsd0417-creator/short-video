@@ -199,6 +199,8 @@ def main(path):
         if i in items:
             slide["_step"] = (items.index(i) + 1, len(items))
         f = work / f"bg{i}.jpg"
+        if spec.get("plain_bg") or slide.get("plain_bg"):
+            f = Path("__none__")  # 写真が合わない時は無地の背景にする
         try:
             bg = cover(Image.open(f)) if f.exists() else gradient_bg()
         except Exception:

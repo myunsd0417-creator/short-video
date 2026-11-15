@@ -50,11 +50,14 @@ titles = {f.stem: json.loads(f.read_text(encoding="utf-8"))["title"] for f in Pa
 old = [r for r in rows if r["video"] == "?"]
 ours = [r for r in rows if r["video"] != "?"]
 def avg(rs, k):
-    vals = [float(r["metrics"].get(k, 0) or 0) for r in rs]
+    vals = [float(r["metrics"][k] or 0) for r in rs if k in r["metrics"]]  # その数字がある投稿だけで平均
+    if k == "Avg. Watch Time (sec)":
+        vals = [v for v in vals if v > 0]  # 集計前（0）は除く
     return round(sum(vals) / len(vals), 1) if vals else 0
 lines = ["# 投稿の数字（自動更新）", "",
          f"比較用（ジャンル変更前の過去投稿 {len(old)}本の平均）: 再生 {avg(old, 'Video Views')}、平均視聴秒数 {avg(old, 'Avg. Watch Time (sec)')}",
-         f"新ジャンル {len(ours)}本の平均: 再生 {avg(ours, 'Video Views')}、平均視聴秒数 {avg(ours, 'Avg. Watch Time (sec)')}",
+         f"新ジャンル TikTok {sum(r['service']=='tiktok' for r in ours)}本の平均: 再生 {avg([r for r in ours if r['service']=='tiktok'], 'Video Views')}、平均視聴秒数 {avg(ours, 'Avg. Watch Time (sec)')}",
+         f"新ジャンル YouTube {sum(r['service']=='youtube' for r in ours)}本の平均: 再生 {avg([r for r in ours if r['service']=='youtube'], 'Video Views')}（YouTubeは視聴秒数がBufferに来ない）",
          "", "| 動画 | 媒体 | 投稿日時 | 数字 |", "|---|---|---|---|"]
 for r in sorted(ours, key=lambda r: r["dueAt"] or ""):
     m = "、".join(f"{k}: {v}" for k, v in r["metrics"].items()) or "まだ集計なし"
