@@ -14,3 +14,6 @@ durations: [2.2, 2.56, 2.98, 2.55, 2.8] total: 13.09
 VOICEVOX: OK
 speaker: 8 ['春日部つむぎ（ノーマル）']
 durations: [2.2, 2.56, 2.98, 2.55, 3.21] total: 13.5
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [1.9, 1.92, 1.92, 1.92, 1.86] total: 9.52
