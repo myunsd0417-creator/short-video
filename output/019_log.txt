@@ -1,0 +1,16 @@
+  search 'refrigerator with food': 11 usable
+[0] OK refrigerator with food -> File:Refrigerator with frozen foods in Sailor House (1).jpg (CC0)
+  search 'refrigerator shelves food': 17 usable
+[1] OK refrigerator shelves food -> File:Food Safety - Cut Waste in Refrigerators (20200608-FSIS-LSC-0114).jpg (Public domain)
+  search 'thermometer': 9 usable
+[2] OK thermometer -> File:- Thermometer -.jpg (CC BY 2.5)
+  search 'kitchen thermometer': 7 usable
+[3] OK kitchen thermometer -> File:Food thermometer 2.JPG (Public domain)
+  search 'refrigerator': 5 usable
+[4] OK refrigerator -> File:Prestcold packaway refrigerator.jpg (CC BY 2.0)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.2, 3.14, 3.66, 3.03, 3.33] total: 15.36
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.2, 3.14, 3.66, 3.03, 4.08] total: 16.11
