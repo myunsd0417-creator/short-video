@@ -7,6 +7,7 @@ deletePost(input: DeletePostInput) fields=['id']
 013 tiktok 2026-11-18T11:45:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
 008 tiktok 2026-11-18T19:30:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
 019 tiktok 2026-11-19T11:45:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
+012 tiktok 2026-11-19T19:30:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
 016 youtube 2026-11-16T11:45:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
 017 youtube 2026-11-16T19:30:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
 011 youtube 2026-11-17T11:45:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
@@ -14,3 +15,4 @@ deletePost(input: DeletePostInput) fields=['id']
 013 youtube 2026-11-18T11:45:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
 008 youtube 2026-11-18T19:30:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
 019 youtube 2026-11-19T11:45:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
+012 youtube 2026-11-19T19:30:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
