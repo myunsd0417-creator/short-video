@@ -108,6 +108,44 @@ def bgm(seconds, seed=0):
     return out
 
 
+def sfx_whoosh():
+    """切り替えの「シュッ」：ノイズの音程を上げていく"""
+    n = int(0.28 * SR)
+    rng = np.random.default_rng(7)
+    noise = rng.standard_normal(n).astype(np.float32)
+    out = np.zeros(n, dtype=np.float32)
+    lp = 0.0
+    for i in range(n):  # だんだん明るくなるフィルター
+        a = 0.02 + 0.5 * (i / n)
+        lp += a * (noise[i] - lp)
+        out[i] = lp
+    env = np.sin(np.linspace(0, np.pi, n)) ** 2
+    return 0.35 * out * env
+
+
+def sfx_pop():
+    """文字が出る「ポン」"""
+    n = int(0.09 * SR)
+    tt = np.arange(n) / SR
+    f = 900 - 500 * tt / tt[-1]
+    return 0.28 * np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-tt * 45)
+
+
+def sfx_ding():
+    """締めの「キラン」"""
+    n = int(0.6 * SR)
+    tt = np.arange(n) / SR
+    s = sum(np.sin(2 * np.pi * f * tt) * w for f, w in ((1568, 1), (2093, 0.6), (3136, 0.3)))
+    return 0.12 * s * np.exp(-tt * 6)
+
+
+def add(track, clip, at):
+    st = int(at * SR)
+    ln = min(len(clip), len(track) - st)
+    if ln > 0 and st >= 0:
+        track[st:st + ln] += clip[:ln]
+
+
 def write_wav(path, data):
     data = np.clip(data, -1, 1)
     pcm = (data * 32767).astype(np.int16)
@@ -156,10 +194,20 @@ def main(path):
             ln = min(len(v), len(voice_track) - st)
             voice_track[st:st + ln] += v[:ln]
         pos += d
+    # 効果音：切り替えで「シュッ」、文字が出たら「ポン」、締めで「キラン」
+    fx = np.zeros_like(music)
+    pos = 0.0
+    for k, (s, d) in enumerate(zip(spec["slides"], durs)):
+        if k > 0:
+            add(fx, sfx_whoosh(), pos - 0.12)
+            add(fx, sfx_pop(), pos + 0.1)
+        if s["type"] == "end":
+            add(fx, sfx_ding(), pos + 0.15)
+        pos += d
     # 声がある時はBGMを下げる（ダッキング）
     env = np.convolve(np.abs(voice_track), np.ones(int(0.2 * SR)) / int(0.2 * SR), mode="same")
     duck = 1 - 0.55 * np.clip(env * 12, 0, 1)
-    mix = music * (0.9 if any(v is not None for v in voices) else 1.4) * duck + voice_track * 1.1
+    mix = music * (0.9 if any(v is not None for v in voices) else 1.4) * duck + voice_track * 1.1 + fx
     peak = np.max(np.abs(mix)) or 1
     mix = mix / peak * 0.9
     write_wav(work / f"audio_{VARIANT}.wav", mix)
