@@ -1,5 +1,33 @@
 [
  {
+  "video": "007",
+  "service": "youtube",
+  "dueAt": "2026-11-15T10:30:00.000Z",
+  "updated": "2026-11-15T10:32:50.561Z",
+  "metrics": {
+   "Reactions": 0,
+   "Comments": 0,
+   "Eng. Rate": 0,
+   "Video Views": 0
+  }
+ },
+ {
+  "video": "007",
+  "service": "tiktok",
+  "dueAt": "2026-11-15T10:30:00.000Z",
+  "updated": "2026-11-15T07:52:47.519Z",
+  "metrics": {
+   "Reactions": 0,
+   "Comments": 0,
+   "Eng. Rate": 0,
+   "Video Views": 0,
+   "Shares": 0,
+   "Reach": 0,
+   "Watch Time (min)": 0,
+   "Avg. Watch Time (sec)": 0
+  }
+ },
+ {
   "video": "015",
   "service": "youtube",
   "dueAt": "2026-11-15T02:45:00.000Z",
