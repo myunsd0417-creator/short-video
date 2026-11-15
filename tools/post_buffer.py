@@ -109,7 +109,7 @@ def main():
             inp = {
                 "channelId": channel,
                 "text": text,
-                "schedulingType": "automatic",
+                "schedulingType": ("notification" if service == "tiktok" and when.strftime("%H:%M") in CFG.get("tiktok_notify_slots", []) else "automatic"),
                 "mode": "customScheduled",
                 "dueAt": when.astimezone(dt.timezone.utc).isoformat().replace("+00:00", "Z"),
                 "assets": [{"video": {"url": video_url(vid, service), "metadata": {"thumbnailOffset": 1200, "title": spec["title"]}}}],

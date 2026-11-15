@@ -22,7 +22,7 @@ MIN_PAD = 0.2  # 声のあとに残す間（秒）
 
 
 VARIANT = sys.argv[2] if len(sys.argv) > 2 else "tt"  # tt=TikTok / yt=YouTube
-CTA_SAY = {"tt": "フォローして、保存してね", "yt": "いいねと保存、チャンネル登録もしてね"}
+CTA_SAY = {"tt": "フォローしてね", "yt": "いいねと保存、チャンネル登録もしてね"}
 
 
 def narration_text(s):
@@ -32,6 +32,8 @@ def narration_text(s):
     if s["type"] == "hook":
         return big  # 冒頭は短く言い切る（続きの一言は文字で見せる）
     if s["type"] == "item":
+        if VARIANT == "tt":
+            return big  # TikTok版は短く：説明は文字で見せる
         return f"{big}。{s.get('sub', '')}"  # 番号は進み具合バーで見せる
     return f"{big}。{CTA_SAY[VARIANT]}"
 
@@ -40,7 +42,7 @@ def tts(text):
     q = urllib.request.urlopen(urllib.request.Request(
         f"{ENGINE}/audio_query?" + urllib.parse.urlencode({"text": text, "speaker": SPEAKER}), method="POST"), timeout=60)
     query = json.loads(q.read())
-    query["speedScale"] = 1.35
+    query["speedScale"] = 1.5 if VARIANT == "tt" else 1.35
     query["intonationScale"] = 1.2
     query["prePhonemeLength"] = 0.05
     query["postPhonemeLength"] = 0.05
@@ -181,7 +183,9 @@ def main(path):
         if v is not None:
             d = max(d * 0.8, len(v) / SR + MIN_PAD)
         if s["type"] == "hook":
-            d = max(d, 2.2)  # 続きの一言を読める長さを確保
+            d = max(d, 1.9 if VARIANT == "tt" else 2.2)  # 続きの一言を読める長さを確保
+        elif VARIANT == "tt" and s["type"] == "item":
+            d = max(d, 1.9)  # 下の説明文を読める最低限
         voices.append(v)
         durs.append(round(d, 2))
     total = sum(durs)
