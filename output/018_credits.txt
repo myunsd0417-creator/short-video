@@ -1,0 +1,5 @@
+slide0: File:A Moldy Loaf of Bread.jpg / Muldoonsamuel55 / CC0 / https://commons.wikimedia.org/wiki/File:A_Moldy_Loaf_of_Bread.jpg
+slide1: File:Slices of sourdough bread.jpg / Angel Ganev / CC BY 2.0 / https://commons.wikimedia.org/wiki/File:Slices_of_sourdough_bread.jpg
+slide2: File:Appenzeller cheese cuts.jpg / P1898 / CC BY 4.0 / https://commons.wikimedia.org/wiki/File:Appenzeller_cheese_cuts.jpg
+slide3: File:Frozen scallop meat (20240124).jpg / Fumikas Sagisavas / CC0 / https://commons.wikimedia.org/wiki/File:Frozen_scallop_meat_(20240124).jpg
+slide4: File:Cooking vegetables in a kitchen with a woman preparing food near a window.jpg / Shixart1985 / CC BY 2.0 / https://commons.wikimedia.org/wiki/File:Cooking_vegetables_in_a_kitchen_with_a_woman_preparing_food_near_a_window.jpg
