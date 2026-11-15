@@ -27,10 +27,10 @@
     {
       "type": "item",
       "tag": "その1",
-      "query": "boiling water kettle",
+      "query": "electric kettle",
       "fallback": [
-        "kettle",
-        "hot water"
+        "kettle kitchen",
+        "pouring hot water"
       ],
       "big": [
         "洗ったあと",
@@ -42,10 +42,10 @@
     {
       "type": "item",
       "tag": "その2",
-      "query": "chopping vegetables",
+      "query": "cutting vegetables on board",
       "fallback": [
-        "cutting vegetables",
-        "vegetables cutting board"
+        "chopping board vegetables",
+        "sliced vegetables"
       ],
       "big": [
         "そのまま",
@@ -57,10 +57,10 @@
     {
       "type": "item",
       "tag": "その3",
-      "query": "kitchen sponge",
+      "query": "dishwashing sponge",
       "fallback": [
-        "sponge",
-        "dish sponge"
+        "washing dishes",
+        "scouring pad"
       ],
       "big": [
         "スポンジは",

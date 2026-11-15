@@ -7,10 +7,10 @@
   "slides": [
     {
       "type": "hook",
-      "query": "refrigerator interior",
+      "query": "inside refrigerator",
       "fallback": [
-        "open fridge",
-        "fridge"
+        "refrigerator with food",
+        "fridge shelves"
       ],
       "small": "年末の大そうじ前に",
       "big": [
@@ -23,10 +23,10 @@
     {
       "type": "item",
       "tag": "その1",
-      "query": "glass food storage containers",
+      "query": "clear plastic food container",
       "fallback": [
-        "food containers",
-        "glass jars"
+        "food storage container",
+        "plastic food box"
       ],
       "big": [
         "中が見える",

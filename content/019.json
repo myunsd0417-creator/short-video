@@ -10,10 +10,10 @@
   "slides": [
     {
       "type": "hook",
-      "query": "open refrigerator",
+      "query": "refrigerator with food",
       "fallback": [
-        "refrigerator interior",
-        "fridge"
+        "inside refrigerator",
+        "fridge shelves food"
       ],
       "small": "年末の買いだめ前に",
       "big": [
