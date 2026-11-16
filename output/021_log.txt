@@ -1,0 +1,19 @@
+  search 'inside refrigerator': 6 usable
+[0] OK inside refrigerator -> File:Dilution Refrigerator (39016294284).jpg (CC BY 2.0)
+  search 'clear plastic food container': 18 usable
+[1] OK clear plastic food container -> File:Bottle, food product (AM 2015.4.7-4).jpg (CC BY 4.0)
+  search 'plastic storage bin': 5 usable
+[2] OK plastic storage bin -> File:1990s Dynoplast Norway stackable plastic storage bin model 6734.jpg (CC BY 4.0)
+  search 'masking tape': 10 usable
+[3] OK masking tape -> File:Masking tape on canvas.jpg (CC BY 2.0)
+  search 'kitchen': 8 usable
+[4] OK kitchen -> File:The kitchen at Grandmother's place.jpg (CC BY 2.0)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [1.9, 1.92, 1.92, 1.92, 2.07] total: 9.73
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.2, 3.35, 2.59, 2.47, 3.87] total: 14.48
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [1.9, 1.92, 1.92, 1.92, 2.07] total: 9.73
