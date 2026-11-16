@@ -1,0 +1,5 @@
+slide0: File:A Moldy Loaf of Bread.jpg / Muldoonsamuel55 / CC0 / https://commons.wikimedia.org/wiki/File:A_Moldy_Loaf_of_Bread.jpg
+slide1: File:Bread slices.jpg / Saral Shots / CC0 / https://commons.wikimedia.org/wiki/File:Bread_slices.jpg
+slide2: File:Baby carrots, grape tomatoes, hard-boiled eggs, and sardines on lettuce, with cheddar cheese and mango vinaigrette dressing - Massachusetts.jpg / Daderot / CC0 / https://commons.wikimedia.org/wiki/File:Baby_carrots,_grape_tomatoes,_hard-boiled_eggs,_and_sardines_on_lettuce,_with_cheddar_cheese_and_mango_vinaigrette_dressing_-_Massachusetts.jpg
+slide3: File:Frozen scallop meat (20240124).jpg / Fumikas Sagisavas / CC0 / https://commons.wikimedia.org/wiki/File:Frozen_scallop_meat_(20240124).jpg
+slide4: File:Vegetables on Cutting Board.jpg / F. D. Neal / CC0 / https://commons.wikimedia.org/wiki/File:Vegetables_on_Cutting_Board.jpg
