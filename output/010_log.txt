@@ -1,0 +1,19 @@
+  search 'dirty stove': 1 usable
+[0] OK dirty stove -> File:Julin, a six-year-old child, making pansies for her neighbors on top floor (Gatto), 106 Thompson Street, N.Y. They said she does this every day, 'but not all day.' A growler and dirty beer LOC cph.3a38582.jpg (Public domain)
+  search 'kitchen paper towels': 1 usable
+[1] OK kitchen paper towels -> File:Improvisacao - Funil de Guardanapo.JPG (Public domain)
+  search 'cleaning spray': 2 usable
+[2] OK cleaning spray -> File:USAG Benelux Law Enforcement Certification- OC Spray (9875199).jpg (Public domain)
+  search 'aluminium foil': 12 usable
+[3] OK aluminium foil -> File:HK 香港航空 HongKong Airlines 飛機餐 in-flight meal food 蓮蓉包 Lotus seed bun with 鋁箔紙袋 disposable aluminium foil January 2025 R12S 07.jpg (CC0)
+  search 'clean kitchen': 3 usable
+[4] OK clean kitchen -> File:Circle of Thomas van Apshoven - Kitchen Scene with Women Cleaning a Carp (c. 1655–1670) - BLAC.jpg (Public domain)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [1.9, 1.92, 1.92, 1.92, 1.86] total: 9.52
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.2, 2.67, 2.86, 2.87, 3.54] total: 14.14
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [1.9, 1.92, 1.92, 1.92, 1.86] total: 9.52
