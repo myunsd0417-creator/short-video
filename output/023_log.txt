@@ -1,0 +1,19 @@
+  search 'dirty dishes sink': 3 usable
+[0] OK dirty dishes sink -> File:Sink full of dirty dishes.jpg (CC0)
+  search 'kitchen tongs': 2 usable
+[1] OK kitchen tongs -> File:Tongs steel.JPG (Public domain)
+  search 'pot boiling water': 6 usable
+[2] OK pot boiling water -> File:Steam-boiling green asparagus.jpg (CC0)
+  search 'cutting board': 5 usable
+[3] OK cutting board -> File:11. place vegetables on cutting board.jpg (CC0)
+  search 'clean kitchen': 2 usable
+[4] OK clean kitchen -> File:Floris Gerritsz. van Schooten - Kitchen Still-Life - WGA21045.jpg (Public domain)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.24, 1.92, 1.92, 1.92, 2.31] total: 10.31
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.44, 4.25, 3.5, 3.22, 4.03] total: 17.44
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.24, 1.92, 1.92, 1.92, 2.31] total: 10.31
