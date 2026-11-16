@@ -1,0 +1,84 @@
+{
+  "id": "023",
+  "kind": "product",
+  "hook_type": "regret",
+  "persona": true,
+  "title": "洗い物めんどくさい私が やめたこと3つ",
+  "caption": "洗い物がめんどくさすぎて、やめたこと3つ🫠\n道具を減らすと洗い物も減る\n保存して、あとで見返してね\n#一人暮らし #洗い物 #ズボラ #時短家事 #自炊",
+  "slides": [
+    {
+      "type": "hook",
+      "query": "dirty dishes sink",
+      "fallback": [
+        "dishes in sink",
+        "kitchen sink"
+      ],
+      "big": [
+        "洗い物ぎらいが",
+        "やめたこと3つ"
+      ],
+      "mark": "やめた",
+      "sub": "2つ目がいちばん効いた",
+      "small": "洗い物がめんどくさい私",
+      "say": "洗い物ぎらいの私が、やめたこと3つ"
+    },
+    {
+      "type": "item",
+      "query": "kitchen tongs",
+      "fallback": [
+        "tongs",
+        "cooking utensils"
+      ],
+      "big": [
+        "菜箸とおたま",
+        "→トング1本に"
+      ],
+      "mark": "トング",
+      "sub": "混ぜる・取る・盛るが1本で",
+      "tag": "その1"
+    },
+    {
+      "type": "item",
+      "query": "pot boiling water",
+      "fallback": [
+        "boiling pot",
+        "saucepan"
+      ],
+      "big": [
+        "鍋でゆでる",
+        "→レンジに"
+      ],
+      "mark": "レンジ",
+      "sub": "耐熱容器ならそのまま器にも",
+      "tag": "その2"
+    },
+    {
+      "type": "item",
+      "query": "cutting board",
+      "fallback": [
+        "chopping board",
+        "knife board"
+      ],
+      "big": [
+        "毎回まな板",
+        "→ハサミで"
+      ],
+      "mark": "ハサミ",
+      "sub": "肉もネギも鍋の上で切る",
+      "tag": "その3"
+    },
+    {
+      "type": "end",
+      "query": "clean kitchen",
+      "fallback": [
+        "kitchen counter",
+        "tidy kitchen"
+      ],
+      "big": [
+        "洗い物は",
+        "道具の数で決まる"
+      ],
+      "mark": "道具の数"
+    }
+  ]
+}

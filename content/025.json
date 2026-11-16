@@ -1,0 +1,84 @@
+{
+  "id": "025",
+  "kind": "product",
+  "hook_type": "result",
+  "persona": true,
+  "title": "洗い物ゼロの日の作り方",
+  "caption": "洗い物、今日はゼロにしたい日の過ごし方🍳\n保存して、あとで見返してね\n#一人暮らし #洗い物 #ズボラ #時短家事 #自炊",
+  "slides": [
+    {
+      "type": "hook",
+      "query": "frying pan cooking",
+      "fallback": [
+        "skillet",
+        "pan cooking"
+      ],
+      "big": [
+        "今日は",
+        "洗い物ゼロ"
+      ],
+      "mark": "ゼロ",
+      "sub": "3つ目は紙で解決",
+      "small": "洗い物がめんどくさい私",
+      "say": "洗い物ぎらいの私の、洗い物ゼロの日"
+    },
+    {
+      "type": "item",
+      "query": "one pan meal",
+      "fallback": [
+        "skillet meal",
+        "frying pan food"
+      ],
+      "big": [
+        "フライパン1つで",
+        "作って食べる"
+      ],
+      "mark": "1つ",
+      "sub": "皿に移さない日があってもいい",
+      "tag": "その1"
+    },
+    {
+      "type": "item",
+      "query": "baking paper",
+      "fallback": [
+        "parchment paper",
+        "baking sheet"
+      ],
+      "big": [
+        "クッキング",
+        "シートで焼く"
+      ],
+      "mark": "シート",
+      "sub": "フライパンが汚れない",
+      "tag": "その2"
+    },
+    {
+      "type": "item",
+      "query": "paper plates",
+      "fallback": [
+        "paper plate",
+        "disposable plates"
+      ],
+      "big": [
+        "紙皿の日を",
+        "決めておく"
+      ],
+      "mark": "紙皿",
+      "sub": "週1回だけでもかなりラク",
+      "tag": "その3"
+    },
+    {
+      "type": "end",
+      "query": "relaxing at home",
+      "fallback": [
+        "sofa living room",
+        "cozy room"
+      ],
+      "big": [
+        "がんばらない日を",
+        "つくる"
+      ],
+      "mark": "がんばらない"
+    }
+  ]
+}

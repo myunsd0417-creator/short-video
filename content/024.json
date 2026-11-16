@@ -1,0 +1,84 @@
+{
+  "id": "024",
+  "kind": "knowledge",
+  "hook_type": "result",
+  "persona": true,
+  "title": "洗い物がラクになる 洗い方のコツ3つ",
+  "caption": "洗い物がめんどくさい人ほど、洗う前が大事🧽\n保存して、あとで見返してね\n#一人暮らし #洗い物 #ズボラ #時短家事 #自炊",
+  "slides": [
+    {
+      "type": "hook",
+      "query": "washing dishes",
+      "fallback": [
+        "dish washing",
+        "kitchen sink"
+      ],
+      "big": [
+        "洗い物",
+        "10分が5分に"
+      ],
+      "mark": "5分",
+      "sub": "1つ目、洗う前にやる",
+      "small": "洗い物がめんどくさい私",
+      "say": "洗い物ぎらいの私の、洗い方のコツ3つ"
+    },
+    {
+      "type": "item",
+      "query": "paper towel",
+      "fallback": [
+        "kitchen paper",
+        "paper towels"
+      ],
+      "big": [
+        "油汚れは",
+        "先に拭く"
+      ],
+      "mark": "拭く",
+      "sub": "キッチンペーパーでひと拭き",
+      "tag": "その1"
+    },
+    {
+      "type": "item",
+      "query": "soaking dishes",
+      "fallback": [
+        "dishes soaking",
+        "bowl water"
+      ],
+      "big": [
+        "こびりつきは",
+        "お湯につける"
+      ],
+      "mark": "お湯",
+      "sub": "こするのは、ゆるんでから",
+      "tag": "その2"
+    },
+    {
+      "type": "item",
+      "query": "stack of plates",
+      "fallback": [
+        "plates",
+        "dishes"
+      ],
+      "big": [
+        "洗う順番は",
+        "汚れの少ない順"
+      ],
+      "mark": "順番",
+      "sub": "油ものは最後にまとめて",
+      "tag": "その3"
+    },
+    {
+      "type": "end",
+      "query": "clean dishes",
+      "fallback": [
+        "dish rack",
+        "clean plates"
+      ],
+      "big": [
+        "洗う前で",
+        "ラクが決まる"
+      ],
+      "mark": "洗う前"
+    }
+  ]
+}
