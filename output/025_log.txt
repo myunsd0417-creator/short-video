@@ -1,0 +1,20 @@
+  search 'frying pan cooking': 4 usable
+[0] OK frying pan cooking -> File:Portable gas stove and frying pan.jpg (Public domain)
+  search 'one pan meal': 0 usable
+  search 'skillet meal': 1 usable
+[1] OK skillet meal -> File:Japanese spicy miso ramen with teppanyaki beef on cast iron skillet.jpg (CC0)
+  search 'baking paper': 5 usable
+[2] OK baking paper -> File:Chicken breast, mushrooms, and vegetables, baked in parchment paper - Massachusetts.jpg (CC0)
+  search 'paper plates': 3 usable
+[3] OK paper plates -> File:BEER BOTTLE AND PAPER PLATE AMONG THE LILY PADS-UNWELCOME MEMENTOES OF A FOURTH OF JULY CELEBRATION AT A COUNTY PARK... - NARA - 550807.jpg (Public domain)
+  search 'relaxing at home': 1 usable
+[4] OK relaxing at home -> File:Alda relaxing at home LCCN2014681665.jpg (Public domain)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.38, 1.92, 1.92, 1.92, 1.9] total: 10.04
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.53, 3.21, 2.57, 3.04, 3.67] total: 15.02
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.38, 1.92, 1.92, 1.92, 1.9] total: 10.04
