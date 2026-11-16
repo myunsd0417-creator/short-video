@@ -1,0 +1,5 @@
+slide0: File:Box-veggies-and-two-apples.jpg / Hay Kranen / CC0 / https://commons.wikimedia.org/wiki/File:Box-veggies-and-two-apples.jpg
+slide1: File:Japanese vacuum flask.jpg / Petey21 / CC0 / https://commons.wikimedia.org/wiki/File:Japanese_vacuum_flask.jpg
+slide2: File:Packed Lunch - Bengali Wikipedia 10th Anniversary Celebration - Jadavpur University - Kolkata 2015-01-09 2849.JPG / Biswarup Ganguly / CC BY 3.0 / https://commons.wikimedia.org/wiki/File:Packed_Lunch_-_Bengali_Wikipedia_10th_Anniversary_Celebration_-_Jadavpur_University_-_Kolkata_2015-01-09_2849.JPG
+slide3: File:1960s Norwegian Panco Plast Fredrikstad plastic kitchen storage container number 192 for dry goods view 3.jpg / R. Henrik Nilsson / CC BY 4.0 / https://commons.wikimedia.org/wiki/File:1960s_Norwegian_Panco_Plast_Fredrikstad_plastic_kitchen_storage_container_number_192_for_dry_goods_view_3.jpg
+slide4: File:Oksusu-onmyeon.jpg / chomjong / CC BY 2.0 / https://commons.wikimedia.org/wiki/File:Oksusu-onmyeon.jpg
