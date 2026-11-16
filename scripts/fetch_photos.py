@@ -1,4 +1,4 @@
-"""Wikimedia Commonsから、商用利用OK（CC0・パブリックドメイン・CC BY）の写真を取ってくる。
+"""Wikimedia Commonsから、商用利用OKでクレジット表示も不要（CC0・パブリックドメイン）の写真を取ってくる。
 CC BY-SA など条件が重いものは使わない。出典は output/<id>_credits.txt に残す。
 使い方: python scripts/fetch_photos.py content/001.json
 """
@@ -28,7 +28,7 @@ def license_ok(name):
     n = (name or "").lower()
     if "sa" in re.split(r"[\s\-]+", n):
         return False
-    return n.startswith("cc0") or "public domain" in n or n == "pd" or n.startswith("cc by")
+    return n.startswith("cc0") or "public domain" in n or n == "pd"  # 表示不要のフリー素材だけ
 
 
 def search(query):

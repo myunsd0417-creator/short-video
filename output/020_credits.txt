@@ -1,5 +1,0 @@
-slide0: File:Carton of eggs.jpg / Gisela Francisco / CC BY 3.0 / https://commons.wikimedia.org/wiki/File:Carton_of_eggs.jpg
-slide1: File:Breakfast with fried eggs and sausages, Rostov-on-Don, Russia.jpg / Vyacheslav Argenberg / CC BY 4.0 / https://commons.wikimedia.org/wiki/File:Breakfast_with_fried_eggs_and_sausages,_Rostov-on-Don,_Russia.jpg
-slide2: File:Cracked egg (30298255024).jpg / Carlos Ebert from São Paulo, BrazilGRU / CC BY 2.0 / https://commons.wikimedia.org/wiki/File:Cracked_egg_(30298255024).jpg
-slide3: File:Refrigerator showing eggs in storage at Parafield poultry farm(GN10018).jpg / State Government Photographer / CC0 / https://commons.wikimedia.org/wiki/File:Refrigerator_showing_eggs_in_storage_at_Parafield_poultry_farm(GN10018).jpg
-slide4: File:Scrambled eggs with basil.jpg / OmegaFallon / CC BY 4.0 / https://commons.wikimedia.org/wiki/File:Scrambled_eggs_with_basil.jpg
