@@ -1,0 +1,5 @@
+slide0: File:Box-veggies-and-two-apples.jpg / Hay Kranen / CC0 / https://commons.wikimedia.org/wiki/File:Box-veggies-and-two-apples.jpg
+slide1: File:Japanese vacuum flask.jpg / Petey21 / CC0 / https://commons.wikimedia.org/wiki/File:Japanese_vacuum_flask.jpg
+slide2: File:Brown Bag Lunch (12501651023).jpg / Kansas City District U.S. Army Corps of Engineers / Public domain / https://commons.wikimedia.org/wiki/File:Brown_Bag_Lunch_(12501651023).jpg
+slide3: File:SZ 深圳 Shenzhen 福田 Futian 金田路 Jintian Road shop 餃子店 dumplings restaurant plastic food boxes April 2026 N13P.jpg / HWUE 223 RIWAME Zhognn 8820 / CC0 / https://commons.wikimedia.org/wiki/File:SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E7%A6%8F%E7%94%B0_Futian_%E9%87%91%E7%94%B0%E8%B7%AF_Jintian_Road_shop_%E9%A4%83%E5%AD%90%E5%BA%97_dumplings_restaurant_plastic_food_boxes_April_2026_N13P.jpg
+slide4: File:Local German restaurant keeps Airmen warm with soup donation (6462040).jpg / U.S. Air Force photo by Airman 1st Class Taylor Slater / Public domain / https://commons.wikimedia.org/wiki/File:Local_German_restaurant_keeps_Airmen_warm_with_soup_donation_(6462040).jpg

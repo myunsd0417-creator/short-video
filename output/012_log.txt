@@ -1,0 +1,19 @@
+  search 'lunch box': 4 usable
+[0] OK lunch box -> File:Box-veggies-and-two-apples.jpg (CC0)
+  search 'food thermos': 5 usable
+[1] OK food thermos -> File:Japanese vacuum flask.jpg (CC0)
+  search 'lunch bag': 5 usable
+[2] OK lunch bag -> File:Brown Bag Lunch (12501651023).jpg (Public domain)
+  search 'plastic food container': 10 usable
+[3] OK plastic food container -> File:SZ 深圳 Shenzhen 福田 Futian 金田路 Jintian Road shop 餃子店 dumplings restaurant plastic food boxes April 2026 N13P.jpg (CC0)
+  search 'warm soup': 6 usable
+[4] OK warm soup -> File:Local German restaurant keeps Airmen warm with soup donation (6462040).jpg (Public domain)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [1.9, 1.92, 1.92, 1.92, 1.77] total: 9.43
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.2, 2.73, 3.11, 2.93, 3.47] total: 14.44
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [1.9, 1.92, 1.92, 1.92, 1.77] total: 9.43
