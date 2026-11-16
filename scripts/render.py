@@ -120,6 +120,20 @@ def text_layer(slide):
         d.text((W - 80 - d.textlength(lab, font=f_step), top + 30), lab, font=f_step, fill=WHITE,
                stroke_width=4, stroke_fill=(0, 0, 0))
 
+    if slide["type"] == "end" and slide.get("_credits"):  # 写真・声のクレジット（利用ルールで表示が必要）
+        f_c = font(26)
+        cy = 340
+        for text in slide["_credits"]:
+            line = ""
+            for ch in text:  # 省略せずに折り返す（作者名を全部出す）
+                if d.textlength(line + ch, font=f_c) > W - 200:
+                    d.text((40, cy), line, font=f_c, fill=(255, 255, 255, 200), stroke_width=2, stroke_fill=(0, 0, 0))
+                    cy += 34
+                    line = ch
+                else:
+                    line += ch
+            d.text((40, cy), line, font=f_c, fill=(255, 255, 255, 200), stroke_width=2, stroke_fill=(0, 0, 0))
+            cy += 34
     if slide["type"] == "end" and VARIANT == "tt":  # 最後にボタン風の呼びかけ
         label = CTA[VARIANT][0]
         f_btn = font(72)
@@ -196,6 +210,21 @@ def main(path):
     ]
     p = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     items = [i for i, sl in enumerate(spec["slides"]) if sl["type"] == "item"]
+    credits = []
+    cfile = Path("output") / f"{spec['id']}_credits.txt"
+    if cfile.exists() and not spec.get("plain_bg"):
+        names = []
+        for line in cfile.read_text(encoding="utf-8").splitlines():
+            parts = [x.strip() for x in line.split(" / ")]
+            if len(parts) >= 3 and parts[2].upper().startswith("CC BY"):
+                names.append(f"{parts[1][:30]}（{parts[2]}）")
+        if names:
+            credits.append("写真: Wikimedia Commons " + "、".join(dict.fromkeys(names)))
+    if (work / f"durations_{RAW}.json").exists() and json.loads((work / f"durations_{RAW}.json").read_text()).get("voice"):
+        credits.append("VOICEVOX:春日部つむぎ")
+    for sl in spec["slides"]:
+        if sl["type"] == "end":
+            sl["_credits"] = credits
     for i, slide in enumerate(spec["slides"]):
         if i in items:
             slide["_step"] = (items.index(i) + 1, len(items))

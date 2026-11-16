@@ -105,12 +105,7 @@ def main():
             notify = service == "tiktok" and when.strftime("%H:%M") in CFG.get("tiktok_notify_slots", [])
             spec = json.loads(Path(f"content/{vid}.json").read_text(encoding="utf-8"))
             text = spec["caption"]
-            cl = credits_line(vid)
-            if cl:
-                text += "\n\n" + cl
-            log_p = Path(f"output/{vid}_log.txt")
-            if log_p.exists() and "VOICEVOX: OK" in log_p.read_text(encoding="utf-8"):
-                text += ("\n" if cl else "\n\n") + "VOICEVOX:春日部つむぎ"
+            # 写真・声のクレジットは動画の最後に小さく表示している（説明文はハッシュタグまで）
             inp = {
                 "channelId": channel,
                 "text": text,
