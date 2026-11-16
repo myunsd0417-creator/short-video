@@ -1,0 +1,20 @@
+  search 'cutting board': 5 usable
+[0] OK cutting board -> File:11. place vegetables on cutting board.jpg (CC0)
+  search 'electric kettle': 2 usable
+[1] OK electric kettle -> File:Electric kettle phillips white.JPG (Public domain)
+  search 'cutting vegetables on board': 6 usable
+[2] OK cutting vegetables on board -> File:Vegetables on Cutting Board.jpg (CC0)
+  search 'dishwashing sponge': 0 usable
+  search 'washing dishes': 3 usable
+[3] OK washing dishes -> File:Our Father's House Soup Kitchen dishwashing-vertical.jpg (Public domain)
+  search 'clean kitchen': 3 usable
+[4] OK clean kitchen -> File:Circle of Thomas van Apshoven - Kitchen Scene with Women Cleaning a Carp (c. 1655–1670) - BLAC.jpg (Public domain)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.06, 1.92, 1.92, 1.92, 1.92] total: 9.74
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.29, 3.1, 3.04, 3.7, 3.61] total: 15.74
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.06, 1.92, 1.92, 1.92, 1.92] total: 9.74
