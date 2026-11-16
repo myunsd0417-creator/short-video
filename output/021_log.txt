@@ -1,0 +1,20 @@
+  search 'inside refrigerator': 2 usable
+[0] OK inside refrigerator -> File:Inside domestic refrigerator.JPG (Public domain)
+  search 'clear plastic food container': 5 usable
+[1] OK clear plastic food container -> File:Frozen yogurt (1) (cropped).jpg (Public domain)
+  search 'plastic storage bin': 3 usable
+[2] OK plastic storage bin -> File:EFTA00001726 - Well-organized laundry room with shelves stacked high with plastic storage bins containing white clothes and bedding items.jpg (Public domain)
+  search 'masking tape': 0 usable
+  search 'tape roll': 7 usable
+[3] OK tape roll -> File:ISS-52 Roll Out Solar Array (ROSA) (2).jpg (Public domain)
+  search 'kitchen': 1 usable
+[4] OK kitchen -> File:Beecher-stowe-Kitchen Planing.jpg (Public domain)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [1.9, 1.92, 1.92, 1.92, 2.07] total: 9.73
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.2, 3.35, 2.59, 2.47, 3.87] total: 14.48
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [1.9, 1.92, 1.92, 1.92, 2.07] total: 9.73
