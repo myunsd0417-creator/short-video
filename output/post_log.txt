@@ -1,18 +1,6 @@
-warmup 023: The read operation timed out
-023 tiktok 2026-11-18T19:30:00+09:00 OK {"data": {"createPost": {"post": {"id": "6afb04833e3c61c15b221aaa", "dueAt": "2026-11-18T10:30:00.000Z"}}}}
-warmup 008: HTTP Error 404: Not Found
-warmup 008: HTTP Error 404: Not Found
-warmup 008: HTTP Error 404: Not Found
-warmup 008: HTTP Error 404: Not Found
-008 tiktok 2026-11-19T11:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6afb0579742ce9928410fc46", "dueAt": "2026-11-19T02:45:00.000Z"}}}}
-warmup 023: HTTP Error 503: Service Unavailable
-warmup 023: HTTP Error 503: Service Unavailable
-warmup 023: HTTP Error 503: Service Unavailable
-warmup 023: HTTP Error 503: Service Unavailable
 warmup 023: HTTP Error 404: Not Found
 warmup 023: HTTP Error 404: Not Found
 warmup 023: HTTP Error 404: Not Found
-023 youtube 2026-11-18T19:30:00+09:00 NG {"data": {"createPost": {"message": "Invalid post: Video could not be read from its URL."}}}
-warmup 024: HTTP Error 404: Not Found
-warmup 024: HTTP Error 404: Not Found
-024 youtube 2026-11-20T11:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6afb080572786171b2214c4a", "dueAt": "2026-11-20T02:45:00.000Z"}}}}
+warmup 023: HTTP Error 404: Not Found
+023 youtube url=https://raw.githubusercontent.com/myunsd0417-creator/short-video/21e6b561ebff1a0d2d2fbed70d070feb5ce9f646/output/023_yt.mp4
+023 youtube 2026-11-18T19:30:00+09:00 OK {"data": {"createPost": {"post": {"id": "6afb08c53e9b9dfa816bae9f", "dueAt": "2026-11-18T10:30:00.000Z"}}}}
