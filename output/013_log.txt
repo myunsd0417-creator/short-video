@@ -1,0 +1,21 @@
+  search 'kitchen cupboard': 2 usable
+[0] OK kitchen cupboard -> File:Kitchen area with open door and a wall out of focus in front of it.jpg (CC0)
+  search 'large cooking pot': 0 usable
+  search 'stock pot': 1 usable
+[1] OK stock pot -> File:Tableware from EpicentrK 06.jpg (CC0)
+  search 'spice rack': 4 usable
+[2] OK spice rack -> File:Kitchen utensils hanging below a spice rack.jpg (Public domain)
+  search 'waffle iron': 3 usable
+[3] OK waffle iron -> File:Woddles the penguin ish waffle maker.jpg (Public domain)
+  search 'organized kitchen': 0 usable
+  search 'kitchen interior': 8 usable
+[4] OK kitchen interior -> File:Dirck de Vries - Kitchen Interior - Walters 372651.jpg (Public domain)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [1.9, 1.92, 1.92, 1.92, 2.13] total: 9.79
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.2, 2.91, 2.72, 2.65, 3.88] total: 14.36
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [1.9, 1.92, 1.92, 1.92, 2.13] total: 9.79
