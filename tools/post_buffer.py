@@ -131,11 +131,15 @@ def main():
                         "Accept": "video/mp4,*/*"}), timeout=90).read()
                 except Exception as e:
                     log(f"warmup {vid}: {e}")
+                if attempt >= 3:  # CDNがだめならGitHubの直接リンクで試す
+                    url = url.replace("https://cdn.jsdelivr.net/gh/" + REPO + "@", "https://raw.githubusercontent.com/" + REPO + "/")
+                    inp["assets"][0]["video"]["url"] = url
                 res = gql(MUTATION, {"input": inp})
                 msg = json.dumps(res, ensure_ascii=False)
                 if "could not be read" not in msg:
                     break
                 time.sleep(30)
+            log(f"{vid} {service} url={url}")
             post = ((res.get("data") or {}).get("createPost") or {}).get("post")
             ok = bool(post)
             log(f"{vid} {service} {when.isoformat()} {'OK' if ok else 'NG'} {json.dumps(res, ensure_ascii=False)[:400]}")
