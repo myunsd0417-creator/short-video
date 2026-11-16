@@ -1,0 +1,19 @@
+  search 'breakfast toast': 5 usable
+[0] OK breakfast toast -> File:Breakfast burrito and toast - Bakersfield, CA.jpg (CC0)
+  search 'hot sandwich': 7 usable
+[1] OK hot sandwich -> File:Hot dago1 inside.jpg (CC0)
+  search 'boiled eggs': 2 usable
+[2] OK boiled eggs -> File:Boiled eggs on a white plate.jpg (CC0)
+  search 'toaster oven': 1 usable
+[3] OK toaster oven -> File:Sanyo oven toaster (SQ-WK3).jpg (CC0)
+  search 'coffee breakfast': 5 usable
+[4] OK coffee breakfast -> File:Coffee, breakfast, croissant.jpg (CC0)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [1.9, 1.92, 1.92, 1.92, 1.98] total: 9.64
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.2, 2.72, 2.49, 2.71, 3.69] total: 13.81
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [1.9, 1.92, 1.92, 1.92, 1.98] total: 9.64
