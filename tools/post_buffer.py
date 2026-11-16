@@ -124,16 +124,18 @@ def main():
             if not publish:
                 inp["saveToDraft"] = True
             url = inp["assets"][0]["video"]["url"]
-            for attempt in range(4):
+            for attempt in range(7):
                 try:  # 先にCDNへ取りに行って、Bufferが読めるようにしておく
-                    urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "short-video-bot"}), timeout=60).read()
+                    urllib.request.urlopen(urllib.request.Request(url, headers={
+                        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+                        "Accept": "video/mp4,*/*"}), timeout=90).read()
                 except Exception as e:
                     log(f"warmup {vid}: {e}")
                 res = gql(MUTATION, {"input": inp})
                 msg = json.dumps(res, ensure_ascii=False)
                 if "could not be read" not in msg:
                     break
-                time.sleep(20)
+                time.sleep(30)
             post = ((res.get("data") or {}).get("createPost") or {}).get("post")
             ok = bool(post)
             log(f"{vid} {service} {when.isoformat()} {'OK' if ok else 'NG'} {json.dumps(res, ensure_ascii=False)[:400]}")
