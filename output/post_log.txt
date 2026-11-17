@@ -1,6 +1,4 @@
-warmup 023: HTTP Error 404: Not Found
-warmup 023: HTTP Error 404: Not Found
-warmup 023: HTTP Error 404: Not Found
-warmup 023: HTTP Error 404: Not Found
-023 youtube url=https://raw.githubusercontent.com/myunsd0417-creator/short-video/21e6b561ebff1a0d2d2fbed70d070feb5ce9f646/output/023_yt.mp4
-023 youtube 2026-11-18T19:30:00+09:00 OK {"data": {"createPost": {"post": {"id": "6afb08c53e9b9dfa816bae9f", "dueAt": "2026-11-18T10:30:00.000Z"}}}}
+020 tiktok url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@e1aa01d4b6fdbc0c89f465b9ec910764c8d6c6a4/output/020.mp4
+020 tiktok 2026-11-21T11:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6afbd3a04b26315855bdb485", "dueAt": "2026-11-21T02:45:00.000Z"}}}}
+020 youtube url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@e1aa01d4b6fdbc0c89f465b9ec910764c8d6c6a4/output/020_yt.mp4
+020 youtube 2026-11-21T11:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6afbd3a2797935b975deb6c1", "dueAt": "2026-11-21T02:45:00.000Z"}}}}
