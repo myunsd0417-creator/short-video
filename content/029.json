@@ -1,0 +1,90 @@
+{
+  "id": "029",
+  "kind": "knowledge",
+  "hook_type": "regret",
+  "persona": true,
+  "title": "炊いたご飯とりんご やりがちな保存NG3つ",
+  "caption": "自炊サボりたい日に、ご飯をまとめて炊く人へ🍚\n参考：英国食品基準庁（スコットランド）・英国政府の学生向けガイド・稲城市「果物の追熟と保存」\n保存して、あとで見返してね\n#一人暮らし #自炊 #ご飯 #保存方法 #知らないと損",
+  "sources": [
+    "Food Standards Scotland：ご飯はできるだけ早く、理想は1時間以内に冷やす。冷蔵したご飯は24時間より長く置かずに食べる https://www.foodstandards.gov.scot/consumers/food-safety/at-home/storage",
+    "GOV.UK 学生向け食品衛生ガイド：ご飯はできるだけ早く、理想は1時間以内に冷やす https://www.gov.uk/government/publications/student-guide-to-food-safety-and-hygiene/student-guide-to-food-safety-and-hygiene",
+    "稲城市 果物の追熟と保存：りんごはエチレンガスを多く出し、まわりの果物や野菜に影響を与える https://www.city.inagi.tokyo.jp/_res/projects/default_project/_page_/001/003/075/kudamono.pdf"
+  ],
+  "slides": [
+    {
+      "type": "hook",
+      "query": "cooked rice",
+      "fallback": [
+        "steamed rice",
+        "rice bowl"
+      ],
+      "big": [
+        "ご飯は",
+        "1時間で冷やす"
+      ],
+      "mark": "1時間",
+      "sub": "2つ目、私もやってた",
+      "small": "自炊サボりたい日の私",
+      "say": "ご飯をまとめて炊く私が、やめた保存3つ"
+    },
+    {
+      "type": "item",
+      "query": "steamed rice",
+      "fallback": [
+        "cooked rice",
+        "rice bowl"
+      ],
+      "big": [
+        "炊飯器で",
+        "放置しない"
+      ],
+      "mark": "放置",
+      "sub": "海外では1時間以内に冷やすのがめやす",
+      "tag": "その1"
+    },
+    {
+      "type": "item",
+      "query": "rice in container",
+      "fallback": [
+        "cooked rice",
+        "rice ball"
+      ],
+      "big": [
+        "冷蔵ご飯は",
+        "24時間まで"
+      ],
+      "mark": "24時間",
+      "sub": "24時間より長く置かない",
+      "tag": "その2"
+    },
+    {
+      "type": "item",
+      "query": "apples",
+      "fallback": [
+        "red apples",
+        "apple fruit"
+      ],
+      "big": [
+        "りんごは",
+        "袋を分ける"
+      ],
+      "mark": "分ける",
+      "sub": "ガスで周りの果物が早く熟す",
+      "tag": "その3"
+    },
+    {
+      "type": "end",
+      "query": "rice bowl",
+      "fallback": [
+        "cooked rice",
+        "japanese meal"
+      ],
+      "big": [
+        "置き方を",
+        "変えるだけ"
+      ],
+      "mark": "置き方",
+      "sub": "保存して、あとで見返してね"
+    }
+  ]
+}

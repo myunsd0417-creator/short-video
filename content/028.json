@@ -1,0 +1,90 @@
+{
+  "id": "028",
+  "kind": "knowledge",
+  "hook_type": "surprise",
+  "persona": true,
+  "title": "海外では常識 冷蔵庫に入れる時のルール3つ",
+  "caption": "イギリスやアイルランドの食品機関が教えている冷蔵庫ルール🧊\n参考：英国食品基準庁（スコットランド）・英国政府の学生向けガイド・アイルランド食品安全庁\n保存して、あとで見返してね\n#一人暮らし #冷蔵庫 #保存方法 #知らないと損",
+  "sources": [
+    "Food Standards Scotland：生の肉はふた付きの清潔な容器に入れ冷蔵庫の一番下の段へ（他の食品に触れたり汁が垂れたりしないように）。開けた缶詰は缶のまま保存せず容器に移す https://www.foodstandards.gov.scot/consumers/food-safety/at-home/storage",
+    "GOV.UK 学生向け食品衛生ガイド：生の肉・魚・貝は冷蔵庫の一番下の段に。開けた缶は冷蔵庫に入れない（菌が増えたり金属の味がつくことがある） https://www.gov.uk/government/publications/student-guide-to-food-safety-and-hygiene/student-guide-to-food-safety-and-hygiene",
+    "FSAI（アイルランド食品安全庁）：生の肉・魚・鶏肉は一番下の段に。温かい食品を冷蔵庫に詰め込みすぎない（庫内全体の温度が上がる） https://www.fsai.ie/consumer-advice/food-safety-and-hygiene/storage"
+  ],
+  "slides": [
+    {
+      "type": "hook",
+      "query": "raw meat",
+      "fallback": [
+        "raw beef",
+        "raw steak"
+      ],
+      "big": [
+        "生の肉は",
+        "一番下の段"
+      ],
+      "mark": "一番下",
+      "sub": "3つ目は日本だとやりがち",
+      "small": "冷蔵庫に適当に入れる私",
+      "say": "冷蔵庫に適当に入れてた私が知った、海外のルール3つ"
+    },
+    {
+      "type": "item",
+      "query": "raw meat",
+      "fallback": [
+        "raw beef",
+        "raw pork"
+      ],
+      "big": [
+        "生の肉・魚は",
+        "一番下"
+      ],
+      "mark": "一番下",
+      "sub": "汁が下の食品に垂れないように",
+      "tag": "その1"
+    },
+    {
+      "type": "item",
+      "query": "open tin can",
+      "fallback": [
+        "tin can",
+        "canned food"
+      ],
+      "big": [
+        "開けた缶は",
+        "容器に移す"
+      ],
+      "mark": "移す",
+      "sub": "缶のままだと金属の味がつくことも",
+      "tag": "その2"
+    },
+    {
+      "type": "item",
+      "query": "refrigerator interior",
+      "fallback": [
+        "open refrigerator",
+        "fridge shelves"
+      ],
+      "big": [
+        "温かいものを",
+        "詰めこまない"
+      ],
+      "mark": "詰めこまない",
+      "sub": "庫内ぜんぶの温度が上がる",
+      "tag": "その3"
+    },
+    {
+      "type": "end",
+      "query": "fresh vegetables",
+      "fallback": [
+        "vegetables",
+        "groceries"
+      ],
+      "big": [
+        "置き場所で",
+        "変わる"
+      ],
+      "mark": "置き場所",
+      "sub": "保存して、あとで見返してね"
+    }
+  ]
+}

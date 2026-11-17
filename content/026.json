@@ -1,0 +1,90 @@
+{
+  "id": "026",
+  "kind": "knowledge",
+  "hook_type": "result",
+  "persona": true,
+  "title": "カレー・鍋の残り 翌日まで置く前の3つ",
+  "caption": "寒い日のカレーや鍋、残りはどうしてる？🍛\n参考：農林水産省「ウェルシュ菌」「冷蔵庫のかしこい使い方」\n保存して、あとで見返してね\n#一人暮らし #自炊 #作り置き #保存方法 #知らないと損",
+  "sources": [
+    "農林水産省 冷蔵庫のかしこい使い方：大量に作ったカレーや煮物を鍋に入れたまま放置すると、冷める過程で菌（ウェルシュ菌）が急激に増えることがある https://www.maff.go.jp/j/syouan/seisaku/foodpoisoning/frige.html",
+    "農林水産省 ウェルシュ菌：増える温度帯は約12〜50℃。100℃で1時間の加熱にも耐える芽胞をつくる。常温で放置せずその日のうちに食べきる。再加熱はおたまで鍋底までかき混ぜ中心まで加熱 https://www.maff.go.jp/j/syouan/seisaku/foodpoisoning/f_encyclopedia/clostridium.perfringens.html",
+    "近畿農政局 カレーの保存：浅い容器に小分けして素早く冷やす。再加熱はよくかき混ぜながら全体を十分に加熱 https://www.maff.go.jp/kinki/syouhi/mn/foodpoisoning/curry.html"
+  ],
+  "slides": [
+    {
+      "type": "hook",
+      "query": "Japanese curry",
+      "fallback": [
+        "curry stew",
+        "beef stew pot"
+      ],
+      "big": [
+        "鍋のまま",
+        "置かない"
+      ],
+      "mark": "置かない",
+      "sub": "3つ目は温め直しでも残る",
+      "small": "寒い日に鍋を作りすぎる私",
+      "say": "鍋を作りすぎる私が知った、残りの置き方3つ"
+    },
+    {
+      "type": "item",
+      "query": "stew pot",
+      "fallback": [
+        "cooking pot",
+        "soup pot"
+      ],
+      "big": [
+        "鍋ごと",
+        "放置しない"
+      ],
+      "mark": "放置",
+      "sub": "冷める途中で菌が増えやすい",
+      "tag": "その1"
+    },
+    {
+      "type": "item",
+      "query": "food storage container",
+      "fallback": [
+        "plastic container food",
+        "leftovers container"
+      ],
+      "big": [
+        "12〜50℃を",
+        "早く通す"
+      ],
+      "mark": "早く",
+      "sub": "浅い容器に小分けで早く冷える",
+      "tag": "その2"
+    },
+    {
+      "type": "item",
+      "query": "ladle",
+      "fallback": [
+        "soup ladle",
+        "stirring soup"
+      ],
+      "big": [
+        "鍋底まで",
+        "かき混ぜる"
+      ],
+      "mark": "鍋底",
+      "sub": "100℃1時間でも残る菌がいる",
+      "tag": "その3"
+    },
+    {
+      "type": "end",
+      "query": "bowl of soup",
+      "fallback": [
+        "soup bowl",
+        "hot soup"
+      ],
+      "big": [
+        "残りは",
+        "早めに食べる"
+      ],
+      "mark": "早め",
+      "sub": "保存して、あとで見返してね"
+    }
+  ]
+}

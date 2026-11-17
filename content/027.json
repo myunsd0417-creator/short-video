@@ -1,0 +1,85 @@
+{
+  "id": "027",
+  "kind": "product",
+  "hook_type": "loss",
+  "persona": true,
+  "title": "一人暮らし 冬の節約 お湯をムダにしない3つ",
+  "caption": "冬はお湯を沸かす回数が増えるから、ムダを減らしたい☕\n保存して、あとで見返してね\n#一人暮らし #節約 #ズボラ #自炊 #冬",
+  "slides": [
+    {
+      "type": "hook",
+      "query": "pot lid",
+      "fallback": [
+        "saucepan lid",
+        "cooking pot with lid"
+      ],
+      "big": [
+        "沸かし直し",
+        "やめた"
+      ],
+      "mark": "やめた",
+      "sub": "2つ目がいちばんラク",
+      "small": "冬の節約がめんどくさい私",
+      "say": "めんどくさがりの私が、冬にやめた沸かし直し"
+    },
+    {
+      "type": "item",
+      "query": "cooking pot with lid",
+      "fallback": [
+        "saucepan lid",
+        "pot lid"
+      ],
+      "big": [
+        "鍋は",
+        "ふたをする"
+      ],
+      "mark": "ふた",
+      "sub": "湯気で熱が逃げにくい",
+      "tag": "その1"
+    },
+    {
+      "type": "item",
+      "query": "electric kettle",
+      "fallback": [
+        "kettle",
+        "boiling water"
+      ],
+      "big": [
+        "飲む分だけ",
+        "沸かす"
+      ],
+      "mark": "分だけ",
+      "sub": "1杯ならカップ1杯分の水で",
+      "tag": "その2"
+    },
+    {
+      "type": "item",
+      "query": "vacuum flask",
+      "fallback": [
+        "thermos bottle",
+        "insulated bottle"
+      ],
+      "big": [
+        "残りは",
+        "保温ボトルへ"
+      ],
+      "mark": "保温",
+      "sub": "あとで沸かし直さなくていい",
+      "tag": "その3"
+    },
+    {
+      "type": "end",
+      "query": "cup of tea",
+      "fallback": [
+        "hot tea cup",
+        "tea mug"
+      ],
+      "big": [
+        "ムダを減らして",
+        "ぬくぬく"
+      ],
+      "mark": "ぬくぬく",
+      "sub": "保存して、あとで見返してね"
+    }
+  ]
+}
