@@ -1,0 +1,20 @@
+  search 'Japanese curry': 15 usable
+[0] OK Japanese curry -> File:Katsu Chicken Curry Don - Memo Wall Japanese Cuisine.jpg (CC0)
+  search 'stew pot': 0 usable
+  search 'cooking pot': 2 usable
+[1] OK cooking pot -> File:Cooking Pot March.jpg (CC0)
+  search 'food storage container': 7 usable
+[2] OK food storage container -> File:Bear-resistant container 4.jpg (CC0)
+  search 'ladle': 9 usable
+[3] OK ladle -> File:Greek - Ladle - Walters 57909.jpg (Public domain)
+  search 'bowl of soup': 9 usable
+[4] OK bowl of soup -> File:Soup bowl MET DP234526.jpg (CC0)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.67, 1.92, 1.95, 1.92, 1.96] total: 10.42
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [3.02, 2.83, 3.97, 3.35, 3.68] total: 16.85
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.67, 1.92, 1.95, 1.92, 1.96] total: 10.42
