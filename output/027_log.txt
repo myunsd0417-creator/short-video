@@ -1,0 +1,20 @@
+  search 'pot lid': 6 usable
+[0] OK pot lid -> File:Piesse & Lubin pot "189 Regent Street" (lid).jpg (CC0)
+  search 'cooking pot with lid': 0 usable
+  search 'saucepan lid': 4 usable
+[1] OK saucepan lid -> File:Steam-boiling green asparagus.jpg (CC0)
+  search 'electric kettle': 2 usable
+[2] OK electric kettle -> File:Electric kettle phillips white.JPG (Public domain)
+  search 'vacuum flask': 2 usable
+[3] OK vacuum flask -> File:Japanese vacuum flask.jpg (CC0)
+  search 'cup of tea': 4 usable
+[4] OK cup of tea -> File:The Cup of Tea MET DT88.jpg (CC0)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.56, 1.92, 1.92, 1.92, 1.93] total: 10.25
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.83, 2.4, 3.05, 2.86, 3.62] total: 14.76
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.56, 1.92, 1.92, 1.92, 1.93] total: 10.25
