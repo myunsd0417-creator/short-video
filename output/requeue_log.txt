@@ -1,12 +1,16 @@
 mutations: addPostToContentItem, createCollaborationNote, createContentItem, createContentItemDraft, createIdea, createPost, createPostTemplate, createSnippet, createTag, deleteCollaborationNote, deleteContentItem, deletePost, deletePostTemplate, deleteSnippet, deleteTag, editPost, movePostInQueue, promoteContentItemDraftToPosts, removePostFromContentItem, updateCollaborationNote, updateContentItem, updateContentItemDraft, updatePostTemplate, updateSnippet, updateTag
 deletePost(input: DeletePostInput) fields=['id']
-008 tiktok 2026-11-18T19:30:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
-019 tiktok 2026-11-19T11:45:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
-012 tiktok 2026-11-19T19:30:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
-020 tiktok 2026-11-20T11:45:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
-009 tiktok 2026-11-20T19:30:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
-008 youtube 2026-11-18T19:30:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
-019 youtube 2026-11-19T11:45:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
-012 youtube 2026-11-19T19:30:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
-020 youtube 2026-11-20T11:45:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
-009 youtube 2026-11-20T19:30:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
+013 tiktok 2026-11-18T11:45:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
+013 youtube 2026-11-18T11:45:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
+019 tiktok 2026-11-19T19:30:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
+024 tiktok 2026-11-20T11:45:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
+012 tiktok 2026-11-20T19:30:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
+008 youtube 2026-11-19T11:45:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
+019 youtube 2026-11-19T19:30:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
+012 youtube 2026-11-20T19:30:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
+023 tiktok 2026-11-18T19:30:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
+008 tiktok 2026-11-19T11:45:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
+024 youtube 2026-11-20T11:45:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
+023 youtube 2026-11-18T19:30:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
+020 tiktok 2026-11-21T11:45:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
+020 youtube 2026-11-21T11:45:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
