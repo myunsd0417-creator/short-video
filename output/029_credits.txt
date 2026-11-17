@@ -1,0 +1,5 @@
+slide0: File:Meshi 001.jpg / Ocdp / CC0 / https://commons.wikimedia.org/wiki/File:Meshi_001.jpg
+slide1: File:Black rice and multigrain steamed buns.jpg / Fumikas Sagisavas / CC0 / https://commons.wikimedia.org/wiki/File:Black_rice_and_multigrain_steamed_buns.jpg
+slide2: File:Bowl of Rice Krispies.jpg / Mx. Granger / CC0 / https://commons.wikimedia.org/wiki/File:Bowl_of_Rice_Krispies.jpg
+slide3: File:Tree with red apples in Barkedal 4.jpg / W.carter / CC0 / https://commons.wikimedia.org/wiki/File:Tree_with_red_apples_in_Barkedal_4.jpg
+slide4: File:Donburi Rice bowl of Chicken Teriyaki with Tomato.jpg / TechnoKittyCat / CC0 / https://commons.wikimedia.org/wiki/File:Donburi_Rice_bowl_of_Chicken_Teriyaki_with_Tomato.jpg
