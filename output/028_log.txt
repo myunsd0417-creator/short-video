@@ -1,0 +1,19 @@
+  search 'raw meat': 2 usable
+[0] OK raw meat -> File:Raw snake meat cut into pieces.jpg (CC0)
+  search 'raw meat': 2 usable
+[1] OK raw meat -> File:Dawro food.jpg (CC0)
+  search 'open tin can': 3 usable
+[2] OK open tin can -> File:Kitchen-Modern-Can-Opener.jpg (Public domain)
+  search 'refrigerator interior': 5 usable
+[3] OK refrigerator interior -> File:Walk-in Refrigerator, Biltmore House, Biltmore Estate, Asheville, NC (31786574617).jpg (CC0)
+  search 'fresh vegetables': 2 usable
+[4] OK fresh vegetables -> File:Fresh Vegetables in Indonesia Restaurant.jpg (CC0)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [3.06, 1.92, 1.92, 1.92, 1.76] total: 10.58
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [3.37, 3.92, 3.53, 2.88, 3.46] total: 17.16
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [3.06, 1.92, 1.92, 1.92, 1.76] total: 10.58
