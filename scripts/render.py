@@ -53,7 +53,7 @@ def shade():
 
 RAW = sys.argv[2] if len(sys.argv) > 2 else "tt"  # tt=TikTok / yt=YouTube / tn=TikTok・BGMなし
 VARIANT = "tt" if RAW == "tn" else RAW
-CTA = {"tt": ("＋ フォロー", "フォロー＆保存で、また見返せる"),
+CTA = {"tt": ("＋ フォロー", "毎日2本、ラクする台所を更新中"),
        "yt": ("チャンネル登録", "チャンネル登録＆保存してね")}
 
 

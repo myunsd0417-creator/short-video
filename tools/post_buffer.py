@@ -104,7 +104,7 @@ def main():
         for vid, when in zip(todo, slots):
             notify = service == "tiktok" and when.strftime("%H:%M") in CFG.get("tiktok_notify_slots", [])
             spec = json.loads(Path(f"content/{vid}.json").read_text(encoding="utf-8"))
-            text = spec["caption"]
+            text = "【めんどくさがり一人暮らしの台所】\n" + spec["caption"]  # シリーズ名でフォローする理由を作る
             # 写真・声のクレジットは動画の最後に小さく表示している（説明文はハッシュタグまで）
             inp = {
                 "channelId": channel,
