@@ -1,4 +1,1 @@
-020 tiktok url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@e1aa01d4b6fdbc0c89f465b9ec910764c8d6c6a4/output/020.mp4
-020 tiktok 2026-11-21T11:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6afbd3a04b26315855bdb485", "dueAt": "2026-11-21T02:45:00.000Z"}}}}
-020 youtube url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@e1aa01d4b6fdbc0c89f465b9ec910764c8d6c6a4/output/020_yt.mp4
-020 youtube 2026-11-21T11:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6afbd3a2797935b975deb6c1", "dueAt": "2026-11-21T02:45:00.000Z"}}}}
+
