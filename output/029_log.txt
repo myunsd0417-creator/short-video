@@ -1,0 +1,19 @@
+  search 'cooked rice': 4 usable
+[0] OK cooked rice -> File:Meshi 001.jpg (CC0)
+  search 'steamed rice': 15 usable
+[1] OK steamed rice -> File:Black rice and multigrain steamed buns.jpg (CC0)
+  search 'rice in container': 3 usable
+[2] OK rice in container -> File:Bowl of Rice Krispies.jpg (CC0)
+  search 'apples': 5 usable
+[3] OK apples -> File:Tree with red apples in Barkedal 4.jpg (CC0)
+  search 'rice bowl': 10 usable
+[4] OK rice bowl -> File:Donburi Rice bowl of Chicken Teriyaki with Tomato.jpg (CC0)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.45, 1.92, 1.92, 1.92, 1.89] total: 10.1
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.63, 3.68, 3.52, 3.1, 3.63] total: 16.56
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.45, 1.92, 1.92, 1.92, 1.89] total: 10.1
