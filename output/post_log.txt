@@ -1,1 +1,19 @@
-
+019 youtube 2026-11-19T19:30:00+09:00 NG(投稿失敗→入れ直し) Looks like you've hit the limit of 2 posts per 24 hours.
+021 tiktok url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@20e0d751101b7227584221b080cd9d3996ea53a4/output/021_tn.mp4
+021 tiktok 2026-11-23T19:30:00+09:00 OK {"data": {"createPost": {"post": {"id": "6afed1467c25de751c32aa79", "dueAt": "2026-11-23T10:30:00.000Z"}}}}
+019 youtube url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@9a150ea9669c0e562a9710515674d56286db9fa5/output/019_yt.mp4
+019 youtube 2026-11-19T20:30:00+09:00 OK {"data": {"createPost": {"post": {"id": "6afed147528b203593ebe411", "dueAt": "2026-11-19T11:30:00.000Z"}}}}
+024 youtube url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@8032d01fc45cfe67daff6d423ce5a4cf28a9cf7c/output/024_yt.mp4
+024 youtube 2026-11-20T12:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6afed148ffd0192517a90cb8", "dueAt": "2026-11-20T03:45:00.000Z"}}}}
+012 youtube url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@0d07bfa2dde5d82d804a33f56bcfc6b66db9d478/output/012_yt.mp4
+012 youtube 2026-11-21T11:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6afed1497c25de751c32ab98", "dueAt": "2026-11-21T02:45:00.000Z"}}}}
+020 youtube url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@e1aa01d4b6fdbc0c89f465b9ec910764c8d6c6a4/output/020_yt.mp4
+020 youtube 2026-11-21T19:30:00+09:00 OK {"data": {"createPost": {"post": {"id": "6afed14c528b203593ebe638", "dueAt": "2026-11-21T10:30:00.000Z"}}}}
+025 youtube url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@448bcb82ba871c5f907dab9eab856531e809ddec/output/025_yt.mp4
+025 youtube 2026-11-22T12:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6afed14d528b203593ebe6ad", "dueAt": "2026-11-22T03:45:00.000Z"}}}}
+009 youtube url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@25495290d3268b777aa49cf5084be2d0d1de0563/output/009_yt.mp4
+009 youtube 2026-11-22T20:30:00+09:00 OK {"data": {"createPost": {"post": {"id": "6afed14effd0192517a90e73", "dueAt": "2026-11-22T11:30:00.000Z"}}}}
+022 youtube url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@3778ec1e41cedd5e53d0aa12f3a9e8810fdf49ee/output/022_yt.mp4
+022 youtube 2026-11-23T19:30:00+09:00 OK {"data": {"createPost": {"post": {"id": "6afed14f7fbb7ebdc1b4eaa8", "dueAt": "2026-11-23T10:30:00.000Z"}}}}
+010 youtube url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@612cce42cb3434b055dea304b68d15e882b7d46f/output/010_yt.mp4
+010 youtube 2026-11-24T11:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6afed1517c25de751c32b0a1", "dueAt": "2026-11-24T02:45:00.000Z"}}}}

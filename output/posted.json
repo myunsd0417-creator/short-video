@@ -340,41 +340,10 @@
    "id": "019",
    "service": "youtube",
    "dueAt": "2026-11-19T19:30:00+09:00",
-   "ok": true,
+   "ok": false,
    "publish": true,
-   "post_id": "6afc7b13a166de7b3ebd9f28"
-  },
-  {
-   "id": "024",
-   "service": "youtube",
-   "dueAt": "2026-11-20T11:45:00+09:00",
-   "ok": true,
-   "publish": true,
-   "post_id": "6afc7b14afa176f59996e49a"
-  },
-  {
-   "id": "012",
-   "service": "youtube",
-   "dueAt": "2026-11-20T19:30:00+09:00",
-   "ok": true,
-   "publish": true,
-   "post_id": "6afc7b1c104bf3e6248dc54c"
-  },
-  {
-   "id": "020",
-   "service": "youtube",
-   "dueAt": "2026-11-21T11:45:00+09:00",
-   "ok": true,
-   "publish": true,
-   "post_id": "6afc7b1e104bf3e6248dc5f8"
-  },
-  {
-   "id": "025",
-   "service": "youtube",
-   "dueAt": "2026-11-21T19:30:00+09:00",
-   "ok": true,
-   "publish": true,
-   "post_id": "6afc7b20afa176f59996ebb1"
+   "post_id": "6afc7b13a166de7b3ebd9f28",
+   "failed": "Looks like you've hit the limit of 2 posts per 24 hours."
   },
   {
    "id": "009",
@@ -383,14 +352,6 @@
    "ok": true,
    "publish": true,
    "post_id": "6afd165c93fa11d37d01bbbe"
-  },
-  {
-   "id": "009",
-   "service": "youtube",
-   "dueAt": "2026-11-22T11:45:00+09:00",
-   "ok": true,
-   "publish": true,
-   "post_id": "6afd165faa3b065dd96bd86e"
   },
   {
    "id": "022",
@@ -409,20 +370,76 @@
    "post_id": "6afe633df6b6aa0cd4976746"
   },
   {
-   "id": "022",
-   "service": "youtube",
-   "dueAt": "2026-11-22T19:30:00+09:00",
+   "id": "021",
+   "service": "tiktok",
+   "dueAt": "2026-11-23T19:30:00+09:00",
    "ok": true,
    "publish": true,
-   "post_id": "6afe63413802f5b9fc60d1a3"
+   "post_id": "6afed1467c25de751c32aa79"
+  },
+  {
+   "id": "019",
+   "service": "youtube",
+   "dueAt": "2026-11-19T20:30:00+09:00",
+   "ok": true,
+   "publish": true,
+   "post_id": "6afed147528b203593ebe411"
+  },
+  {
+   "id": "024",
+   "service": "youtube",
+   "dueAt": "2026-11-20T12:45:00+09:00",
+   "ok": true,
+   "publish": true,
+   "post_id": "6afed148ffd0192517a90cb8"
+  },
+  {
+   "id": "012",
+   "service": "youtube",
+   "dueAt": "2026-11-21T11:45:00+09:00",
+   "ok": true,
+   "publish": true,
+   "post_id": "6afed1497c25de751c32ab98"
+  },
+  {
+   "id": "020",
+   "service": "youtube",
+   "dueAt": "2026-11-21T19:30:00+09:00",
+   "ok": true,
+   "publish": true,
+   "post_id": "6afed14c528b203593ebe638"
+  },
+  {
+   "id": "025",
+   "service": "youtube",
+   "dueAt": "2026-11-22T12:45:00+09:00",
+   "ok": true,
+   "publish": true,
+   "post_id": "6afed14d528b203593ebe6ad"
+  },
+  {
+   "id": "009",
+   "service": "youtube",
+   "dueAt": "2026-11-22T20:30:00+09:00",
+   "ok": true,
+   "publish": true,
+   "post_id": "6afed14effd0192517a90e73"
+  },
+  {
+   "id": "022",
+   "service": "youtube",
+   "dueAt": "2026-11-23T19:30:00+09:00",
+   "ok": true,
+   "publish": true,
+   "post_id": "6afed14f7fbb7ebdc1b4eaa8"
   },
   {
    "id": "010",
    "service": "youtube",
-   "dueAt": "2026-11-23T11:45:00+09:00",
+   "dueAt": "2026-11-24T11:45:00+09:00",
    "ok": true,
    "publish": true,
-   "post_id": "6afe63453802f5b9fc60d23f"
+   "post_id": "6afed1517c25de751c32b0a1"
   }
  ]
 }
