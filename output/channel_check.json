@@ -1,0 +1,1332 @@
+{
+ "types": {
+  "Channel": {
+   "fields": [
+    {
+     "name": "id",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "SCALAR",
+       "name": "ChannelId",
+       "ofType": null
+      }
+     }
+    },
+    {
+     "name": "allowedActions",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "LIST",
+       "name": null,
+       "ofType": {
+        "kind": "NON_NULL",
+        "name": null
+       }
+      }
+     }
+    },
+    {
+     "name": "avatar",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "SCALAR",
+       "name": "String",
+       "ofType": null
+      }
+     }
+    },
+    {
+     "name": "descriptor",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "SCALAR",
+       "name": "String",
+       "ofType": null
+      }
+     }
+    },
+    {
+     "name": "displayName",
+     "type": {
+      "kind": "SCALAR",
+      "name": "String",
+      "ofType": null
+     }
+    },
+    {
+     "name": "externalLink",
+     "type": {
+      "kind": "SCALAR",
+      "name": "String",
+      "ofType": null
+     }
+    },
+    {
+     "name": "hasActiveMemberDevice",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "SCALAR",
+       "name": "Boolean",
+       "ofType": null
+      }
+     }
+    },
+    {
+     "name": "isDisconnected",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "SCALAR",
+       "name": "Boolean",
+       "ofType": null
+      }
+     }
+    },
+    {
+     "name": "isLocked",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "SCALAR",
+       "name": "Boolean",
+       "ofType": null
+      }
+     }
+    },
+    {
+     "name": "isNew",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "SCALAR",
+       "name": "Boolean",
+       "ofType": null
+      }
+     }
+    },
+    {
+     "name": "isQueuePaused",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "SCALAR",
+       "name": "Boolean",
+       "ofType": null
+      }
+     }
+    },
+    {
+     "name": "linkShortening",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "OBJECT",
+       "name": "ChannelLinkShortening",
+       "ofType": null
+      }
+     }
+    },
+    {
+     "name": "metadata",
+     "type": {
+      "kind": "UNION",
+      "name": "ChannelMetadata",
+      "ofType": null
+     }
+    },
+    {
+     "name": "name",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "SCALAR",
+       "name": "String",
+       "ofType": null
+      }
+     }
+    },
+    {
+     "name": "organizationId",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "SCALAR",
+       "name": "OrganizationId",
+       "ofType": null
+      }
+     }
+    },
+    {
+     "name": "postingGoal",
+     "type": {
+      "kind": "OBJECT",
+      "name": "PostingGoal",
+      "ofType": null
+     }
+    },
+    {
+     "name": "postingSchedule",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "LIST",
+       "name": null,
+       "ofType": {
+        "kind": "NON_NULL",
+        "name": null
+       }
+      }
+     }
+    },
+    {
+     "name": "products",
+     "type": {
+      "kind": "LIST",
+      "name": null,
+      "ofType": {
+       "kind": "NON_NULL",
+       "name": null,
+       "ofType": {
+        "kind": "ENUM",
+        "name": "Product"
+       }
+      }
+     }
+    },
+    {
+     "name": "scopes",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "LIST",
+       "name": null,
+       "ofType": {
+        "kind": "SCALAR",
+        "name": "String"
+       }
+      }
+     }
+    },
+    {
+     "name": "service",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "ENUM",
+       "name": "Service",
+       "ofType": null
+      }
+     }
+    },
+    {
+     "name": "serviceId",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "SCALAR",
+       "name": "String",
+       "ofType": null
+      }
+     }
+    },
+    {
+     "name": "showTrendingTopicSuggestions",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "SCALAR",
+       "name": "Boolean",
+       "ofType": null
+      }
+     }
+    },
+    {
+     "name": "timezone",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "SCALAR",
+       "name": "String",
+       "ofType": null
+      }
+     }
+    },
+    {
+     "name": "type",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "ENUM",
+       "name": "ChannelType",
+       "ofType": null
+      }
+     }
+    },
+    {
+     "name": "createdAt",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "SCALAR",
+       "name": "DateTime",
+       "ofType": null
+      }
+     }
+    },
+    {
+     "name": "updatedAt",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "SCALAR",
+       "name": "DateTime",
+       "ofType": null
+      }
+     }
+    }
+   ],
+   "enumValues": null
+  },
+  "Post": {
+   "fields": [
+    {
+     "name": "id",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "SCALAR",
+       "name": "PostId",
+       "ofType": null
+      }
+     }
+    },
+    {
+     "name": "allowedActions",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "LIST",
+       "name": null,
+       "ofType": {
+        "kind": "NON_NULL",
+        "name": null
+       }
+      }
+     }
+    },
+    {
+     "name": "assets",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "LIST",
+       "name": null,
+       "ofType": {
+        "kind": "NON_NULL",
+        "name": null
+       }
+      }
+     }
+    },
+    {
+     "name": "author",
+     "type": {
+      "kind": "OBJECT",
+      "name": "Author",
+      "ofType": null
+     }
+    },
+    {
+     "name": "channel",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "OBJECT",
+       "name": "Channel",
+       "ofType": null
+      }
+     }
+    },
+    {
+     "name": "channelId",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "SCALAR",
+       "name": "ChannelId",
+       "ofType": null
+      }
+     }
+    },
+    {
+     "name": "channelService",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "ENUM",
+       "name": "Service",
+       "ofType": null
+      }
+     }
+    },
+    {
+     "name": "contentItemId",
+     "type": {
+      "kind": "SCALAR",
+      "name": "ContentItemId",
+      "ofType": null
+     }
+    },
+    {
+     "name": "dueAt",
+     "type": {
+      "kind": "SCALAR",
+      "name": "DateTime",
+      "ofType": null
+     }
+    },
+    {
+     "name": "error",
+     "type": {
+      "kind": "OBJECT",
+      "name": "PostPublishingError",
+      "ofType": null
+     }
+    },
+    {
+     "name": "externalLink",
+     "type": {
+      "kind": "SCALAR",
+      "name": "String",
+      "ofType": null
+     }
+    },
+    {
+     "name": "ideaId",
+     "type": {
+      "kind": "SCALAR",
+      "name": "IdeaId",
+      "ofType": null
+     }
+    },
+    {
+     "name": "isCustomScheduled",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "SCALAR",
+       "name": "Boolean",
+       "ofType": null
+      }
+     }
+    },
+    {
+     "name": "metadata",
+     "type": {
+      "kind": "UNION",
+      "name": "PostMetadata",
+      "ofType": null
+     }
+    },
+    {
+     "name": "metrics",
+     "type": {
+      "kind": "LIST",
+      "name": null,
+      "ofType": {
+       "kind": "NON_NULL",
+       "name": null,
+       "ofType": {
+        "kind": "OBJECT",
+        "name": "PostMetric"
+       }
+      }
+     }
+    },
+    {
+     "name": "metricsUpdatedAt",
+     "type": {
+      "kind": "SCALAR",
+      "name": "DateTime",
+      "ofType": null
+     }
+    },
+    {
+     "name": "notificationStatus",
+     "type": {
+      "kind": "ENUM",
+      "name": "NotificationStatus",
+      "ofType": null
+     }
+    },
+    {
+     "name": "schedulingType",
+     "type": {
+      "kind": "ENUM",
+      "name": "SchedulingType",
+      "ofType": null
+     }
+    },
+    {
+     "name": "sentAt",
+     "type": {
+      "kind": "SCALAR",
+      "name": "DateTime",
+      "ofType": null
+     }
+    },
+    {
+     "name": "sharedNow",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "SCALAR",
+       "name": "Boolean",
+       "ofType": null
+      }
+     }
+    },
+    {
+     "name": "shareMode",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "ENUM",
+       "name": "ShareMode",
+       "ofType": null
+      }
+     }
+    },
+    {
+     "name": "status",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "ENUM",
+       "name": "PostStatus",
+       "ofType": null
+      }
+     }
+    },
+    {
+     "name": "tags",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "LIST",
+       "name": null,
+       "ofType": {
+        "kind": "NON_NULL",
+        "name": null
+       }
+      }
+     }
+    },
+    {
+     "name": "text",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "SCALAR",
+       "name": "String",
+       "ofType": null
+      }
+     }
+    },
+    {
+     "name": "via",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "ENUM",
+       "name": "PostVia",
+       "ofType": null
+      }
+     }
+    },
+    {
+     "name": "createdAt",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "SCALAR",
+       "name": "DateTime",
+       "ofType": null
+      }
+     }
+    },
+    {
+     "name": "updatedAt",
+     "type": {
+      "kind": "NON_NULL",
+      "name": null,
+      "ofType": {
+       "kind": "SCALAR",
+       "name": "DateTime",
+       "ofType": null
+      }
+     }
+    }
+   ],
+   "enumValues": null
+  },
+  "PostStatus": {
+   "fields": null,
+   "enumValues": [
+    {
+     "name": "draft"
+    },
+    {
+     "name": "error"
+    },
+    {
+     "name": "needs_approval"
+    },
+    {
+     "name": "scheduled"
+    },
+    {
+     "name": "sending"
+    },
+    {
+     "name": "sent"
+    }
+   ]
+  },
+  "PostError": {},
+  "PostNotice": {}
+ },
+ "channels": {
+  "data": {
+   "channels": [
+    {
+     "id": "6af3e49562b70b94b0ee8b6f",
+     "avatar": "https://yt3.ggpht.com/f5kG_BSUHxg_zt0qJzl6opzgi92eUSE943TNnuH2HkdyPr-epYedtGpACsvGhm72_eln2nQ9c3s=s88-c-k-c0x00ffffff-no-rj",
+     "descriptor": "YouTube Channel",
+     "displayName": "みん",
+     "externalLink": "https://www.youtube.com/channel/UC6_qo-Vo0Qvbgu3CYd48e6A",
+     "hasActiveMemberDevice": true,
+     "isDisconnected": false,
+     "isLocked": false,
+     "isNew": false,
+     "isQueuePaused": false,
+     "name": "みん",
+     "organizationId": "6715160d6ebd9c191c9ccab2",
+     "products": [
+      "publish"
+     ],
+     "scopes": [
+      "https://www.googleapis.com/auth/youtube",
+      "https://www.googleapis.com/auth/youtube.force-ssl",
+      "https://www.googleapis.com/auth/youtube.upload",
+      "https://www.googleapis.com/auth/yt-analytics.readonly"
+     ],
+     "service": "youtube",
+     "serviceId": "UC6_qo-Vo0Qvbgu3CYd48e6A",
+     "showTrendingTopicSuggestions": true,
+     "timezone": "Europe/London",
+     "type": "channel",
+     "createdAt": "2026-11-11T03:44:21.161Z",
+     "updatedAt": "2026-11-11T03:44:21.160Z"
+    },
+    {
+     "id": "6af3b90962b70b94b0ecb696",
+     "avatar": "https://buffer-channel-avatars-bucket.s3.amazonaws.com/6af3b90962b70b94b0ecb696_1794357513856",
+     "descriptor": "TikTok Account",
+     "displayName": "minmi_581",
+     "externalLink": "https://tiktok.com/@minmi_581",
+     "hasActiveMemberDevice": true,
+     "isDisconnected": false,
+     "isLocked": false,
+     "isNew": false,
+     "isQueuePaused": false,
+     "name": "minmi_581",
+     "organizationId": "6715160d6ebd9c191c9ccab2",
+     "products": [
+      "publish"
+     ],
+     "scopes": [
+      "user.info.basic",
+      "comment.list",
+      "comment.list.manage",
+      "user.info.stats",
+      "video.publish",
+      "user.info.username",
+      "user.insights",
+      "video.insights",
+      "video.list"
+     ],
+     "service": "tiktok",
+     "serviceId": "_000AbT0wySmk4VMhmxmu9jzPDicTeCjemHp",
+     "showTrendingTopicSuggestions": true,
+     "timezone": "Europe/London",
+     "type": "account",
+     "createdAt": "2026-11-11T00:38:33.611Z",
+     "updatedAt": "2026-11-11T00:38:33.610Z"
+    },
+    {
+     "id": "6af02b6162b70b94b0bb3dab",
+     "avatar": "https://buffer-channel-avatars-bucket.s3.amazonaws.com/6af02b6162b70b94b0bb3dab_1794124641737",
+     "descriptor": "Threads Profile",
+     "displayName": "miiiint555",
+     "externalLink": "https://www.threads.net/@miiiint555",
+     "hasActiveMemberDevice": true,
+     "isDisconnected": false,
+     "isLocked": false,
+     "isNew": false,
+     "isQueuePaused": false,
+     "name": "miiiint555",
+     "organizationId": "6715160d6ebd9c191c9ccab2",
+     "products": [
+      "publish"
+     ],
+     "scopes": [
+      "threads_basic",
+      "threads_content_publish",
+      "threads_manage_insights",
+      "threads_manage_replies",
+      "threads_read_replies",
+      "threads_delete",
+      "threads_location_tagging",
+      "threads_keyword_search"
+     ],
+     "service": "threads",
+     "serviceId": "28943076552019796",
+     "showTrendingTopicSuggestions": true,
+     "timezone": "Asia/Tokyo",
+     "type": "profile",
+     "createdAt": "2026-11-08T07:57:21.632Z",
+     "updatedAt": "2026-11-08T07:57:21.631Z"
+    }
+   ]
+  }
+ },
+ "statuses": [
+  "draft",
+  "error",
+  "needs_approval",
+  "scheduled",
+  "sending",
+  "sent"
+ ],
+ "youtube_posts_by_status": {
+  "draft": {
+   "data": {
+    "posts": {
+     "edges": [
+      {
+       "node": {
+        "id": "6af5955f49bcfed3aa76e27a",
+        "channelId": "6af3e49562b70b94b0ee8b6f",
+        "channelService": "youtube",
+        "contentItemId": null,
+        "dueAt": "2026-11-12T11:15:00.000Z",
+        "externalLink": null,
+        "ideaId": null,
+        "isCustomScheduled": true,
+        "metricsUpdatedAt": "2026-11-12T10:30:55.422Z",
+        "notificationStatus": null,
+        "schedulingType": "automatic",
+        "sentAt": null,
+        "sharedNow": false,
+        "shareMode": "customScheduled",
+        "status": "draft",
+        "text": "一人暮らしの洗い物、これで半分になった🍳\n保存して、あとで見返してね\n#一人暮らし #キッチングッズ #時短家事 #洗い物 #便利グッズ\n\n写真: Wikimedia Commons INRA DIST（CC BY 2.0）、Sheila Sund from Salem, United States（CC BY 2.0）、Shixart1985（CC BY 2.0）",
+        "via": "buffer",
+        "createdAt": "2026-11-12T10:30:55.414Z",
+        "updatedAt": "2026-11-12T10:30:55.436Z",
+        "error": null
+       }
+      }
+     ]
+    }
+   }
+  },
+  "error": {
+   "data": {
+    "posts": {
+     "edges": [
+      {
+       "node": {
+        "id": "6afc7b13a166de7b3ebd9f28",
+        "channelId": "6af3e49562b70b94b0ee8b6f",
+        "channelService": "youtube",
+        "contentItemId": null,
+        "dueAt": "2026-11-19T10:30:00.000Z",
+        "externalLink": null,
+        "ideaId": null,
+        "isCustomScheduled": true,
+        "metricsUpdatedAt": "2026-11-17T16:04:35.787Z",
+        "notificationStatus": null,
+        "schedulingType": "automatic",
+        "sentAt": null,
+        "sharedNow": false,
+        "shareMode": "customScheduled",
+        "status": "error",
+        "text": "【めんどくさがり一人暮らしの台所】\n年末の買いだめ前に、冷蔵庫のめやすをチェック🧊\n参考：厚生労働省「家庭でできる食中毒予防の6つのポイント」\n保存して、あとで見返してね\n#一人暮らし #冷蔵庫 #保存方法 #知らないと損 #年末\n#shorts",
+        "via": "buffer",
+        "createdAt": "2026-11-17T16:04:35.771Z",
+        "updatedAt": "2026-11-17T16:04:35.799Z",
+        "error": {
+         "message": "The daily posting limit for this channel has been reached! Please try reducing the amount of times per day in your schedule and try again later.",
+         "rawError": "Looks like you've hit the limit of 2 posts per 24 hours.",
+         "supportUrl": "https://support.buffer.com/articles/daily-posting-limits-kJ0JtpsdvD?utm_source=buffer&utm_medium=error-message-link&utm_campaign=error-message"
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  "needs_approval": {
+   "data": {
+    "posts": {
+     "edges": []
+    }
+   }
+  },
+  "scheduled": {
+   "data": {
+    "posts": {
+     "edges": [
+      {
+       "node": {
+        "id": "6afe63453802f5b9fc60d23f",
+        "channelId": "6af3e49562b70b94b0ee8b6f",
+        "channelService": "youtube",
+        "contentItemId": null,
+        "dueAt": "2026-11-23T02:45:00.000Z",
+        "externalLink": null,
+        "ideaId": null,
+        "isCustomScheduled": true,
+        "metricsUpdatedAt": "2026-11-19T02:47:33.468Z",
+        "notificationStatus": null,
+        "schedulingType": "automatic",
+        "sentAt": null,
+        "sharedNow": false,
+        "shareMode": "customScheduled",
+        "status": "scheduled",
+        "text": "【めんどくさがり一人暮らしの台所】\n掃除を後回しにしがちな人へ🧽\n保存して、あとで見返してね\n#一人暮らし #キッチングッズ #時短家事 #便利グッズ #自炊\n#shorts",
+        "via": "buffer",
+        "createdAt": "2026-11-19T02:47:33.456Z",
+        "updatedAt": "2026-11-19T02:47:33.476Z",
+        "error": null
+       }
+      },
+      {
+       "node": {
+        "id": "6afe63413802f5b9fc60d1a3",
+        "channelId": "6af3e49562b70b94b0ee8b6f",
+        "channelService": "youtube",
+        "contentItemId": null,
+        "dueAt": "2026-11-22T10:30:00.000Z",
+        "externalLink": null,
+        "ideaId": null,
+        "isCustomScheduled": true,
+        "metricsUpdatedAt": "2026-11-19T02:47:29.707Z",
+        "notificationStatus": null,
+        "schedulingType": "automatic",
+        "sentAt": null,
+        "sharedNow": false,
+        "shareMode": "customScheduled",
+        "status": "scheduled",
+        "text": "【めんどくさがり一人暮らしの台所】\n冬の鍋の準備に、まな板とスポンジのルール🔪\n参考：厚生労働省「家庭でできる食中毒予防の6つのポイント」\n保存して、あとで見返してね\n#一人暮らし #自炊 #キッチン #知らないと損 #衛生\n#shorts",
+        "via": "buffer",
+        "createdAt": "2026-11-19T02:47:29.692Z",
+        "updatedAt": "2026-11-19T02:47:29.716Z",
+        "error": null
+       }
+      },
+      {
+       "node": {
+        "id": "6afd165faa3b065dd96bd86e",
+        "channelId": "6af3e49562b70b94b0ee8b6f",
+        "channelService": "youtube",
+        "contentItemId": null,
+        "dueAt": "2026-11-22T02:45:00.000Z",
+        "externalLink": null,
+        "ideaId": null,
+        "isCustomScheduled": true,
+        "metricsUpdatedAt": "2026-11-18T03:07:11.898Z",
+        "notificationStatus": null,
+        "schedulingType": "automatic",
+        "sentAt": null,
+        "sharedNow": false,
+        "shareMode": "customScheduled",
+        "status": "scheduled",
+        "text": "【めんどくさがり一人暮らしの台所】\n食器を変えたら洗い物がラクになった🍽\n保存して、あとで見返してね\n#一人暮らし #キッチングッズ #時短家事 #便利グッズ #自炊\n#shorts",
+        "via": "buffer",
+        "createdAt": "2026-11-18T03:07:11.857Z",
+        "updatedAt": "2026-11-18T03:07:11.917Z",
+        "error": null
+       }
+      },
+      {
+       "node": {
+        "id": "6afc7b20afa176f59996ebb1",
+        "channelId": "6af3e49562b70b94b0ee8b6f",
+        "channelService": "youtube",
+        "contentItemId": null,
+        "dueAt": "2026-11-21T10:30:00.000Z",
+        "externalLink": null,
+        "ideaId": null,
+        "isCustomScheduled": true,
+        "metricsUpdatedAt": "2026-11-17T16:04:48.988Z",
+        "notificationStatus": null,
+        "schedulingType": "automatic",
+        "sentAt": null,
+        "sharedNow": false,
+        "shareMode": "customScheduled",
+        "status": "scheduled",
+        "text": "【めんどくさがり一人暮らしの台所】\n洗い物、今日はゼロにしたい日の過ごし方🍳\n保存して、あとで見返してね\n#一人暮らし #洗い物 #ズボラ #時短家事 #自炊\n#shorts",
+        "via": "buffer",
+        "createdAt": "2026-11-17T16:04:48.904Z",
+        "updatedAt": "2026-11-17T16:04:49.000Z",
+        "error": null
+       }
+      },
+      {
+       "node": {
+        "id": "6afc7b1e104bf3e6248dc5f8",
+        "channelId": "6af3e49562b70b94b0ee8b6f",
+        "channelService": "youtube",
+        "contentItemId": null,
+        "dueAt": "2026-11-21T02:45:00.000Z",
+        "externalLink": null,
+        "ideaId": null,
+        "isCustomScheduled": true,
+        "metricsUpdatedAt": "2026-11-17T16:04:46.099Z",
+        "notificationStatus": null,
+        "schedulingType": "automatic",
+        "sentAt": null,
+        "sharedNow": false,
+        "shareMode": "customScheduled",
+        "status": "scheduled",
+        "text": "【めんどくさがり一人暮らしの台所】\n卵の賞味期限は「生で食べられる期限」🥚\n参考：農林水産省「aff」2021年3月号／鶏卵公正取引協議会／クレムソン大学（米国）\n保存して、あとで見返してね\n#一人暮らし #自炊 #保存方法 #知らないと損 #卵\n#shorts",
+        "via": "buffer",
+        "createdAt": "2026-11-17T16:04:45.982Z",
+        "updatedAt": "2026-11-17T16:04:46.111Z",
+        "error": null
+       }
+      },
+      {
+       "node": {
+        "id": "6afc7b1c104bf3e6248dc54c",
+        "channelId": "6af3e49562b70b94b0ee8b6f",
+        "channelService": "youtube",
+        "contentItemId": null,
+        "dueAt": "2026-11-20T10:30:00.000Z",
+        "externalLink": null,
+        "ideaId": null,
+        "isCustomScheduled": true,
+        "metricsUpdatedAt": "2026-11-17T16:04:44.606Z",
+        "notificationStatus": null,
+        "schedulingType": "automatic",
+        "sentAt": null,
+        "sharedNow": false,
+        "shareMode": "customScheduled",
+        "status": "scheduled",
+        "text": "【めんどくさがり一人暮らしの台所】\n冬のお昼を温かく🍱\n保存して、あとで見返してね\n#一人暮らし #キッチングッズ #時短家事 #自炊 #冬\n#shorts",
+        "via": "buffer",
+        "createdAt": "2026-11-17T16:04:44.576Z",
+        "updatedAt": "2026-11-17T16:04:44.621Z",
+        "error": null
+       }
+      },
+      {
+       "node": {
+        "id": "6afc7b14afa176f59996e49a",
+        "channelId": "6af3e49562b70b94b0ee8b6f",
+        "channelService": "youtube",
+        "contentItemId": null,
+        "dueAt": "2026-11-20T02:45:00.000Z",
+        "externalLink": null,
+        "ideaId": null,
+        "isCustomScheduled": true,
+        "metricsUpdatedAt": "2026-11-17T16:04:36.422Z",
+        "notificationStatus": null,
+        "schedulingType": "automatic",
+        "sentAt": null,
+        "sharedNow": false,
+        "shareMode": "customScheduled",
+        "status": "scheduled",
+        "text": "【めんどくさがり一人暮らしの台所】\n洗い物がめんどくさい人ほど、洗う前が大事🧽\n保存して、あとで見返してね\n#一人暮らし #洗い物 #ズボラ #時短家事 #自炊\n#shorts",
+        "via": "buffer",
+        "createdAt": "2026-11-17T16:04:36.340Z",
+        "updatedAt": "2026-11-17T16:04:36.436Z",
+        "error": null
+       }
+      }
+     ]
+    }
+   }
+  },
+  "sending": {
+   "data": {
+    "posts": {
+     "edges": []
+    }
+   }
+  },
+  "sent": {
+   "data": {
+    "posts": {
+     "edges": [
+      {
+       "node": {
+        "id": "6afc7b0fa166de7b3ebd9e08",
+        "channelId": "6af3e49562b70b94b0ee8b6f",
+        "channelService": "youtube",
+        "contentItemId": null,
+        "dueAt": "2026-11-19T03:12:45.055Z",
+        "externalLink": "https://www.youtube.com/shorts/Er5Hgaz_MeE",
+        "ideaId": null,
+        "isCustomScheduled": true,
+        "metricsUpdatedAt": "2026-11-19T03:15:12.929Z",
+        "notificationStatus": null,
+        "schedulingType": "automatic",
+        "sentAt": "2026-11-19T03:12:46.661Z",
+        "sharedNow": true,
+        "shareMode": "customScheduled",
+        "status": "sent",
+        "text": "【めんどくさがり一人暮らしの台所】\n朝ごはん抜きの人ほど見てほしい🍞\n保存して、あとで見返してね\n#一人暮らし #キッチングッズ #時短家事 #便利グッズ #自炊\n#shorts",
+        "via": "buffer",
+        "createdAt": "2026-11-17T16:04:31.931Z",
+        "updatedAt": "2026-11-19T03:15:12.929Z",
+        "error": null
+       }
+      },
+      {
+       "node": {
+        "id": "6afc7b0ea166de7b3ebd9dc8",
+        "channelId": "6af3e49562b70b94b0ee8b6f",
+        "channelService": "youtube",
+        "contentItemId": null,
+        "dueAt": "2026-11-18T10:30:00.000Z",
+        "externalLink": "https://www.youtube.com/shorts/ioVpj6u2uTc",
+        "ideaId": null,
+        "isCustomScheduled": true,
+        "metricsUpdatedAt": "2026-11-19T00:33:20.553Z",
+        "notificationStatus": null,
+        "schedulingType": "automatic",
+        "sentAt": "2026-11-18T10:30:34.333Z",
+        "sharedNow": false,
+        "shareMode": "customScheduled",
+        "status": "sent",
+        "text": "【めんどくさがり一人暮らしの台所】\n洗い物がめんどくさすぎて、やめたこと3つ🫠\n道具を減らすと洗い物も減る\n保存して、あとで見返してね\n#一人暮らし #洗い物 #ズボラ #時短家事 #自炊\n#shorts",
+        "via": "buffer",
+        "createdAt": "2026-11-17T16:04:30.647Z",
+        "updatedAt": "2026-11-19T00:33:20.553Z",
+        "error": null
+       }
+      },
+      {
+       "node": {
+        "id": "6afc7aacf78506c8dd335d20",
+        "channelId": "6af3e49562b70b94b0ee8b6f",
+        "channelService": "youtube",
+        "contentItemId": null,
+        "dueAt": "2026-11-18T02:45:00.000Z",
+        "externalLink": "https://www.youtube.com/shorts/rNFxHjRm7JE",
+        "ideaId": null,
+        "isCustomScheduled": true,
+        "metricsUpdatedAt": "2026-11-19T00:33:20.553Z",
+        "notificationStatus": null,
+        "schedulingType": "automatic",
+        "sentAt": "2026-11-18T02:45:08.240Z",
+        "sharedNow": false,
+        "shareMode": "customScheduled",
+        "status": "sent",
+        "text": "【めんどくさがり一人暮らしの台所】\n買う前に見てほしい…🙅\n保存して、あとで見返してね\n#一人暮らし #キッチングッズ #時短家事 #自炊 #冬\n#shorts",
+        "via": "buffer",
+        "createdAt": "2026-11-17T16:02:52.567Z",
+        "updatedAt": "2026-11-19T00:33:20.553Z",
+        "error": null
+       }
+      },
+      {
+       "node": {
+        "id": "6afafbe615603179b139fd6a",
+        "channelId": "6af3e49562b70b94b0ee8b6f",
+        "channelService": "youtube",
+        "contentItemId": null,
+        "dueAt": "2026-11-17T10:30:00.000Z",
+        "externalLink": "https://www.youtube.com/shorts/zT-6KKLPBuw",
+        "ideaId": null,
+        "isCustomScheduled": true,
+        "metricsUpdatedAt": "2026-11-19T00:33:20.553Z",
+        "notificationStatus": null,
+        "schedulingType": "automatic",
+        "sentAt": "2026-11-17T10:30:46.633Z",
+        "sharedNow": false,
+        "shareMode": "customScheduled",
+        "status": "sent",
+        "text": "カビが出た時、捨てる？削る？🧀\n参考：米国農務省（USDA）の目安（コネチカット大学の解説）\n保存して、あとで見返してね\n#一人暮らし #自炊 #保存方法 #知らないと損 #キッチン\n#shorts",
+        "via": "buffer",
+        "createdAt": "2026-11-16T12:49:42.693Z",
+        "updatedAt": "2026-11-19T00:33:20.553Z",
+        "error": null
+       }
+      },
+      {
+       "node": {
+        "id": "6afafbe4ff033fc79b9733b3",
+        "channelId": "6af3e49562b70b94b0ee8b6f",
+        "channelService": "youtube",
+        "contentItemId": null,
+        "dueAt": "2026-11-17T02:45:00.000Z",
+        "externalLink": "https://www.youtube.com/shorts/BX3P6_WrulM",
+        "ideaId": null,
+        "isCustomScheduled": true,
+        "metricsUpdatedAt": "2026-11-19T00:33:20.553Z",
+        "notificationStatus": null,
+        "schedulingType": "automatic",
+        "sentAt": "2026-11-17T02:45:12.392Z",
+        "sharedNow": false,
+        "shareMode": "customScheduled",
+        "status": "sent",
+        "text": "寒い日は一人鍋でいい🍲\n保存して、あとで見返してね\n#一人暮らし #キッチングッズ #時短家事 #自炊 #冬\n#shorts",
+        "via": "buffer",
+        "createdAt": "2026-11-16T12:49:40.286Z",
+        "updatedAt": "2026-11-19T00:33:20.553Z",
+        "error": null
+       }
+      },
+      {
+       "node": {
+        "id": "6af9a89a76c23bf1c77ce1ce",
+        "channelId": "6af3e49562b70b94b0ee8b6f",
+        "channelService": "youtube",
+        "contentItemId": null,
+        "dueAt": "2026-11-16T10:30:00.000Z",
+        "externalLink": "https://www.youtube.com/shorts/7wQtg1vI2Q4",
+        "ideaId": null,
+        "isCustomScheduled": true,
+        "metricsUpdatedAt": "2026-11-19T00:33:20.553Z",
+        "notificationStatus": null,
+        "schedulingType": "automatic",
+        "sentAt": "2026-11-16T10:30:42.780Z",
+        "sharedNow": false,
+        "shareMode": "customScheduled",
+        "status": "sent",
+        "text": "冷凍・解凍、意外と知られていない事実❄️\n参考：米国農務省（USDA）「Focus on Freezing」\n保存して、あとで見返してね\n#一人暮らし #自炊 #保存方法 #知らないと損 #キッチン\n\n写真: Wikimedia Commons Carlos Pacheco from Toronto, Canada（CC BY 2.0）、Shixart1985（CC BY 2.0）\nVOICEVOX:春日部つむぎ\n#shorts",
+        "via": "buffer",
+        "createdAt": "2026-11-15T12:42:02.418Z",
+        "updatedAt": "2026-11-19T00:33:20.553Z",
+        "error": null
+       }
+      },
+      {
+       "node": {
+        "id": "6af9a898e86a5789a60dcf1e",
+        "channelId": "6af3e49562b70b94b0ee8b6f",
+        "channelService": "youtube",
+        "contentItemId": null,
+        "dueAt": "2026-11-16T02:45:00.000Z",
+        "externalLink": "https://www.youtube.com/shorts/AWj--gWGfRg",
+        "ideaId": null,
+        "isCustomScheduled": true,
+        "metricsUpdatedAt": "2026-11-19T00:33:20.553Z",
+        "notificationStatus": null,
+        "schedulingType": "automatic",
+        "sentAt": "2026-11-16T02:45:15.871Z",
+        "sharedNow": false,
+        "shareMode": "customScheduled",
+        "status": "sent",
+        "text": "アメリカでは常識の「残りもの2時間ルール」🍲\n参考：米国農務省（USDA）の食品安全の目安\n保存して、あとで見返してね\n#一人暮らし #自炊 #保存方法 #知らないと損 #キッチン\n\n写真: Wikimedia Commons R. Henrik Nilsson（CC BY 4.0）、Bart Everson（CC BY 2.0）\nVOICEVOX:春日部つむぎ\n#shorts",
+        "via": "buffer",
+        "createdAt": "2026-11-15T12:42:00.140Z",
+        "updatedAt": "2026-11-19T00:33:20.553Z",
+        "error": null
+       }
+      },
+      {
+       "node": {
+        "id": "6af964e776c23bf1c766cc85",
+        "channelId": "6af3e49562b70b94b0ee8b6f",
+        "channelService": "youtube",
+        "contentItemId": null,
+        "dueAt": "2026-11-15T10:30:00.000Z",
+        "externalLink": "https://www.youtube.com/shorts/KQVHWLOdZQ8",
+        "ideaId": null,
+        "isCustomScheduled": true,
+        "metricsUpdatedAt": "2026-11-19T00:33:20.553Z",
+        "notificationStatus": null,
+        "schedulingType": "automatic",
+        "sentAt": "2026-11-15T10:30:18.604Z",
+        "sharedNow": false,
+        "shareMode": "customScheduled",
+        "status": "sent",
+        "text": "三日坊主だった自炊が続くようになった\n保存して、あとで見返してね\n#一人暮らし #キッチングッズ #時短家事 #便利グッズ #自炊\n\n写真: Wikimedia Commons James St. John（CC BY 2.0）\nVOICEVOX:春日部つむぎ\n#shorts",
+        "via": "buffer",
+        "createdAt": "2026-11-15T07:53:11.596Z",
+        "updatedAt": "2026-11-19T00:33:20.553Z",
+        "error": null
+       }
+      },
+      {
+       "node": {
+        "id": "6af85f80e86a5789a6ab47c6",
+        "channelId": "6af3e49562b70b94b0ee8b6f",
+        "channelService": "youtube",
+        "contentItemId": null,
+        "dueAt": "2026-11-15T02:45:00.000Z",
+        "externalLink": "https://www.youtube.com/shorts/oiDdGBWwRSo",
+        "ideaId": null,
+        "isCustomScheduled": true,
+        "metricsUpdatedAt": "2026-11-19T00:33:20.553Z",
+        "notificationStatus": null,
+        "schedulingType": "automatic",
+        "sentAt": "2026-11-15T02:45:08.631Z",
+        "sharedNow": false,
+        "shareMode": "customScheduled",
+        "status": "sent",
+        "text": "海外では常識なのに、日本ではあまり聞かない台所のルール🍅\n参考：米国農務省（USDA）2019年の調査／米国科学アカデミー紀要（2016年）のトマト研究\n保存して、あとで見返してね\n#一人暮らし #自炊 #キッチン #保存方法 #知らないと損\n\n写真: Wikimedia Commons George Chernilevsky（CC BY 4.0）、Mark Bonica（CC BY 2.0）、Fouzia's Catering Services（CC BY 4.0）\nVOICEVOX:春日部つむぎ\n#shorts",
+        "via": "buffer",
+        "createdAt": "2026-11-14T13:17:52.503Z",
+        "updatedAt": "2026-11-19T00:33:20.553Z",
+        "error": null
+       }
+      },
+      {
+       "node": {
+        "id": "6af802d878196a0a97469197",
+        "channelId": "6af3e49562b70b94b0ee8b6f",
+        "channelService": "youtube",
+        "contentItemId": null,
+        "dueAt": "2026-11-14T10:30:00.000Z",
+        "externalLink": "https://www.youtube.com/shorts/zteLBv2_Now",
+        "ideaId": null,
+        "isCustomScheduled": true,
+        "metricsUpdatedAt": "2026-11-19T00:33:20.553Z",
+        "notificationStatus": null,
+        "schedulingType": "automatic",
+        "sentAt": "2026-11-14T10:30:15.155Z",
+        "sharedNow": false,
+        "shareMode": "customScheduled",
+        "status": "sent",
+        "text": "ワンルームのキッチン、これで広くなった✨\n保存して、あとで見返してね\n#一人暮らし #キッチングッズ #時短家事 #便利グッズ #自炊\n\n写真: Wikimedia Commons Douglas Paul Perkins（CC BY 3.0）、Shixart1985（CC BY 2.0）、Candeadly（CC BY 4.0）、Shixart1985（CC BY 2.0）\nVOICEVOX:春日部つむぎ\n#shorts",
+        "via": "buffer",
+        "createdAt": "2026-11-14T06:42:32.421Z",
+        "updatedAt": "2026-11-19T00:33:20.553Z",
+        "error": null
+       }
+      },
+      {
+       "node": {
+        "id": "6af5acdec5cde44885552e2d",
+        "channelId": "6af3e49562b70b94b0ee8b6f",
+        "channelService": "youtube",
+        "contentItemId": null,
+        "dueAt": "2026-11-14T03:15:00.000Z",
+        "externalLink": "https://www.youtube.com/shorts/s1-G_Yy3CHU",
+        "ideaId": null,
+        "isCustomScheduled": true,
+        "metricsUpdatedAt": "2026-11-19T00:33:20.553Z",
+        "notificationStatus": null,
+        "schedulingType": "automatic",
+        "sentAt": "2026-11-14T03:15:10.497Z",
+        "sharedNow": false,
+        "shareMode": "customScheduled",
+        "status": "sent",
+        "text": "包丁とまな板、ほぼ出さなくなった🔪\n保存して、あとで見返してね\n#一人暮らし #キッチングッズ #時短家事 #便利グッズ #自炊\n\n写真: Wikimedia Commons HungryHuy（CC BY 2.0）、Maxis ftw (talk)（CC BY 3.0）",
+        "via": "buffer",
+        "createdAt": "2026-11-12T12:11:10.116Z",
+        "updatedAt": "2026-11-19T00:33:20.553Z",
+        "error": null
+       }
+      },
+      {
+       "node": {
+        "id": "6af5acdd479471c09c7c4e94",
+        "channelId": "6af3e49562b70b94b0ee8b6f",
+        "channelService": "youtube",
+        "contentItemId": null,
+        "dueAt": "2026-11-13T11:15:00.000Z",
+        "externalLink": "https://www.youtube.com/shorts/RYPjqamwc_U",
+        "ideaId": null,
+        "isCustomScheduled": true,
+        "metricsUpdatedAt": "2026-11-19T00:33:20.553Z",
+        "notificationStatus": null,
+        "schedulingType": "automatic",
+        "sentAt": "2026-11-13T11:15:19.744Z",
+        "sharedNow": false,
+        "shareMode": "customScheduled",
+        "status": "sent",
+        "text": "火を使わない自炊、これで十分だった🍳\n保存して、あとで見返してね\n#一人暮らし #キッチングッズ #時短家事 #便利グッズ #自炊\n\n写真: Wikimedia Commons Evil Erin（CC BY 2.0）",
+        "via": "buffer",
+        "createdAt": "2026-11-12T12:11:09.698Z",
+        "updatedAt": "2026-11-19T00:33:20.553Z",
+        "error": null
+       }
+      },
+      {
+       "node": {
+        "id": "6af5acdcfab891d6a9f2aa4a",
+        "channelId": "6af3e49562b70b94b0ee8b6f",
+        "channelService": "youtube",
+        "contentItemId": null,
+        "dueAt": "2026-11-13T03:15:00.000Z",
+        "externalLink": "https://www.youtube.com/shorts/AviYPlObKRU",
+        "ideaId": null,
+        "isCustomScheduled": true,
+        "metricsUpdatedAt": "2026-11-19T00:33:20.553Z",
+        "notificationStatus": null,
+        "schedulingType": "automatic",
+        "sentAt": "2026-11-13T03:15:21.202Z",
+        "sharedNow": false,
+        "shareMode": "customScheduled",
+        "status": "sent",
+        "text": "一人暮らしの洗い物、これで半分になった🍳\n保存して、あとで見返してね\n#一人暮らし #キッチングッズ #時短家事 #洗い物 #便利グッズ\n\n写真: Wikimedia Commons INRA DIST（CC BY 2.0）、Sheila Sund from Salem, United States（CC BY 2.0）、Shixart1985（CC BY 2.0）",
+        "via": "buffer",
+        "createdAt": "2026-11-12T12:11:08.728Z",
+        "updatedAt": "2026-11-19T00:33:20.553Z",
+        "error": null
+       }
+      }
+     ]
+    }
+   }
+  }
+ }
+}
