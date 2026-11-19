@@ -1,5 +1,6 @@
 """Bufferにまだ予約中（未投稿）の動画を取り消して、作り直した動画で入れ直せるようにする。
 使い方: python tools/requeue.py 004 007 008 009 010
+片方だけ取り消す時は 024@youtube のように書く。
 取り消せたものは output/posted.json から外す（このあと post_buffer.py が新しい動画で予約し直す）。
 """
 import datetime as dt
@@ -55,7 +56,8 @@ def main(ids):
     keep = []
     for p in state["posts"]:
         future = dt.datetime.fromisoformat(p["dueAt"]) > now + dt.timedelta(minutes=20)
-        if p["id"] in ids and p.get("ok") and p.get("publish") and future and p.get("post_id"):
+        hit = p["id"] in ids or f"{p['id']}@{p['service']}" in ids
+        if hit and p.get("ok") and p.get("publish") and future and p.get("post_id"):
             r = gql(q, {"v": make(p["post_id"])})
             res = (r.get("data") or {}).get("deletePost") or {}
             ok = bool(res) and "message" not in res and "errors" not in r

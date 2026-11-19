@@ -69,24 +69,60 @@ def video_url(vid, service="tiktok", notify=False):
     return f"https://cdn.jsdelivr.net/gh/{REPO}@{sha}/output/{name}"
 
 
-def next_slots(n, taken):
+def next_slots(n, taken, service="tiktok", history=()):
+    """空いている枠を早い順に n 個。
+    YouTubeはBufferの「24時間で2本まで」の制限があるので、2本前の投稿から24時間＋余裕を空ける。"""
     now = dt.datetime.now(JST) + dt.timedelta(minutes=30)
+    slots = CFG["slots_jst"]
+    gap = None
+    if service == "youtube" and CFG.get("youtube_slots_jst"):
+        slots = CFG["youtube_slots_jst"]
+        gap = dt.timedelta(minutes=CFG.get("youtube_gap_min", 1480))
+    hist = sorted(history)
     out, day = [], now.date()
     while len(out) < n:
-        for s in CFG["slots_jst"]:
+        for s in slots:
             h, m = map(int, s.split(":"))
             t = dt.datetime(day.year, day.month, day.day, h, m, tzinfo=JST)
-            if t > now and t.isoformat() not in taken:
-                out.append(t)
-                if len(out) == n:
-                    break
+            if t <= now or t.isoformat() in taken:
+                continue
+            if gap is not None:
+                before = [x for x in hist if x < t]
+                after = [x for x in hist if x > t]
+                if before and t - before[-1] < dt.timedelta(hours=5):
+                    continue
+                if len(before) >= 2 and t - before[-2] < gap:
+                    continue
+                if after:  # 先の予約とぶつかる枠は使わない
+                    continue
+                hist = sorted(hist + [t])
+            out.append(t)
+            if len(out) == n:
+                break
         day += dt.timedelta(days=1)
     return out
+
+
+ERRQ = """query($org:OrganizationId!,$ch:[ChannelId!]){posts(first:50,input:{organizationId:$org,filter:{status:[error],channelIds:$ch}}){edges{node{id error{message rawError}}}}}"""
+
+
+def mark_failed():
+    """Bufferで投稿に失敗した予約を見つけて、入れ直せるように記録から外す"""
+    res = gql(ERRQ, {"org": CFG.get("org", "6715160d6ebd9c191c9ccab2"), "ch": list(CFG["channels"].values())})
+    edges = ((res.get("data") or {}).get("posts") or {}).get("edges") or []
+    bad = {e["node"]["id"]: (e["node"].get("error") or {}) for e in edges}
+    for p in STATE["posts"]:
+        if p.get("ok") and p.get("post_id") in bad:
+            p["ok"] = False
+            p["failed"] = (bad[p["post_id"]].get("rawError") or bad[p["post_id"]].get("message") or "")[:200]
+            log(f"{p['id']} {p['service']} {p['dueAt']} NG(投稿失敗→入れ直し) {p['failed']}")
 
 
 def main():
     publish = CFG.get("publish", False)
     now = dt.datetime.now(JST)
+    if publish:
+        mark_failed()
     done = {(p["id"], p["service"]) for p in STATE["posts"] if p.get("ok") and p.get("publish") == publish}
     vids = sorted(f.stem for f in Path("output").glob("*.mp4") if not f.stem.endswith(("_yt", "_tn")))
     vids = [v for v in vids if v not in CFG.get("skip", [])]
@@ -100,7 +136,9 @@ def main():
         room = CFG["max_queued_per_channel"] - len(future) if publish else 1
         todo = [v for v in vids if (v, service) not in done][:max(room, 0)]
         taken = {p["dueAt"] for p in future}
-        slots = next_slots(len(todo), taken)
+        history = [dt.datetime.fromisoformat(p["dueAt"]) for p in STATE["posts"]
+                   if p["service"] == service and p.get("ok") and p.get("publish")]
+        slots = next_slots(len(todo), taken, service, history)
         for vid, when in zip(todo, slots):
             notify = service == "tiktok" and when.strftime("%H:%M") in CFG.get("tiktok_notify_slots", [])
             spec = json.loads(Path(f"content/{vid}.json").read_text(encoding="utf-8"))
