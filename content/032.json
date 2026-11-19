@@ -1,0 +1,89 @@
+{
+  "id": "032",
+  "kind": "knowledge",
+  "hook_type": "surprise",
+  "persona": true,
+  "title": "年末のまとめ買い 冷凍庫は冷蔵庫と逆のルール",
+  "caption": "年末のまとめ買い前に知っておきたい、冷凍庫のルール❄️\n参考：ミシガン州立大学・サウスダコタ州立大学エクステンション（米国）\n保存して、あとで見返してね\n#一人暮らし #冷凍保存 #保存方法 #年末 #知らないと損",
+  "sources": [
+    "MSU Extension：満杯の冷凍庫は約48時間、半分なら約24時間温度を保つ（扉を閉めたままの場合）。冷凍庫は0°F（約-18℃）以下 https://www.canr.msu.edu/news/what_foods_are_safe_to_keep_after_a_power_outage",
+    "SDSU Extension：冷蔵庫4時間、満杯の冷凍庫48時間、半分の冷凍庫24時間。冷凍庫は0°F。開けるたびに中の温度が上がる https://extension.sdstate.edu/power-outages-and-your-cold-foods"
+  ],
+  "slides": [
+    {
+      "type": "hook",
+      "query": "frozen vegetables",
+      "fallback": [
+        "frozen food",
+        "ice cubes"
+      ],
+      "big": [
+        "冷凍庫は",
+        "ぎっしりが正解"
+      ],
+      "mark": "ぎっしり",
+      "sub": "冷蔵庫の7割ルールと逆",
+      "small": "年末にまとめ買いする私",
+      "say": "年末にまとめ買いする私が知った、冷凍庫は冷蔵庫と逆"
+    },
+    {
+      "type": "item",
+      "query": "frozen peas",
+      "fallback": [
+        "frozen vegetables",
+        "frozen food"
+      ],
+      "big": [
+        "満杯なら",
+        "停電でも2日"
+      ],
+      "mark": "2日",
+      "sub": "半分なら約1日。満杯ほど冷たさが続く",
+      "tag": "その1"
+    },
+    {
+      "type": "item",
+      "query": "thermometer",
+      "fallback": [
+        "freezer thermometer",
+        "ice"
+      ],
+      "big": [
+        "めやすは",
+        "-18℃以下"
+      ],
+      "mark": "-18℃",
+      "sub": "海外のめやすは0°F＝約-18℃",
+      "tag": "その2"
+    },
+    {
+      "type": "item",
+      "query": "refrigerator",
+      "fallback": [
+        "fridge",
+        "refrigerator door"
+      ],
+      "big": [
+        "停電中は",
+        "開けない"
+      ],
+      "mark": "開けない",
+      "sub": "開けるたびに中が温まる",
+      "tag": "その3"
+    },
+    {
+      "type": "end",
+      "query": "ice cubes",
+      "fallback": [
+        "frozen food",
+        "ice"
+      ],
+      "big": [
+        "冷凍庫は",
+        "詰めてOK"
+      ],
+      "mark": "詰めて",
+      "sub": "保存して、あとで見返してね"
+    }
+  ]
+}

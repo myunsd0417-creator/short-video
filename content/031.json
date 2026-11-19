@@ -1,0 +1,85 @@
+{
+  "id": "031",
+  "kind": "product",
+  "hook_type": "loss",
+  "persona": true,
+  "title": "一人暮らし シンク下が片付く3つ",
+  "caption": "年末の片付け、シンク下からがいちばんラク🧹\n保存して、あとで見返してね\n#一人暮らし #片付け #収納 #ズボラ #年末",
+  "slides": [
+    {
+      "type": "hook",
+      "query": "kitchen cabinet",
+      "fallback": [
+        "cupboard",
+        "kitchen cupboard"
+      ],
+      "big": [
+        "シンク下の",
+        "上半分が空き"
+      ],
+      "mark": "上半分",
+      "sub": "2つ目で倍しまえる",
+      "small": "年末も片付けたくない私",
+      "say": "片付けめんどくさい私が、シンク下でやったこと3つ"
+    },
+    {
+      "type": "item",
+      "query": "file boxes",
+      "fallback": [
+        "cardboard boxes",
+        "storage boxes"
+      ],
+      "big": [
+        "立てて",
+        "ボックスに"
+      ],
+      "mark": "ボックス",
+      "sub": "フライパンも立てれば取りやすい",
+      "tag": "その1"
+    },
+    {
+      "type": "item",
+      "query": "wire shelf",
+      "fallback": [
+        "metal shelf",
+        "wire rack"
+      ],
+      "big": [
+        "コの字ラックで",
+        "2段に"
+      ],
+      "mark": "2段",
+      "sub": "空いてた上半分が使える",
+      "tag": "その2"
+    },
+    {
+      "type": "item",
+      "query": "spray bottles",
+      "fallback": [
+        "cleaning supplies",
+        "spray bottle"
+      ],
+      "big": [
+        "突っ張り棒に",
+        "かける"
+      ],
+      "mark": "かける",
+      "sub": "スプレーは引っかけて浮かせる",
+      "tag": "その3"
+    },
+    {
+      "type": "end",
+      "query": "kitchen cabinet",
+      "fallback": [
+        "cupboard",
+        "kitchen storage"
+      ],
+      "big": [
+        "1回やれば",
+        "ずっとラク"
+      ],
+      "mark": "ずっと",
+      "sub": "保存して、あとで見返してね"
+    }
+  ]
+}

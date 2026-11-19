@@ -1,0 +1,90 @@
+{
+  "id": "033",
+  "kind": "knowledge",
+  "hook_type": "result",
+  "persona": true,
+  "title": "残りものの温め直し 英国では常識の3つ",
+  "caption": "作り置きを何回も温め直してた私へ🍛\n参考：英国食品基準庁（FSA）・スコットランド食品基準庁の家庭向けガイド\n保存して、あとで見返してね\n#一人暮らし #作り置き #自炊 #保存方法 #知らないと損",
+  "sources": [
+    "GOV.UK 学生向け食品衛生ガイド：残りものの温め直しは1回だけ／温めるのではなく中まで湯気が出るほど熱く／解凍した食品は24時間以内に調理して食べる https://www.gov.uk/government/publications/student-guide-to-food-safety-and-hygiene/student-guide-to-food-safety-and-hygiene",
+    "FSA Cooking your food 7.2：残りものの温め直しは1回だけ、中まで湯気が出るほど熱く https://www.gov.uk/government/publications/cooking-your-food/cooking-your-food",
+    "Food Standards Scotland：温め直しは2回以上しない。真ん中まで湯気が出るか確かめる https://www.foodstandards.gov.scot/consumers/food-safety/at-home/cooking-food"
+  ],
+  "slides": [
+    {
+      "type": "hook",
+      "query": "leftovers",
+      "fallback": [
+        "leftover food",
+        "food container"
+      ],
+      "big": [
+        "温め直しは",
+        "1回だけ"
+      ],
+      "mark": "1回",
+      "sub": "2つ目、ぬるいのはNG",
+      "small": "作り置きをチンし直す私",
+      "say": "作り置きを何回も温め直してた私が、やめたこと"
+    },
+    {
+      "type": "item",
+      "query": "food containers",
+      "fallback": [
+        "meal prep containers",
+        "food container"
+      ],
+      "big": [
+        "食べる分だけ",
+        "温める"
+      ],
+      "mark": "食べる分",
+      "sub": "英国では温め直しは1回まで",
+      "tag": "その1"
+    },
+    {
+      "type": "item",
+      "query": "steaming food",
+      "fallback": [
+        "hot soup",
+        "steam"
+      ],
+      "big": [
+        "真ん中まで",
+        "湯気が出るまで"
+      ],
+      "mark": "湯気",
+      "sub": "ぬるいではなく、中まで熱く",
+      "tag": "その2"
+    },
+    {
+      "type": "item",
+      "query": "frozen food",
+      "fallback": [
+        "frozen meal",
+        "freezer"
+      ],
+      "big": [
+        "解凍したら",
+        "24時間以内"
+      ],
+      "mark": "24時間",
+      "sub": "解凍後は24時間以内に食べる",
+      "tag": "その3"
+    },
+    {
+      "type": "end",
+      "query": "japanese meal",
+      "fallback": [
+        "rice bowl",
+        "home cooking"
+      ],
+      "big": [
+        "温め方を",
+        "変えるだけ"
+      ],
+      "mark": "温め方",
+      "sub": "保存して、あとで見返してね"
+    }
+  ]
+}

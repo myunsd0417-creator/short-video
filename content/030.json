@@ -1,0 +1,88 @@
+{
+  "id": "030",
+  "kind": "knowledge",
+  "hook_type": "surprise",
+  "persona": true,
+  "title": "レンジ温め 海外では常識の3つのコツ",
+  "caption": "寒い日、レンジだけで済ませたい人へ🍲\n参考：クレムソン大学（米国）Home & Garden Information Center「Microwave Food Safety」\n保存して、あとで見返してね\n#一人暮らし #自炊 #電子レンジ #ズボラ #知らないと損",
+  "sources": [
+    "Clemson HGIC Microwave Food Safety：温め直す時はふたをすると水分が保たれ、加熱が均一になる／途中で混ぜるか回すと冷たい部分が減る／加熱後は数分置くと熱が全体に回り加熱が仕上がる https://hgic.clemson.edu/factsheet/microwave-food-safety/"
+  ],
+  "slides": [
+    {
+      "type": "hook",
+      "query": "microwave oven",
+      "fallback": [
+        "microwave",
+        "kitchen microwave"
+      ],
+      "big": [
+        "チンして",
+        "すぐ食べない"
+      ],
+      "mark": "すぐ食べない",
+      "sub": "3つ目、私も知らなかった",
+      "small": "寒い日、レンジだけの私",
+      "say": "レンジだけで済ませたい私が、知らなかったコツ3つ"
+    },
+    {
+      "type": "item",
+      "query": "food container with lid",
+      "fallback": [
+        "bowl with lid",
+        "plastic food container"
+      ],
+      "big": [
+        "ふたを",
+        "してチン"
+      ],
+      "mark": "ふた",
+      "sub": "水分が残って、ムラが減る",
+      "tag": "その1"
+    },
+    {
+      "type": "item",
+      "query": "stirring soup",
+      "fallback": [
+        "soup pot spoon",
+        "stirring pot"
+      ],
+      "big": [
+        "途中で",
+        "1回混ぜる"
+      ],
+      "mark": "混ぜる",
+      "sub": "冷たいところが減る",
+      "tag": "その2"
+    },
+    {
+      "type": "item",
+      "query": "bowl of soup",
+      "fallback": [
+        "hot soup",
+        "soup bowl"
+      ],
+      "big": [
+        "数分",
+        "置いてから"
+      ],
+      "mark": "置いて",
+      "sub": "熱が全体に回って仕上がる",
+      "tag": "その3"
+    },
+    {
+      "type": "end",
+      "query": "bowl of soup",
+      "fallback": [
+        "hot soup",
+        "japanese meal"
+      ],
+      "big": [
+        "レンジだけでも",
+        "ムラなく"
+      ],
+      "mark": "ムラなく",
+      "sub": "保存して、あとで見返してね"
+    }
+  ]
+}
