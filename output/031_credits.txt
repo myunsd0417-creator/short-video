@@ -1,0 +1,5 @@
+slide0: File:Kitchen cabinet display in 2009 in NJ.jpg / Tomwsulcer / Public domain / https://commons.wikimedia.org/wiki/File:Kitchen_cabinet_display_in_2009_in_NJ.jpg
+slide1: File:Messy office (boxes).jpg / OboeBlanket / CC0 / https://commons.wikimedia.org/wiki/File:Messy_office_(boxes).jpg
+slide2: File:Flower nursery or garden, located in a hilly area, with many potted plants arranged on tiered shelves.jpg / Jothisettu / CC0 / https://commons.wikimedia.org/wiki/File:Flower_nursery_or_garden,_located_in_a_hilly_area,_with_many_potted_plants_arranged_on_tiered_shelves.jpg
+slide3: File:Atomizador con clorhexidina.jpg / ELTORO.VET / CC0 / https://commons.wikimedia.org/wiki/File:Atomizador_con_clorhexidina.jpg
+slide4: File:Kitchen cabinet display 2009 with bend.jpg / Tomwsulcer / Public domain / https://commons.wikimedia.org/wiki/File:Kitchen_cabinet_display_2009_with_bend.jpg
