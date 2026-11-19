@@ -1,5 +1,0 @@
-slide0: File:Microwave oven "Erisson".jpg / Karamanskaya / CC0 / https://commons.wikimedia.org/wiki/File:Microwave_oven_%22Erisson%22.jpg
-slide1: File:Dated lid with container of corn being prepared for freezing.jpg / Nutrition, Food Safety &amp; Health / CC0 / https://commons.wikimedia.org/wiki/File:Dated_lid_with_container_of_corn_being_prepared_for_freezing.jpg
-slide2: File:Photograph of Preparing Lunch at a Canoe Camp Site - NARA - 2128768.jpg / Unknown authorUnknown author or not provided / Public domain / https://commons.wikimedia.org/wiki/File:Photograph_of_Preparing_Lunch_at_a_Canoe_Camp_Site_-_NARA_-_2128768.jpg
-slide3: File:Soup bowl MET DP234526.jpg / Mary Louise McLaughlin / CC0 / https://commons.wikimedia.org/wiki/File:Soup_bowl_MET_DP234526.jpg
-slide4: File:IRMA SZINGER SOUP BOWL LID.jpg / THEO SZINGER / CC0 / https://commons.wikimedia.org/wiki/File:IRMA_SZINGER_SOUP_BOWL_LID.jpg

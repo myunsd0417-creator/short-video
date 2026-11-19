@@ -12,10 +12,10 @@
   "slides": [
     {
       "type": "hook",
-      "query": "frozen vegetables",
+      "query": "frozen peas",
       "fallback": [
-        "frozen food",
-        "ice cubes"
+        "frozen vegetables",
+        "frozen peas and carrots"
       ],
       "big": [
         "冷凍庫は",
@@ -69,7 +69,8 @@
       ],
       "mark": "開けない",
       "sub": "開けるたびに中が温まる",
-      "tag": "その3"
+      "tag": "その3",
+      "plain_bg": true
     },
     {
       "type": "end",

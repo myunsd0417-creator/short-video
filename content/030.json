@@ -53,7 +53,8 @@
       ],
       "mark": "混ぜる",
       "sub": "冷たいところが減る",
-      "tag": "その2"
+      "tag": "その2",
+      "plain_bg": true
     },
     {
       "type": "item",
