@@ -1,0 +1,19 @@
+  search 'kitchen cabinet': 5 usable
+[0] OK kitchen cabinet -> File:Kitchen cabinet display in 2009 in NJ.jpg (Public domain)
+  search 'file boxes': 4 usable
+[1] OK file boxes -> File:Messy office (boxes).jpg (CC0)
+  search 'wire shelf': 7 usable
+[2] OK wire shelf -> File:Flower nursery or garden, located in a hilly area, with many potted plants arranged on tiered shelves.jpg (CC0)
+  search 'spray bottles': 4 usable
+[3] OK spray bottles -> File:Atomizador con clorhexidina.jpg (CC0)
+  search 'kitchen cabinet': 5 usable
+[4] OK kitchen cabinet -> File:Kitchen cabinet display 2009 with bend.jpg (Public domain)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.67, 1.92, 1.92, 1.92, 1.99] total: 10.42
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.92, 2.62, 2.66, 2.64, 3.71] total: 14.55
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.67, 1.92, 1.92, 1.92, 1.99] total: 10.42
