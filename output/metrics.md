@@ -2,7 +2,7 @@
 
 比較用（ジャンル変更前の過去投稿 16本の平均）: 再生 556.1、平均視聴秒数 16.3
 新ジャンル TikTok 13本の平均: 再生 109.0、平均視聴秒数 3.1
-新ジャンル YouTube 12本の平均: 再生 541.5（YouTubeは視聴秒数がBufferに来ない）
+新ジャンル YouTube 13本の平均: 再生 499.8（YouTubeは視聴秒数がBufferに来ない）
 
 | 動画 | 媒体 | 投稿日時 | 数字 |
 |---|---|---|---|
@@ -31,6 +31,7 @@
 | 023 洗い物めんどくさい私が やめたこと3つ | youtube | 2026-11-18T10:30:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 318 |
 | 023 洗い物めんどくさい私が やめたこと3つ | tiktok | 2026-11-18T10:30:00.000Z | まだ集計なし |
 | 008 朝ごはんが5分で終わる3つの道具 | tiktok | 2026-11-19T02:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 0、Shares: 0、Reach: 0、Watch Time (min): 0、Avg. Watch Time (sec): 0 |
+| 008 朝ごはんが5分で終わる3つの道具 | youtube | 2026-11-19T03:12:45.055Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 0 |
 
 ## 冒頭の型ごとの平均（TikTok）
 
