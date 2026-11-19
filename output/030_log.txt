@@ -1,0 +1,19 @@
+  search 'microwave oven': 1 usable
+[0] OK microwave oven -> File:Microwave oven "Erisson".jpg (CC0)
+  search 'food container with lid': 4 usable
+[1] OK food container with lid -> File:Dated lid with container of corn being prepared for freezing.jpg (CC0)
+  search 'stirring soup': 3 usable
+[2] OK stirring soup -> File:Photograph of Preparing Lunch at a Canoe Camp Site - NARA - 2128768.jpg (Public domain)
+  search 'bowl of soup': 9 usable
+[3] OK bowl of soup -> File:Soup bowl MET DP234526.jpg (CC0)
+  search 'bowl of soup': 9 usable
+[4] OK bowl of soup -> File:IRMA SZINGER SOUP BOWL LID.jpg (CC0)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.62, 1.92, 1.92, 1.92, 1.92] total: 10.3
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.88, 2.9, 2.38, 2.79, 3.63] total: 14.58
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.62, 1.92, 1.92, 1.92, 1.92] total: 10.3
