@@ -1,0 +1,19 @@
+  search 'leftovers': 3 usable
+[0] OK leftovers -> File:Leftovers - Massachusetts.jpg (CC0)
+  search 'food containers': 8 usable
+[1] OK food containers -> File:Rita Rapp with Apollo 16 food containers.jpg (Public domain)
+  search 'steaming food': 2 usable
+[2] OK steaming food -> File:Steam-boiling green asparagus.jpg (CC0)
+  search 'frozen food': 4 usable
+[3] OK frozen food -> File:Refrigerator with frozen foods in Sailor House (2).jpg (CC0)
+  search 'japanese meal': 15 usable
+[4] OK japanese meal -> File:Family meal, Japan LCCN2002716187.jpg (Public domain)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.83, 1.92, 1.92, 1.92, 2.02] total: 10.61
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [3.17, 3.27, 3.38, 3.75, 3.79] total: 17.36
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.83, 1.92, 1.92, 1.92, 2.02] total: 10.61
