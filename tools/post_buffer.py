@@ -86,6 +86,9 @@ def next_slots(n, taken, service="tiktok", history=()):
             t = dt.datetime(day.year, day.month, day.day, h, m, tzinfo=JST)
             if t <= now or t.isoformat() in taken:
                 continue
+            per_day = sum(1 for x in list(taken) + [o.isoformat() for o in out] if x[:10] == t.date().isoformat())
+            if gap is None and per_day >= len(slots):  # 時刻を変えた日でも1日の本数は増やさない
+                continue
             if gap is not None:
                 before = [x for x in hist if x < t]
                 after = [x for x in hist if x > t]
