@@ -99,10 +99,10 @@ def text_layer(slide):
     if slide["type"] == "end":
         sub = CTA[VARIANT][1] if VARIANT == "tt" else None  # YouTubeは矢印で示す
     if sub:
-        f_sub = font(56)
+        f_sub = font(64)
         sw = d.textlength(sub, font=f_sub)
         if sw > W - 100:
-            f_sub = font(int(56 * (W - 100) / sw))
+            f_sub = font(int(64 * (W - 100) / sw))
             sw = d.textlength(sub, font=f_sub)
         d.text(((W - sw) / 2, y + 70), sub, font=f_sub, fill=WHITE, stroke_width=6, stroke_fill=(0, 0, 0))
 
