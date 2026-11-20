@@ -1,8 +1,8 @@
 # 投稿の数字（自動更新）
 
 比較用（ジャンル変更前の過去投稿 16本の平均）: 再生 556.3、平均視聴秒数 16.3
-新ジャンル TikTok 14本の平均: 再生 119.0、平均視聴秒数 3.3
-新ジャンル YouTube 14本の平均: 再生 509.9（YouTubeは視聴秒数がBufferに来ない）
+新ジャンル TikTok 16本の平均: 再生 108.2、平均視聴秒数 3.3
+新ジャンル YouTube 15本の平均: 再生 475.9（YouTubeは視聴秒数がBufferに来ない）
 
 | 動画 | 媒体 | 投稿日時 | 数字 |
 |---|---|---|---|
@@ -34,13 +34,16 @@
 | 008 朝ごはんが5分で終わる3つの道具 | youtube | 2026-11-19T03:12:45.055Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 302 |
 | 019 冷蔵庫 詰めすぎNG 厚労省のめやす3つ | tiktok | 2026-11-19T10:30:00.000Z | まだ集計なし |
 | 019 冷蔵庫 詰めすぎNG 厚労省のめやす3つ | youtube | 2026-11-19T11:30:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 242 |
+| 024 洗い物がラクになる 洗い方のコツ3つ | tiktok | 2026-11-20T02:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 0、Shares: 0、Reach: 0、Watch Time (min): 0、Avg. Watch Time (sec): 0 |
+| 024 洗い物がラクになる 洗い方のコツ3つ | youtube | 2026-11-20T03:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 0 |
+| 012 お弁当 冬でも温かく食べる3つ | tiktok | 2026-11-20T10:30:00.000Z | まだ集計なし |
 
 ## 冒頭の型ごとの平均（TikTok）
 
 | 型 | 本数 | 平均再生 | 平均視聴秒数 |
 |---|---|---|---|
-| loss | 1 | 0 | 0 |
+| loss | 2 | 0 | 0 |
 | question | 3 | 120.0 | 2.7 |
 | regret | 2 | 93.0 | 4.3 |
-| result | 5 | 121.0 | 3.4 |
+| result | 6 | 96.8 | 3.4 |
 | surprise | 3 | 126.5 | 3.6 |
