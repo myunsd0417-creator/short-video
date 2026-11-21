@@ -1,0 +1,21 @@
+  search 'paper towel roll': 10 usable
+[0] OK paper towel roll -> File:Continuous Towel Roll.jpg (CC0)
+  search 'paper towels': 0 usable
+  search 'kitchen paper': 0 usable
+  search 'paper towel roll': 10 usable
+[1] OK paper towel roll -> File:Crumpled tissue paper.jpg (CC0)
+  search 'cooking oil': 18 usable
+[2] OK cooking oil -> File:Cooking oil tanks at 唐揚げ shop.jpg (CC0)
+  search 'newspaper': 1 usable
+[3] OK newspaper -> File:Dewey Defeats Truman.jpg (Public domain)
+  search 'washing dishes': 3 usable
+[4] OK washing dishes -> File:Our Father's House Soup Kitchen dishwashing-vertical.jpg (Public domain)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.58, 1.92, 1.92, 1.92, 1.85] total: 10.19
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.89, 3.46, 3.01, 3.36, 3.58] total: 16.3
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.58, 1.92, 1.92, 1.92, 1.85] total: 10.19
