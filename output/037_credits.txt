@@ -1,0 +1,5 @@
+slide0: File:Citrus fruits.jpg / Scott Bauer, USDA / Public domain / https://commons.wikimedia.org/wiki/File:Citrus_fruits.jpg
+slide1: File:Defense.gov News Photo 050412-N-1485H-006.jpg / Petty Officer 3rd Class Lamel J. Hinton, U.S. Navy / Public domain / https://commons.wikimedia.org/wiki/File:Defense.gov_News_Photo_050412-N-1485H-006.jpg
+slide2: File:Queen's Bathroom in the Wilanów Palace 04.jpg / BurgererSF / CC0 / https://commons.wikimedia.org/wiki/File:Queen%27s_Bathroom_in_the_Wilan%C3%B3w_Palace_04.jpg
+slide3: File:Window on a barn in Färlev.jpg / W.carter / CC0 / https://commons.wikimedia.org/wiki/File:Window_on_a_barn_in_F%C3%A4rlev.jpg
+slide4: File:Floris Gerritsz. van Schooten - Kitchen Still-Life - WGA21045.jpg / Floris van Schooten / Public domain / https://commons.wikimedia.org/wiki/File:Floris_Gerritsz._van_Schooten_-_Kitchen_Still-Life_-_WGA21045.jpg
