@@ -1,8 +1,1 @@
-028 tiktok url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@df063b069e9852be2db9a6aee0c8743e6ccd3ed0/output/028.mp4
-028 tiktok 2026-11-25T07:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6b01065cdd205ed779b38466", "dueAt": "2026-11-24T22:45:00.000Z"}}}}
-warmup 027: HTTP Error 403: Forbidden
-warmup 027: HTTP Error 403: Forbidden
-warmup 027: HTTP Error 403: Forbidden
-warmup 027: HTTP Error 403: Forbidden
-027 youtube url=https://raw.githubusercontent.com/myunsd0417-creator/short-video/4cbbbb1e751f19cba86b6337dace950da922a19b/output/027_yt.mp4
-027 youtube 2026-11-26T11:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6b0106bedd205ed779b3a040", "dueAt": "2026-11-26T02:45:00.000Z"}}}}
+
