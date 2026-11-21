@@ -1,0 +1,21 @@
+  search 'hot pot': 4 usable
+[0] OK hot pot -> File:Spicy Hot Pot.jpg (CC0)
+  search 'large cooking pot': 0 usable
+  search 'stock pot': 1 usable
+[1] OK stock pot -> File:Tableware from EpicentrK 06.jpg (CC0)
+  search 'iron griddle': 4 usable
+[2] OK iron griddle -> File:Tawa(Griddle).jpg (CC0)
+  search 'induction cooktop': 0 usable
+  search 'induction stove': 1 usable
+[3] OK induction stove -> File:MIA induction stove IKP2201.JPG (Public domain)
+  search 'hot pot': 4 usable
+[4] OK hot pot -> File:Hot pot with meat.jpg (CC0)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.49, 1.92, 1.92, 1.92, 1.86] total: 10.11
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.67, 3.35, 3.41, 3.51, 3.65] total: 16.59
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.49, 1.92, 1.92, 1.92, 1.86] total: 10.11

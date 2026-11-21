@@ -1,0 +1,5 @@
+slide0: File:Spicy Hot Pot.jpg / ZHANGQI1066 / CC0 / https://commons.wikimedia.org/wiki/File:Spicy_Hot_Pot.jpg
+slide1: File:Tableware from EpicentrK 06.jpg / Ата / CC0 / https://commons.wikimedia.org/wiki/File:Tableware_from_EpicentrK_06.jpg
+slide2: File:Tawa(Griddle).jpg / Rajani Gairshail / CC0 / https://commons.wikimedia.org/wiki/File:Tawa(Griddle).jpg
+slide3: File:MIA induction stove IKP2201.JPG / Dmitry G / Public domain / https://commons.wikimedia.org/wiki/File:MIA_induction_stove_IKP2201.JPG
+slide4: File:Hot pot with meat.jpg / Hrixson / CC0 / https://commons.wikimedia.org/wiki/File:Hot_pot_with_meat.jpg
