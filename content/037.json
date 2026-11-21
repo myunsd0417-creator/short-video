@@ -1,0 +1,91 @@
+{
+  "id": "037",
+  "kind": "knowledge",
+  "hook_type": "surprise",
+  "persona": true,
+  "title": "年末の大掃除 まぜるな危険 意外な3つ",
+  "caption": "知ってた？\n大掃除でクエン酸を使う人に🍋\n参考：東京都消費生活総合センター・日本中毒情報センター\n保存して、あとで見返してね\n#大掃除 #掃除 #一人暮らし #年末 #知らないと損",
+  "sources": [
+    "東京都消費生活総合センター「まぜるな危険」：酸性タイプと塩素系を一緒に使うと有害な塩素ガスが発生。直接まぜなくても前後して使用しない。クエン酸やお酢も酸性なので塩素系とまざると有害なガスが発生することがある。必ず単独で使い、必ず換気 https://www.shouhiseikatu.metro.tokyo.lg.jp/trouble/documents/trouble65-mazerunakiken.pdf",
+    "日本中毒情報センター（2022年12月）：塩素系洗浄剤は必ず単独で使用。換気扇を使ったり窓や戸を開けて十分な換気。保護具（ゴム手袋など）を着用。12月の誤使用事故の原因は薬剤混合が31% https://www.j-poison-ic.jp/wordpress/wp-content/uploads/oosouji20221223.pdf"
+  ],
+  "slides": [
+    {
+      "type": "hook",
+      "query": "lemons",
+      "fallback": [
+        "lemon",
+        "citrus fruit"
+      ],
+      "big": [
+        "クエン酸も",
+        "塩素系とNG"
+      ],
+      "mark": "NG",
+      "sub": "2つ目、やりがち",
+      "small": "年末の大掃除が苦手な私",
+      "say": "大掃除で知らなかった、クエン酸もまぜたらダメ"
+    },
+    {
+      "type": "item",
+      "query": "rubber gloves",
+      "fallback": [
+        "cleaning gloves",
+        "yellow gloves"
+      ],
+      "big": [
+        "塩素系は",
+        "単独で使う"
+      ],
+      "mark": "単独",
+      "sub": "酸性とまざると有害なガスが出る",
+      "tag": "その1"
+    },
+    {
+      "type": "item",
+      "query": "bathroom tiles",
+      "fallback": [
+        "tiles",
+        "bathroom"
+      ],
+      "big": [
+        "続けて",
+        "使わない"
+      ],
+      "mark": "続けて",
+      "sub": "まぜなくても前後で使うのはNG",
+      "tag": "その2",
+      "plain_bg": true
+    },
+    {
+      "type": "item",
+      "query": "open window",
+      "fallback": [
+        "window",
+        "kitchen window"
+      ],
+      "big": [
+        "窓を開けて",
+        "換気扇も"
+      ],
+      "mark": "換気扇",
+      "sub": "掃除中は必ず換気する",
+      "tag": "その3"
+    },
+    {
+      "type": "end",
+      "query": "clean kitchen",
+      "fallback": [
+        "kitchen",
+        "clean room"
+      ],
+      "big": [
+        "ラベルの",
+        "まぜるな危険"
+      ],
+      "mark": "まぜるな危険",
+      "sub": "知らなかった人はコメントで『1』",
+      "plain_bg": true
+    }
+  ]
+}

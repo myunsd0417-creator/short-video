@@ -1,0 +1,90 @@
+{
+  "id": "034",
+  "kind": "knowledge",
+  "hook_type": "regret",
+  "persona": true,
+  "title": "一人鍋 カセットこんろ やりがちNG3つ",
+  "caption": "あなたはやってた？\n冬の一人鍋、カセットこんろで私これやってました🍲\n参考：製品評価技術基盤機構（NITE）の注意喚起\n保存して、あとで見返してね\n#一人暮らし #一人鍋 #カセットコンロ #冬 #知らないと損",
+  "sources": [
+    "NITE（製品評価技術基盤機構）：カセットこんろを覆うような大きな調理器具（鉄板、なべ）は絶対に使用しない／2台並べた使用は絶対にしない。2台並べて鉄板を置き、ボンベが爆発して15人がやけどの事例 https://www.nite.go.jp/data/000086396.pdf",
+    "NITE：カセットボンベは正しく装着する／ボンベが異常に熱くなる使い方はしない。IH調理器の上に置いたカセットこんろを誤って作動させボンベが破裂した事例 https://www.nite.go.jp/data/000088248.pdf",
+    "家電Watch（NITEの発表の紹介）：IH調理器やガスこんろの上に置かない、覆うような鍋・鉄板はボンベが過熱して危険 https://kaden.watch.impress.co.jp/docs/news/1255053.html"
+  ],
+  "slides": [
+    {
+      "type": "hook",
+      "query": "hot pot",
+      "fallback": [
+        "nabe",
+        "clay pot"
+      ],
+      "big": [
+        "こんろより",
+        "大きい鍋はNG"
+      ],
+      "mark": "大きい鍋",
+      "sub": "3つ目、うっかりやりがち",
+      "small": "冬は毎日一人鍋の私",
+      "say": "冬の一人鍋で、私がやってたNG3つ"
+    },
+    {
+      "type": "item",
+      "query": "large cooking pot",
+      "fallback": [
+        "stock pot",
+        "big pot"
+      ],
+      "big": [
+        "こんろを",
+        "覆う鍋はNG"
+      ],
+      "mark": "覆う鍋",
+      "sub": "ボンベが熱くなり破裂の事故も",
+      "tag": "その1"
+    },
+    {
+      "type": "item",
+      "query": "iron griddle",
+      "fallback": [
+        "griddle",
+        "teppanyaki"
+      ],
+      "big": [
+        "2台並べて",
+        "使わない"
+      ],
+      "mark": "2台",
+      "sub": "並べて鉄板をのせ15人やけどの事故",
+      "tag": "その2"
+    },
+    {
+      "type": "item",
+      "query": "induction cooktop",
+      "fallback": [
+        "induction stove",
+        "electric stove"
+      ],
+      "big": [
+        "IHの上に",
+        "置かない"
+      ],
+      "mark": "IH",
+      "sub": "うっかりIHが入り破裂した事故も",
+      "tag": "その3"
+    },
+    {
+      "type": "end",
+      "query": "hot pot",
+      "fallback": [
+        "nabe",
+        "soup pot"
+      ],
+      "big": [
+        "鍋の大きさ",
+        "だけ見て"
+      ],
+      "mark": "大きさ",
+      "sub": "やってた人はコメントで『1』"
+    }
+  ]
+}

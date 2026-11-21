@@ -1,0 +1,90 @@
+{
+  "id": "036",
+  "kind": "knowledge",
+  "hook_type": "regret",
+  "persona": true,
+  "title": "洗い物 油汚れ 流す前の3つ",
+  "caption": "あなたはやってた？\n揚げ物の油、そのまま流してた私へ🍤\n参考：東京都下水道局・西宮市「油を流さないで」\n保存して、あとで見返してね\n#一人暮らし #洗い物 #台所 #キッチン #知らないと損",
+  "sources": [
+    "東京都（下水道局）2026年9月：台所から流れた油は下水道管内で冷えて固まり、詰まりや悪臭の原因に。お皿や鍋を洗う前に油汚れをふき取る https://www.metro.tokyo.lg.jp/ja/information/press/2026/09/2026091820",
+    "西宮市「下水道に油や有害物質を流さないで」：(1)使い切る＝残った油は熱いうちにこし器に移すと炒め物などに使える (2)拭き取る＝鍋や皿の油汚れはキッチンペーパーなどで拭き取ってから洗う (3)吸い取る＝揚げ物の油は新聞紙などで吸い取るか凝固剤で固めて燃えるゴミへ https://www.nishi.or.jp/kurashi/suido/jogesuidokyoku/shimin_gesui/aburawonagasanaide.html"
+  ],
+  "slides": [
+    {
+      "type": "hook",
+      "query": "greasy frying pan",
+      "fallback": [
+        "frying pan",
+        "cooking oil"
+      ],
+      "big": [
+        "油汚れは",
+        "洗う前に拭く"
+      ],
+      "mark": "拭く",
+      "sub": "2つ目、捨てずに使える",
+      "small": "洗い物ギライの私",
+      "say": "揚げ物の油、そのまま流してた私がやめたこと"
+    },
+    {
+      "type": "item",
+      "query": "paper towels",
+      "fallback": [
+        "kitchen paper",
+        "paper towel roll"
+      ],
+      "big": [
+        "皿の油は",
+        "紙で拭いてから"
+      ],
+      "mark": "拭いて",
+      "sub": "流した油は管で冷えて固まる",
+      "tag": "その1"
+    },
+    {
+      "type": "item",
+      "query": "cooking oil",
+      "fallback": [
+        "vegetable oil",
+        "oil in pan"
+      ],
+      "big": [
+        "残った油は",
+        "炒め物に"
+      ],
+      "mark": "炒め物",
+      "sub": "熱いうちにこして使い切る",
+      "tag": "その2"
+    },
+    {
+      "type": "item",
+      "query": "newspaper",
+      "fallback": [
+        "paper",
+        "newsprint"
+      ],
+      "big": [
+        "捨てる油は",
+        "紙に吸わせる"
+      ],
+      "mark": "紙",
+      "sub": "新聞紙などで吸わせて燃えるゴミへ",
+      "tag": "その3",
+      "plain_bg": true
+    },
+    {
+      "type": "end",
+      "query": "washing dishes",
+      "fallback": [
+        "dish washing",
+        "kitchen sink"
+      ],
+      "big": [
+        "拭いてから",
+        "洗うだけ"
+      ],
+      "mark": "拭いて",
+      "sub": "やってた人はコメントで『1』"
+    }
+  ]
+}

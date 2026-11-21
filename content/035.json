@@ -1,0 +1,85 @@
+{
+  "id": "035",
+  "kind": "product",
+  "hook_type": "loss",
+  "persona": true,
+  "title": "フライパン 傷つけにくい道具3つ",
+  "caption": "あなたはどっち派？\nフライパンをすぐダメにしてた私が替えた道具🍳\n保存して、あとで見返してね\n#一人暮らし #キッチン道具 #フライパン #自炊 #お玉",
+  "slides": [
+    {
+      "type": "hook",
+      "query": "ladle",
+      "fallback": [
+        "metal ladle",
+        "soup ladle"
+      ],
+      "big": [
+        "金属のお玉が",
+        "傷のもと"
+      ],
+      "mark": "傷",
+      "sub": "3つ目がいちばん使える",
+      "small": "フライパンすぐダメにする私",
+      "say": "金属のお玉で、フライパンを傷めて損してました"
+    },
+    {
+      "type": "item",
+      "query": "silicone spatula",
+      "fallback": [
+        "silicone utensils",
+        "kitchen utensils"
+      ],
+      "big": [
+        "シリコンの",
+        "お玉に"
+      ],
+      "mark": "シリコン",
+      "sub": "先がやわらかく鍋を傷つけにくい",
+      "tag": "その1"
+    },
+    {
+      "type": "item",
+      "query": "wooden spatula",
+      "fallback": [
+        "wooden spoon",
+        "wooden utensils"
+      ],
+      "big": [
+        "炒めるのは",
+        "木べら"
+      ],
+      "mark": "木べら",
+      "sub": "持つところが熱くなりにくい",
+      "tag": "その2"
+    },
+    {
+      "type": "item",
+      "query": "spatula",
+      "fallback": [
+        "turner",
+        "kitchen spatula"
+      ],
+      "big": [
+        "シリコンの",
+        "フライ返し"
+      ],
+      "mark": "フライ返し",
+      "sub": "焼いたものの下にすっと入る",
+      "tag": "その3"
+    },
+    {
+      "type": "end",
+      "query": "frying pan",
+      "fallback": [
+        "skillet",
+        "pan"
+      ],
+      "big": [
+        "道具を替えて",
+        "長持ち"
+      ],
+      "mark": "長持ち",
+      "sub": "金属お玉の人はコメントで『1』"
+    }
+  ]
+}
