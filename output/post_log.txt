@@ -1,4 +1,7 @@
-029 tiktok url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@06170a924bf0ff34068caa2d2dc1c1adcbd9376f/output/029_tn.mp4
-029 tiktok 2026-11-25T19:30:00+09:00 OK {"data": {"createPost": {"post": {"id": "6b02463d0247969092160f52", "dueAt": "2026-11-25T10:30:00.000Z"}}}}
-028 youtube url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@c2f92bbbf9e56a6636d971bb5492ae4beeaba455/output/028_yt.mp4
-028 youtube 2026-11-26T19:30:00+09:00 OK {"data": {"createPost": {"post": {"id": "6b0246400247969092161035", "dueAt": "2026-11-26T10:30:00.000Z"}}}}
+warmup 031: HTTP Error 403: Forbidden
+warmup 031: HTTP Error 403: Forbidden
+warmup 031: HTTP Error 403: Forbidden
+031 tiktok url=https://raw.githubusercontent.com/myunsd0417-creator/short-video/21bd10a8491a503070db48d59b92b9d313f20df1/output/031.mp4
+031 tiktok 2026-11-26T07:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6b02b8b3cc364169c1421ee8", "dueAt": "2026-11-25T22:45:00.000Z"}}}}
+029 youtube url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@a48769ed2431bdbeec13647a240daf906a7d3474/output/029_yt.mp4
+029 youtube 2026-11-27T12:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6b02b8b6cc364169c1422236", "dueAt": "2026-11-27T03:45:00.000Z"}}}}

@@ -1,8 +1,8 @@
 # 投稿の数字（自動更新）
 
 比較用（ジャンル変更前の過去投稿 18本の平均）: 再生 516.5、平均視聴秒数 14.4
-新ジャンル TikTok 18本の平均: 再生 124.0、平均視聴秒数 3.6
-新ジャンル YouTube 17本の平均: 再生 558.8（YouTubeは視聴秒数がBufferに来ない）
+新ジャンル TikTok 19本の平均: 再生 114.5、平均視聴秒数 3.6
+新ジャンル YouTube 18本の平均: 再生 527.8（YouTubeは視聴秒数がBufferに来ない）
 
 | 動画 | 媒体 | 投稿日時 | 数字 |
 |---|---|---|---|
@@ -41,12 +41,14 @@
 | 020 卵の賞味期限 意外と知らない3つのこと | tiktok | 2026-11-21T02:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 131、Shares: 0、Reach: 0、Watch Time (min): 32.98、Avg. Watch Time (sec): 7.15 |
 | 020 卵の賞味期限 意外と知らない3つのこと | youtube | 2026-11-21T10:30:00.000Z | Reactions: 2、Comments: 0、Eng. Rate: 0.25、Video Views: 796 |
 | 025 洗い物ゼロの日の作り方 | tiktok | 2026-11-21T10:30:00.000Z | まだ集計なし |
+| 009 洗い物を減らす食器の選び方 | tiktok | 2026-11-22T02:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 0、Shares: 0、Reach: 0、Watch Time (min): 0、Avg. Watch Time (sec): 0 |
+| 025 洗い物ゼロの日の作り方 | youtube | 2026-11-22T03:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 0 |
 
 ## 冒頭の型ごとの平均（TikTok）
 
 | 型 | 本数 | 平均再生 | 平均視聴秒数 |
 |---|---|---|---|
-| loss | 2 | 0 | 0 |
+| loss | 3 | 0.0 | 0 |
 | question | 3 | 120.0 | 2.7 |
 | regret | 2 | 93.0 | 4.2 |
 | result | 7 | 130.2 | 3.3 |
