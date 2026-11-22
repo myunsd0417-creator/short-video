@@ -1,0 +1,3 @@
+2026-11-22 09:40 UTC
+NG HTTP 401 https://video.bsky.app/xrpc/app.bsky.video.uploadVideo: {"jobStatus":{"did":"","error":"unconfirmed_email","jobId":"","state":""}}
+
