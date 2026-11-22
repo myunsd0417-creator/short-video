@@ -5,7 +5,7 @@ on:
     - cron: "7 11 * * *"   # 日本時間 20:07
   workflow_dispatch:
   push:
-    paths: [".github/workflows/bluesky.yml"]
+    paths: [".github/workflows/bluesky.yml"]  # 設定を変えた時に1回だけ動く
 permissions:
   contents: write
 concurrency:
