@@ -1,3 +1,2 @@
-2026-11-22 09:40 UTC
-NG HTTP 401 https://video.bsky.app/xrpc/app.bsky.video.uploadVideo: {"jobStatus":{"did":"","error":"unconfirmed_email","jobId":"","state":""}}
-
+2026-11-22 09:41 UTC
+004 投稿OK at://did:plc:f7p3cd3fyuldevbytyks6frz/app.bsky.feed.post/3n2vd6aduwr2d
