@@ -1,11 +1,9 @@
 name: post-to-bluesky
 on:
   schedule:
-    - cron: "7 3 * * *"     # 日本時間 12:07 動画
-    - cron: "7 11 * * *"    # 日本時間 20:07 動画
-    - cron: "37 11 * * 0"   # 日本時間 日曜 20:37 今週のまとめ
+    - cron: "17 * * * *"    # 1時間ごとに確認。投稿は 12〜16時・20〜24時に1本ずつ、日曜20時以降に今週のまとめ
   push:
-    paths: ["bluesky_pin.txt"]   # このファイルを置くと自己紹介を固定（1回）
+    paths: ["bluesky_pin.txt", "bluesky_now.txt"]   # 自己紹介の固定（1回）／今すぐ確認
   workflow_dispatch:
 permissions:
   contents: write
@@ -20,17 +18,16 @@ jobs:
         env:
           BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
         run: |
-          if [ "${{ github.event_name }}" = "push" ]; then
-            [ -f bluesky_pin.txt ] && python tools/post_bluesky.py pin && git rm -q bluesky_pin.txt || true
-          elif [ "${{ github.event.schedule }}" = "37 11 * * 0" ]; then
-            python tools/post_bluesky.py weekly
+          if [ -f bluesky_pin.txt ]; then
+            python tools/post_bluesky.py pin && git rm -q bluesky_pin.txt || true
           else
-            python tools/post_bluesky.py
+            python tools/post_bluesky.py auto
+            [ -f bluesky_now.txt ] && git rm -q bluesky_now.txt || true
           fi
       - name: Save record
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
-          git add -A output bluesky_pin.txt 2>/dev/null || git add -A output
+          git add -A output; git add -A bluesky_pin.txt bluesky_now.txt 2>/dev/null || true
           git commit -m "post: bluesky" || exit 0
           git pull --rebase -q origin main && git push

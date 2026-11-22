@@ -205,6 +205,27 @@ def pin_intro():
     log(f"自己紹介を固定OK {res.get('uri', '')}")
 
 
+def auto():
+    """1時間ごとに起動され、必要な時だけ投稿する（予約実行の取りこぼし対策）"""
+    jst = dt.datetime.now(dt.timezone(dt.timedelta(hours=9)))
+    state = load_state()
+    last = max((dt.datetime.fromisoformat(h["at"]) for h in state["history"]), default=None)
+    in_slot = 12 <= jst.hour < 16 or 20 <= jst.hour < 24
+    if in_slot and (last is None or dt.datetime.now(dt.timezone.utc) - last > dt.timedelta(hours=5)):
+        post_video()
+    else:
+        log(f"動画の投稿なし（{jst:%H:%M}、前回 {last}）")
+    week = jst.strftime("%G-W%V")
+    state = load_state()
+    if jst.weekday() == 6 and jst.hour >= 20 and state.get("weekly_done") != week:
+        since = dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=7)
+        if sum(dt.datetime.fromisoformat(h["at"]) > since for h in state["history"]) >= 2:
+            post_weekly()
+        state = load_state()
+        state["weekly_done"] = week
+        save_state(state)
+
+
 if __name__ == "__main__":
     mode = sys.argv[1] if len(sys.argv) > 1 else "post"
     try:
@@ -214,6 +235,8 @@ if __name__ == "__main__":
             post_weekly()
         elif mode == "pin":
             pin_intro()
+        elif mode == "auto":
+            auto()
         else:
             post_video()
     except Exception as e:
