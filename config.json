@@ -62,6 +62,12 @@
   ],
   "youtube_gap_min": 1480,
   "bluesky": {
-    "handle": "mirumi96market.bsky.social"
+    "handle": "mirumi96market.bsky.social",
+    "links": [
+      {
+        "label": "▶ 続きはYouTubeで",
+        "url": "https://www.youtube.com/@みん-d1q2l/shorts"
+      }
+    ]
   }
 }

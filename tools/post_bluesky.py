@@ -62,8 +62,20 @@ def main():
         return
     spec = json.loads(Path(f"content/{vid}.json").read_text(encoding="utf-8"))
     text = spec["caption"]
-    if len(text) > 290:  # Blueskyは300文字まで
-        text = text[:290]
+    links = BS.get("links", [])
+    tail = "".join(f"\n{l['label']}\n{l['url']}" for l in links)
+    if len(text) + len(tail) > 295:  # Blueskyは300文字まで
+        text = text[: 295 - len(tail)]
+    text += tail
+    # URLをタップできるようにする（バイト位置で指定）
+    facets = []
+    b = text.encode("utf-8")
+    for l in links:
+        u = l["url"].encode("utf-8")
+        i = b.find(u)
+        if i >= 0:
+            facets.append({"index": {"byteStart": i, "byteEnd": i + len(u)},
+                           "features": [{"$type": "app.bsky.richtext.facet#link", "uri": l["url"]}]})
 
     sess = call("POST", f"{PDS}/xrpc/com.atproto.server.createSession", {"identifier": HANDLE, "password": PASSWORD})
     did, jwt = sess["did"], sess["accessJwt"]
@@ -95,6 +107,7 @@ def main():
         "text": text,
         "createdAt": time.strftime("%Y-%m-%dT%H:%M:%S.000Z", time.gmtime()),
         "langs": ["ja"],
+        "facets": facets,
         "embed": {"$type": "app.bsky.embed.video", "video": blob, "aspectRatio": {"width": 1080, "height": 1920},
                   "alt": spec.get("title", "")},
     }

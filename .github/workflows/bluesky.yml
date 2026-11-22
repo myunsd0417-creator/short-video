@@ -4,6 +4,8 @@ on:
     - cron: "7 3 * * *"    # 日本時間 12:07
     - cron: "7 11 * * *"   # 日本時間 20:07
   workflow_dispatch:
+  push:
+    paths: [".github/workflows/bluesky.yml"]
 permissions:
   contents: write
 concurrency:
