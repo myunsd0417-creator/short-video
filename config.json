@@ -60,5 +60,8 @@
     "20:30",
     "21:00"
   ],
-  "youtube_gap_min": 1480
+  "youtube_gap_min": 1480,
+  "bluesky": {
+    "handle": "mirumi96market.bsky.social"
+  }
 }
