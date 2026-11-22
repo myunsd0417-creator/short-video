@@ -1,2 +1,3 @@
-2026-11-22 10:25 UTC (pin)
-自己紹介を固定OK at://did:plc:f7p3cd3fyuldevbytyks6frz/app.bsky.feed.post/3n2vfn55fds2p
+2026-11-22 13:23 UTC (auto)
+015 投稿OK at://did:plc:f7p3cd3fyuldevbytyks6frz/app.bsky.feed.post/3n2vplbc7j226
+015 3行まとめOK
