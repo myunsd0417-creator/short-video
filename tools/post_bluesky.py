@@ -1,10 +1,16 @@
-"""台所用のBlueskyアカウントに、動画を1本投稿する（GitHub Actionsから1日2回動かす）。
+"""台所用Blueskyアカウントの自動投稿。
+使い方:
+  python tools/post_bluesky.py          動画を1本投稿し、自分の返信で「3行まとめ」を付ける
+  python tools/post_bluesky.py weekly   その週に投稿した動画のまとめ投稿をする
+  python tools/post_bluesky.py pin      自己紹介の投稿を作ってプロフィールに固定する（1回だけ）
 - アカウント名は config.json の bluesky.handle、パスワードは GitHub のシークレット BSKY_APP_PASSWORD
-- 投稿順は config.json の order（TikTok・YouTubeと同じ並び）。投稿済みは output/bluesky_posted.json に記録
-- 動画は TikTok 版（<id>.mp4）を使う。説明文はハッシュタグまで
+- 投稿順は config.json の order。投稿済みは output/bluesky_posted.json に記録
+- 他の人への自動いいね・フォロー・返信はしない（Blueskyのルールでスパム扱いになるため）
 """
+import datetime as dt
 import json
 import os
+import re
 import sys
 import time
 import urllib.parse
@@ -39,6 +45,98 @@ def call(method, url, body=None, headers=None, raw=None, ctype="application/json
         raise RuntimeError(f"HTTP {e.code} {url.split('?')[0]}: {e.read().decode()[:300]}")
 
 
+def load_state():
+    s = json.loads(STATE_PATH.read_text(encoding="utf-8")) if STATE_PATH.exists() else {}
+    s.setdefault("posted", [])
+    s.setdefault("history", [])  # {"id", "at"}
+    return s
+
+
+def save_state(s):
+    STATE_PATH.write_text(json.dumps(s, ensure_ascii=False, indent=1), encoding="utf-8")
+
+
+def login():
+    sess = call("POST", f"{PDS}/xrpc/com.atproto.server.createSession", {"identifier": HANDLE, "password": PASSWORD})
+    return sess, {"Authorization": f"Bearer {sess['accessJwt']}"}
+
+
+def links_tail():
+    return "".join(f"\n{l['label']}\n{l['url']}" for l in BS.get("links", []))
+
+
+def facets_for(text):
+    """URLとハッシュタグを押せるようにする（位置はバイトで指定）"""
+    facets = []
+    for m in re.finditer(r"https?://\S+", text):
+        s = len(text[: m.start()].encode("utf-8"))
+        e = s + len(m.group(0).encode("utf-8"))
+        facets.append({"index": {"byteStart": s, "byteEnd": e},
+                       "features": [{"$type": "app.bsky.richtext.facet#link", "uri": m.group(0)}]})
+    for m in re.finditer(r"(?:(?<=\s)|^)#([^\s#]+)", text):
+        s = len(text[: m.start()].encode("utf-8"))
+        e = s + len(m.group(0).encode("utf-8"))
+        facets.append({"index": {"byteStart": s, "byteEnd": e},
+                       "features": [{"$type": "app.bsky.richtext.facet#tag", "tag": m.group(1)}]})
+    return facets
+
+
+def fit(text, tail="", limit=295):
+    """Blueskyは300文字まで。末尾（リンク）は残して本文を詰める"""
+    if len(text) + len(tail) > limit:
+        text = text[: limit - len(tail)]
+    return text + tail
+
+
+def create_post(sess, auth, text, embed=None, reply=None):
+    record = {"$type": "app.bsky.feed.post", "text": text, "langs": ["ja"], "facets": facets_for(text),
+              "createdAt": time.strftime("%Y-%m-%dT%H:%M:%S.000Z", time.gmtime())}
+    if embed:
+        record["embed"] = embed
+    if reply:
+        record["reply"] = reply
+    return call("POST", f"{PDS}/xrpc/com.atproto.repo.createRecord",
+                {"repo": sess["did"], "collection": "app.bsky.feed.post", "record": record}, headers=auth)
+
+
+def upload_video(sess, auth, path, name):
+    pds_host = urllib.parse.urlparse(sess.get("didDoc", {}).get("service", [{}])[0].get("serviceEndpoint", PDS)).netloc
+    svc = call("GET", f"{PDS}/xrpc/com.atproto.server.getServiceAuth?" + urllib.parse.urlencode(
+        {"aud": f"did:web:{pds_host}", "lxm": "com.atproto.repo.uploadBlob", "exp": int(time.time()) + 1800}), headers=auth)
+    up = call("POST", "https://video.bsky.app/xrpc/app.bsky.video.uploadVideo?" + urllib.parse.urlencode(
+        {"did": sess["did"], "name": name}), raw=path.read_bytes(), ctype="video/mp4",
+        headers={"Authorization": f"Bearer {svc['token']}"})
+    job = up.get("jobId") or up.get("jobStatus", {}).get("jobId")
+    blob = up.get("blob") or up.get("jobStatus", {}).get("blob")
+    for _ in range(60):  # 動画の処理が終わるのを待つ
+        if blob:
+            return blob
+        time.sleep(5)
+        st = call("GET", "https://video.bsky.app/xrpc/app.bsky.video.getJobStatus?jobId=" + urllib.parse.quote(job), headers=auth)
+        js = st.get("jobStatus", {})
+        if js.get("state") == "JOB_STATE_FAILED":
+            raise RuntimeError(f"動画の処理に失敗: {js.get('error')}")
+        blob = js.get("blob")
+    raise RuntimeError("動画の処理が時間内に終わりませんでした")
+
+
+def summary_text(spec):
+    """動画の要点を文字で（検索に引っかかるように）"""
+    items = [s for s in spec["slides"] if s["type"] == "item"]
+    lines = ["【3行まとめ】"]
+    for n, s in zip("①②③", items):
+        head = "".join(s["big"])
+        sub = s.get("sub", "")
+        lines.append(f"{n}{head}" + (f"：{sub}" if sub else ""))
+    end = [s for s in spec["slides"] if s["type"] == "end"]
+    if end:
+        lines.append("→ " + "".join(end[0]["big"]))
+    ref = [l for l in spec["caption"].splitlines() if l.startswith("参考")]
+    if ref:
+        lines.append(ref[0])
+    return fit("\n".join(lines))
+
+
 def pick_video(state):
     done = set(state["posted"])
     skip = set(CFG.get("skip", []))
@@ -51,77 +149,75 @@ def pick_video(state):
     return None
 
 
-def main():
-    if not (HANDLE and PASSWORD):
-        log("Blueskyのアカウント名かアプリパスワードが未設定なので、何もしません")
-        return
-    state = json.loads(STATE_PATH.read_text(encoding="utf-8")) if STATE_PATH.exists() else {"posted": []}
+def post_video():
+    state = load_state()
     vid = pick_video(state)
     if not vid:
         log("投稿する動画がありません")
         return
     spec = json.loads(Path(f"content/{vid}.json").read_text(encoding="utf-8"))
-    text = spec["caption"]
-    links = BS.get("links", [])
-    tail = "".join(f"\n{l['label']}\n{l['url']}" for l in links)
-    if len(text) + len(tail) > 295:  # Blueskyは300文字まで
-        text = text[: 295 - len(tail)]
-    text += tail
-    # URLをタップできるようにする（バイト位置で指定）
-    facets = []
-    b = text.encode("utf-8")
-    for l in links:
-        u = l["url"].encode("utf-8")
-        i = b.find(u)
-        if i >= 0:
-            facets.append({"index": {"byteStart": i, "byteEnd": i + len(u)},
-                           "features": [{"$type": "app.bsky.richtext.facet#link", "uri": l["url"]}]})
-
-    sess = call("POST", f"{PDS}/xrpc/com.atproto.server.createSession", {"identifier": HANDLE, "password": PASSWORD})
-    did, jwt = sess["did"], sess["accessJwt"]
-    auth = {"Authorization": f"Bearer {jwt}"}
-
-    # 動画サービスに上げるための一時的な許可をもらう
-    pds_host = urllib.parse.urlparse(sess.get("didDoc", {}).get("service", [{}])[0].get("serviceEndpoint", PDS)).netloc
-    svc = call("GET", f"{PDS}/xrpc/com.atproto.server.getServiceAuth?" + urllib.parse.urlencode(
-        {"aud": f"did:web:{pds_host}", "lxm": "com.atproto.repo.uploadBlob", "exp": int(time.time()) + 1800}), headers=auth)
-    video = Path(f"output/{vid}.mp4").read_bytes()
-    up = call("POST", "https://video.bsky.app/xrpc/app.bsky.video.uploadVideo?" + urllib.parse.urlencode(
-        {"did": did, "name": f"{vid}.mp4"}), raw=video, ctype="video/mp4", headers={"Authorization": f"Bearer {svc['token']}"})
-    job = up.get("jobId") or up.get("jobStatus", {}).get("jobId")
-    blob = up.get("blob") or up.get("jobStatus", {}).get("blob")
-    for _ in range(60):  # 動画の処理が終わるのを待つ
-        if blob:
-            break
-        time.sleep(5)
-        st = call("GET", "https://video.bsky.app/xrpc/app.bsky.video.getJobStatus?jobId=" + urllib.parse.quote(job), headers=auth)
-        js = st.get("jobStatus", {})
-        if js.get("state") == "JOB_STATE_FAILED":
-            raise RuntimeError(f"動画の処理に失敗: {js.get('error')}")
-        blob = js.get("blob")
-    if not blob:
-        raise RuntimeError("動画の処理が時間内に終わりませんでした")
-
-    record = {
-        "$type": "app.bsky.feed.post",
-        "text": text,
-        "createdAt": time.strftime("%Y-%m-%dT%H:%M:%S.000Z", time.gmtime()),
-        "langs": ["ja"],
-        "facets": facets,
-        "embed": {"$type": "app.bsky.embed.video", "video": blob, "aspectRatio": {"width": 1080, "height": 1920},
-                  "alt": spec.get("title", "")},
-    }
-    res = call("POST", f"{PDS}/xrpc/com.atproto.repo.createRecord",
-               {"repo": did, "collection": "app.bsky.feed.post", "record": record}, headers=auth)
+    sess, auth = login()
+    blob = upload_video(sess, auth, Path(f"output/{vid}.mp4"), f"{vid}.mp4")
+    embed = {"$type": "app.bsky.embed.video", "video": blob, "aspectRatio": {"width": 1080, "height": 1920},
+             "alt": spec.get("title", "")}
+    res = create_post(sess, auth, fit(spec["caption"], links_tail()), embed=embed)
     state["posted"].append(vid)
-    STATE_PATH.write_text(json.dumps(state, ensure_ascii=False, indent=1), encoding="utf-8")
+    state["history"].append({"id": vid, "at": dt.datetime.now(dt.timezone.utc).isoformat()})
+    save_state(state)
     log(f"{vid} 投稿OK {res.get('uri', '')}")
+    try:  # 自分の投稿への返信なので、他の人に通知は飛ばない
+        ref = {"uri": res["uri"], "cid": res["cid"]}
+        create_post(sess, auth, summary_text(spec), reply={"root": ref, "parent": ref})
+        log(f"{vid} 3行まとめOK")
+    except Exception as e:
+        log(f"{vid} 3行まとめNG {e}")
+
+
+def post_weekly():
+    state = load_state()
+    since = dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=7)
+    ids = [h["id"] for h in state["history"] if dt.datetime.fromisoformat(h["at"]) > since]
+    if not ids:
+        log("今週の投稿がないので、まとめはなし")
+        return
+    titles = ["・" + json.loads(Path(f"content/{v}.json").read_text(encoding="utf-8"))["title"] for v in dict.fromkeys(ids)]
+    head = "【今週のまとめ】めんどくさがり一人暮らしの台所\n"
+    tail = "\n保存して、あとで見返してね\n#一人暮らし #自炊" + links_tail()
+    sess, auth = login()
+    res = create_post(sess, auth, fit(head + "\n".join(titles), tail))
+    log(f"週のまとめOK {res.get('uri', '')}")
+
+
+def pin_intro():
+    sess, auth = login()
+    text = ("めんどくさがりの一人暮らしが、台所をラクにする道具と工夫を毎日紹介しています🍳\n"
+            "洗い物・自炊・保存・片付け・節約。知っているだけでラクになることを、短い動画で。\n"
+            "#一人暮らし #自炊 #時短家事" + links_tail())
+    res = create_post(sess, auth, fit(text))
+    prof = call("GET", f"{PDS}/xrpc/com.atproto.repo.getRecord?" + urllib.parse.urlencode(
+        {"repo": sess["did"], "collection": "app.bsky.actor.profile", "rkey": "self"}), headers=auth)
+    record = prof.get("value", {"$type": "app.bsky.actor.profile"})
+    record["pinnedPost"] = {"uri": res["uri"], "cid": res["cid"]}  # 名前・自己紹介などはそのまま残す
+    body = {"repo": sess["did"], "collection": "app.bsky.actor.profile", "rkey": "self", "record": record}
+    if prof.get("cid"):
+        body["swapRecord"] = prof["cid"]
+    call("POST", f"{PDS}/xrpc/com.atproto.repo.putRecord", body, headers=auth)
+    log(f"自己紹介を固定OK {res.get('uri', '')}")
 
 
 if __name__ == "__main__":
+    mode = sys.argv[1] if len(sys.argv) > 1 else "post"
     try:
-        main()
+        if not (HANDLE and PASSWORD):
+            log("Blueskyのアカウント名かアプリパスワードが未設定なので、何もしません")
+        elif mode == "weekly":
+            post_weekly()
+        elif mode == "pin":
+            pin_intro()
+        else:
+            post_video()
     except Exception as e:
         log(f"NG {e}")
-    LOG_PATH.write_text(time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime()) + "\n" + "\n".join(LOG) + "\n", encoding="utf-8")
+    LOG_PATH.write_text(time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime()) + f" ({mode})\n" + "\n".join(LOG) + "\n",
+                        encoding="utf-8")
     sys.exit(0)
