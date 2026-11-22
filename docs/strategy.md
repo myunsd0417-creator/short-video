@@ -6,6 +6,12 @@
 - TikTok @minmi_581 / YouTube「みん」。ジャンルは「一人暮らしのキッチン・食まわりの便利グッズ」
 - 顔出し・声出しなし。Buffer経由で自動投稿（TikTokは1日2本、11:45 と 19:30。YouTubeはBufferの「24時間で2本まで」の制限があるため、2本前から24時間40分あけて1日約1.6本。config.json の youtube_slots_jst）
 
+## 全体の形（2026-11-23〜）：YouTube × TikTok（Shop）× Bluesky の連携
+- TikTok：本命。フォロワー1,000人でTikTok Shopアフィリエイト。新しいアカウントで出し直す予定（Miyuuさんが作成→Bufferにつなぐ）
+- YouTube：今いちばん見られている。登録者500人＋ショート300万回/90日などで楽天のショッピングアフィリエイト
+- Bluesky（mirumi96market）：入口。1日2本＋3行まとめ＋日曜のまとめ。リンクでYouTube（とTikTok）へ流す
+- 見直しでは3つの数字をまとめて見る（TikTok・YouTubeは output/metrics.md、Blueskyは output/bluesky_log.txt と bluesky_posted.json）
+
 ## 最優先の目標
 - 撮影はしない（手元撮影も続かないのでやらない）。素材は自動で作れるものだけ
 - TikTok Shopアフィリエイト（日本：フォロワー1,000人以上など）。TikTokの数字（平均視聴秒数・フォロワー増）を最優先で見る
