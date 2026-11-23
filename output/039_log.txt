@@ -1,0 +1,19 @@
+  search 'grilled fish': 1 usable
+[0] OK grilled fish -> File:Grilled salmon at French restaurant in Tokyo.jpg (CC0)
+  search 'kitchen hood': 2 usable
+[1] OK kitchen hood -> File:CaptiveAire Hood.jpg (CC0)
+  search 'food storage bag': 5 usable
+[2] OK food storage bag -> File:Space Food, Beef and Vegetables, Mercury, Friendship 7 - DPLA - 7abee08de67ccd93eb4cd952141b8720.jpg (CC0)
+  search 'trash can': 5 usable
+[3] OK trash can -> File:Trash can in Monterey, California, USA.jpg (CC0)
+  search 'small kitchen': 2 usable
+[4] OK small kitchen -> File:Full English Breakfast (small) - Tutti Frutti Kitchen 2024-07-04.jpg (CC0)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.47, 1.92, 1.92, 1.92, 1.79] total: 10.02
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.69, 2.79, 3.33, 2.81, 3.51] total: 15.13
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.47, 1.92, 1.92, 1.92, 1.79] total: 10.02
