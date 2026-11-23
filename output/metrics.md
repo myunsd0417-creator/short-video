@@ -1,7 +1,7 @@
 # 投稿の数字（自動更新）
 
 比較用（ジャンル変更前の過去投稿 18本の平均）: 再生 516.7、平均視聴秒数 14.4
-新ジャンル TikTok 20本の平均: 再生 123.5、平均視聴秒数 3.5
+新ジャンル TikTok 21本の平均: 再生 114.7、平均視聴秒数 3.5
 新ジャンル YouTube 19本の平均: 再生 557.1（YouTubeは視聴秒数がBufferに来ない）
 
 | 動画 | 媒体 | 投稿日時 | 数字 |
@@ -45,12 +45,13 @@
 | 025 洗い物ゼロの日の作り方 | youtube | 2026-11-22T03:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 533 |
 | 022 まな板とスポンジ 洗うだけはもったいない3つ | tiktok | 2026-11-22T10:30:00.000Z | まだ集計なし |
 | 009 洗い物を減らす食器の選び方 | youtube | 2026-11-22T11:30:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 459 |
+| 010 キッチン掃除がラクになる3つ | tiktok | 2026-11-23T02:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 0、Shares: 0、Reach: 0、Watch Time (min): 0、Avg. Watch Time (sec): 0 |
 
 ## 冒頭の型ごとの平均（TikTok）
 
 | 型 | 本数 | 平均再生 | 平均視聴秒数 |
 |---|---|---|---|
-| loss | 4 | 97.0 | 4.4 |
+| loss | 5 | 48.5 | 4.4 |
 | question | 3 | 120.0 | 2.1 |
 | regret | 2 | 94.0 | 4.2 |
 | result | 7 | 130.4 | 3.3 |

@@ -1,4 +1,7 @@
-030 tiktok url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@35f76af1e8aedb1e171f7c8bcf607fce76dcc32b/output/030_tn.mp4
-030 tiktok 2026-11-26T19:30:00+09:00 OK {"data": {"createPost": {"post": {"id": "6b039d7ba6de38de9eadee0c", "dueAt": "2026-11-26T10:30:00.000Z"}}}}
+032 tiktok url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@153d273e4b704162745c8d6bc3ffe712f8c2a723/output/032.mp4
+032 tiktok 2026-11-27T07:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6b03db55d864a0110527e617", "dueAt": "2026-11-26T22:45:00.000Z"}}}}
 031 youtube url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@21bd10a8491a503070db48d59b92b9d313f20df1/output/031_yt.mp4
 031 youtube 2026-11-27T20:30:00+09:00 NG {"data": {"createPost": {"message": "You have already scheduled the maximum number of posts YouTube allows in a day (2). Please consider scheduling this post for another day."}}}
+031 youtube 上限のため次の枠で再試行
+031 youtube url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@21bd10a8491a503070db48d59b92b9d313f20df1/output/031_yt.mp4
+031 youtube 2026-11-28T19:30:00+09:00 OK {"data": {"createPost": {"post": {"id": "6b03db56c72676f5e98f8ee9", "dueAt": "2026-11-28T10:30:00.000Z"}}}}
