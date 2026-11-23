@@ -53,7 +53,8 @@
       ],
       "mark": "穴",
       "sub": "湿気や匂いで味が落ちる",
-      "tag": "その2"
+      "tag": "その2",
+      "plain_bg": true
     },
     {
       "type": "item",
@@ -68,7 +69,8 @@
       ],
       "mark": "小分け",
       "sub": "冷蔵庫か野菜室へ",
-      "tag": "その3"
+      "tag": "その3",
+      "plain_bg": true
     },
     {
       "type": "end",
