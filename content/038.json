@@ -1,0 +1,90 @@
+{
+  "id": "038",
+  "kind": "knowledge",
+  "hook_type": "surprise",
+  "persona": true,
+  "title": "じゃがいも 冷蔵庫に入れない 農水省の保存3つ",
+  "caption": "あなたは冷蔵庫に入れてた？\nじゃがいもは冷蔵庫に入れなくていい🥔\n参考：農林水産省「じゃがいもを買うとき・保存するとき」ほか\n保存して、あとで見返してね\n#一人暮らし #保存方法 #じゃがいも #自炊 #知らないと損",
+  "sources": [
+    "農林水産省（ソラニン・チャコニン）：じゃがいもは暗くて涼しくて通気性がよい場所に保存。冷蔵庫で保存する必要はない。紙袋や段ボールに入れ風通しのよい暗所、10℃くらいが好ましい。芽はまわりも含めて取り除き、緑色の部分はなくなるまで皮をむく https://www.maff.go.jp/j/syouan/seisaku/solanine/yobou/yobou.html",
+    "農林水産省（家庭調理でできること）：長期間冷蔵すると還元糖が増える。冷蔵したじゃがいもを炒めると焦げやすくなった https://www.maff.go.jp/j/syouan/seisaku/acryl_amide/a_syosai/teigen/syohisya/katei_chori.html",
+    "農林水産省（フライドポテトを家庭で作るときのアドバイス）：冷蔵庫で長い間保存したじゃがいもは糖分が増え焦げやすい。室温に一週間程度置くと糖分が減る https://www.maff.go.jp/j/syouan/seisaku/acryl_amide/a_kiso/potato.html"
+  ],
+  "slides": [
+    {
+      "type": "hook",
+      "query": "potatoes",
+      "fallback": [
+        "potato",
+        "raw potatoes"
+      ],
+      "big": [
+        "じゃがいもは",
+        "冷蔵庫いらない"
+      ],
+      "mark": "いらない",
+      "sub": "2つ目、袋のままはもったいない",
+      "small": "冬の買いだめをする私",
+      "say": "じゃがいもは、冷蔵庫に入れなくていいんです"
+    },
+    {
+      "type": "item",
+      "query": "fried potatoes",
+      "fallback": [
+        "potato slices",
+        "french fries"
+      ],
+      "big": [
+        "冷やすと",
+        "焦げやすい"
+      ],
+      "mark": "焦げやすい",
+      "sub": "長く冷蔵すると糖が増える（農水省）",
+      "tag": "その1"
+    },
+    {
+      "type": "item",
+      "query": "cardboard box",
+      "fallback": [
+        "paper bag",
+        "brown paper bag"
+      ],
+      "big": [
+        "紙袋か箱で",
+        "暗い所へ"
+      ],
+      "mark": "暗い所",
+      "sub": "10℃くらいの涼しい所がいい",
+      "tag": "その2"
+    },
+    {
+      "type": "item",
+      "query": "sprouting potato",
+      "fallback": [
+        "potato sprouts",
+        "potato"
+      ],
+      "big": [
+        "芽はまわり",
+        "ごと取る"
+      ],
+      "mark": "まわり",
+      "sub": "緑の皮はなくなるまでむく",
+      "tag": "その3"
+    },
+    {
+      "type": "end",
+      "query": "potato dish",
+      "fallback": [
+        "boiled potatoes",
+        "mashed potatoes"
+      ],
+      "big": [
+        "冷蔵庫より",
+        "暗い所へ"
+      ],
+      "mark": "暗い所",
+      "sub": "やってた人はコメントで『1』"
+    }
+  ]
+}

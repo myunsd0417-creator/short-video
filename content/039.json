@@ -1,0 +1,85 @@
+{
+  "id": "039",
+  "kind": "product",
+  "hook_type": "loss",
+  "persona": true,
+  "title": "ワンルーム キッチンの匂い 減らす3つの道具",
+  "caption": "あなたの部屋はどう？\nワンルームで焼き魚をした次の日も匂ってた私🐟\n保存して、あとで見返してね\n#一人暮らし #ワンルーム #キッチン #匂い対策 #キッチン道具",
+  "slides": [
+    {
+      "type": "hook",
+      "query": "grilled fish",
+      "fallback": [
+        "grilled mackerel",
+        "fish dish"
+      ],
+      "big": [
+        "焼き魚の",
+        "匂いが残る"
+      ],
+      "mark": "匂い",
+      "sub": "3つ目、ゴミ箱を変えた",
+      "small": "ワンルームで冬ごもりの私",
+      "say": "ワンルームで焼き魚、次の日まで匂ってました"
+    },
+    {
+      "type": "item",
+      "query": "kitchen hood",
+      "fallback": [
+        "range hood",
+        "extractor hood"
+      ],
+      "big": [
+        "換気扇に",
+        "フィルター"
+      ],
+      "mark": "フィルター",
+      "sub": "油と匂いがたまりにくい",
+      "tag": "その1"
+    },
+    {
+      "type": "item",
+      "query": "food storage bag",
+      "fallback": [
+        "zipper bag",
+        "plastic bag"
+      ],
+      "big": [
+        "生ごみは",
+        "袋でしばる"
+      ],
+      "mark": "しばる",
+      "sub": "密閉できる袋に入れて捨てる日まで",
+      "tag": "その2"
+    },
+    {
+      "type": "item",
+      "query": "trash can",
+      "fallback": [
+        "waste bin",
+        "dustbin"
+      ],
+      "big": [
+        "ゴミ箱は",
+        "ふた付き"
+      ],
+      "mark": "ふた付き",
+      "sub": "足で開けられると手も汚れない",
+      "tag": "その3"
+    },
+    {
+      "type": "end",
+      "query": "small kitchen",
+      "fallback": [
+        "kitchen",
+        "apartment kitchen"
+      ],
+      "big": [
+        "匂いは",
+        "閉じこめる"
+      ],
+      "mark": "閉じこめる",
+      "sub": "やってた人はコメントで『1』"
+    }
+  ]
+}

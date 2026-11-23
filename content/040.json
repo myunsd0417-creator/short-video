@@ -1,0 +1,88 @@
+{
+  "id": "040",
+  "kind": "knowledge",
+  "hook_type": "result",
+  "persona": true,
+  "title": "キャベツ・白菜 長持ちさせる 農水省の3つ",
+  "caption": "あなたは切って使ってた？\nキャベツ・白菜は丸ごとなら約半月もつ🥬\n参考：農林水産省 aff 2023年1月号「品目別保存法」\n保存して、あとで見返してね\n#一人暮らし #保存方法 #キャベツ #白菜 #節約",
+  "sources": [
+    "農林水産省 aff 2023年1月号：キャベツは丸ごとなら約半月は保存可能。細かくカットしたものは1、2日のうちに。外側の葉から必要な枚数だけはがして使えば、より長持ち。キャベツ・はくさいは丸ごとならポリ袋に入れて野菜室か冷暗所。芯に両端から斜めに包丁を入れて三角に切り落とすと鮮度が保てる。葉物は切り口を下にして立てて保存するほうが長持ち https://www.maff.go.jp/j/pr/aff/2301/spe1_02.html"
+  ],
+  "slides": [
+    {
+      "type": "hook",
+      "query": "cabbage",
+      "fallback": [
+        "cabbage head",
+        "green cabbage"
+      ],
+      "big": [
+        "キャベツは",
+        "外からはがす"
+      ],
+      "mark": "外から",
+      "sub": "丸ごとなら約半月もつ",
+      "small": "冬の鍋で白菜を買う私",
+      "say": "キャベツと白菜は、切らずに外からはがすと長持ち"
+    },
+    {
+      "type": "item",
+      "query": "cabbage leaves",
+      "fallback": [
+        "cabbage leaf",
+        "savoy cabbage"
+      ],
+      "big": [
+        "切らずに",
+        "外の葉から"
+      ],
+      "mark": "外の葉",
+      "sub": "使う枚数だけはがす",
+      "tag": "その1"
+    },
+    {
+      "type": "item",
+      "query": "cabbage core",
+      "fallback": [
+        "cut cabbage",
+        "cabbage cross section"
+      ],
+      "big": [
+        "芯は三角に",
+        "切り落とす"
+      ],
+      "mark": "三角",
+      "sub": "芯を取ると鮮度が保てる",
+      "tag": "その2"
+    },
+    {
+      "type": "item",
+      "query": "napa cabbage",
+      "fallback": [
+        "chinese cabbage",
+        "bok choy"
+      ],
+      "big": [
+        "切り口を下に",
+        "立てて保存"
+      ],
+      "mark": "立てて",
+      "sub": "袋に入れて野菜室へ",
+      "tag": "その3"
+    },
+    {
+      "type": "end",
+      "query": "cabbage dish",
+      "fallback": [
+        "coleslaw",
+        "cabbage salad"
+      ],
+      "big": [
+        "外から使って",
+        "約半月"
+      ],
+      "mark": "約半月",
+      "sub": "やってた人はコメントで『1』"
+    }
+  ]
+}

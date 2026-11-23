@@ -1,0 +1,88 @@
+{
+  "id": "041",
+  "kind": "knowledge",
+  "hook_type": "regret",
+  "persona": true,
+  "title": "お米の保存 袋のままはNG 農水省のおすすめ",
+  "caption": "あなたは袋のままだった？\nお米を買った袋のまま置いてた私がやめたこと🍚\n参考：農林水産省「お米のおいしさがアップする炊き方と保存法」\n保存して、あとで見返してね\n#一人暮らし #保存方法 #お米 #自炊 #知らないと損",
+  "sources": [
+    "農林水産省（お米のおいしさがアップする炊き方と保存法）：売られているお米の袋には小さな穴が開いていて、お米はこの穴から呼吸し、外の湿気や臭いにふれ、味が落ちる原因に。購入後はチャックで密閉できる食品保存袋に小分けして、冷蔵庫や野菜室で保管するのがおすすめ。お米は野菜と同じく生鮮食品 https://www.maff.go.jp/j/keikaku/syokubunka/culture/wagohan/articles/2111/spe3_01.html"
+  ],
+  "slides": [
+    {
+      "type": "hook",
+      "query": "rice grains",
+      "fallback": [
+        "uncooked rice",
+        "white rice"
+      ],
+      "big": [
+        "お米は",
+        "冷蔵庫が正解"
+      ],
+      "mark": "冷蔵庫",
+      "sub": "2つ目、袋に穴があいてる",
+      "small": "年末にお米を買う私",
+      "say": "お米を、買った袋のまま置いてた私がやめたこと"
+    },
+    {
+      "type": "item",
+      "query": "rice",
+      "fallback": [
+        "raw rice",
+        "rice bowl"
+      ],
+      "big": [
+        "お米は",
+        "野菜と同じ"
+      ],
+      "mark": "野菜",
+      "sub": "農水省は生鮮食品と紹介",
+      "tag": "その1"
+    },
+    {
+      "type": "item",
+      "query": "rice sack",
+      "fallback": [
+        "rice bag",
+        "sack"
+      ],
+      "big": [
+        "売り袋には",
+        "小さな穴"
+      ],
+      "mark": "穴",
+      "sub": "湿気や匂いで味が落ちる",
+      "tag": "その2"
+    },
+    {
+      "type": "item",
+      "query": "food storage bag",
+      "fallback": [
+        "zipper bag",
+        "plastic bag"
+      ],
+      "big": [
+        "保存袋に",
+        "小分けして"
+      ],
+      "mark": "小分け",
+      "sub": "冷蔵庫か野菜室へ",
+      "tag": "その3"
+    },
+    {
+      "type": "end",
+      "query": "cooked rice",
+      "fallback": [
+        "rice bowl",
+        "steamed rice"
+      ],
+      "big": [
+        "小分けして",
+        "冷蔵庫へ"
+      ],
+      "mark": "冷蔵庫",
+      "sub": "やってた人はコメントで『1』"
+    }
+  ]
+}
