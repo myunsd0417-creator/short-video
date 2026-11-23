@@ -141,8 +141,14 @@ def main():
         taken = {p["dueAt"] for p in future}
         history = [dt.datetime.fromisoformat(p["dueAt"]) for p in STATE["posts"]
                    if p["service"] == service and p.get("ok") and p.get("publish")]
-        slots = next_slots(len(todo), taken, service, history)
-        for vid, when in zip(todo, slots):
+        blocked = []  # Bufferに「1日の上限」で断られた時刻（次の枠へずらす）
+        queue = list(todo)
+        while queue:
+            vid = queue.pop(0)
+            slots = next_slots(1, taken | {b.isoformat() for b in blocked}, service, history + blocked)
+            if not slots:
+                break
+            when = slots[0]
             notify = service == "tiktok" and when.strftime("%H:%M") in CFG.get("tiktok_notify_slots", [])
             spec = json.loads(Path(f"content/{vid}.json").read_text(encoding="utf-8"))
             text = "【めんどくさがり一人暮らしの台所】\n" + spec["caption"]  # シリーズ名でフォローする理由を作る
@@ -184,6 +190,14 @@ def main():
             post = ((res.get("data") or {}).get("createPost") or {}).get("post")
             ok = bool(post)
             log(f"{vid} {service} {when.isoformat()} {'OK' if ok else 'NG'} {json.dumps(res, ensure_ascii=False)[:400]}")
+            if not ok and service == "youtube" and re.search(r"maximum number of posts|limit of 2", msg) and len(blocked) < 4:
+                blocked.append(when)  # 同じ動画を次の枠で入れ直す（記録はしない）
+                queue.insert(0, vid)
+                log(f"{vid} youtube 上限のため次の枠で再試行")
+                continue
+            if ok:
+                taken.add(when.isoformat())
+                history.append(when)
             STATE["posts"].append({"id": vid, "service": service, "dueAt": when.isoformat(), "ok": ok,
                                    "publish": publish, "post_id": post and post.get("id")})
     STATE_PATH.write_text(json.dumps(STATE, ensure_ascii=False, indent=1), encoding="utf-8")
