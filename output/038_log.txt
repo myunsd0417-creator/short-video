@@ -1,0 +1,19 @@
+  search 'potatoes': 7 usable
+[0] OK potatoes -> File:Dettaglio - Solanaceae Solanum tuberosum Lin. Erbario Frizzi Perugia n. 3916.jpg (Public domain)
+  search 'fried potatoes': 5 usable
+[1] OK fried potatoes -> File:Potatoes, fried - Massachusetts.jpg (CC0)
+  search 'cardboard box': 2 usable
+[2] OK cardboard box -> File:SZ 深圳 Shenzhen 福田 Futian 福民路 Fumin Road 水圍 Shuiwei 味琪餐廳 Wei Qi Restaurant food logistics paper cardboard boxes egg Lee Kum Kee soy sauce wine 板車 cart January 2024 R12S.jpg (CC0)
+  search 'sprouting potato': 6 usable
+[3] OK sprouting potato -> File:New York steak in bourbon sauce, with Brussels sprouts and roasted potatoes - Massachusetts.jpg (CC0)
+  search 'potato dish': 5 usable
+[4] OK potato dish -> File:Funeral potatoes after baking.jpg (CC0)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.18, 1.92, 1.92, 1.92, 2.26] total: 10.2
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.37, 3.79, 3.76, 2.76, 4.05] total: 16.73
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.18, 1.92, 1.92, 1.92, 2.26] total: 10.2
