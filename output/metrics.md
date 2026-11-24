@@ -1,8 +1,8 @@
 # 投稿の数字（自動更新）
 
-比較用（ジャンル変更前の過去投稿 18本の平均）: 再生 516.7、平均視聴秒数 14.4
-新ジャンル TikTok 21本の平均: 再生 114.7、平均視聴秒数 3.5
-新ジャンル YouTube 19本の平均: 再生 557.1（YouTubeは視聴秒数がBufferに来ない）
+比較用（ジャンル変更前の過去投稿 19本の平均）: 再生 489.5、平均視聴秒数 14.4
+新ジャンル TikTok 23本の平均: 再生 122.2、平均視聴秒数 3.4
+新ジャンル YouTube 21本の平均: 再生 536.5（YouTubeは視聴秒数がBufferに来ない）
 
 | 動画 | 媒体 | 投稿日時 | 数字 |
 |---|---|---|---|
@@ -11,9 +11,9 @@
 | 002 レンジだけで自炊できる3つの道具 | youtube | 2026-11-13T11:15:00.000Z | Reactions: 2、Comments: 0、Eng. Rate: 0.24、Video Views: 834 |
 | 002 レンジだけで自炊できる3つの道具 | tiktok | 2026-11-13T11:15:00.000Z | Reactions: 1、Comments: 0、Eng. Rate: 0.8、Video Views: 125、Shares: 0、Reach: 125、Watch Time (min): 5.1、Avg. Watch Time (sec): 1.89 |
 | 005 包丁を使わなくていい3つの道具 | youtube | 2026-11-14T03:15:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 359 |
-| 005 包丁を使わなくていい3つの道具 | tiktok | 2026-11-14T03:15:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 128、Shares: 0、Reach: 128、Watch Time (min): 7.52、Avg. Watch Time (sec): 2.52 |
+| 005 包丁を使わなくていい3つの道具 | tiktok | 2026-11-14T03:15:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 128、Shares: 0、Reach: 128、Watch Time (min): 5.23、Avg. Watch Time (sec): 1.75 |
 | 004 狭いキッチンの置き場所を増やす3つ | youtube | 2026-11-14T10:30:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 342 |
-| 004 狭いキッチンの置き場所を増やす3つ | tiktok | 2026-11-14T10:30:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 151、Shares: 0、Reach: 151、Watch Time (min): 12.33、Avg. Watch Time (sec): 3.38 |
+| 004 狭いキッチンの置き場所を増やす3つ | tiktok | 2026-11-14T10:30:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 151、Shares: 0、Reach: 151、Watch Time (min): 8.47、Avg. Watch Time (sec): 2.32 |
 | 015 海外では常識 日本であまり聞かない台所のルール3つ | youtube | 2026-11-15T02:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 2 |
 | 015 海外では常識 日本であまり聞かない台所のルール3つ | tiktok | 2026-11-15T02:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 92、Shares: 0、Reach: 92、Watch Time (min): 6.85、Avg. Watch Time (sec): 3.32 |
 | 007 自炊が続く3つの道具 | youtube | 2026-11-15T10:30:00.000Z | Reactions: 5、Comments: 0、Eng. Rate: 0.43、Video Views: 1168 |
@@ -22,7 +22,7 @@
 | 016 海外では常識 残りものの2時間ルール | tiktok | 2026-11-16T02:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 163、Shares: 0、Reach: 161、Watch Time (min): 15.2、Avg. Watch Time (sec): 3.91 |
 | 017 冷凍と解凍 意外と知らない3つの事実 | youtube | 2026-11-16T10:30:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 464 |
 | 017 冷凍と解凍 意外と知らない3つの事実 | tiktok | 2026-11-16T10:30:00.000Z | まだ集計なし |
-| 011 一人鍋 準備が5分で終わる3つ | youtube | 2026-11-17T02:45:00.000Z | Reactions: 1、Comments: 0、Eng. Rate: 0.17、Video Views: 605 |
+| 011 一人鍋 準備が5分で終わる3つ | youtube | 2026-11-17T02:45:00.000Z | Reactions: 1、Comments: 0、Eng. Rate: 0.16、Video Views: 609 |
 | 011 一人鍋 準備が5分で終わる3つ | tiktok | 2026-11-17T02:45:00.000Z | Reactions: 1、Comments: 0、Eng. Rate: 0.77、Video Views: 130、Shares: 0、Reach: 130、Watch Time (min): 9.68、Avg. Watch Time (sec): 3.11 |
 | 018 カビが出たら 捨てる？削る？ | youtube | 2026-11-17T10:30:00.000Z | Reactions: 1、Comments: 0、Eng. Rate: 0.14、Video Views: 724 |
 | 018 カビが出たら 捨てる？削る？ | tiktok | 2026-11-17T10:30:00.000Z | まだ集計なし |
@@ -30,29 +30,33 @@
 | 013 一人暮らし 買って後悔したキッチン道具3つ | tiktok | 2026-11-18T02:45:00.000Z | Reactions: 1、Comments: 0、Eng. Rate: 1.06、Video Views: 94、Shares: 0、Reach: 93、Watch Time (min): 11.63、Avg. Watch Time (sec): 4.23 |
 | 023 洗い物めんどくさい私が やめたこと3つ | youtube | 2026-11-18T10:30:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 342 |
 | 023 洗い物めんどくさい私が やめたこと3つ | tiktok | 2026-11-18T10:30:00.000Z | まだ集計なし |
-| 008 朝ごはんが5分で終わる3つの道具 | tiktok | 2026-11-19T02:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 110、Shares: 0、Reach: 98、Watch Time (min): 10.87、Avg. Watch Time (sec): 3.21 |
+| 008 朝ごはんが5分で終わる3つの道具 | tiktok | 2026-11-19T02:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 110、Shares: 0、Reach: 110、Watch Time (min): 10.87、Avg. Watch Time (sec): 3.21 |
 | 008 朝ごはんが5分で終わる3つの道具 | youtube | 2026-11-19T03:12:45.055Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 307 |
 | 019 冷蔵庫 詰めすぎNG 厚労省のめやす3つ | tiktok | 2026-11-19T10:30:00.000Z | まだ集計なし |
 | 019 冷蔵庫 詰めすぎNG 厚労省のめやす3つ | youtube | 2026-11-19T11:30:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 244 |
-| 024 洗い物がラクになる 洗い方のコツ3つ | tiktok | 2026-11-20T02:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 141、Shares: 0、Reach: 0、Watch Time (min): 14.18、Avg. Watch Time (sec): 3.07 |
-| 024 洗い物がラクになる 洗い方のコツ3つ | youtube | 2026-11-20T03:45:00.000Z | Reactions: 4、Comments: 0、Eng. Rate: 0.43、Video Views: 924 |
+| 024 洗い物がラクになる 洗い方のコツ3つ | tiktok | 2026-11-20T02:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 141、Shares: 0、Reach: 140、Watch Time (min): 14.18、Avg. Watch Time (sec): 3.07 |
+| 024 洗い物がラクになる 洗い方のコツ3つ | youtube | 2026-11-20T03:45:00.000Z | Reactions: 4、Comments: 0、Eng. Rate: 0.43、Video Views: 921 |
 | 012 お弁当 冬でも温かく食べる3つ | tiktok | 2026-11-20T10:30:00.000Z | まだ集計なし |
-| 012 お弁当 冬でも温かく食べる3つ | youtube | 2026-11-21T02:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 620 |
-| 020 卵の賞味期限 意外と知らない3つのこと | tiktok | 2026-11-21T02:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 148、Shares: 0、Reach: 0、Watch Time (min): 36.2、Avg. Watch Time (sec): 6.83 |
-| 020 卵の賞味期限 意外と知らない3つのこと | youtube | 2026-11-21T10:30:00.000Z | Reactions: 2、Comments: 0、Eng. Rate: 0.23、Video Views: 854 |
+| 012 お弁当 冬でも温かく食べる3つ | youtube | 2026-11-21T02:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 633 |
+| 020 卵の賞味期限 意外と知らない3つのこと | tiktok | 2026-11-21T02:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 148、Shares: 0、Reach: 148、Watch Time (min): 36.53、Avg. Watch Time (sec): 6.85 |
+| 020 卵の賞味期限 意外と知らない3つのこと | youtube | 2026-11-21T10:30:00.000Z | Reactions: 2、Comments: 0、Eng. Rate: 0.22、Video Views: 896 |
 | 025 洗い物ゼロの日の作り方 | tiktok | 2026-11-21T10:30:00.000Z | まだ集計なし |
-| 009 洗い物を減らす食器の選び方 | tiktok | 2026-11-22T02:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 97、Shares: 0、Reach: 0、Watch Time (min): 12.43、Avg. Watch Time (sec): 4.37 |
-| 025 洗い物ゼロの日の作り方 | youtube | 2026-11-22T03:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 533 |
+| 009 洗い物を減らす食器の選び方 | tiktok | 2026-11-22T02:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 184、Shares: 0、Reach: 0、Watch Time (min): 20.85、Avg. Watch Time (sec): 4.41 |
+| 025 洗い物ゼロの日の作り方 | youtube | 2026-11-22T03:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 602 |
 | 022 まな板とスポンジ 洗うだけはもったいない3つ | tiktok | 2026-11-22T10:30:00.000Z | まだ集計なし |
-| 009 洗い物を減らす食器の選び方 | youtube | 2026-11-22T11:30:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 459 |
-| 010 キッチン掃除がラクになる3つ | tiktok | 2026-11-23T02:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 0、Shares: 0、Reach: 0、Watch Time (min): 0、Avg. Watch Time (sec): 0 |
+| 009 洗い物を減らす食器の選び方 | youtube | 2026-11-22T11:30:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 518 |
+| 010 キッチン掃除がラクになる3つ | tiktok | 2026-11-23T02:45:00.000Z | Reactions: 1、Comments: 0、Eng. Rate: 0.71、Video Views: 140、Shares: 0、Reach: 0、Watch Time (min): 19.75、Avg. Watch Time (sec): 4.34 |
+| 022 まな板とスポンジ 洗うだけはもったいない3つ | youtube | 2026-11-23T10:30:00.000Z | Reactions: 1、Comments: 0、Eng. Rate: 0.2、Video Views: 498 |
+| 021 冷蔵庫 中が見やすくなる3つの道具 | tiktok | 2026-11-23T10:30:00.000Z | まだ集計なし |
+| 026 カレー・鍋の残り 翌日まで置く前の3つ | tiktok | 2026-11-23T22:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 0、Shares: 0、Reach: 0、Watch Time (min): 0、Avg. Watch Time (sec): 0 |
+| 010 キッチン掃除がラクになる3つ | youtube | 2026-11-24T02:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 0 |
 
 ## 冒頭の型ごとの平均（TikTok）
 
 | 型 | 本数 | 平均再生 | 平均視聴秒数 |
 |---|---|---|---|
-| loss | 5 | 48.5 | 4.4 |
-| question | 3 | 120.0 | 2.1 |
+| loss | 5 | 162.0 | 4.4 |
+| question | 3 | 120.0 | 1.8 |
 | regret | 2 | 94.0 | 4.2 |
-| result | 7 | 130.4 | 3.3 |
+| result | 9 | 108.7 | 3.1 |
 | surprise | 4 | 134.3 | 4.7 |
