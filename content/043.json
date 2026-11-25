@@ -1,0 +1,85 @@
+{
+  "id": "043",
+  "kind": "product",
+  "hook_type": "regret",
+  "persona": true,
+  "title": "冬の洗い物 手が冷たくない3つの道具",
+  "caption": "あなたは素手派？\n冬の洗い物、冷たい水を素手でがまんしてた私🧤\n保存して、あとで見返してね\n#一人暮らし #洗い物 #冬 #キッチン道具 #洗い物 減らす",
+  "slides": [
+    {
+      "type": "hook",
+      "query": "rubber gloves",
+      "fallback": [
+        "rubber glove",
+        "dishwashing gloves"
+      ],
+      "big": [
+        "冬の洗い物",
+        "手袋が正解"
+      ],
+      "mark": "手袋",
+      "sub": "3つ目、手を水に入れない",
+      "small": "洗い物ぎらいの私",
+      "say": "冬の洗い物、素手でがまんしてた私がやめたこと"
+    },
+    {
+      "type": "item",
+      "query": "rubber gloves",
+      "fallback": [
+        "dishwashing gloves",
+        "household gloves"
+      ],
+      "big": [
+        "裏起毛の",
+        "ゴム手袋"
+      ],
+      "mark": "裏起毛",
+      "sub": "冷たさがやわらぐ",
+      "tag": "その1"
+    },
+    {
+      "type": "item",
+      "query": "washing up bowl",
+      "fallback": [
+        "dish tub",
+        "basin"
+      ],
+      "big": [
+        "洗い桶に",
+        "お湯をためる"
+      ],
+      "mark": "お湯",
+      "sub": "流しっぱなしにしない",
+      "tag": "その2"
+    },
+    {
+      "type": "item",
+      "query": "dish brush",
+      "fallback": [
+        "washing up brush",
+        "brush"
+      ],
+      "big": [
+        "柄つきの",
+        "ブラシ"
+      ],
+      "mark": "柄つき",
+      "sub": "手を水に入れずに洗える",
+      "tag": "その3"
+    },
+    {
+      "type": "end",
+      "query": "dish washing",
+      "fallback": [
+        "washing dishes",
+        "clean dishes"
+      ],
+      "big": [
+        "冬の洗い物",
+        "手袋から"
+      ],
+      "mark": "手袋",
+      "sub": "素手だった人はコメントで『1』"
+    }
+  ]
+}

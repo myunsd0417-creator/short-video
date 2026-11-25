@@ -1,0 +1,89 @@
+{
+  "id": "045",
+  "kind": "knowledge",
+  "hook_type": "surprise",
+  "persona": true,
+  "title": "お餅の保存 そのままだと1週間でカビ 農水省の3つ",
+  "caption": "あなたはどう保存してる？\nお正月のお餅、毎年カビさせてた私🍡\n参考：農林水産省「aff」余った餅の保存法、「和ごはん」鏡もちの記事\n保存して、あとで見返してね\n#一人暮らし #保存方法 #お餅 #年末 #知らないと損",
+  "sources": [
+    "農林水産省 和ごはん（鏡もち）：お餅はそのままにしておくと1週間ほどでカビ。数日以内に食べる分は表面の粉を落としてポリ袋や密封容器で冷蔵。長期は1個ずつラップに包み冷凍保存袋で冷凍、2～3か月保存できる。解凍は室温で半解凍、凍ったままでも焼ける https://www.maff.go.jp/j/keikaku/syokubunka/culture/wagohan/articles/2301/spe13_01.html",
+    "農林水産省 aff 2020年1月号（正月に余った餅の食べ方・保存法）：ラップで1個ずつ包み、フリーザーパックに入れて冷凍庫で保存 https://www.maff.go.jp/j/pr/aff/2001/spe2_04.html"
+  ],
+  "slides": [
+    {
+      "type": "hook",
+      "query": "mochi",
+      "fallback": [
+        "rice cake",
+        "japanese rice cake"
+      ],
+      "big": [
+        "お餅は",
+        "1週間でカビ"
+      ],
+      "mark": "カビ",
+      "sub": "3つ目、凍ったまま焼ける",
+      "small": "年末にお餅を買う私",
+      "say": "お餅、そのままだと1週間ほどでカビが生えるそうです"
+    },
+    {
+      "type": "item",
+      "query": "mochi",
+      "fallback": [
+        "rice cakes",
+        "japanese mochi"
+      ],
+      "big": [
+        "数日なら",
+        "冷蔵庫へ"
+      ],
+      "mark": "冷蔵庫",
+      "sub": "粉を落として袋か容器に",
+      "tag": "その1"
+    },
+    {
+      "type": "item",
+      "query": "plastic wrap",
+      "fallback": [
+        "cling film",
+        "food wrap"
+      ],
+      "big": [
+        "長く置くなら",
+        "冷凍庫"
+      ],
+      "mark": "冷凍",
+      "sub": "1個ずつラップで2〜3か月",
+      "tag": "その2"
+    },
+    {
+      "type": "item",
+      "query": "grilled mochi",
+      "fallback": [
+        "toasted mochi",
+        "rice cake grilled"
+      ],
+      "big": [
+        "凍ったまま",
+        "焼ける"
+      ],
+      "mark": "焼ける",
+      "sub": "解凍するなら室温で半解凍",
+      "tag": "その3"
+    },
+    {
+      "type": "end",
+      "query": "kagami mochi",
+      "fallback": [
+        "mochi",
+        "rice cake"
+      ],
+      "big": [
+        "お餅は",
+        "1個ずつ冷凍"
+      ],
+      "mark": "冷凍",
+      "sub": "カビさせた人はコメントで『1』"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "044",
+  "kind": "knowledge",
+  "hook_type": "loss",
+  "persona": true,
+  "title": "みかんの保存 箱のまま重ねるのはNG 農水省の3つ",
+  "caption": "あなたは箱のままだった？\nみかんを箱買いして、下のほうを傷ませてた私🍊\n参考：農林水産省「aff」みかんの選び方・食べ方\n保存して、あとで見返してね\n#一人暮らし #保存方法 #みかん #冬 #知らないと損",
+  "sources": [
+    "農林水産省 aff 2017年1月号（みかんの選び方・食べ方）：風通しがよい場所に重ねずに置く。保存期間は2～3週間。常温保存といわれるが8～10度の場所がベスト。湿気のあるところは避け、メッシュのカゴなどに重ねずに置く。冷凍みかんなら1～2カ月保存可能（軽く洗って水分を拭き取ってから冷凍） https://www.maff.go.jp/j/pr/aff/1701/spe1_05.html"
+  ],
+  "slides": [
+    {
+      "type": "hook",
+      "query": "mandarin oranges",
+      "fallback": [
+        "tangerines",
+        "satsuma oranges"
+      ],
+      "big": [
+        "みかんは",
+        "重ねない"
+      ],
+      "mark": "重ねない",
+      "sub": "3つ目、冷凍もできる",
+      "small": "冬はみかんを箱買いする私",
+      "say": "みかん、箱のまま重ねて置くと損してます"
+    },
+    {
+      "type": "item",
+      "query": "mandarin orange",
+      "fallback": [
+        "tangerine",
+        "clementine"
+      ],
+      "big": [
+        "みかんは",
+        "8〜10度"
+      ],
+      "mark": "8〜10度",
+      "sub": "常温より涼しい場所がベスト",
+      "tag": "その1"
+    },
+    {
+      "type": "item",
+      "query": "fruit basket",
+      "fallback": [
+        "wire basket",
+        "mesh basket"
+      ],
+      "big": [
+        "湿気を避け",
+        "重ねない"
+      ],
+      "mark": "重ねない",
+      "sub": "メッシュのカゴがおすすめ",
+      "tag": "その2"
+    },
+    {
+      "type": "item",
+      "query": "frozen orange",
+      "fallback": [
+        "frozen fruit",
+        "ice fruit"
+      ],
+      "big": [
+        "冷凍なら",
+        "1〜2か月"
+      ],
+      "mark": "1〜2か月",
+      "sub": "洗って水気をふいてから",
+      "tag": "その3"
+    },
+    {
+      "type": "end",
+      "query": "tangerines",
+      "fallback": [
+        "mandarin oranges",
+        "citrus fruit"
+      ],
+      "big": [
+        "みかんは",
+        "重ねず涼しく"
+      ],
+      "mark": "涼しく",
+      "sub": "箱のままだった人はコメントで『1』"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "042",
+  "kind": "knowledge",
+  "hook_type": "loss",
+  "persona": true,
+  "title": "鶏肉 洗うのはNG 農水省がすすめる下ごしらえ3つ",
+  "caption": "あなたは洗ってた？\n鶏肉をいつも水で洗ってた私がやめたこと🍗\n参考：農林水産省「カンピロバクター」のページ、米国農務省（USDA）\n保存して、あとで見返してね\n#一人暮らし #自炊 #鶏肉 #下ごしらえ #知らないと損",
+  "sources": [
+    "農林水産省（カンピロバクターによる食中毒の予防）：ポイント4「鶏肉を洗わないで！」肉を洗ったときの水がはねると、一緒に飛び散った菌でキッチンや周りの食材が汚染される可能性。ドリップが気になる場合はキッチンペーパー等でふき取る。ポイント3：調理器具を分けるか、肉は最後に切る https://www.maff.go.jp/j/fs/campylobacter.html",
+    "米国農務省FSIS（Washing Raw Poultry: Our Science, Your Choice）：The best practice is not to wash poultry. 菌はほかの場所や食品に簡単に広がる https://www.fsis.usda.gov/news-events/news-press-releases/washing-raw-poultry-our-science-your-choice"
+  ],
+  "slides": [
+    {
+      "type": "hook",
+      "query": "raw chicken",
+      "fallback": [
+        "chicken meat",
+        "poultry meat"
+      ],
+      "big": [
+        "鶏肉は",
+        "洗わない"
+      ],
+      "mark": "洗わない",
+      "sub": "2つ目、水はねが問題",
+      "small": "寒い日に鍋を作る私",
+      "say": "鶏肉、水で洗うのは損です。農水省も、洗わないでと言っています"
+    },
+    {
+      "type": "item",
+      "query": "raw chicken breast",
+      "fallback": [
+        "chicken breast",
+        "raw poultry"
+      ],
+      "big": [
+        "農水省も",
+        "洗わないで"
+      ],
+      "mark": "洗わないで",
+      "sub": "アメリカの農務省も同じ",
+      "tag": "その1"
+    },
+    {
+      "type": "item",
+      "query": "kitchen sink",
+      "fallback": [
+        "sink faucet",
+        "sink water"
+      ],
+      "big": [
+        "水はねで",
+        "菌が広がる"
+      ],
+      "mark": "水はね",
+      "sub": "キッチンや周りの食材へ",
+      "tag": "その2"
+    },
+    {
+      "type": "item",
+      "query": "paper towel",
+      "fallback": [
+        "kitchen paper",
+        "paper towel roll"
+      ],
+      "big": [
+        "ドリップは",
+        "紙でふく"
+      ],
+      "mark": "紙",
+      "sub": "キッチンペーパーでOK",
+      "tag": "その3"
+    },
+    {
+      "type": "end",
+      "query": "cutting board",
+      "fallback": [
+        "wooden cutting board",
+        "chopping board"
+      ],
+      "big": [
+        "肉は",
+        "最後に切る"
+      ],
+      "mark": "最後",
+      "sub": "洗ってた人はコメントで『1』"
+    }
+  ]
+}
