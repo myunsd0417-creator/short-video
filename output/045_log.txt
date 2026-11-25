@@ -1,0 +1,19 @@
+  search 'mochi': 16 usable
+[0] OK mochi -> File:Purple sweet potato mochi (2).jpg (CC0)
+  search 'mochi': 16 usable
+[1] OK mochi -> File:Purple sweet potato mochi (1).jpg (CC0)
+  search 'plastic wrap': 1 usable
+[2] OK plastic wrap -> File:Clingfilm.jpg (Public domain)
+  search 'grilled mochi': 1 usable
+[3] OK grilled mochi -> File:Isobe-mochi 001.jpg (CC0)
+  search 'kagami mochi': 3 usable
+[4] OK kagami mochi -> File:Kagami mochi (Japanese New Year decoration); January 2020.jpg (CC0)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.81, 1.92, 1.92, 1.92, 2.06] total: 10.63
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [3.1, 3.14, 3.49, 2.95, 3.79] total: 16.47
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.81, 1.92, 1.92, 1.92, 2.06] total: 10.63
