@@ -1,0 +1,20 @@
+  search 'rubber gloves': 5 usable
+[0] OK rubber gloves -> File:Defense.gov News Photo 050412-N-1485H-006.jpg (Public domain)
+  search 'rubber gloves': 5 usable
+[1] OK rubber gloves -> File:Glove in road - Arlington, MA - 20200925 093725.jpg (CC0)
+  search 'washing up bowl': 0 usable
+  search 'dish tub': 2 usable
+[2] OK dish tub -> File:Isaac Robert Cruikshank - Being well lather^d from a dish or tub -Hodge new began with grinning pain to grub Sirrah^ I tell - B1981.19.42 - Yale Center for British Art.jpg (CC0)
+  search 'dish brush': 4 usable
+[3] OK dish brush -> File:Flia̠.jpg (CC0)
+  search 'dish washing': 3 usable
+[4] OK dish washing -> File:Our Father's House Soup Kitchen dishwashing-vertical.jpg (Public domain)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.57, 1.92, 1.92, 1.92, 2.12] total: 10.45
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.9, 2.44, 2.61, 2.41, 3.9] total: 14.26
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.57, 1.92, 1.92, 1.92, 2.12] total: 10.45
