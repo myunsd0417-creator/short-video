@@ -39,7 +39,8 @@
       ],
       "mark": "洗わないで",
       "sub": "アメリカの農務省も同じ",
-      "tag": "その1"
+      "tag": "その1",
+      "plain_bg": true
     },
     {
       "type": "item",
@@ -69,7 +70,8 @@
       ],
       "mark": "紙",
       "sub": "キッチンペーパーでOK",
-      "tag": "その3"
+      "tag": "その3",
+      "plain_bg": true
     },
     {
       "type": "end",
