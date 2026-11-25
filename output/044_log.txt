@@ -1,0 +1,19 @@
+  search 'mandarin oranges': 4 usable
+[0] OK mandarin oranges -> File:Mandarinier Gortyne.jpg (CC0)
+  search 'mandarin orange': 4 usable
+[1] OK mandarin orange -> File:Citrus reticulata fruit 2009 G1.jpg (Public domain)
+  search 'fruit basket': 11 usable
+[2] OK fruit basket -> File:Passion fruit in basket 2.jpg (CC0)
+  search 'frozen orange': 4 usable
+[3] OK frozen orange -> File:Oranges and orange juice.jpg (Public domain)
+  search 'tangerines': 5 usable
+[4] OK tangerines -> File:Tangerines - Massachusetts - DSC02904.jpg (CC0)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.17, 1.92, 1.92, 1.92, 2.06] total: 9.99
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.4, 3.54, 2.61, 3.22, 3.79] total: 15.56
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.17, 1.92, 1.92, 1.92, 2.06] total: 9.99

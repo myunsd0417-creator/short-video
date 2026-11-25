@@ -1,0 +1,5 @@
+slide0: File:Mandarinier Gortyne.jpg / Jebulon / CC0 / https://commons.wikimedia.org/wiki/File:Mandarinier_Gortyne.jpg
+slide1: File:Citrus reticulata fruit 2009 G1.jpg / George Chernilevsky / Public domain / https://commons.wikimedia.org/wiki/File:Citrus_reticulata_fruit_2009_G1.jpg
+slide2: File:Passion fruit in basket 2.jpg / Bajinra / CC0 / https://commons.wikimedia.org/wiki/File:Passion_fruit_in_basket_2.jpg
+slide3: File:Oranges and orange juice.jpg / USDA photo by Scott Bauer. Image Number K7237-8. / Public domain / https://commons.wikimedia.org/wiki/File:Oranges_and_orange_juice.jpg
+slide4: File:Tangerines - Massachusetts - DSC02904.jpg / Daderot / CC0 / https://commons.wikimedia.org/wiki/File:Tangerines_-_Massachusetts_-_DSC02904.jpg
