@@ -1,26 +1,8 @@
-032 tiktok url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@6312bac89be57f45377282a4ce3cd16db98c8701/output/032.mp4
-032 tiktok 2026-11-27T07:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6b08300921c680d3d87864af", "dueAt": "2026-11-26T22:45:00.000Z"}}}}
-033 tiktok url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@b973a60f39fd72bbf1cc60a82d768539d2a5d727/output/033_tn.mp4
-033 tiktok 2026-11-27T19:30:00+09:00 OK {"data": {"createPost": {"post": {"id": "6b08300b92d2e9d521748eb6", "dueAt": "2026-11-27T10:30:00.000Z"}}}}
-034 tiktok url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@d4e2c6bdbe893f5b6e3159628c84c6e3bee600e0/output/034.mp4
-034 tiktok 2026-11-28T07:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6b08300eb56b3bb7f9fceecc", "dueAt": "2026-11-27T22:45:00.000Z"}}}}
-035 tiktok url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@a9262e06e95779819724afd67ee0bc2d53d2b71b/output/035_tn.mp4
-035 tiktok 2026-11-28T19:30:00+09:00 OK {"data": {"createPost": {"post": {"id": "6b083010a9849181fe51cbb9", "dueAt": "2026-11-28T10:30:00.000Z"}}}}
-036 tiktok url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@673336ece2a635efd0e3e8325c57ed6650f0a257/output/036.mp4
-036 tiktok 2026-11-29T07:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6b0830123f4b65b6c4b2fccd", "dueAt": "2026-11-28T22:45:00.000Z"}}}}
-warmup 037: HTTP Error 403: Forbidden
-warmup 037: HTTP Error 403: Forbidden
-037 tiktok url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@2294bf3c3e5e534317cb83c0218f963272b527fa/output/037_tn.mp4
-037 tiktok 2026-11-29T19:30:00+09:00 OK {"data": {"createPost": {"post": {"id": "6b0830563f4b65b6c4b3111a", "dueAt": "2026-11-29T10:30:00.000Z"}}}}
-038 tiktok url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@02eb07a9a6afc771a3605467d752e7b5fd642424/output/038.mp4
-038 tiktok 2026-11-30T07:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6b08305892d2e9d52174b836", "dueAt": "2026-11-29T22:45:00.000Z"}}}}
-039 tiktok url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@46ce11cf58acf5eb4600173cced7b13f130d0ccd/output/039_tn.mp4
-039 tiktok 2026-11-30T19:30:00+09:00 OK {"data": {"createPost": {"post": {"id": "6b08305ae810af63c62aad7e", "dueAt": "2026-11-30T10:30:00.000Z"}}}}
-032 youtube url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@6312bac89be57f45377282a4ce3cd16db98c8701/output/032_yt.mp4
-032 youtube 2026-12-02T11:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6b08305ea9849181fe51e7d8", "dueAt": "2026-12-02T02:45:00.000Z"}}}}
-033 youtube url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@b973a60f39fd72bbf1cc60a82d768539d2a5d727/output/033_yt.mp4
-033 youtube 2026-12-02T20:30:00+09:00 OK {"data": {"createPost": {"post": {"id": "6b08306192d2e9d52174bd0d", "dueAt": "2026-12-02T11:30:00.000Z"}}}}
-034 youtube url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@d4e2c6bdbe893f5b6e3159628c84c6e3bee600e0/output/034_yt.mp4
-034 youtube 2026-12-03T12:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6b0830653f4b65b6c4b31716", "dueAt": "2026-12-03T03:45:00.000Z"}}}}
-035 youtube url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@a9262e06e95779819724afd67ee0bc2d53d2b71b/output/035_yt.mp4
-035 youtube 2026-12-04T11:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6b08306721c680d3d8789027", "dueAt": "2026-12-04T02:45:00.000Z"}}}}
+035 tiktok url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@5c0021e80f4bb19c24aab01d356a0b2e0f3df0d0/output/035_tn.mp4
+035 tiktok 2026-11-28T19:30:00+09:00 OK {"data": {"createPost": {"post": {"id": "6b08325ca9849181fe52d040", "dueAt": "2026-11-28T10:30:00.000Z"}}}}
+warmup 038: HTTP Error 403: Forbidden
+warmup 038: HTTP Error 403: Forbidden
+038 tiktok url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@157174634b5daf29d8cb7fef3ab7dd78bc3fb43f/output/038.mp4
+038 tiktok 2026-11-30T07:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6b08329f3f4b65b6c4b42111", "dueAt": "2026-11-29T22:45:00.000Z"}}}}
+035 youtube url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@5c0021e80f4bb19c24aab01d356a0b2e0f3df0d0/output/035_yt.mp4
+035 youtube 2026-12-04T11:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6b0832a2e810af63c62bd295", "dueAt": "2026-12-04T02:45:00.000Z"}}}}

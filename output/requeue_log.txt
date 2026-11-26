@@ -1,12 +1,5 @@
 mutations: addPostToContentItem, createCollaborationNote, createContentItem, createContentItemDraft, createIdea, createPinterestBoard, createPost, createPostTemplate, createSnippet, createTag, deleteCollaborationNote, deleteContentItem, deletePost, deletePostTemplate, deleteSnippet, deleteTag, editPost, movePostInQueue, promoteContentItemDraftToPosts, publishPostNow, refreshPinterestBoards, removePostFromContentItem, shortenLink, updateCollaborationNote, updateContentItem, updateContentItemDraft, updatePostTemplate, updateSnippet, updateTag
 deletePost(input: DeletePostInput) fields=['id']
-032 tiktok 2026-11-27T07:45:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
-033 tiktok 2026-11-27T19:30:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
-034 tiktok 2026-11-28T07:45:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
-032 youtube 2026-11-29T20:30:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
 035 tiktok 2026-11-28T19:30:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
-036 tiktok 2026-11-29T07:45:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
-033 youtube 2026-11-30T12:45:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
-034 youtube 2026-12-01T11:45:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
-037 tiktok 2026-11-29T19:30:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
 038 tiktok 2026-11-30T07:45:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
+035 youtube 2026-12-04T11:45:00+09:00 取り消しOK {"data": {"deletePost": {"__typename": "DeletePostSuccess"}}}
