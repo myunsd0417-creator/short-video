@@ -121,6 +121,44 @@ def mark_failed():
             log(f"{p['id']} {p['service']} {p['dueAt']} NG(投稿失敗→入れ直し) {p['failed']}")
 
 
+def existing_posts():
+    """Bufferにすでにある予約・投稿済みの中身（同じ動画を2回出さないため）"""
+    q = """query($org: OrganizationId!, $ch: [ChannelId!], $after: String) {
+      posts(first: 100, after: $after, input: {organizationId: $org, filter: {status: [scheduled, sent], channelIds: $ch}}) {
+        edges { node { channelId text assets { source } } }
+        pageInfo { endCursor hasNextPage }
+      }
+    }"""
+    seen, after = [], None
+    try:
+        for _ in range(10):
+            res = gql(q, {"org": "6715160d6ebd9c191c9ccab2", "ch": list(CFG["channels"].values()), "after": after})
+            data = (res.get("data") or {}).get("posts")
+            if not data:
+                log(f"既存の投稿を読めませんでした: {json.dumps(res, ensure_ascii=False)[:200]}")
+                break
+            for e in data["edges"]:
+                n = e["node"]
+                srcs = " ".join(a.get("source") or "" for a in (n.get("assets") or []))
+                seen.append((n["channelId"], (n.get("text") or ""), srcs))
+            if not data["pageInfo"]["hasNextPage"]:
+                break
+            after = data["pageInfo"]["endCursor"]
+    except Exception as e:
+        log(f"既存の投稿の確認に失敗: {e}")
+    return seen
+
+
+def already_there(seen, channel, vid, spec):
+    key = spec["caption"].splitlines()[0].strip()
+    for ch, text, srcs in seen:
+        if ch != channel:
+            continue
+        if f"/output/{vid}." in srcs or f"/output/{vid}_" in srcs or (key and key in text):
+            return True
+    return False
+
+
 def main():
     publish = CFG.get("publish", False)
     now = dt.datetime.now(JST)
@@ -142,6 +180,12 @@ def main():
         history = [dt.datetime.fromisoformat(p["dueAt"]) for p in STATE["posts"]
                    if p["service"] == service and p.get("ok") and p.get("publish")]
         blocked = []  # Bufferに「1日の上限」で断られた時刻（次の枠へずらす）
+        seen = existing_posts() if publish else []
+        for v in [v for v in todo if already_there(seen, channel, v, json.loads(Path(f"content/{v}.json").read_text(encoding="utf-8")))]:
+            log(f"{v} {service} はBufferに既にあるので追加しません")  # 記録だけ合わせて二重投稿を防ぐ
+            STATE["posts"].append({"id": v, "service": service, "dueAt": now.isoformat(), "ok": True,
+                                   "publish": publish, "post_id": None, "note": "already in buffer"})
+            todo.remove(v)
         queue = list(todo)
         while queue:
             vid = queue.pop(0)
