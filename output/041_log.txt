@@ -1,6 +1,6 @@
   search 'rice grains': 7 usable
 [0] OK rice grains -> File:Red glutinous rice (1).jpg (CC0)
-  search 'rice': 2 usable
+  search 'rice': 1 usable
 [1] OK rice -> File:Different rice straw.jpg (CC0)
   search 'rice sack': 3 usable
 [2] OK rice sack -> File:Fallujah sack race.jpg (Public domain)
