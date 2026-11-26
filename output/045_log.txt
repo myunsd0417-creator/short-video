@@ -1,6 +1,6 @@
-  search 'mochi': 16 usable
+  search 'mochi': 17 usable
 [0] OK mochi -> File:Purple sweet potato mochi (2).jpg (CC0)
-  search 'mochi': 16 usable
+  search 'mochi': 17 usable
 [1] OK mochi -> File:Purple sweet potato mochi (1).jpg (CC0)
   search 'plastic wrap': 1 usable
 [2] OK plastic wrap -> File:Clingfilm.jpg (Public domain)
