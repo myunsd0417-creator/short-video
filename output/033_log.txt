@@ -5,7 +5,7 @@
   search 'steaming food': 2 usable
 [2] OK steaming food -> File:Steam-boiling green asparagus.jpg (CC0)
   search 'frozen food': 4 usable
-[3] OK frozen food -> File:Refrigerator with frozen foods in Sailor House (1).jpg (CC0)
+[3] OK frozen food -> File:Refrigerator with frozen foods in Sailor House (2).jpg (CC0)
   search 'japanese meal': 15 usable
 [4] OK japanese meal -> File:Family meal, Japan LCCN2002716187.jpg (Public domain)
 VOICEVOX: OK
