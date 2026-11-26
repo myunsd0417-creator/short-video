@@ -236,7 +236,8 @@ def main(path):
             sl["_credits"] = credits
     for i, slide in enumerate(spec["slides"]):
         words = spec["title"].split()
-        slide["_topic"] = spec.get("topic") or (words[0] if len(words[0]) > 5 or len(words) == 1 else " ".join(words[:2]))[:13]
+        two = " ".join(words[:2])
+        slide["_topic"] = spec.get("topic") or (two if len(words) > 1 and len(words[0]) <= 5 and len(two) <= 13 else words[0][:13])
         if i in items:
             slide["_step"] = (items.index(i) + 1, len(items))
         f = work / f"bg{i}.jpg"
