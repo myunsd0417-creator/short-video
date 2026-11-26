@@ -106,6 +106,15 @@ def text_layer(slide):
             sw = d.textlength(sub, font=f_sub)
         d.text(((W - sw) / 2, y + 70), sub, font=f_sub, fill=WHITE, stroke_width=6, stroke_fill=(0, 0, 0))
 
+    topic = slide.get("_topic")  # どのコマが一覧の表紙になっても、何の動画かわかるように
+    if topic and slide["type"] != "hook":
+        f_t = font(54)
+        tw = d.textlength(topic, font=f_t)
+        bx0, by0 = (W - tw) / 2 - 42, 372
+        d.rounded_rectangle((bx0, by0, bx0 + tw + 84, by0 + 82), radius=41, fill=(0, 0, 0, 175))
+        d.rectangle((bx0 + 22, by0 + 20, bx0 + 32, by0 + 62), fill=YELLOW)
+        d.text((bx0 + 48, by0 + 6), topic, font=f_t, fill=WHITE)
+
     step = slide.get("_step")  # 進み具合（1/3 など）を上に表示
     if step:
         n, total = step
@@ -117,7 +126,7 @@ def text_layer(slide):
             d.rounded_rectangle((x0, top, x0 + seg, top + hgt), radius=8, fill=col)
         f_step = font(44)
         lab = f"{n}/{total}"
-        d.text((W - 80 - d.textlength(lab, font=f_step), top + 30), lab, font=f_step, fill=WHITE,
+        d.text((W - 80 - d.textlength(lab, font=f_step), top - 58), lab, font=f_step, fill=WHITE,
                stroke_width=4, stroke_fill=(0, 0, 0))
 
     if slide["type"] == "end" and slide.get("_credits"):  # 写真・声のクレジット（利用ルールで表示が必要）
@@ -226,6 +235,8 @@ def main(path):
         if sl["type"] == "end":
             sl["_credits"] = credits
     for i, slide in enumerate(spec["slides"]):
+        words = spec["title"].split()
+        slide["_topic"] = spec.get("topic") or (words[0] if len(words[0]) > 5 or len(words) == 1 else " ".join(words[:2]))[:13]
         if i in items:
             slide["_step"] = (items.index(i) + 1, len(items))
         f = work / f"bg{i}.jpg"
