@@ -1,7 +1,7 @@
 # 投稿の数字（自動更新）
 
-比較用（ジャンル変更前の過去投稿 24本の平均）: 再生 446.2、平均視聴秒数 11.9
-新ジャンル TikTok 27本の平均: 再生 122.8、平均視聴秒数 3.5
+比較用（ジャンル変更前の過去投稿 24本の平均）: 再生 446.4、平均視聴秒数 11.9
+新ジャンル TikTok 27本の平均: 再生 130.2、平均視聴秒数 3.4
 新ジャンル YouTube 23本の平均: 再生 561.2（YouTubeは視聴秒数がBufferに来ない）
 
 | 動画 | 媒体 | 投稿日時 | 数字 |
@@ -23,7 +23,7 @@
 | 017 冷凍と解凍 意外と知らない3つの事実 | youtube | 2026-11-16T10:30:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 464 |
 | 017 冷凍と解凍 意外と知らない3つの事実 | tiktok | 2026-11-16T10:30:00.000Z | まだ集計なし |
 | 011 一人鍋 準備が5分で終わる3つ | youtube | 2026-11-17T02:45:00.000Z | Reactions: 1、Comments: 0、Eng. Rate: 0.16、Video Views: 616 |
-| 011 一人鍋 準備が5分で終わる3つ | tiktok | 2026-11-17T02:45:00.000Z | Reactions: 1、Comments: 0、Eng. Rate: 0.77、Video Views: 130、Shares: 0、Reach: 130、Watch Time (min): 9.68、Avg. Watch Time (sec): 3.11 |
+| 011 一人鍋 準備が5分で終わる3つ | tiktok | 2026-11-17T02:45:00.000Z | Reactions: 1、Comments: 0、Eng. Rate: 0.77、Video Views: 130、Shares: 0、Reach: 130、Watch Time (min): 6.72、Avg. Watch Time (sec): 2.14 |
 | 018 カビが出たら 捨てる？削る？ | youtube | 2026-11-17T10:30:00.000Z | Reactions: 1、Comments: 0、Eng. Rate: 0.14、Video Views: 726 |
 | 018 カビが出たら 捨てる？削る？ | tiktok | 2026-11-17T10:30:00.000Z | まだ集計なし |
 | 013 一人暮らし 買って後悔したキッチン道具3つ | youtube | 2026-11-18T02:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 607 |
@@ -48,21 +48,21 @@
 | 010 キッチン掃除がラクになる3つ | tiktok | 2026-11-23T02:45:00.000Z | Reactions: 1、Comments: 0、Eng. Rate: 0.63、Video Views: 159、Shares: 0、Reach: 159、Watch Time (min): 23.57、Avg. Watch Time (sec): 4.41 |
 | 022 まな板とスポンジ 洗うだけはもったいない3つ | youtube | 2026-11-23T10:30:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 507 |
 | 021 冷蔵庫 中が見やすくなる3つの道具 | tiktok | 2026-11-23T10:30:00.000Z | まだ集計なし |
-| 026 カレー・鍋の残り 翌日まで置く前の3つ | tiktok | 2026-11-23T22:45:00.000Z | Reactions: 2、Comments: 0、Eng. Rate: 1.27、Video Views: 157、Shares: 0、Reach: 11、Watch Time (min): 27.95、Avg. Watch Time (sec): 5.33 |
+| 026 カレー・鍋の残り 翌日まで置く前の3つ | tiktok | 2026-11-23T22:45:00.000Z | Reactions: 2、Comments: 0、Eng. Rate: 1.27、Video Views: 157、Shares: 0、Reach: 11、Watch Time (min): 27.97、Avg. Watch Time (sec): 5.31 |
 | 010 キッチン掃除がラクになる3つ | youtube | 2026-11-24T02:45:00.000Z | Reactions: 1、Comments: 0、Eng. Rate: 0.16、Video Views: 610 |
 | 027 一人暮らし 冬の節約 お湯をムダにしない3つ | tiktok | 2026-11-24T10:30:00.000Z | まだ集計なし |
 | 021 冷蔵庫 中が見やすくなる3つの道具 | youtube | 2026-11-24T11:30:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 446 |
-| 028 海外では常識 冷蔵庫に入れる時のルール3つ | tiktok | 2026-11-24T22:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 78、Shares: 0、Reach: 0、Watch Time (min): 17.12、Avg. Watch Time (sec): 5.55 |
+| 028 海外では常識 冷蔵庫に入れる時のルール3つ | tiktok | 2026-11-24T22:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 155、Shares: 0、Reach: 11、Watch Time (min): 28.03、Avg. Watch Time (sec): 4.92 |
 | 026 カレー・鍋の残り 翌日まで置く前の3つ | youtube | 2026-11-25T03:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 530 |
 | 029 炊いたご飯とりんご やりがちな保存NG3つ | tiktok | 2026-11-25T10:30:00.000Z | まだ集計なし |
-| 031 一人暮らし シンク下が片付く3つ | tiktok | 2026-11-25T22:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 0、Shares: 0、Reach: 0、Watch Time (min): 0、Avg. Watch Time (sec): 0 |
+| 031 一人暮らし シンク下が片付く3つ | tiktok | 2026-11-25T22:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 50、Shares: 0、Reach: 0、Watch Time (min): 4.75、Avg. Watch Time (sec): 3.14 |
 
 ## 冒頭の型ごとの平均（TikTok）
 
 | 型 | 本数 | 平均再生 | 平均視聴秒数 |
 |---|---|---|---|
-| loss | 7 | 114.3 | 4.4 |
+| loss | 7 | 131.0 | 4.0 |
 | question | 3 | 120.0 | 1.8 |
 | regret | 3 | 94.0 | 4.2 |
-| result | 9 | 134.8 | 3.2 |
-| surprise | 5 | 120.2 | 4.4 |
+| result | 9 | 134.8 | 3.1 |
+| surprise | 5 | 139.5 | 4.2 |

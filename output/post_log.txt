@@ -1,7 +1,1 @@
-027 youtube 2026-11-26T11:45:00+09:00 NG(投稿失敗→入れ直し) Looks like you've hit the limit of 2 posts per 24 hours.
-037 tiktok url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@c8f53a9cf786f96f16cf21e6d982ef35047b329e/output/037_tn.mp4
-037 tiktok 2026-11-29T19:30:00+09:00 OK {"data": {"createPost": {"post": {"id": "6b07ab509f6dda31ccbecf7b", "dueAt": "2026-11-29T10:30:00.000Z"}}}}
-038 tiktok url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@fb742964b9d80cc4b4e0fbecbd5ab5324e9e62ef/output/038.mp4
-038 tiktok 2026-11-30T07:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6b07ab53d4eda4b659d53b23", "dueAt": "2026-11-29T22:45:00.000Z"}}}}
-027 youtube url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@4cbbbb1e751f19cba86b6337dace950da922a19b/output/027_yt.mp4
-027 youtube 2026-12-01T19:30:00+09:00 OK {"data": {"createPost": {"post": {"id": "6b07ab5607071a6067504146", "dueAt": "2026-12-01T10:30:00.000Z"}}}}
+
