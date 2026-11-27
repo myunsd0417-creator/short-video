@@ -1,3 +1,2 @@
-040 tiktok url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@cc7ad8fbbe353f0070cc971e22ca4a9b74c1a353/output/040.mp4
-040 tiktok 2026-12-01T07:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6b08fd09049983dcfb84f59a", "dueAt": "2026-11-30T22:45:00.000Z"}}}}
-036 youtube はBufferに既にあるので追加しません
+037 youtube url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@2294bf3c3e5e534317cb83c0218f963272b527fa/output/037_yt.mp4
+037 youtube 2026-12-04T19:30:00+09:00 OK {"data": {"createPost": {"post": {"id": "6b092202776ce21276f06cd5", "dueAt": "2026-12-04T10:30:00.000Z"}}}}
