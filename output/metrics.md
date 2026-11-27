@@ -1,8 +1,8 @@
 # 投稿の数字（自動更新）
 
-比較用（ジャンル変更前の過去投稿 24本の平均）: 再生 446.4、平均視聴秒数 11.9
-新ジャンル TikTok 28本の平均: 再生 130.2、平均視聴秒数 3.4
-新ジャンル YouTube 24本の平均: 再生 537.8（YouTubeは視聴秒数がBufferに来ない）
+比較用（ジャンル変更前の過去投稿 25本の平均）: 再生 427.8、平均視聴秒数 11.9
+新ジャンル TikTok 29本の平均: 再生 123.0、平均視聴秒数 3.4
+新ジャンル YouTube 25本の平均: 再生 516.3（YouTubeは視聴秒数がBufferに来ない）
 
 | 動画 | 媒体 | 投稿日時 | 数字 |
 |---|---|---|---|
@@ -58,6 +58,8 @@
 | 031 一人暮らし シンク下が片付く3つ | tiktok | 2026-11-25T22:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 50、Shares: 0、Reach: 0、Watch Time (min): 4.75、Avg. Watch Time (sec): 3.14 |
 | 030 レンジ温め 海外では常識の3つのコツ | tiktok | 2026-11-26T10:30:00.000Z | まだ集計なし |
 | 028 海外では常識 冷蔵庫に入れる時のルール3つ | youtube | 2026-11-26T10:30:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 0 |
+| 032 年末のまとめ買い 冷凍庫は冷蔵庫と逆のルール | tiktok | 2026-11-26T22:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 0、Shares: 0、Reach: 0、Watch Time (min): 0、Avg. Watch Time (sec): 0 |
+| 029 炊いたご飯とりんご やりがちな保存NG3つ | youtube | 2026-11-27T03:45:00.000Z | Reactions: 0、Comments: 0、Eng. Rate: 0、Video Views: 0 |
 
 ## 冒頭の型ごとの平均（TikTok）
 
@@ -67,4 +69,4 @@
 | question | 3 | 120.0 | 1.8 |
 | regret | 3 | 94.0 | 4.2 |
 | result | 9 | 134.8 | 3.1 |
-| surprise | 6 | 139.5 | 4.2 |
+| surprise | 7 | 111.6 | 4.2 |

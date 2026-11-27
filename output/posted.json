@@ -657,6 +657,23 @@
    "ok": true,
    "publish": true,
    "post_id": "6b0832a2e810af63c62bd295"
+  },
+  {
+   "id": "040",
+   "service": "tiktok",
+   "dueAt": "2026-12-01T07:45:00+09:00",
+   "ok": true,
+   "publish": true,
+   "post_id": "6b08fd09049983dcfb84f59a"
+  },
+  {
+   "id": "036",
+   "service": "youtube",
+   "dueAt": "2026-11-27T12:46:14.317891+09:00",
+   "ok": true,
+   "publish": true,
+   "post_id": null,
+   "note": "already in buffer"
   }
  ]
 }
