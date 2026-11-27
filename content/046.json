@@ -1,0 +1,89 @@
+{
+  "id": "046",
+  "kind": "knowledge",
+  "hook_type": "loss",
+  "persona": true,
+  "title": "大根の保存 葉つきのままはNG 3つのコツ",
+  "caption": "あなたは葉つきのままだった？\n大根を丸ごと買って、しなしなにしてた私🥬\n参考：農畜産業振興機構「だいこんの話」、松山市「食品保存のコツ」\n保存して、あとで見返してね\n#一人暮らし #保存方法 #大根 #冬 #知らないと損",
+  "sources": [
+    "農畜産業振興機構（ALIC）だいこんの話：大部分が水分なので乾燥を防いで保存。寒い季節は新聞紙に包んで風が直接あたらないところに置けば1週間は保存できる。冷蔵はラップに包み、野菜室で切り口を上にして保存 https://www.alic.go.jp/content/000084677.pdf",
+    "松山市『食品ロス』を減らそう！食品保存のコツ：葉つきの場合は保存前に葉を切り落とす。冷蔵はラップに包み野菜室で切り口を上に https://www.city.matsuyama.ehime.jp/kurashi/gomi/kanren/kateisyokurosu.files/hozon.pdf"
+  ],
+  "slides": [
+    {
+      "type": "hook",
+      "query": "daikon radish",
+      "fallback": [
+        "daikon",
+        "white radish"
+      ],
+      "big": [
+        "大根の葉は",
+        "すぐ切る"
+      ],
+      "mark": "切る",
+      "sub": "3つ目、冷蔵は切り口を上",
+      "small": "冬は大根を丸ごと買う私",
+      "say": "大根、葉つきのままは損してます"
+    },
+    {
+      "type": "item",
+      "query": "daikon",
+      "fallback": [
+        "daikon radish",
+        "white radish"
+      ],
+      "big": [
+        "葉つきなら",
+        "先に切る"
+      ],
+      "mark": "切る",
+      "sub": "保存の前に葉を切り落とす",
+      "tag": "その1"
+    },
+    {
+      "type": "item",
+      "query": "daikon radishes",
+      "fallback": [
+        "daikon",
+        "radish"
+      ],
+      "big": [
+        "寒い日は",
+        "新聞紙で1週間"
+      ],
+      "mark": "1週間",
+      "sub": "風が直接あたらない所に",
+      "tag": "その2"
+    },
+    {
+      "type": "item",
+      "query": "sliced daikon",
+      "fallback": [
+        "daikon slices",
+        "cut radish"
+      ],
+      "big": [
+        "冷蔵庫なら",
+        "切り口を上"
+      ],
+      "mark": "切り口",
+      "sub": "ラップで包んで野菜室へ",
+      "tag": "その3"
+    },
+    {
+      "type": "end",
+      "query": "daikon",
+      "fallback": [
+        "daikon radish",
+        "white radish"
+      ],
+      "big": [
+        "大根は",
+        "乾燥させない"
+      ],
+      "mark": "乾燥",
+      "sub": "葉つきのままだった人はコメントで『1』"
+    }
+  ]
+}

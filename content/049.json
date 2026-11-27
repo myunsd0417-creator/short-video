@@ -1,0 +1,85 @@
+{
+  "id": "049",
+  "kind": "product",
+  "hook_type": "loss",
+  "persona": true,
+  "title": "ご飯の冷凍 ラクになる3つの道具",
+  "caption": "あなたはラップ派？容器派？\n毎回ラップでご飯を包んで、冷凍庫で迷子にしてた私🍚\n保存して、あとで見返してね\n#一人暮らし #冷凍ごはん #作り置き #キッチン道具 #時短",
+  "slides": [
+    {
+      "type": "hook",
+      "query": "cooked rice in container",
+      "fallback": [
+        "cooked rice",
+        "rice bowl"
+      ],
+      "big": [
+        "ご飯の冷凍は",
+        "1膳の容器"
+      ],
+      "mark": "容器",
+      "sub": "3つ目、詰めるのがラク",
+      "small": "ご飯をまとめて炊く私",
+      "say": "ご飯の冷凍、ラップだけは損してます"
+    },
+    {
+      "type": "item",
+      "query": "cooked rice",
+      "fallback": [
+        "steamed rice",
+        "rice bowl"
+      ],
+      "big": [
+        "1膳分の",
+        "冷凍容器"
+      ],
+      "mark": "1膳分",
+      "sub": "ふたごとレンジOKのものを",
+      "tag": "その1"
+    },
+    {
+      "type": "item",
+      "query": "freezer",
+      "fallback": [
+        "chest freezer",
+        "freezer drawer"
+      ],
+      "big": [
+        "立てて入れる",
+        "仕切りケース"
+      ],
+      "mark": "仕切り",
+      "sub": "冷凍庫で迷子にならない",
+      "tag": "その2"
+    },
+    {
+      "type": "item",
+      "query": "rice paddle",
+      "fallback": [
+        "shamoji",
+        "rice scoop"
+      ],
+      "big": [
+        "くっつかない",
+        "しゃもじ"
+      ],
+      "mark": "しゃもじ",
+      "sub": "熱いうちに詰めやすい",
+      "tag": "その3"
+    },
+    {
+      "type": "end",
+      "query": "onigiri",
+      "fallback": [
+        "cooked rice",
+        "rice"
+      ],
+      "big": [
+        "ご飯の冷凍",
+        "容器でラク"
+      ],
+      "mark": "容器",
+      "sub": "ラップ派の人はコメントで『1』"
+    }
+  ]
+}

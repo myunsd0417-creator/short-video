@@ -1,0 +1,88 @@
+{
+  "id": "047",
+  "kind": "knowledge",
+  "hook_type": "surprise",
+  "persona": true,
+  "title": "しいたけ 洗うのはNG 意外と知らない3つ",
+  "caption": "あなたは洗ってた？\n鍋の前に、しいたけをじゃぶじゃぶ洗ってた私🍄\n参考：農畜産業振興機構「VEGETABLE BOOK」しいたけ\n保存して、あとで見返してね\n#一人暮らし #保存方法 #しいたけ #鍋 #知らないと損",
+  "sources": [
+    "農畜産業振興機構（ALIC）VEGETABLE BOOK しいたけ：調理する際は水で洗わずにペーパーなどでふき取る。ひだを下にすると胞子が落ちて黒ずむため、ひだを上に向けてパックのまま野菜室へ。生のまま密閉容器で冷凍でき、解凍せずそのまま煮物や炒め物に使える https://www.alic.go.jp/content/001237399.pdf"
+  ],
+  "slides": [
+    {
+      "type": "hook",
+      "query": "shiitake",
+      "fallback": [
+        "shiitake mushrooms",
+        "mushrooms"
+      ],
+      "big": [
+        "しいたけは",
+        "洗わない"
+      ],
+      "mark": "洗わない",
+      "sub": "3つ目、生のまま冷凍できる",
+      "small": "冬は鍋ばかりの私",
+      "say": "しいたけは、洗わないのが正解"
+    },
+    {
+      "type": "item",
+      "query": "shiitake mushrooms",
+      "fallback": [
+        "shiitake",
+        "mushrooms"
+      ],
+      "big": [
+        "洗わずに",
+        "ふき取る"
+      ],
+      "mark": "ふき取る",
+      "sub": "ペーパーで汚れを取る",
+      "tag": "その1"
+    },
+    {
+      "type": "item",
+      "query": "shiitake gills",
+      "fallback": [
+        "shiitake",
+        "mushroom gills"
+      ],
+      "big": [
+        "保存は",
+        "ひだを上に"
+      ],
+      "mark": "ひだ",
+      "sub": "下向きだと黒ずむ",
+      "tag": "その2"
+    },
+    {
+      "type": "item",
+      "query": "frozen mushrooms",
+      "fallback": [
+        "mushrooms",
+        "shiitake"
+      ],
+      "big": [
+        "生のまま",
+        "冷凍OK"
+      ],
+      "mark": "冷凍",
+      "sub": "凍ったまま煮物や炒め物に",
+      "tag": "その3"
+    },
+    {
+      "type": "end",
+      "query": "shiitake",
+      "fallback": [
+        "shiitake mushrooms",
+        "mushrooms"
+      ],
+      "big": [
+        "しいたけは",
+        "洗わずふく"
+      ],
+      "mark": "ふく",
+      "sub": "洗ってた人はコメントで『1』"
+    }
+  ]
+}

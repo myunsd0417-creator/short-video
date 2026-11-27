@@ -1,0 +1,88 @@
+{
+  "id": "048",
+  "kind": "knowledge",
+  "hook_type": "regret",
+  "persona": true,
+  "title": "ブロッコリーの保存 洗って密封はNG 3つのコツ",
+  "caption": "あなたは洗ってからしまってた？\nブロッコリーを使いきれずに黄色くしてた私🥦\n参考：松山市「食品保存のコツ」\n保存して、あとで見返してね\n#一人暮らし #保存方法 #ブロッコリー #冷凍 #知らないと損",
+  "sources": [
+    "松山市『食品ロス』を減らそう！食品保存のコツ：ブロッコリーは水洗いせずポリ袋に入れ、密封せずに野菜室で保存すれば2～3日は持つ。小房に分けて硬めに茹でたものは冷蔵庫なら3～4日、冷凍庫なら約1か月保存可能 https://www.city.matsuyama.ehime.jp/kurashi/gomi/kanren/kateisyokurosu.files/hozon.pdf"
+  ],
+  "slides": [
+    {
+      "type": "hook",
+      "query": "broccoli",
+      "fallback": [
+        "fresh broccoli",
+        "broccoli florets"
+      ],
+      "big": [
+        "ブロッコリーは",
+        "密封しない"
+      ],
+      "mark": "密封しない",
+      "sub": "3つ目、ゆでれば1か月",
+      "small": "野菜を使いきれない私",
+      "say": "ブロッコリー、洗って密封は失敗でした"
+    },
+    {
+      "type": "item",
+      "query": "broccoli",
+      "fallback": [
+        "fresh broccoli",
+        "broccoli head"
+      ],
+      "big": [
+        "保存の前に",
+        "洗わない"
+      ],
+      "mark": "洗わない",
+      "sub": "水洗いせずポリ袋へ",
+      "tag": "その1"
+    },
+    {
+      "type": "item",
+      "query": "broccoli head",
+      "fallback": [
+        "broccoli",
+        "fresh broccoli"
+      ],
+      "big": [
+        "袋は",
+        "密封しない"
+      ],
+      "mark": "密封",
+      "sub": "野菜室で2〜3日",
+      "tag": "その2"
+    },
+    {
+      "type": "item",
+      "query": "blanched broccoli",
+      "fallback": [
+        "boiled broccoli",
+        "broccoli florets"
+      ],
+      "big": [
+        "硬めにゆでて",
+        "冷凍で1か月"
+      ],
+      "mark": "1か月",
+      "sub": "小房に分けて。冷蔵なら3〜4日",
+      "tag": "その3"
+    },
+    {
+      "type": "end",
+      "query": "broccoli florets",
+      "fallback": [
+        "broccoli",
+        "fresh broccoli"
+      ],
+      "big": [
+        "ブロッコリーは",
+        "洗わず袋へ"
+      ],
+      "mark": "袋",
+      "sub": "洗って密封してた人はコメントで『1』"
+    }
+  ]
+}
