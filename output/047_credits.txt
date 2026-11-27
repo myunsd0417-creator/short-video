@@ -1,0 +1,5 @@
+slide0: File:Lentinula edodes USDA.jpg /  / Public domain / https://commons.wikimedia.org/wiki/File:Lentinula_edodes_USDA.jpg
+slide1: File:Fresh shiitake mushrooms.jpg / Fumikas Sagisavas / CC0 / https://commons.wikimedia.org/wiki/File:Fresh_shiitake_mushrooms.jpg
+slide2: File:Suizhou pattern shiitake mushrooms.jpg / Fumikas Sagisavas / CC0 / https://commons.wikimedia.org/wiki/File:Suizhou_pattern_shiitake_mushrooms.jpg
+slide3: File:Macrolepiota procera 2013 G1.jpg / George Chernilevsky / Public domain / https://commons.wikimedia.org/wiki/File:Macrolepiota_procera_2013_G1.jpg
+slide4: File:Lentinula edodes 20101113 c.jpg / Batholith (talk) / Public domain / https://commons.wikimedia.org/wiki/File:Lentinula_edodes_20101113_c.jpg

@@ -1,0 +1,21 @@
+  search 'shiitake': 7 usable
+[0] OK shiitake -> File:Lentinula edodes USDA.jpg (Public domain)
+  search 'shiitake mushrooms': 9 usable
+[1] OK shiitake mushrooms -> File:Fresh shiitake mushrooms.jpg (CC0)
+  search 'shiitake gills': 0 usable
+  search 'shiitake': 7 usable
+[2] OK shiitake -> File:Suizhou pattern shiitake mushrooms.jpg (CC0)
+  search 'frozen mushrooms': 0 usable
+  search 'mushrooms': 6 usable
+[3] OK mushrooms -> File:Macrolepiota procera 2013 G1.jpg (Public domain)
+  search 'shiitake': 7 usable
+[4] OK shiitake -> File:Lentinula edodes 20101113 c.jpg (Public domain)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [1.91, 1.92, 1.92, 1.92, 1.96] total: 9.63
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.2, 2.41, 2.46, 3.11, 3.67] total: 13.85
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [1.91, 1.92, 1.92, 1.92, 1.96] total: 9.63
