@@ -1,0 +1,19 @@
+  search 'cooked rice in container': 2 usable
+[0] OK cooked rice in container -> File:HK KCD 馬頭圍道 Ma Tau Wai Road n 落山道 Lok Shan Road shop 包點料理 Bao Dim Liu Lee cooked food 臘腸蒸雞飯 Steamed Chicken with Chinese Sausage Rice box July 2025 N13P white paper spoon.jpg (CC0)
+  search 'cooked rice': 4 usable
+[1] OK cooked rice -> File:Meshi 001.jpg (CC0)
+  search 'freezer': 1 usable
+[2] OK freezer -> File:Bottles of water and a tray of ice cubes inside a fridge freezer.jpg (CC0)
+  search 'rice paddle': 3 usable
+[3] OK rice paddle -> File:Ifugao rice spoon III.JPG (CC0)
+  search 'onigiri': 9 usable
+[4] OK onigiri -> File:Negi Miso onigiri - Onigiri Heads 2025-09-18.jpg (CC0)
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.13, 1.92, 1.92, 1.92, 2.11] total: 10.0
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.37, 3.05, 2.9, 2.35, 3.84] total: 14.51
+VOICEVOX: OK
+speaker: 8 ['春日部つむぎ（ノーマル）']
+durations: [2.13, 1.92, 1.92, 1.92, 2.11] total: 10.0
