@@ -1,1 +1,4 @@
-
+041 tiktok url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@9f3b2e3aa2ab5283d265548f23fb268afe879063/output/041_tn.mp4
+041 tiktok 2026-12-01T19:30:00+09:00 OK {"data": {"createPost": {"post": {"id": "6b0a4adeeab081a3f51d1e12", "dueAt": "2026-12-01T10:30:00.000Z"}}}}
+042 tiktok url=https://cdn.jsdelivr.net/gh/myunsd0417-creator/short-video@fa46423cebffa5ef142333f2f2202b1f3fcc3f04/output/042.mp4
+042 tiktok 2026-12-02T07:45:00+09:00 OK {"data": {"createPost": {"post": {"id": "6b0a4ae141454797eae8bd1a", "dueAt": "2026-12-01T22:45:00.000Z"}}}}
